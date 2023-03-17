@@ -32,8 +32,8 @@ import {
 
 export default function LITable ({tnp, activeClass, activeYearGroup, activeSubject, adminCheck}) {
 
-  const yearGroup = activeYearGroup;
-  const docRef = doc(db, '2023', 'subject', activeSubject.toString(), yearGroup.toString(), 'topic', `${tnp}`);
+  // const yearGroup = activeYearGroup;
+  const docRef = doc(db, '2023', 'subject', activeSubject.toString(), activeYearGroup.toString(), 'topic', `${tnp}`);
 
   let activeYearArray;
 
