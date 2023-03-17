@@ -170,6 +170,7 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
   );
 
 
+  
   // initial load from firestore
   useEffect(() => {
     const loadDoc = async () => {

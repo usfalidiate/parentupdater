@@ -130,7 +130,7 @@ export default function MainPage() {
     </>
     )
   };
-  function Year10SciLITables(){
+    function Year10SciLITables(){
     return (
       <>
       <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
