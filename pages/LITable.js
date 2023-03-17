@@ -30,10 +30,10 @@ import {
   yearArrayIQsInvSci12, yearArrayIQsInvSci11
 } from '../Components/LIArrays';
 
-export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoiceProp, adminCheck}) {
+export default function LITable ({tnp, activeSubject, activeYearGroup, activeClass, adminCheck}) {
 
-  // const yearGroup = activeYearGroup;
-  const docRef = doc(db, '2023', 'subject', subjectChoiceProp.toString(), activeYearGroup.toString(), 'topic', `${tnp}`);
+  const docRef = doc(db, '2023', 'subject', activeSubject.toString(), activeClass.toString(), 'topic', `${tnp}`);
+  const setDocRef = doc(db, '2023', 'subject', activeSubject.toString(), activeClass.toString(), 'topic', `${tnp}` );
 
   let activeYearArray;
 
@@ -86,7 +86,7 @@ export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoi
 
 
   let LITableHeading;
-  switch (activeClass) {
+  switch (activeSubject) {
     case '10SciASP':
       LITableHeading= 'Year 10 Science (ASP)'
       break;
@@ -184,8 +184,15 @@ export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoi
 
           setButtonState( cloudState );
         }
+        console.log('loadDoc ran');
+
       } catch {
-        console.log('loadDoc error');
+        // await setDoc(setDocRef, 
+        //   buttonState
+        //   );
+        // console.log('loadDoc error, tried setDoc');
+
+        setButtonState(createInitFalseArray())
       }
     };
     loadDoc();
@@ -224,10 +231,8 @@ export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoi
         );
         alert('Upload To Cloud Successful');
       } catch {
-          await addDoc(docRef, 
-            buttonState
-            );
-        alert('Upload Failed - addDoc was run');
+          await setDoc(setDocRef, buttonState );
+        alert('Upload Failed - setDoc was run');
       };
     };
 
@@ -278,7 +283,7 @@ export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoi
 
 
   let tableColLIHeading;
-  switch (subjectChoiceProp) {
+  switch (activeSubject) {
     case 'Sci':
       tableColLIHeading = 'Learning Intention'
       break;
@@ -294,7 +299,7 @@ export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoi
   };
 
   let topicModuleOrProject;
-  switch (subjectChoiceProp) {
+  switch (activeSubject) {
     case 'Sci':
       topicModuleOrProject = 'Topic'
       break;

@@ -58,17 +58,17 @@ export default function MainPage() {
 
 
   // SUBJECT
-  const handleSubjectChoice = ({subjectChoiceProp}) => {
-    setSubjectChoice(subjectChoiceProp);
+  const handleSubjectChoice = ({activeSubject}) => {
+    setSubjectChoice(activeSubject);
     setDisplaySubjectChoice(false);
     setDisplayClassChoice(true);
   };
 
-  function ButtonSubjectChoice ({buttonSubjectTitleProp, subjectChoiceProp}) {
+  function ButtonSubjectChoice ({buttonSubjectTitleProp, activeSubject}) {
     return (
       <div className={'divButtonSubjectChoice'}> 
         <button className='glow-on-hover' 
-          onClick={()=>handleSubjectChoice({subjectChoiceProp})} 
+          onClick={()=>handleSubjectChoice({activeSubject})} 
         > 
         <p className={'buttonText'}>  {buttonSubjectTitleProp}  </p> 
         </button> 
@@ -77,19 +77,19 @@ export default function MainPage() {
 
   // CLASS
 
-  const handleClassChoice = ({classChoiceProp}) => {
-    setClassChoice(classChoiceProp);
+  const handleClassChoice = ({activeClass}) => {
+    setClassChoice(activeClass);
     setDisplayClassChoice(false);
     setDisplayContentChoice(true);
 
   };
 
 
-  function ButtonClassChoice({buttonClassTitleProp, classChoiceProp}) {
+  function ButtonClassChoice({buttonClassTitleProp, activeClass}) {
     return (
       <div> 
         <button className='glow-on-hover' 
-          onClick={()=>handleClassChoice({classChoiceProp})} 
+          onClick={()=>handleClassChoice({activeClass})} 
         > 
         <p className={'buttonText'} >  {buttonClassTitleProp}   </p>
         </button> 
@@ -120,12 +120,12 @@ export default function MainPage() {
   function Year10SciASPLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
-      <LITable tnp={ Number(3) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
-      <LITable tnp={ Number(4) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
-      <LITable tnp={ Number(5) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
-      <LITable tnp={ Number(6) } activeClass={'10SciASP'} activeYearGroup={10} activeSubject={'SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
 
     </>
     )
@@ -133,12 +133,12 @@ export default function MainPage() {
   function Year10SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(3) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(4) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(5) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(6) } activeClass={'10Sci'} activeYearGroup={10} activeSubject={'Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
 
     </>
     )
@@ -146,24 +146,24 @@ export default function MainPage() {
   function Year9SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'9Sci'} activeYearGroup={9} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'9Sci'} activeYearGroup={9} activeSubject={'Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminState} />
     </>
     )
   };
   function Year8SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'8Sci'} activeYearGroup={8} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'8Sci'} activeYearGroup={8} activeSubject={'Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminState} />
     </>
     )
   };
   function Year7SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'7Sci'} activeYearGroup={7} activeSubject={'Sci'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'7Sci'} activeYearGroup={7} activeSubject={'Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminState} />
     </>
     )
   };
@@ -173,7 +173,7 @@ export default function MainPage() {
   function Year10STEM100HourLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'10STEM100Hour'} activeYearGroup={10} activeSubject={'STEM'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM100Hour'}   adminCheck={adminState} />
 
       </>
     )
@@ -181,7 +181,7 @@ export default function MainPage() {
   function Year10STEM200HourLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'10STEM200Hour'} activeYearGroup={10} activeSubject={'STEM'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM200Hour'}   adminCheck={adminState} />
 
       </>
     )
@@ -189,7 +189,7 @@ export default function MainPage() {
   function Year9STEMLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'9STEM'} activeYearGroup={9} activeSubject={'STEM'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'STEM'} activeYearGroup={'9'} activeClass={'9STEM'}   adminCheck={adminState} />
 
       </>
     )
@@ -197,7 +197,7 @@ export default function MainPage() {
   function Year8STEMSem1LITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'8STEMSem1'} activeYearGroup={8} activeSubject={'STEM'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem1'}   adminCheck={adminState} />
 
       </>
     )
@@ -205,7 +205,7 @@ export default function MainPage() {
   function Year8STEMSem2LITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'8STEMSem2'} activeYearGroup={8} activeSubject={'STEM'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem2'}   adminCheck={adminState} />
 
       </>
     )
@@ -216,10 +216,10 @@ export default function MainPage() {
   function Year12PhyLITables() {
     return (
       <>
-      <LITable tnp={ Number(5) } activeClass={'12Phy'} activeYearGroup={12} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(6) } activeClass={'12Phy'} activeYearGroup={12} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(7) } activeClass={'12Phy'} activeYearGroup={12} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(8) } activeClass={'12Phy'} activeYearGroup={12} activeSubject={'Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(7) } activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(8) } activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
 
 
       </>
@@ -228,10 +228,10 @@ export default function MainPage() {
   function Year11PhyLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'11Phy'} activeYearGroup={11} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'11Phy'} activeYearGroup={11} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(3) } activeClass={'11Phy'} activeYearGroup={11} activeSubject={'Phy'} adminCheck={adminState} />
-      <LITable tnp={ Number(4) } activeClass={'11Phy'} activeYearGroup={11} activeSubject={'Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
 
 
       </>
@@ -243,10 +243,10 @@ export default function MainPage() {
   function Year12InvSciLITables() {
     return (
       <>
-      <LITable tnp={ Number(5) } activeClass={'12InvSci'} activeYearGroup={12} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(6) } activeClass={'12InvSci'} activeYearGroup={12} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(7) } activeClass={'12InvSci'} activeYearGroup={12} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(8) } activeClass={'12InvSci'} activeYearGroup={12} activeSubject={'InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(7) } activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(8) } activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
 
 
       </>
@@ -255,10 +255,10 @@ export default function MainPage() {
   function Year11InvSciLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeClass={'11InvSci'} activeYearGroup={11} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(2) } activeClass={'11InvSci'} activeYearGroup={11} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(3) } activeClass={'11InvSci'} activeYearGroup={11} activeSubject={'InvSci'} adminCheck={adminState} />
-      <LITable tnp={ Number(4) } activeClass={'11InvSci'} activeYearGroup={11} activeSubject={'InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(1) } activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
 
 
       </>
@@ -282,10 +282,10 @@ export default function MainPage() {
 
     { displaySubjectChoice ?
       <div className='divSubjectChoice'>
-      <ButtonSubjectChoice subjectChoiceProp={'Sci'} buttonSubjectTitleProp={'SCIENCE'}/>
-      <ButtonSubjectChoice subjectChoiceProp={'STEM'} buttonSubjectTitleProp={'STEM'} />
-      <ButtonSubjectChoice subjectChoiceProp={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
-      <ButtonSubjectChoice subjectChoiceProp={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
+      <ButtonSubjectChoice activeSubject={'Sci'} buttonSubjectTitleProp={'SCIENCE'}/>
+      <ButtonSubjectChoice activeSubject={'STEM'} buttonSubjectTitleProp={'STEM'} />
+      <ButtonSubjectChoice activeSubject={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
+      <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
     </div>
     : null 
     }
@@ -298,35 +298,35 @@ export default function MainPage() {
     <div className='divClassChoice'>
     { subjectChoice == 'Sci' ? 
       <div className='divClassChoiceSci'>
-    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
-    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
-    <ButtonClassChoice activeYearGroup={'9'} classChoiceProp={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
-    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
-    <ButtonClassChoice activeYearGroup={'7'} classChoiceProp={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
+    <ButtonClassChoice activeYearGroup={'10'} activeClass={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
+    <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
+    <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
+    <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
+    <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
     </div> : null
     }
 
     { subjectChoice == 'STEM' ?
       <div className='divClassChoiceSTEM'>
-    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
-    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
-    <ButtonClassChoice activeYearGroup={'9'} classChoiceProp={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
-    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
-    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
+    <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
+    <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
+    <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
+    <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
+    <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
     </div> : null
     }
 
     { subjectChoice == 'Phy' ?
       <div className='divClassChoicePhy'>
-    <ButtonClassChoice activeYearGroup={'12'} classChoiceProp={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
-    <ButtonClassChoice activeYearGroup={'11'} classChoiceProp={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
+    <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
+    <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
     </div> : null
     }
 
     { subjectChoice == 'InvSci' ?
       <div className='divClassChoiceInvSci'>
-    <ButtonClassChoice activeYearGroup={'12'} classChoiceProp={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
-    <ButtonClassChoice activeYearGroup={'11'} classChoiceProp={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
+    <ButtonClassChoice activeYearGroup={'12'} activeClass={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
+    <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
     </div> : null
     }
   </div>
@@ -355,7 +355,7 @@ export default function MainPage() {
 
 
 { subjectChoice == 'Sci' && classChoice == '10SciASP' && contentChoice == 'LITable' ? 
-  <div className='divLITable'> <Year10SciASPLITables/> </div> : null
+  <div className='divLITable'> < Year10SciASPLITables /> </div> : null
 }
 
 { subjectChoice == 'Sci' && classChoice == '10Sci' && contentChoice == 'LITable' ? 
