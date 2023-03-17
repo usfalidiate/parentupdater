@@ -32,8 +32,8 @@ import {
 
 export default function LITable ({tnp, activeSubject, activeYearGroup, activeClass, adminCheck}) {
 
-  const docRef = doc(db, '2023', 'subject', activeSubject.toString(), activeClass.toString(), 'topic', `${tnp}`);
-  const setDocRef = doc(db, '2023', 'subject', activeSubject.toString(), activeClass.toString(), 'topic', `${tnp}` );
+  const docRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`);
+  const setDocRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}` );
 
   let activeYearArray;
 
@@ -170,7 +170,7 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
   );
 
 
-  
+
   // initial load from firestore
   useEffect(() => {
     const loadDoc = async () => {
