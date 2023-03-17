@@ -298,35 +298,35 @@ export default function MainPage() {
     <div className='divClassChoice'>
     { subjectChoice == 'Sci' ? 
       <div className='divClassChoiceSci'>
-    <ButtonClassChoice classChoiceProp={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
-    <ButtonClassChoice classChoiceProp={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
-    <ButtonClassChoice classChoiceProp={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
-    <ButtonClassChoice classChoiceProp={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
-    <ButtonClassChoice classChoiceProp={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
+    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
+    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
+    <ButtonClassChoice activeYearGroup={'9'} classChoiceProp={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
+    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
+    <ButtonClassChoice activeYearGroup={'7'} classChoiceProp={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
     </div> : null
     }
 
     { subjectChoice == 'STEM' ?
       <div className='divClassChoiceSTEM'>
-    <ButtonClassChoice classChoiceProp={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
-    <ButtonClassChoice classChoiceProp={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
-    <ButtonClassChoice classChoiceProp={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
-    <ButtonClassChoice classChoiceProp={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
-    <ButtonClassChoice classChoiceProp={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
+    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
+    <ButtonClassChoice activeYearGroup={'10'} classChoiceProp={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
+    <ButtonClassChoice activeYearGroup={'9'} classChoiceProp={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
+    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
+    <ButtonClassChoice activeYearGroup={'8'} classChoiceProp={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
     </div> : null
     }
 
     { subjectChoice == 'Phy' ?
       <div className='divClassChoicePhy'>
-    <ButtonClassChoice classChoiceProp={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
-    <ButtonClassChoice classChoiceProp={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
+    <ButtonClassChoice activeYearGroup={'12'} classChoiceProp={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
+    <ButtonClassChoice activeYearGroup={'11'} classChoiceProp={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
     </div> : null
     }
 
     { subjectChoice == 'InvSci' ?
       <div className='divClassChoiceInvSci'>
-    <ButtonClassChoice classChoiceProp={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
-    <ButtonClassChoice classChoiceProp={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
+    <ButtonClassChoice activeYearGroup={'12'} classChoiceProp={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
+    <ButtonClassChoice activeYearGroup={'11'} classChoiceProp={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
     </div> : null
     }
   </div>

@@ -30,10 +30,10 @@ import {
   yearArrayIQsInvSci12, yearArrayIQsInvSci11
 } from '../Components/LIArrays';
 
-export default function LITable ({tnp, activeClass, activeYearGroup, activeSubject, adminCheck}) {
+export default function LITable ({tnp, activeClass, activeYearGroup, subjectChoiceProp, adminCheck}) {
 
   // const yearGroup = activeYearGroup;
-  const docRef = doc(db, '2023', 'subject', activeSubject.toString(), activeYearGroup.toString(), 'topic', `${tnp}`);
+  const docRef = doc(db, '2023', 'subject', subjectChoiceProp.toString(), activeYearGroup.toString(), 'topic', `${tnp}`);
 
   let activeYearArray;
 
@@ -278,7 +278,7 @@ export default function LITable ({tnp, activeClass, activeYearGroup, activeSubje
 
 
   let tableColLIHeading;
-  switch (activeSubject) {
+  switch (subjectChoiceProp) {
     case 'Sci':
       tableColLIHeading = 'Learning Intention'
       break;
@@ -294,7 +294,7 @@ export default function LITable ({tnp, activeClass, activeYearGroup, activeSubje
   };
 
   let topicModuleOrProject;
-  switch (activeSubject) {
+  switch (subjectChoiceProp) {
     case 'Sci':
       topicModuleOrProject = 'Topic'
       break;
