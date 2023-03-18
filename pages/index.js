@@ -27,8 +27,6 @@ import {
 import MainPage from './MainPage';
 
 export default function Home() {
-  <Login/>
-
  
 
 return (
@@ -40,7 +38,7 @@ return (
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
-  {/* <Login/> */}
+  <Login/>
 
 
   <MainPage />
