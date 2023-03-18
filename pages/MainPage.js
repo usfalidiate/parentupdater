@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { app, db, auth } from '../Components/Firebase';
 
 
-import LITable from './LITable';
+import LITable from '../Components/LITable';
 
 export default function MainPage() {
 

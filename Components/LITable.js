@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { app, db, auth } from '../Components/Firebase';
+import { app, db, auth } from './Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from '../Components/Auth';
+import { Login } from './Auth';
 import {
   getFirestore,
   collection,
@@ -28,7 +28,7 @@ import {
   yearArray100HourSTEM10, yearArray200HourSTEM10, yearArraySTEM9, yearArraySTEM8, 
   yearArrayIQsPhy12, yearArrayIQsPhy11,
   yearArrayIQsInvSci12, yearArrayIQsInvSci11
-} from '../Components/LIArrays';
+} from './LIArrays';
 
 export default function LITable ({tnp, activeSubject, activeYearGroup, activeClass, adminCheck}) {
 
