@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';10
 import { useState, useEffect, useRef } from 'react';
+import { app, db, auth } from '../Components/Firebase';
+
 
 import LITable from './LITable';
 

@@ -39,7 +39,7 @@ return (
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
-  {/* <Login/> */}
+  <Login/>
 
 
   <MainPage />
