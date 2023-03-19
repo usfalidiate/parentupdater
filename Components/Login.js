@@ -125,19 +125,12 @@ export default function Login () {
 
 
 
-console.log('adminState in Login', adminState);
 
 
 return (
 
   <>
-        {/* <div className='divDisplayLoginAdmin'>
-          <ButtonToggleDisplayLoginAdmin/>
-        </div> */}
-    
-        {/* <button onClick={()=>check()}> check user </button> */}
 
-      {/* {displayLoginAdmin ?  */}
         <>
         <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
@@ -146,13 +139,12 @@ return (
         <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
         <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
+        {currentUser?.email ? <p className='neonButtonActive'>Logged In</p> : <p className='neonButton'>Guest Mode</p>}
     
-        {/* <div className='divAdmin'>
-          <ButtonToggleAdminMode adminModeState={adminState} />
-        </div> */}
+
 
       </> 
-      {/* : null} */}
+
 
     </>
 )

@@ -22,7 +22,7 @@ export default function MainPage() {
   function ButtonToggleDisplayLoginAdmin() {
     return (
       <button onClick={handleToggleLoginAdmin}
-      className='neonButton'>
+      className={ adminState ? 'neonButtonActive' : 'neonButton'}>
         <p className='buttonTextAdmin'> Admin</p>
       </button>
     )
@@ -44,7 +44,7 @@ export default function MainPage() {
     return ( 
       <>         
         <button 
-          className='neonButton'
+          className={adminState ? 'neonButtonActive' : 'neonButton'}
           onClick={handleToggleAdminMode} >
           {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
         </button>
@@ -388,8 +388,7 @@ export default function MainPage() {
   };
 
 
-  // console.log('adminCheck in Main Page', adminCheck);
-  console.log('adminState in Main Page', adminState);
+
 
 
 
@@ -428,6 +427,7 @@ export default function MainPage() {
         <Login />
       </div>
          
+         {/* HIDE THIS BUTTON IF  currentUser = null IN THE LOGIN COMPONENT */}
       <div className='divAdmin'>
         <ButtonToggleAdminMode />
       </div> </> :null  } 
