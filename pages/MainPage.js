@@ -404,6 +404,10 @@ export default function MainPage() {
   return (
     <>
 
+    <div className='divLoginHidden'>
+      <Login />
+    </div>
+
     <div className='divTopBar'>
                
       { displayTeacherChoice ? null :     
