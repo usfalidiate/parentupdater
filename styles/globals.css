@@ -1,6 +1,7 @@
 .divLogin {
   background-color: #000000;
   color: goldenrod;
+  display: none;
 }
 
 .buttonLogin {
