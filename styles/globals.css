@@ -10,8 +10,10 @@
   background-color: #000000;
   color: goldenrod;
   display: flex;
+  flex-direction: row;
   align-content: center;
-  border: none;
+  align-items: center;
+  /* border: 1px solid goldenrod; */
 }
 
 .divLoginHidden {
@@ -99,19 +101,35 @@
 .buttonLogin {
   background-color: #000000;
   color: goldenrod;
-  border: none;
+  border: solid 1px goldenrod;
+  border-radius: 5px;
 }
 
 input {
   background: black;
   background-color: #000000;
   color: goldenrod;
-  border: none;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
   text-align: center;
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  height: 10px;
+  /* height: 10px; */
 }
 
 input:-webkit-autofill, input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input:hover{
+  background: goldenrod;
+  color: black;
+  box-shadow: 0 0 5px goldenrod,
+              0 0 25px goldenrod,
+              0 0 50px orangered,
+              0 0 100px orangered;
+   -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
 }
 
 html {
@@ -532,17 +550,17 @@ html {
 .neonButton{
   padding: 20px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
+  height: 10px;
   color: goldenrod;
   background-color: black;
   outline: goldenrod;
   font-weight: normal;
-  border: none;
+  border: 1px solid goldenrod;
   border-radius: 5px;
   letter-spacing: 1px;
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
-  height: 10px;
   align-content: center;
   align-items: center;
   display: flex;

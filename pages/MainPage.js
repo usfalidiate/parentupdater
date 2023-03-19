@@ -22,8 +22,8 @@ export default function MainPage() {
   function ButtonToggleDisplayLoginAdmin() {
     return (
       <button onClick={handleToggleLoginAdmin}
-      className='mini-glow-on-hover'>
-        <p className='mini-buttonText'> Admin</p>
+      className='neonButton'>
+        <p className='buttonTextAdmin'> Admin</p>
       </button>
     )
   };
@@ -144,7 +144,7 @@ export default function MainPage() {
 
 
   function ButtonHome() {
-    return (<> <button className='mini-glow-on-hover' onClick={()=> handleHome()}> <p className='mini-buttonText'> Home </p> </button> </> )
+    return (<> <button className='neonButton' onClick={()=> handleHome()}> <p className='buttonTextAdmin'> Home </p> </button> </> )
   };
 
 

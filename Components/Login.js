@@ -85,72 +85,43 @@ export default function Login () {
   };
  
 
-  // CHECK IF LOGGED IN OR NOT
-// const check = () => {
-//   console.log('user', user);
-//   if (user !== null) {
-//     // User is signed in, see docs for a list of available properties
-//     // https://firebase.google.com/docs/reference/js/firebase.User
-//     // ...
-//     console.log('user logged in')
-
-//   } else {
-//     // No user is signed in.
-//     console.log('no user logged in')
-//   };
-// };
-
-// const check = () => {
-  // onAuthStateChanged(auth, (user) => {
-  //   if (user) {
-  //     const uid = user.uid;
-  //     setUID(uid);
-  //     console.log('uid', uid, 'user exists');
-  //     console.log('UID', UID)
-  //   } else {
-  //     console.log('no user is logged in')
-  //   }
-  // });
-// };
-
-
 
 
   // BUTTONS
-  function ButtonClassChoice() {
-    return (
-      <div> 
-        <button className='glow-on-hover' > 
-        <p className={'buttonText'} >  {}   </p>
-        </button> 
-      </div>)
-  };
+  // function ButtonClassChoice() {
+  //   return (
+  //     <div> 
+  //       <button className='glow-on-hover' > 
+  //       <p className={'buttonText'} >  {}   </p>
+  //       </button> 
+  //     </div>)
+  // };
 
 
-  function ButtonDisplayAdminLogin () {
-    return (
-      <div className='divLoginHidden'>
-        <button className='mini-glow-on-hover'> <p className='mini-buttonText'> Admin </p> </button>
-      </div>
-    )
-  }
+  // function ButtonDisplayAdminLogin () {
+  //   return (
+  //     <div className='divLoginHidden'>
+  //       <button className='mini-glow-on-hover'> <p className='mini-buttonText'> Admin </p> </button>
+  //     </div>
+  //   )
+  // }
 
 
 return (
 
   <>
 
-    <div className={'divLogin'}>
+    
         {/* <button onClick={()=>check()}> check user </button> */}
 
         <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
         {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
-        <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleLogin} > Log In </button>
-        <button className={'buttonLogin'} disabled={loading || !currentUser } onClick={handleLogout}> Log Out </button>
-        <button className={'buttonLogin'} onClick={ togglePasswordVisible }> Show or Hide PW </button>
+        <button className={'neonButton'} disabled={loading || currentUser != null } onClick={handleLogin} > <p className='buttonTextAdmin' >Log In</p> </button>
+        <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
+        <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
-    </div>
+    
     </>
 )
 }
