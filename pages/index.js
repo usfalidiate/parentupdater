@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { app, db, auth } from '../Components/Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from '../Components/Login';
+import  Login  from '../Components/Login';
 import {
   getFirestore,
   collection,
@@ -23,7 +23,7 @@ import {
   querySnapshot,
 } from 'firebase/firestore';
 
-
+import TopBar from '../Components/TopBar';
 import MainPage from './MainPage';
 
 export default function Home({activeTeacher}) {
@@ -38,7 +38,7 @@ return (
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
-  <Login/> 
+  {/* <TopBar/>  */}
 
 
   <MainPage />

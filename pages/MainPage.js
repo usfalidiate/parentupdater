@@ -1,17 +1,33 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect, useRef } from 'react';
 import { app, db } from '../Components/Firebase';
-import { Login } from '../Components/Login';
 
 
 import LITable from '../Components/LITable';
+import TopBar from '../Components/TopBar';
+import Login from '../Components/Login';
 
 export default function MainPage() {
 
 
 
+  // DISPLAY LOGIN
 
+  const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
 
+  const handleToggleLoginAdmin = () => {
+    setDisplayLoginAdmin(prev=>!prev);
+  };
+
+  function ButtonToggleDisplayLoginAdmin() {
+    return (
+      <button onClick={handleToggleLoginAdmin}
+      className='mini-glow-on-hover'>
+        <p className='mini-buttonText'> Admin</p>
+      </button>
+    )
+  };
+ 
 
 
   // ADMIN
@@ -384,16 +400,31 @@ console.log(subjectChoice, classChoice, contentChoice);
   return (
     <>
 
+    <div className='divTopBar'>
+               
+      { displayTeacherChoice ? null :     
+        <>
+        <div className='divHome'>
+          <ButtonHome/>
+        </div>      
 
-    {  displayTeacherChoice ? null :   
-    <div className='divAdmin'>
-      <ButtonToggleAdmin />
-    </div> }   
-
-    {  displayTeacherChoice ? null :   
-    <div className='divHome'>
-      <ButtonHome/>
-    </div> }   
+        <div className='divDisplayLoginAdmin'>
+          <ButtonToggleDisplayLoginAdmin/>
+        </div>
+        </> 
+      } 
+      
+      {displayLoginAdmin ? 
+      <>
+      <div className='divLogin'>
+        <Login />
+      </div>
+         
+      <div className='divAdmin'>
+        <ButtonToggleAdmin />
+      </div> </> :null  } 
+  
+    </div>
 
 
     {displayTeacherChoice ? 

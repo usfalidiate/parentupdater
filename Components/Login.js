@@ -14,7 +14,7 @@ export const auth = getAuth();
 // export const user = auth.currentUser;
 
 
-export const Login = () => {
+export default function Login () {
 
   //////   LOGIN AND AUTH   //////
   const [loading, setLoading] = useState(false);
@@ -101,16 +101,16 @@ export const Login = () => {
 // };
 
 // const check = () => {
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      const uid = user.uid;
-      setUID(uid);
-      console.log('uid', uid, 'user exists');
-      console.log('UID', UID)
-    } else {
-      console.log('no user is logged in')
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     const uid = user.uid;
+  //     setUID(uid);
+  //     console.log('uid', uid, 'user exists');
+  //     console.log('UID', UID)
+  //   } else {
+  //     console.log('no user is logged in')
+  //   }
+  // });
 // };
 
 
@@ -127,8 +127,19 @@ export const Login = () => {
   };
 
 
+  function ButtonDisplayAdminLogin () {
+    return (
+      <div className='divLoginHidden'>
+        <button className='mini-glow-on-hover'> <p className='mini-buttonText'> Admin </p> </button>
+      </div>
+    )
+  }
+
+
 return (
- 
+
+  <>
+
     <div className={'divLogin'}>
         {/* <button onClick={()=>check()}> check user </button> */}
 
@@ -140,5 +151,6 @@ return (
         <button className={'buttonLogin'} onClick={ togglePasswordVisible }> Show or Hide PW </button>
         {/* Currently Logged In As: { currentUser?.email } */}
     </div>
+    </>
 )
 }
