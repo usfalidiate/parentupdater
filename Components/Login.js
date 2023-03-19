@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { 
+    
     getAuth, 
     createUserWithEmailAndPassword,
     onAuthStateChanged,
@@ -10,6 +11,8 @@ import {
   } from 'firebase/auth';
 
 export const auth = getAuth();
+// export const user = auth.currentUser;
+
 
 export const Login = () => {
 
@@ -18,6 +21,7 @@ export const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const currentUser = useAuth();
+  const [UID, setUID] = useState();
   
   
   function useAuth() {
@@ -39,7 +43,7 @@ export const Login = () => {
     try {
       await signup(emailRef.current.value, passwordRef.current.value);
     } catch {
-      alert('that user already exists, your PW was less than 6 characters, or something else went wrong')
+      alert('Error')
     }
     setLoading(false);
   };
@@ -52,6 +56,7 @@ export const Login = () => {
     setLoading(true);
     try {
       await login(emailRef.current.value, passwordRef.current.value);
+      console.log('login worked')
     } catch {
       alert('the email and/or password was incorrect (or something else went wrong')
     }
@@ -66,6 +71,7 @@ export const Login = () => {
     setLoading(true);
     try {
     await logout();
+    console.log('logout worked')
   } catch {
     alert('error');
   }
@@ -78,15 +84,61 @@ export const Login = () => {
     setPasswordVisible(!passwordVisible);
   };
  
+
+  // CHECK IF LOGGED IN OR NOT
+// const check = () => {
+//   console.log('user', user);
+//   if (user !== null) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/firebase.User
+//     // ...
+//     console.log('user logged in')
+
+//   } else {
+//     // No user is signed in.
+//     console.log('no user logged in')
+//   };
+// };
+
+// const check = () => {
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      setUID(uid);
+      console.log('uid', uid, 'user exists');
+      console.log('UID', UID)
+    } else {
+      console.log('no user is logged in')
+    }
+  });
+// };
+
+
+
+
+  // BUTTONS
+  function ButtonClassChoice() {
+    return (
+      <div> 
+        <button className='glow-on-hover' > 
+        <p className={'buttonText'} >  {}   </p>
+        </button> 
+      </div>)
+  };
+
+
 return (
-    <div>
-        <input ref={emailRef} placeholder='Email'/>
+ 
+    <div className={'divLogin'}>
+        {/* <button onClick={()=>check()}> check user </button> */}
+
+        <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
-        <button disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button>
-        <button disabled={loading || currentUser != null } onClick={handleLogin} > Log In </button>
-        <button disabled={loading || !currentUser } onClick={handleLogout}> Log Out </button>
-        <button onClick={ togglePasswordVisible }> Show or Hide PW </button>
-        Currently Logged In As: { currentUser?.email }
+        {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
+        <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleLogin} > Log In </button>
+        <button className={'buttonLogin'} disabled={loading || !currentUser } onClick={handleLogout}> Log Out </button>
+        <button className={'buttonLogin'} onClick={ togglePasswordVisible }> Show or Hide PW </button>
+        {/* Currently Logged In As: { currentUser?.email } */}
     </div>
 )
 }

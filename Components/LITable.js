@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { app, db, auth } from './Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from './Auth';
+// import { Login } from './Login';
 import {
   getFirestore,
   collection,
@@ -30,7 +30,13 @@ import {
   yearArrayIQsInvSci12, yearArrayIQsInvSci11
 } from './LIArrays';
 
-export default function LITable ({tnp, activeSubject, activeYearGroup, activeClass, adminCheck}) {
+export default function LITable ({tnp, activeTeacher, activeSubject, activeYearGroup, activeClass, adminCheck}) {
+
+
+
+  console.log('activeTeacher in LITable', activeTeacher);
+  console.log('activeSubject in LITable', activeSubject);
+
 
   const docRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`);
   const setDocRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}` );
@@ -145,7 +151,9 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
       fullID: item.fullID,
     })
   });
-    let poop = {id: tnp, koglin: initFalseArray}
+    let poop = {id: tnp, [`${activeTeacher}`]: initFalseArray};
+    console.log('poop', poop);
+
     return ( 
       poop 
       )
@@ -203,23 +211,34 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
   // function for handling click when button it clicked; changes state of the ith position of the buttonState array
   const handleClick = (i, x) => {
     setButtonState(prevButtonState => {
-      const newKoglin = {...prevButtonState.koglin, [i]: {... prevButtonState.koglin[i], buttonState: !prevButtonState.koglin[i].buttonState }}
+      const newTeacher = {...prevButtonState[`${activeTeacher}`], [i]: {... prevButtonState[`${activeTeacher}`][i], buttonState: !prevButtonState[`${activeTeacher}`][i].buttonState }}
       return {
-        ...prevButtonState, koglin: newKoglin }
+        ...prevButtonState, [`${activeTeacher}`]: newTeacher }
     })
   };
 
 
   // creates a button that shows the state of ith position in buttonState array
   function ButtonCompleted( {i, x} ) {
-    return (
+    try {
+      return (
         <div>
           <button
           onClick={ () => handleClick(i, x) }
-          className={ buttonState.koglin[i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' }
+          className={ buttonState[`${activeTeacher}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' }
           > Click </button>
         </div>
     )
+    } catch {
+      console.log('error in ButtonCompleted')
+      return (
+        <div>
+          <button
+          onClick={ () => handleClick(i, x) }
+          className={ 'buttonUncompleted' } > Error </button>
+        </div>
+    )
+    }
   };
 
 
@@ -247,13 +266,14 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
 
   //function that calculates the % of progress for each topic
   const ProgressBarBasic = () => {
-    const array = Object.entries(buttonState?.koglin).map(item => {
-      return (
-        item[1].buttonState
-      )
-    });
+    try {
+      const array = Object.entries(buttonState?.[`${activeTeacher}`]).map(item => {
+        return (
+          item[1].buttonState
+        )
+      });
 
-    const completed = 
+      const completed = 
       array.filter(truth => truth === true ).map(item => {
         return (
           item
@@ -271,15 +291,26 @@ export default function LITable ({tnp, activeSubject, activeYearGroup, activeCla
     return (
       <ProgressBar now={calc} />
     )
+
+    } catch {
+      console.log('error in progress bar')
+      return (
+        <ProgressBar now = {0} />
+      )
+    }
+
+
   };
 
 
 
   function RowStatus ({i})  {
-    return (
-        <div className={ buttonState.koglin[i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' }
-        >Status</div>
-    )
+    try {
+      return ( <div className={ buttonState[`${activeTeacher}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' } > Status </div> )
+    } catch {
+      console.log('error in RowStatus')
+      return ( <div className={'buttonUncompleted'}> Status Error </div>)
+    }
   };
 
 

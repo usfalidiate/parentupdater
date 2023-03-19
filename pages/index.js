@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { app, db, auth } from '../Components/Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from '../Components/Auth';
+import { Login } from '../Components/Login';
 import {
   getFirestore,
   collection,
@@ -26,9 +26,9 @@ import {
 
 import MainPage from './MainPage';
 
-export default function Home() {
+export default function Home({activeTeacher}) {
  
-
+console.log('activeTeacer in index', activeTeacher);
 return (
 <>
   <Head>
@@ -38,7 +38,7 @@ return (
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
-  <Login/>
+  {activeTeacher === 'admin' ? <Login/> : null}
 
 
   <MainPage />

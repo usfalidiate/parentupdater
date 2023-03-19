@@ -1,3 +1,24 @@
+.divLogin {
+  background-color: #000000;
+  color: goldenrod;
+}
+
+.buttonLogin {
+  background-color: #000000;
+  color: goldenrod;
+}
+
+input {
+  background: black;
+  background-color: #000000;
+  color: goldenrod;
+  border-color: black;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 html {
   background-color: black;
 }
@@ -25,6 +46,8 @@ html {
   padding: 0 0;
 }
 
+
+
 .divLITable {
   background-color: black;
   min-height: 90vh;
@@ -45,6 +68,16 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content:space-around;
+}
+
+.divTeacherChoice {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
+  height: 100vh;
 }
 
 .divSubjectChoice {
@@ -117,9 +150,6 @@ html {
   min-height: 30vh;
 }
 
-input {
-  background-color: #001d3d;
-}
 
 .mainTable {
   background-color: goldenrod;
