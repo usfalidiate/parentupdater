@@ -38,7 +38,7 @@ return (
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
-  {activeTeacher === 'admin' ? <Login/> : null}
+  <Login/> 
 
 
   <MainPage />
