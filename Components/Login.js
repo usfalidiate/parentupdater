@@ -134,10 +134,10 @@ return (
         <>
         <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
+        <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
         <button className={'neonButton'} disabled={loading || currentUser != null } onClick={handleLogin} > <p className='buttonTextAdmin' >Log In</p> </button>
         <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
-        <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
         {currentUser?.email ? <p className='neonButtonActive'>Logged In</p> : <p className='neonButton'>Guest Mode</p>}
     

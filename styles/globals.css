@@ -579,7 +579,7 @@ html {
   color: goldenrod;
   background-color: black;
   outline: goldenrod;
-  font-weight: normal;
+  font-weight: bold;
   border: 1px solid goldenrod;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -599,8 +599,8 @@ html {
 }
 
 .neonButton:hover{
-    background: goldenrod;
-    color: black;
+    background: black;
+    color: goldenrod;
     box-shadow: 0 0 5px goldenrod,
                 0 0 25px goldenrod,
                 0 0 50px orangered,
