@@ -85,35 +85,60 @@ export default function Login () {
   };
  
 
+  // DISPLAY LOGIN
+
+  const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
+
+  const handleToggleLoginAdmin = () => {
+    setDisplayLoginAdmin(prev=>!prev);
+  };
+
+  function ButtonToggleDisplayLoginAdmin() {
+    return (
+      <button onClick={handleToggleLoginAdmin}
+      className='neonButton'>
+        <p className='buttonTextAdmin'> Admin</p>
+      </button>
+    )
+  };
+
+  
+  
+  
+  // TOGGLE ADMIN MODE
+  const [adminState, setAdminState] = useState(false);
+
+  const handleToggleAdminMode = () => {
+    setAdminState(prev=>!prev);
+  };
+
+  function ButtonToggleAdminMode({adminModeState}) {
+    return ( 
+      <>         
+        <button 
+          className='neonButton'
+          onClick={handleToggleAdminMode} >
+          {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
+        </button>
+      </>
+    )};
 
 
-  // BUTTONS
-  // function ButtonClassChoice() {
-  //   return (
-  //     <div> 
-  //       <button className='glow-on-hover' > 
-  //       <p className={'buttonText'} >  {}   </p>
-  //       </button> 
-  //     </div>)
-  // };
 
-
-  // function ButtonDisplayAdminLogin () {
-  //   return (
-  //     <div className='divLoginHidden'>
-  //       <button className='mini-glow-on-hover'> <p className='mini-buttonText'> Admin </p> </button>
-  //     </div>
-  //   )
-  // }
+console.log('adminState in Login', adminState);
 
 
 return (
 
   <>
-
+        <div className='divDisplayLoginAdmin'>
+          <ButtonToggleDisplayLoginAdmin/>
+        </div>
     
         {/* <button onClick={()=>check()}> check user </button> */}
 
+      {displayLoginAdmin ? 
+        <>
         <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
         {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
@@ -122,6 +147,12 @@ return (
         <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
     
+        <div className='divAdmin'>
+          <ButtonToggleAdminMode adminModeState={adminState} />
+        </div>
+
+      </> : null}
+
     </>
 )
 }

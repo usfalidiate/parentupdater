@@ -115,14 +115,18 @@ input {
   padding: 20px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
   height: 10px;
+  font-size: 12px;
   /* height: 10px; */
 }
 
 input:-webkit-autofill, input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+  font-size: 12px;
+
 }
 
 input:hover{
+  font-size: 12px;
   background: goldenrod;
   color: black;
   box-shadow: 0 0 5px goldenrod,
@@ -315,8 +319,8 @@ html {
   grid-row:2;
 
   text-align:center;
-  font-size: 16px;
-  background-color: #023568;
+  font-size: 12px;
+  background-color: black;
   color: goldenrod;
   text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5);
   -webkit-background-clip: text;
@@ -426,7 +430,7 @@ html {
   grid-row:1;
 
   text-align:center;
-  font-size: 12px;
+  font-size: 10px;
   background-color: black;
   color: goldenrod;
   text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5);
@@ -535,6 +539,7 @@ html {
   padding: 0 0;
   margin: 0;
   font-family:"Roboto", sans-serif;
+  font-size: 12px;
 
 }
 

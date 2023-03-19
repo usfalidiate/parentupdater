@@ -28,7 +28,6 @@ import MainPage from './MainPage';
 
 export default function Home({activeTeacher}) {
  
-console.log('activeTeacer in index', activeTeacher);
 return (
 <>
   <Head>
