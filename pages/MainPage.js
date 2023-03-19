@@ -128,7 +128,7 @@ export default function MainPage() {
 
 
   function ButtonHome() {
-    return (<> <button className='neonButton' onClick={()=> handleHome()}> <p className='buttonTextHome'> Home </p> </button> </> )
+    return (<> <button className='mini-glow-on-hover' onClick={()=> handleHome()}> <p className='mini-buttonText'> Home </p> </button> </> )
   };
 
 
@@ -386,8 +386,12 @@ console.log(subjectChoice, classChoice, contentChoice);
 
 
     {  displayTeacherChoice ? null :   
-    <div className='divHome'>
+    <div className='divAdmin'>
       <ButtonToggleAdmin />
+    </div> }   
+
+    {  displayTeacherChoice ? null :   
+    <div className='divHome'>
       <ButtonHome/>
     </div> }   
 

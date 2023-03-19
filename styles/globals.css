@@ -27,6 +27,19 @@ html {
 .divHome {
   background-color: black;
   display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100px;
+  padding: 0 0;
+  align-content: center;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.divAdmin {
+  background-color: black;
+  display: none;
+  /* display: flex; */
   flex-direction: row;
   width: 100vw;
   height: 80px;
@@ -201,7 +214,7 @@ html {
 .buttonText {
   position:relative;
   font-family:"Roboto", sans-serif;
-  transform:translate3d(0px, -4px, 0px);
+  transform:translate3d(0px, 0px, 0px);
   margin:0;
   align-self:end;
   grid-column:1/5;
@@ -293,6 +306,122 @@ html {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.mini-buttonText {
+  position:relative;
+  font-family:"Roboto", sans-serif;
+  transform:translate3d(0px, 0px, 0px);
+  margin:0 0;
+  align-self:end;
+  grid-column:1;
+  grid-row:1;
+
+  text-align:center;
+  font-size: 12px;
+  background-color: black;
+  color: goldenrod;
+  text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5);
+  -webkit-background-clip: text;
+      -moz-background-clip: text;
+          background-clip: text;
+  transition: .13s ease-in-out; 
+}
+
+.mini-glow-on-hover {
+  font-family:"Roboto", sans-serif;
+  transform:translate3d(0px, -4px, 0px);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  /* color: #fff; */
+  /* background: #001d3d; */
+  /* background-color: #f4f5f6; */
+  cursor: pointer;
+  position: relative;
+  margin-left: 30px;
+  margin-top: 20px;
+  z-index: 0;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 5px goldenrod, 0px 0px 25px 5px red; */
+  box-shadow: 0px 0px 2px 5px rgb(255, 255, 255), 0px 0px 25px 5px rgb(255, 255, 255);
+
+}
+
+
+
+.mini-glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, orangered,orangered);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(1px);
+  width: calc(100% );
+  height: calc(100%);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px goldenrod, 0px 0px 25px 5px red, 0px 0px 15px 5px darkgoldenrod, 0px 0px 25px 5px darkred;
+
+}
+
+.mini-glow-on-hover:active {
+  background-color: black;
+  /* box-shadow: 0px 0px 15px 5px goldenrod, 0px 0px 25px 5px red; */
+
+}
+
+.mini-glow-on-hover:active:after {
+  background: transparent;
+}
+
+.mini-glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.mini-glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #001d3d; */
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  
+  
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
 
 
 
