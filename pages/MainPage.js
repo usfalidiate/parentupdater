@@ -7,26 +7,26 @@ import LITable from '../Components/LITable';
 import TopBar from '../Components/TopBar';
 import Login from '../Components/Login';
 
-export default function MainPage({adminModeState}) {
+export default function MainPage() {
 
 
 
   // DISPLAY LOGIN
 
-  // const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
+  const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
 
-  // const handleToggleLoginAdmin = () => {
-  //   setDisplayLoginAdmin(prev=>!prev);
-  // };
+  const handleToggleLoginAdmin = () => {
+    setDisplayLoginAdmin(prev=>!prev);
+  };
 
-  // function ButtonToggleDisplayLoginAdmin() {
-  //   return (
-  //     <button onClick={handleToggleLoginAdmin}
-  //     className='neonButton'>
-  //       <p className='buttonTextAdmin'> Admin</p>
-  //     </button>
-  //   )
-  // };
+  function ButtonToggleDisplayLoginAdmin() {
+    return (
+      <button onClick={handleToggleLoginAdmin}
+      className='neonButton'>
+        <p className='buttonTextAdmin'> Admin</p>
+      </button>
+    )
+  };
  
 
 
@@ -34,22 +34,22 @@ export default function MainPage({adminModeState}) {
 
 
   // TOGGLE ADMIN MODE
-  // const [adminState, setAdminState] = useState(adminModeState);
+  const [adminState, setAdminState] = useState(false);
 
-  // const handleToggleAdminMode = () => {
-  //   setAdminState(prev=>!prev);
-  // };
+  const handleToggleAdminMode = () => {
+    setAdminState(prev=>!prev);
+  };
 
-  // function ButtonToggleAdminMode() {
-  //   return ( 
-  //     <>         
-  //       <button 
-  //         className='neonButton'
-  //         onClick={handleToggleAdminMode} >
-  //         {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
-  //       </button>
-  //     </>
-  //   )};
+  function ButtonToggleAdminMode() {
+    return ( 
+      <>         
+        <button 
+          className='neonButton'
+          onClick={handleToggleAdminMode} >
+          {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
+        </button>
+      </>
+    )};
 
     
       
@@ -242,12 +242,12 @@ export default function MainPage({adminModeState}) {
   function Year10SciASPLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10SciASP'} adminCheck={adminState} />
 
     </>
     )
@@ -255,12 +255,12 @@ export default function MainPage({adminModeState}) {
     function Year10SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'10'} activeClass={'10Sci'} adminCheck={adminState} />
 
     </>
     )
@@ -268,24 +268,24 @@ export default function MainPage({adminModeState}) {
   function Year9SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'9'} activeClass={'9Sci'} adminCheck={adminState} />
     </>
     )
   };
   function Year8SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'8'} activeClass={'8Sci'} adminCheck={adminState} />
     </>
     )
   };
   function Year7SciLITables(){
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Sci'} activeYearGroup={'7'} activeClass={'7Sci'} adminCheck={adminState} />
     </>
     )
   };
@@ -295,7 +295,7 @@ export default function MainPage({adminModeState}) {
   function Year10STEM100HourLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM100Hour'}   adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM100Hour'}   adminCheck={adminState} />
 
       </>
     )
@@ -303,7 +303,7 @@ export default function MainPage({adminModeState}) {
   function Year10STEM200HourLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM200Hour'}   adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'10'} activeClass={'10STEM200Hour'}   adminCheck={adminState} />
 
       </>
     )
@@ -311,7 +311,7 @@ export default function MainPage({adminModeState}) {
   function Year9STEMLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'9'} activeClass={'9STEM'}   adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'9'} activeClass={'9STEM'}   adminCheck={adminState} />
 
       </>
     )
@@ -319,7 +319,7 @@ export default function MainPage({adminModeState}) {
   function Year8STEMSem1LITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem1'}   adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem1'}   adminCheck={adminState} />
 
       </>
     )
@@ -327,7 +327,7 @@ export default function MainPage({adminModeState}) {
   function Year8STEMSem2LITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem2'}   adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'STEM'} activeYearGroup={'8'} activeClass={'8STEMSem2'}   adminCheck={adminState} />
 
       </>
     )
@@ -338,10 +338,10 @@ export default function MainPage({adminModeState}) {
   function Year12PhyLITables() {
     return (
       <>
-      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(7) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(8) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(7) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(8) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'12'} activeClass={'12Phy'} adminCheck={adminState} />
 
 
       </>
@@ -350,10 +350,10 @@ export default function MainPage({adminModeState}) {
   function Year11PhyLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Phy'} activeYearGroup={'11'} activeClass={'11Phy'} adminCheck={adminState} />
 
 
       </>
@@ -365,10 +365,10 @@ export default function MainPage({adminModeState}) {
   function Year12InvSciLITables() {
     return (
       <>
-      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(7) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(8) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(5) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(6) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(7) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(8) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'12'} activeClass={'12InvSci'} adminCheck={adminState} />
 
 
       </>
@@ -377,10 +377,10 @@ export default function MainPage({adminModeState}) {
   function Year11InvSciLITables() {
     return (
       <>
-      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminModeState} />
-      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminModeState} />
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'InvSci'} activeYearGroup={'11'} activeClass={'11InvSci'} adminCheck={adminState} />
 
 
       </>
@@ -389,7 +389,7 @@ export default function MainPage({adminModeState}) {
 
 
   // console.log('adminCheck in Main Page', adminCheck);
-  console.log('adminModeState in Main Page', adminModeState);
+  console.log('adminState in Main Page', adminState);
 
 
 
@@ -411,21 +411,14 @@ export default function MainPage({adminModeState}) {
           <div className='divHome'>
             <ButtonHome/>
           </div>      
-
-          <div className='divLogin'>
-            <Login />
-          </div>
-          
-          {/* <div className='divDisplayLoginAdmin'>
+        
+          <div className='divDisplayLoginAdmin'>
             <ButtonToggleDisplayLoginAdmin/>
-          </div> */}
-        </> 
-      } 
-      
+          </div>
 
 
 
-      {/* {displayLoginAdmin ? 
+      {displayLoginAdmin ? 
       <>
       <div className='divLogin'>
         <Login />
@@ -433,7 +426,13 @@ export default function MainPage({adminModeState}) {
          
       <div className='divAdmin'>
         <ButtonToggleAdminMode />
-      </div> </> :null  }  */}
+      </div> </> :null  } 
+
+
+        </> 
+      } 
+      
+
   
     </div>
 

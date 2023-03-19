@@ -112,7 +112,7 @@ export default function Login () {
     setAdminState(prev=>!prev);
   };
 
-  function ButtonToggleAdminMode({adminModeState}) {
+  function ButtonToggleAdminMode() {
     return ( 
       <>         
         <button 
@@ -131,13 +131,13 @@ console.log('adminState in Login', adminState);
 return (
 
   <>
-        <div className='divDisplayLoginAdmin'>
+        {/* <div className='divDisplayLoginAdmin'>
           <ButtonToggleDisplayLoginAdmin/>
-        </div>
+        </div> */}
     
         {/* <button onClick={()=>check()}> check user </button> */}
 
-      {displayLoginAdmin ? 
+      {/* {displayLoginAdmin ?  */}
         <>
         <input ref={emailRef} type={"email"} placeholder='Email'/>
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
@@ -147,11 +147,12 @@ return (
         <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
     
-        <div className='divAdmin'>
+        {/* <div className='divAdmin'>
           <ButtonToggleAdminMode adminModeState={adminState} />
-        </div>
+        </div> */}
 
-      </> : null}
+      </> 
+      {/* : null} */}
 
     </>
 )
