@@ -14,7 +14,7 @@ export const auth = getAuth();
 // export const user = auth.currentUser;
 
 
-export default function Login ({handleToggleAdminMode}) {
+export default function Login ({adminState, handleToggleAdminMode}) {
 
   //////   LOGIN AND AUTH   //////
   const [loading, setLoading] = useState(false);
@@ -142,7 +142,7 @@ export default function Login ({handleToggleAdminMode}) {
     return ( 
       <>       
         <button 
-          // className={adminState ? 'neonButtonActive' : 'neonButton'}
+          className={adminState ? 'neonButtonActive' : 'neonButton'}
           onClick={handleToggleAdminMode} >
            <p className='buttonTextAdmin'> Admin Mode: </p>
         </button>
@@ -158,12 +158,12 @@ return (
         <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
         <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
         {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
-        <button className={'neonButton'} disabled={loading || currentUser != null } onClick={handleLogin} > <p className='buttonTextAdmin' >Log In</p> </button>
+        <button className={'neonButton'} disabled={loading || currentUser != null || undefined } onClick={handleLogin} > <p className='buttonTextAdmin' >Log In</p> </button>
         <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
-        {currentUser?.email ? <p className='neonButtonActive'>Logged In</p> : <p className='neonButton'>Guest Mode</p>}
+        {currentUser?.email ? <p className='neonBoxActive'>Logged In</p> : <p className='neonBox'>Guest Mode</p>}
 
-        <ButtonToggleAdminMode />
+        {currentUser?.email ? <ButtonToggleAdminMode /> : null}
 
       </> 
 

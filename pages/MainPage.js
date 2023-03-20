@@ -426,7 +426,10 @@ console.log((<CheckLoggedIn/>).toString())
       
       { displayLoginAdmin ? 
       <div className='divLogin'>
-        <Login handleToggleAdminMode={handleToggleAdminMode}/>
+        <Login 
+        handleToggleAdminMode={handleToggleAdminMode}
+        adminState={adminState}
+        />
       </div> : null}
   
     </div>

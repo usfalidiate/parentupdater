@@ -572,6 +572,7 @@ html {
 
 }
 
+
 .neonButtonActive {
   padding: 20px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
@@ -608,6 +609,52 @@ html {
      -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
 }
 
+
+.neonBox{
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  height: 10px;
+  color: goldenrod;
+  background-color: black;
+  outline: goldenrod;
+  font-weight: normal;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: default;
+  align-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.neonBoxActive {
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  height: 10px;
+  color: goldenrod;
+  background-color: black;
+  outline: goldenrod;
+  font-weight: bold;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: default;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  background: goldenrod;
+  color: black;
+  box-shadow: 0 0 5px goldenrod,
+              0 0 25px goldenrod,
+              0 0 50px orangered,
+              0 0 100px orangered;
+   -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
+}
 
 
 
