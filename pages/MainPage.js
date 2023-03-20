@@ -6,10 +6,12 @@ import { app, db } from '../Components/Firebase';
 import LITable from '../Components/LITable';
 import TopBar from '../Components/TopBar';
 import Login from '../Components/Login';
+import CheckLoggedIn from '../Components/CheckLoggedIn';
 
 export default function MainPage() {
 
-
+<CheckLoggedIn/>
+console.log((<CheckLoggedIn/>).toString())
 
   // DISPLAY LOGIN
 
@@ -40,18 +42,19 @@ export default function MainPage() {
     setAdminState(prev=>!prev);
   };
 
-  function ButtonToggleAdminMode() {
-    return ( 
-      <>         
-        <button 
-          className={adminState ? 'neonButtonActive' : 'neonButton'}
-          onClick={handleToggleAdminMode} >
-          {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
-        </button>
-      </>
-    )};
+  // function ButtonToggleAdminMode() {
+  //   // only show/render this return below if currentUser (from Login) != null
+  //   return ( 
+  //     <>       
+  //       <button 
+  //         className={adminState ? 'neonButtonActive' : 'neonButton'}
+  //         onClick={handleToggleAdminMode} >
+  //         {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
+  //       </button>
+  //     </>
+  //   )};
 
-    
+    console.log('adminState in Main', adminState);
       
 
 
@@ -403,11 +406,10 @@ export default function MainPage() {
   return (
     <>
 
-    <div className='divLoginHidden'>
-      <Login />
-    </div>
+
 
     <div className='divTopBar'>
+      {/* <div className='divLoginHidden'> <Login/></div> */}
                
       { displayTeacherChoice ? null :     
         <>
@@ -419,108 +421,93 @@ export default function MainPage() {
             <ButtonToggleDisplayLoginAdmin/>
           </div>
 
-
-
-      {displayLoginAdmin ? 
-      <>
-      <div className='divLogin'>
-        <Login />
-      </div>
-         
-         {/* HIDE THIS BUTTON IF  currentUser = null IN THE LOGIN COMPONENT */}
-      <div className='divAdmin'>
-        <ButtonToggleAdminMode />
-      </div> </> :null  } 
-
-
         </> 
       } 
       
-
+      { displayLoginAdmin ? 
+      <div className='divLogin'>
+        <Login handleToggleAdminMode={handleToggleAdminMode}/>
+      </div> : null}
   
     </div>
 
 
     {displayTeacherChoice ? 
-    <div className='divTeacherChoice'>
-      <TeacherChoice />
-      {/* <ButtonTeacherChoice activeTeacherTitle={'Mr Koglin'} activeTeacher={'koglin'} />
-      <ButtonTeacherChoice activeTeacherTitle={'Mrs Crnogorcevic'} activeTeacher={'crnogorcevic'} />
-      <ButtonTeacherChoice activeTeacherTitle={'Mr Ralston-Bryce'} activeTeacher={'ralstonBryce'} />
-      <ButtonTeacherChoice activeTeacherTitle={'Admin'} activeTeacher={'admin'} /> */}
-    </div> : null
+      <div className='divTeacherChoice'>
+        <TeacherChoice />
+      </div> : null
     }
     
     { displaySubjectChoice || displayClassChoice || displayContentChoice  ?
       <div className='divMain'>
 
 
-        { displaySubjectChoice  ?
-          <div className='divSubjectChoice'>
-            <ButtonSubjectChoice activeSubject={'Sci'} buttonSubjectTitleProp={'SCIENCE'}/>
-            <ButtonSubjectChoice activeSubject={'STEM'} buttonSubjectTitleProp={'STEM'} />
-            <ButtonSubjectChoice activeSubject={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
-            <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
-          </div>
-        : null 
-        }
-      
-      
-
-
-
-        { displayClassChoice ? 
-          <div className='divClassChoice'>
-            { subjectChoice == 'Sci' ? 
-              <div className='divClassChoiceSci'>
-                <ButtonClassChoice activeYearGroup={'10'} activeClass={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
-                <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
-                <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
-                <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
-                <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
-              </div> : null
-            }
-
-            { subjectChoice == 'STEM' ?
-              <div className='divClassChoiceSTEM'>
-            <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
-            <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
-            <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
-            <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
-            <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
-            </div> : null
-            }
-
-            { subjectChoice == 'Phy' ?
-              <div className='divClassChoicePhy'>
-            <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
-            <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
-            </div> : null
-            }
-
-            { subjectChoice == 'InvSci' ?
-              <div className='divClassChoiceInvSci'>
-            <ButtonClassChoice activeYearGroup={'12'} activeClass={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
-            <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
-            </div> : null
-            }
-          </div>
-        : null
-        }
-
-
-
-
-        { displayContentChoice ?
-          <div className='divContentChoice'>
-            <ButtonContentChoice contentChoiceProp={'LITable'} buttonContentTitleProp={'Learning Intention Checklist'}/>
-            <ButtonContentChoice contentChoiceProp={'AssTable'} buttonContentTitleProp={'Assessment Information'}/>
-            <ButtonContentChoice contentChoiceProp={'SubjectInfoTable'} buttonContentTitleProp={'Subject Information'}/>
-          </div> : null
-        }
-
-      </div> : null
+    { displaySubjectChoice  ?
+      <div className='divSubjectChoice'>
+        <ButtonSubjectChoice activeSubject={'Sci'} buttonSubjectTitleProp={'SCIENCE'}/>
+        <ButtonSubjectChoice activeSubject={'STEM'} buttonSubjectTitleProp={'STEM'} />
+        <ButtonSubjectChoice activeSubject={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
+        <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
+      </div>
+    : null 
     }
+      
+      
+
+
+
+      { displayClassChoice ? 
+        <div className='divClassChoice'>
+          { subjectChoice == 'Sci' ? 
+            <div className='divClassChoiceSci'>
+              <ButtonClassChoice activeYearGroup={'10'} activeClass={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
+              <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
+              <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
+              <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
+              <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
+            </div> : null
+          }
+
+          { subjectChoice == 'STEM' ?
+            <div className='divClassChoiceSTEM'>
+          <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
+          <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
+          <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
+          <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
+          <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
+          </div> : null
+          }
+
+          { subjectChoice == 'Phy' ?
+            <div className='divClassChoicePhy'>
+          <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
+          <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
+          </div> : null
+          }
+
+          { subjectChoice == 'InvSci' ?
+            <div className='divClassChoiceInvSci'>
+          <ButtonClassChoice activeYearGroup={'12'} activeClass={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
+          <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
+          </div> : null
+          }
+        </div>
+      : null
+      }
+
+
+
+
+      { displayContentChoice ?
+        <div className='divContentChoice'>
+          <ButtonContentChoice contentChoiceProp={'LITable'} buttonContentTitleProp={'Learning Intention Checklist'}/>
+          <ButtonContentChoice contentChoiceProp={'AssTable'} buttonContentTitleProp={'Assessment Information'}/>
+          <ButtonContentChoice contentChoiceProp={'SubjectInfoTable'} buttonContentTitleProp={'Subject Information'}/>
+        </div> : null
+      }
+
+    </div> : null
+  }
 
 
 

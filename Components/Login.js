@@ -14,7 +14,7 @@ export const auth = getAuth();
 // export const user = auth.currentUser;
 
 
-export default function Login () {
+export default function Login ({handleToggleAdminMode}) {
 
   //////   LOGIN AND AUTH   //////
   const [loading, setLoading] = useState(false);
@@ -87,45 +87,67 @@ export default function Login () {
 
   // DISPLAY LOGIN
 
-  const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
+  // const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
 
-  const handleToggleLoginAdmin = () => {
-    setDisplayLoginAdmin(prev=>!prev);
-  };
+  // const handleToggleLoginAdmin = () => {
+  //   setDisplayLoginAdmin(prev=>!prev);
+  // };
 
-  function ButtonToggleDisplayLoginAdmin() {
-    return (
-      <button onClick={handleToggleLoginAdmin}
-      className='neonButton'>
-        <p className='buttonTextAdmin'> Admin</p>
-      </button>
-    )
-  };
+  // function ButtonToggleDisplayLoginAdmin() {
+  //   return (
+  //     <button onClick={handleToggleLoginAdmin}
+  //     className='neonButton'>
+  //       <p className='buttonTextAdmin'> Admin</p>
+  //     </button>
+  //   )
+  // };
 
   
   
   
   // TOGGLE ADMIN MODE
-  const [adminState, setAdminState] = useState(false);
+  // const [adminState, setAdminState] = useState(false);
 
-  const handleToggleAdminMode = () => {
-    setAdminState(prev=>!prev);
-  };
+  // const handleToggleAdminMode = () => {
+  //   setAdminState(prev=>!prev);
+  // };
+
+  // function ButtonToggleAdminMode() {
+  //   return ( 
+  //     <>         
+  //       <button 
+  //         className='neonButton'
+  //         onClick={handleToggleAdminMode} >
+  //         {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
+  //       </button>
+  //     </>
+  //   )};
+
+// function CheckLoggedIn () {
+//   let array = [];
+//   if (currentUser == true) {
+//     return (array[true]);
+//   }
+//   if (currentUser == false) {
+//     return (array[false])
+//   }
+//   else {
+//     return (array[null])
+//   }
+// };
 
   function ButtonToggleAdminMode() {
+    // only show/render this return below if currentUser (from Login) != null
+    console.log('ButtonToggleAdminMode in Login ran');
     return ( 
-      <>         
+      <>       
         <button 
-          className='neonButton'
+          // className={adminState ? 'neonButtonActive' : 'neonButton'}
           onClick={handleToggleAdminMode} >
-          {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
+           <p className='buttonTextAdmin'> Admin Mode: </p>
         </button>
       </>
     )};
-
-
-
-
 
 return (
 
@@ -140,8 +162,8 @@ return (
         <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
         {/* Currently Logged In As: { currentUser?.email } */}
         {currentUser?.email ? <p className='neonButtonActive'>Logged In</p> : <p className='neonButton'>Guest Mode</p>}
-    
 
+        <ButtonToggleAdminMode />
 
       </> 
 
