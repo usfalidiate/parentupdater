@@ -1,32 +1,8 @@
 import Head from 'next/head';
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { app, db, auth } from '../Components/Firebase';
-import { useState, useEffect, useRef } from 'react';
-import  Login  from '../Components/Login';
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  getDocs,
-  deleteDoc,
-  doc,
-  onSnapshot,
-  updateDoc,
-  getDoc,
-  setDoc,
-  child,
-  query,
-  fieldPath,
-  where,
-  documentId,
-  querySnapshot,
-} from 'firebase/firestore';
-
-import TopBar from '../Components/TopBar';
 import MainPage from './MainPage';
 
-export default function Home({activeTeacher}) {
+export default function Home() {
  
 return (
 <>
@@ -36,8 +12,6 @@ return (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
   </Head>
-
-  {/* <TopBar/>  */}
 
 
   <MainPage />

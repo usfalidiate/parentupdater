@@ -34,8 +34,7 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
 
 
-  console.log('activeTeacher in LITable', activeTeacher);
-  console.log('activeSubject in LITable', activeSubject);
+
 
 
   const docRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`);
@@ -92,7 +91,7 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
 
   let LITableHeading;
-  switch (activeSubject) {
+  switch (activeClass) {
     case '10SciASP':
       LITableHeading= 'Year 10 Science (ASP)'
       break;
@@ -152,7 +151,6 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
     })
   });
     let poop = {id: tnp, [`${activeTeacher}`]: initFalseArray};
-    console.log('poop', poop);
 
     return ( 
       poop 
@@ -171,12 +169,10 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
     )
   };
 
-
   // creates state for buttons and inserts falses from main array
   const [buttonState, setButtonState] = useState( 
     createInitFalseArray()
   );
-
 
 
   // initial load from firestore
@@ -196,12 +192,7 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
         console.log('loadDoc ran');
 
       } catch {
-        // await setDoc(setDocRef, 
-        //   buttonState
-        //   );
-        // console.log('loadDoc error, tried setDoc');
 
-        setButtonState(createInitFalseArray())
       }
     };
     loadDoc();
@@ -210,8 +201,10 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
   // function for handling click when button it clicked; changes state of the ith position of the buttonState array
   const handleClick = (i, x) => {
+
     setButtonState(prevButtonState => {
-      const newTeacher = {...prevButtonState[`${activeTeacher}`], [i]: {... prevButtonState[`${activeTeacher}`][i], buttonState: !prevButtonState[`${activeTeacher}`][i].buttonState }}
+      const newTeacher = {...prevButtonState[`${activeTeacher}`], [i]: {... prevButtonState[`${activeTeacher}`][i], buttonState: !prevButtonState[`${activeTeacher}`][i].buttonState }};
+
       return {
         ...prevButtonState, [`${activeTeacher}`]: newTeacher }
     })
@@ -383,7 +376,7 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
                     i={ Number(item.id)} 
                   /> </td>
                   }
-                  <td className='tdLINumber'> {  activeClass === 'Phy' || 'InvSci' || 'STEM' ? item.fullID : item.LINumber  }</td>
+                  <td className='tdLINumber'> { activeSubject === 'Sci' ? item.LINumber : item.fullID  }</td>
                   <td className='tdLIString'> { item.LIString }</td>
                 </tr>
               )

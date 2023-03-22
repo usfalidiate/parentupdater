@@ -109,7 +109,7 @@ input {
   background: black;
   background-color: #000000;
   color: goldenrod;
-  border: 1px solid goldenrod;
+  border: solid 1px goldenrod;
   border-radius: 5px;
   text-align: center;
   padding: 20px 20px 20px 20px;
@@ -264,8 +264,10 @@ html {
 
 
 .mainTable {
-  background-color: goldenrod;
-  color: black;
+  /* background-color: #001D3D; */
+  background-color: black;
+
+  color: rgb(218, 180, 84);
   text-align: center;
   width: 100%;
 }
@@ -303,8 +305,43 @@ html {
   text-align: left;
 }
 
+.pwd-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
 
+}
 
+h1 {
+  background-color: black;
+  color: goldenrod;
+  margin: 0px 0px 0px;
+  border-color: black;
+  margin-bottom: none;
+}
+
+.PWButton {
+  background-color: black;
+  color: goldenrod;
+  height: 35px;
+  width: 35px;
+  border: none;
+  align-content: center;
+  justify-content: center;
+}
+
+.inputAndPWButton {
+  background-color: black;
+  color: goldenrod;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -566,6 +603,26 @@ html {
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
+  align-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.neonButtonDisabled{
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  height: 10px;
+  color: grey;
+  background-color: black;
+  outline: goldenrod;
+  font-weight: normal;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: not-allowed;
   align-content: center;
   align-items: center;
   display: flex;

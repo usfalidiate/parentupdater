@@ -4,14 +4,15 @@ import { app, db } from '../Components/Firebase';
 
 
 import LITable from '../Components/LITable';
-import TopBar from '../Components/TopBar';
 import Login from '../Components/Login';
-import CheckLoggedIn from '../Components/CheckLoggedIn';
 
 export default function MainPage() {
 
-<CheckLoggedIn/>
-console.log((<CheckLoggedIn/>).toString())
+
+
+
+
+
 
   // DISPLAY LOGIN
 
@@ -35,6 +36,9 @@ console.log((<CheckLoggedIn/>).toString())
 
 
 
+
+
+
   // TOGGLE ADMIN MODE
   const [adminState, setAdminState] = useState(false);
 
@@ -42,19 +46,7 @@ console.log((<CheckLoggedIn/>).toString())
     setAdminState(prev=>!prev);
   };
 
-  // function ButtonToggleAdminMode() {
-  //   // only show/render this return below if currentUser (from Login) != null
-  //   return ( 
-  //     <>       
-  //       <button 
-  //         className={adminState ? 'neonButtonActive' : 'neonButton'}
-  //         onClick={handleToggleAdminMode} >
-  //         {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
-  //       </button>
-  //     </>
-  //   )};
 
-    console.log('adminState in Main', adminState);
       
 
 
@@ -83,10 +75,77 @@ console.log((<CheckLoggedIn/>).toString())
 
 
 
+  // BACK TO 
 
+  const backToTeacher = () => {
+    setDisplayTeacherChoice(true);
+    setDisplaySubjectChoice(false);
+    setDisplayClassChoice(false);
+    setDisplayContentChoice(false);
+    setDisplayLoginAdmin(false);
+    setTeacherChoice();
+    setSubjectChoice();
+    setClassChoice();
+    setContentChoice();
+  };
 
+  const backToSubject = () => {
+    setDisplayTeacherChoice(false);
+    setDisplaySubjectChoice(true);
+    setDisplayClassChoice(false);
+    setDisplayContentChoice(false);
+    setDisplayLoginAdmin(false);
+    // setTeacherChoice();
+    setSubjectChoice();
+    setClassChoice();
+    setContentChoice();
+  };
 
+  const backToClass = () => {
+    setDisplayTeacherChoice(false);
+    setDisplaySubjectChoice(false);
+    setDisplayClassChoice(true);
+    setDisplayContentChoice(false);
+    setDisplayLoginAdmin(false);
+    // setTeacherChoice();
+    // setSubjectChoice();
+    setClassChoice();
+    setContentChoice();
+  };
 
+  const backToContent = () => {
+    setDisplayTeacherChoice(false);
+    setDisplaySubjectChoice(false);
+    setDisplayClassChoice(false);
+    setDisplayContentChoice(true);
+    setDisplayLoginAdmin(false);
+    // setTeacherChoice();
+    // setSubjectChoice();
+    // setClassChoice();
+    setContentChoice();
+  };
+
+  function BackToTeacherButton () {
+    return (
+      <button className='neonButton' onClick={backToTeacher}> <p className='buttonTextAdmin'> Back </p> </button>
+    )
+  };
+
+  function BackToSubjectButton () {
+    return (
+      <button className='neonButton' onClick={backToSubject}> <p className='buttonTextAdmin'> Back </p> </button>
+    )
+  };
+  function BackToClassButton () {
+    return (
+      <button className='neonButton' onClick={backToClass}> <p className='buttonTextAdmin'> Back </p> </button>
+    )
+  };
+  function BackToContentButton () {
+    return (
+      <button className='neonButton' onClick={backToContent}> <p className='buttonTextAdmin'> Back </p> </button>
+    )
+  };
 
 
 
@@ -141,6 +200,7 @@ console.log((<CheckLoggedIn/>).toString())
     setDisplaySubjectChoice(false);
     setDisplayClassChoice(false);
     setDisplayContentChoice(false);
+    setDisplayLoginAdmin(false);
     setSubjectChoice();
     setClassChoice();
     setContentChoice();
@@ -393,7 +453,10 @@ console.log((<CheckLoggedIn/>).toString())
 
 
 
+  // ASSESSMENT TABLE FUNCTIONS
 
+
+  // SUBJECT INFO FUNCTIONS
 
 
 
@@ -417,6 +480,13 @@ console.log((<CheckLoggedIn/>).toString())
             <ButtonHome/>
           </div>      
         
+          <div className='divHome'>
+            {displaySubjectChoice ? <BackToTeacherButton/> : null}
+            {displayClassChoice ? <BackToSubjectButton/> : null}
+            {displayContentChoice ? <BackToClassButton/> : null}
+            { subjectChoice != null && classChoice != null && contentChoice != null ? <BackToContentButton/> : null }
+          </div>
+
           <div className='divDisplayLoginAdmin'>
             <ButtonToggleDisplayLoginAdmin/>
           </div>
@@ -464,20 +534,20 @@ console.log((<CheckLoggedIn/>).toString())
           { subjectChoice == 'Sci' ? 
             <div className='divClassChoiceSci'>
               <ButtonClassChoice activeYearGroup={'10'} activeClass={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
-              <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/>
-              <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/>
-              <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/>
-              <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
+              {/* <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/> */}
+              {/* <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/> */}
+              {/* <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/> */}
+              {/* <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/> */}
             </div> : null
           }
 
           { subjectChoice == 'STEM' ?
             <div className='divClassChoiceSTEM'>
           <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
-          <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/>
-          <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/>
-          <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/>
-          <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/>
+          {/* <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/> */}
+          {/* <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/> */}
+          {/* <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem1'} buttonClassTitleProp={'Year 8 STEM (Sem 1)'}/> */}
+          {/* <ButtonClassChoice activeYearGroup={'8'} activeClass={'8STEMSem2'} buttonClassTitleProp={'Year 8 STEM (Sem 2'}/> */}
           </div> : null
           }
 
@@ -491,7 +561,7 @@ console.log((<CheckLoggedIn/>).toString())
           { subjectChoice == 'InvSci' ?
             <div className='divClassChoiceInvSci'>
           <ButtonClassChoice activeYearGroup={'12'} activeClass={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
-          <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/>
+          {/* <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/> */}
           </div> : null
           }
         </div>
@@ -542,35 +612,35 @@ console.log((<CheckLoggedIn/>).toString())
 
 
 { subjectChoice == 'STEM' && classChoice == '10STEM200Hour' && contentChoice == 'LITable' ? 
-  <div> <Year10STEM200HourLITables/> </div> : null
+  <div className='divLITable' > <Year10STEM200HourLITables/> </div> : null
 }
 
 { subjectChoice == 'STEM' && classChoice == '10STEM100Hour' && contentChoice == 'LITable' ? 
-  <div> <Year10STEM100HourLITables/> </div> : null
+  <div className='divLITable' > <Year10STEM100HourLITables/> </div> : null
 }
 
 { subjectChoice == 'STEM' && classChoice == '9STEM' && contentChoice == 'LITable' ? 
-  <div> <Year9STEMLITables/> </div> : null
+  <div className='divLITable' > <Year9STEMLITables/> </div> : null
 }
 
 { subjectChoice == 'STEM' && classChoice == '8STEMSem2' && contentChoice == 'LITable' ? 
-  <div> <Year8STEMSem1LITables/> </div> : null
+  <div className='divLITable' > <Year8STEMSem1LITables/> </div> : null
 }
 
 { subjectChoice == 'STEM' && classChoice == '8STEMSem1' && contentChoice == 'LITable' ? 
-  <div> <Year8STEMSem2LITables/> </div> : null
+  <div className='divLITable' > <Year8STEMSem2LITables/> </div> : null
 }
 
 
 
 
-
-{ subjectChoice == 'Phy' && classChoice == '11Phy' && contentChoice == 'LITable' ? 
-  <div> <Year12PhyLITables/> </div> : null
-}
 
 { subjectChoice == 'Phy' && classChoice == '12Phy' && contentChoice == 'LITable' ? 
-  <div> <Year11PhyLITables/> </div> : null
+  <div className='divLITable' > <Year12PhyLITables/> </div> : null
+}
+
+{ subjectChoice == 'Phy' && classChoice == '11Phy' && contentChoice == 'LITable' ? 
+  <div className='divLITable' > <Year11PhyLITables/> </div> : null
 }
 
 
@@ -579,11 +649,11 @@ console.log((<CheckLoggedIn/>).toString())
 
 
 { subjectChoice == 'InvSci' && classChoice == '12InvSci' && contentChoice == 'LITable' ? 
-  <div> <Year12InvSciLITables/> </div> : null
+  <div className='divLITable' > <Year12InvSciLITables/> </div> : null
 }
 
 { subjectChoice == 'InvSci' && classChoice == '11InvSci' && contentChoice == 'LITable' ? 
-  <div> <Year11InvSciLITables/> </div> : null
+  <div className='divLITable' > <Year11InvSciLITables/> </div> : null
 }
 
 

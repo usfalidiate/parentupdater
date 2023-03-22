@@ -10,6 +10,13 @@ import {
     signInWithEmailAndPassword
   } from 'firebase/auth';
 
+import PWeye from '../public/PWeye.svg';
+import PWeyeSlash from '../public/PWeyeSlash.svg';
+import PWEyeFunc from './PWEyeFunc';
+import PWEyeSlashFunc from './PWEyeSlashFunc';
+
+
+
 export const auth = getAuth();
 // export const user = auth.currentUser;
 
@@ -85,83 +92,84 @@ export default function Login ({adminState, handleToggleAdminMode}) {
   };
  
 
-  // DISPLAY LOGIN
-
-  // const [displayLoginAdmin, setDisplayLoginAdmin] = useState(false);
-
-  // const handleToggleLoginAdmin = () => {
-  //   setDisplayLoginAdmin(prev=>!prev);
-  // };
-
-  // function ButtonToggleDisplayLoginAdmin() {
-  //   return (
-  //     <button onClick={handleToggleLoginAdmin}
-  //     className='neonButton'>
-  //       <p className='buttonTextAdmin'> Admin</p>
-  //     </button>
-  //   )
-  // };
-
+ 
   
   
   
-  // TOGGLE ADMIN MODE
-  // const [adminState, setAdminState] = useState(false);
-
-  // const handleToggleAdminMode = () => {
-  //   setAdminState(prev=>!prev);
-  // };
-
-  // function ButtonToggleAdminMode() {
-  //   return ( 
-  //     <>         
-  //       <button 
-  //         className='neonButton'
-  //         onClick={handleToggleAdminMode} >
-  //         {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p>}
-  //       </button>
-  //     </>
-  //   )};
-
-// function CheckLoggedIn () {
-//   let array = [];
-//   if (currentUser == true) {
-//     return (array[true]);
-//   }
-//   if (currentUser == false) {
-//     return (array[false])
-//   }
-//   else {
-//     return (array[null])
-//   }
-// };
+  
 
   function ButtonToggleAdminMode() {
-    // only show/render this return below if currentUser (from Login) != null
-    console.log('ButtonToggleAdminMode in Login ran');
     return ( 
       <>       
         <button 
           className={adminState ? 'neonButtonActive' : 'neonButton'}
           onClick={handleToggleAdminMode} >
-           <p className='buttonTextAdmin'> Admin Mode: </p>
+           {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p> }
         </button>
       </>
     )};
 
+
+
+
+
 return (
 
   <>
-
+ 
         <>
-        <input ref={emailRef} type={"email"} placeholder='Email'/>
-        <input ref={passwordRef} type={passwordVisible ? '' : 'password'} placeholder='Password'/>
-        <button className={'neonButton'} onClick={ togglePasswordVisible }> <p className='buttonTextAdmin' >Show or Hide PW</p> </button>
-        {/* <button className={'buttonLogin'} disabled={loading || currentUser != null } onClick={handleSignup} > Sign Up </button> */}
-        <button className={'neonButton'} disabled={loading || currentUser != null || undefined } onClick={handleLogin} > <p className='buttonTextAdmin' >Log In</p> </button>
-        <button className={'neonButton'} disabled={loading || !currentUser } onClick={handleLogout}> <p className='buttonTextAdmin' >Log Out</p> </button>
+          <input 
+            ref={emailRef} 
+            type={"email"} 
+            placeholder='Email'
+          />
+        
+        <div className='inputAndPWButton'>
+          <input
+            ref={passwordRef} 
+            type={passwordVisible ? '' : 'password'} 
+            placeholder='Password'
+          />
+          { 
+            passwordVisible ? 
+              <button 
+                className='PWButton'
+                onClick={togglePasswordVisible}> 
+                <PWEyeFunc/> 
+              </button> 
+            : 
+              <button 
+                className='PWButton'
+                onClick={togglePasswordVisible}> 
+                <PWEyeSlashFunc/> 
+              </button>
+          }
+        </div>
+
+
+
+    
+
+          
+        
+        <button 
+        className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
+        disabled={loading || currentUser != null } 
+        onClick={handleLogin} 
+        > 
+        <p className='buttonTextAdmin' >Log In </p> 
+        </button>
+        
+        <button 
+        className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
+        disabled={loading || !currentUser } 
+        onClick={handleLogout}
+        > 
+        <p className='buttonTextAdmin' >Log Out </p> </button>
+        
         {/* Currently Logged In As: { currentUser?.email } */}
-        {currentUser?.email ? <p className='neonBoxActive'>Logged In</p> : <p className='neonBox'>Guest Mode</p>}
+
+        {currentUser?.email ? <p className='neonBoxActive'>Logged In</p> : <p className='neonBox'>Not Logged In</p>}
 
         {currentUser?.email ? <ButtonToggleAdminMode /> : null}
 
