@@ -330,7 +330,10 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
   function RowStatus ({i})  {
     try {
-      return ( <div className={ buttonState[`${activeTeacher}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' } > Status </div> )
+      return ( 
+      <div 
+      className={ buttonState[`${activeTeacher}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' } 
+      > {buttonState[`${activeTeacher}`][i]?.buttonState ? 'Done' : 'Not Done'} </div> )
     } catch {
       console.log('error in RowStatus')
       return ( <div className={'buttonUncompleted'}> Status Error </div>)

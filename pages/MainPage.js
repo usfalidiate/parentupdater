@@ -159,25 +159,24 @@ export default function MainPage() {
 
   function ButtonTeacherChoice({activeTeacher, activeTeacherTitle}) {
     return (
-    <div className={'divButtonSubjectChoice'}> 
-      <button className='glow-on-hover' 
-        onClick={()=>handleTeacherChoice({activeTeacher})} 
-      > 
-      <p className={'buttonText'}> {activeTeacherTitle} </p>
+      <div className='divRoundButton'>
+        <button className='glow-on-hover' 
+          onClick={()=>handleTeacherChoice({activeTeacher})} 
+        > 
+        <p className={'buttonText'}> {activeTeacherTitle} </p>
       </button> 
-    </div>)
+      </div>
+    )
   };
 
   function TeacherChoice(){
     return (
       <>
-      <div className='divTeacherChoice'>
       <ButtonTeacherChoice activeTeacherTitle={'Koglin'} activeTeacher={'koglin'} />
       <ButtonTeacherChoice activeTeacherTitle={'Crnogorcevic'} activeTeacher={'crnogorcevic'} />
       {/* <ButtonTeacherChoice activeTeacherTitle={'Mr Ralston-Bryce'} activeTeacher={'ralstonBryce'} /> */}
       {/* <ButtonTeacherChoice activeTeacherTitle={'Teacher Admin'} activeTeacher={'admin'} /> */}
 
-      </div>
       </>
     )
   };
@@ -230,7 +229,7 @@ export default function MainPage() {
 
   function ButtonSubjectChoice ({buttonSubjectTitleProp, activeSubject}) {
     return (
-      <div className={'divButtonSubjectChoice'}> 
+      <div className='divRoundButton'> 
         <button className='glow-on-hover' 
           onClick={()=>handleSubjectChoice({activeSubject})} 
         > 
@@ -257,7 +256,7 @@ export default function MainPage() {
 
   function ButtonClassChoice({buttonClassTitleProp, activeClass}) {
     return (
-      <div> 
+      <div className='divRoundButton'> 
         <button className='glow-on-hover' 
           onClick={()=>handleClassChoice({activeClass})} 
         > 
@@ -281,7 +280,7 @@ export default function MainPage() {
 
   function ButtonContentChoice({buttonContentTitleProp, contentChoiceProp}) {
     return (
-    <div> 
+    <div className='divRoundButton'> 
       <button className='glow-on-hover' 
         onClick={()=>handleContentChoice({contentChoiceProp})} 
       > 
@@ -531,22 +530,21 @@ export default function MainPage() {
 
 
     <div className='divTopBar'>
-      {/* <div className='divLoginHidden'> <Login/></div> */}
                
       { displayTeacherChoice ? null :     
         <>
-          <div className='divHome'>
+          <div className='divTopBar'>
             <ButtonHome/>
           </div>      
         
-          <div className='divHome'>
+          <div className='divTopBar'>
             {displaySubjectChoice ? <BackToTeacherButton/> : null}
             {displayClassChoice ? <BackToSubjectButton/> : null}
             {displayContentChoice ? <BackToClassButton/> : null}
-            { subjectChoice != null && classChoice != null && contentChoice != null ? <BackToContentButton/> : null }
+            {subjectChoice != null && classChoice != null && contentChoice != null ? <BackToContentButton/> : null }
           </div>
 
-          <div className='divDisplayLoginAdmin'>
+          <div className='divTopBar'>
             <ButtonToggleDisplayLoginAdmin/>
           </div>
 
@@ -554,7 +552,7 @@ export default function MainPage() {
       } 
       
       { displayLoginAdmin ? 
-      <div className='divLogin'>
+      <div className='divTopBar'>
         <Login 
         handleToggleAdminMode={handleToggleAdminMode}
         adminState={adminState}
@@ -575,15 +573,13 @@ export default function MainPage() {
 
 
     { displaySubjectChoice  ?
-      <div className='divSubjectChoice'>
+      <div className='divChoice'>
         <ButtonSubjectChoice activeSubject={'Sci'} buttonSubjectTitleProp={'SCIENCE'}/>
         <ButtonSubjectChoice activeSubject={'STEM'} buttonSubjectTitleProp={'STEM'} />
         <ButtonSubjectChoice activeSubject={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
         <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
         <ButtonSubjectChoice activeSubject={'Che'} buttonSubjectTitleProp={'CHEMISTRY'} />
         <ButtonSubjectChoice activeSubject={'Pyy'} buttonSubjectTitleProp={'PSYCHOLOGY'} />
-        {/* <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} /> */}
-
       </div>
     : null 
     }
@@ -593,9 +589,9 @@ export default function MainPage() {
 
 
       { displayClassChoice ? 
-        <div className='divClassChoice'>
+        <div className='divChoice'>
           { subjectChoice == 'Sci' ? 
-            <div className='divClassChoiceSci'>
+            <div className='divChoice'>
               <ButtonClassChoice activeYearGroup={'10'} activeClass={'10SciASP'} buttonClassTitleProp={'Year 10 Science (ASP)'}/>
               {/* <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/> */}
               {/* <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/> */}
@@ -605,7 +601,7 @@ export default function MainPage() {
           }
 
           { subjectChoice == 'STEM' ?
-            <div className='divClassChoiceSTEM'>
+            <div className='divChoice'>
           <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM200Hour'} buttonClassTitleProp={'Year 10 STEM (200 Hour)'}/>
           {/* <ButtonClassChoice activeYearGroup={'10'} activeClass={'10STEM100Hour'} buttonClassTitleProp={'Year 10 STEM (100 Hour)'}/> */}
           {/* <ButtonClassChoice activeYearGroup={'9'} activeClass={'9STEM'} buttonClassTitleProp={'Year 9 STEM'}/> */}
@@ -615,28 +611,28 @@ export default function MainPage() {
           }
 
           { subjectChoice == 'Phy' ?
-            <div className='divClassChoicePhy'>
+            <div className='divChoice'>
           <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Phy'} buttonClassTitleProp={'Year 12 Physics'}/>
           <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Phy'} buttonClassTitleProp={'Year 11 Physics'}/>
           </div> : null
           }
 
           { subjectChoice == 'InvSci' ?
-            <div className='divClassChoiceInvSci'>
+            <div className='divChoice'>
           <ButtonClassChoice activeYearGroup={'12'} activeClass={'12InvSci'} buttonClassTitleProp={'Year 12 Investigating Science'}/>
           {/* <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/> */}
           </div> : null
           }
 
           { subjectChoice == 'Pyy' ?
-            <div className='divClassChoiceInvSci'>
+            <div className='divChoice'>
           <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Pyy'} buttonClassTitleProp={'Year 10 Psychology'}/>
           <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Pyy'} buttonClassTitleProp={'Year 9 Psychology'}/>
           </div> : null
           }
 
           { subjectChoice == 'Che' ?
-            <div className='divClassChoiceInvSci'>
+            <div className='divChoice'>
           <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Che'} buttonClassTitleProp={'Year 12 Chemistry'}/>
           <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Che'} buttonClassTitleProp={'Year 11 Chemistry'}/>
 
@@ -652,7 +648,7 @@ export default function MainPage() {
 
 
       { displayContentChoice ?
-        <div className='divContentChoice'>
+        <div className='divChoice'>
           <ButtonContentChoice contentChoiceProp={'LITable'} buttonContentTitleProp={'Learning Intention Checklist'}/>
           <ButtonContentChoice contentChoiceProp={'AssTable'} buttonContentTitleProp={'Assessment Information'}/>
           <ButtonContentChoice contentChoiceProp={'SubjectInfoTable'} buttonContentTitleProp={'Subject Information'}/>

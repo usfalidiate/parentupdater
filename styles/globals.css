@@ -1,108 +1,14 @@
+html {
+  background-color: black;
+}
+
 .divTopBar {
   background-color: #000000;
   color: goldenrod;
   display: flex;
   flex-direction: row;
   align-content: center;
-}
-
-.divLogin {
-  background-color: #000000;
-  color: goldenrod;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
-  /* border: 1px solid goldenrod; */
-}
-
-.divLoginHidden {
-  background-color: #000000;
-  color: goldenrod;
-  display: none;
-}
-
-
-.divAdmin {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  /* width: 100vw; */
-  /* height: 80px; */
-  /* padding: 0 0; */
-  align-content: center;
-  justify-content: center;
-  /* max-width: 100vw; */
-}
-
-.divAdminHidden {
-  background-color: black;
-  display: none;
-  /*flex-direction: row; */
-  /* width: 100vw; */
-  /* height: 80px; */
-  /* padding: 0 0;
-  align-content: right;
-  justify-content: right; */
-  /* max-width: 100vw; */
-}
-
-.divHome {
-  background-color: black;
-  /* display: flex; */
-  /* flex-direction: row;
-  /* width: 100%; */
-  /* height: 100px; */
-  /* align-content: center; */
-  /* justify-content: center;  */
-  /* margin-left: 0px; */
-  /* max-width: 100vw; */
-}
-
-.divHomeHidden {
-  background-color: black;
-  display: none;
-  flex-direction: row;
-  /* width: 100%; */
-  /* height: 100px; */
-  /* padding: 0 0; */
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* margin-left: 0px; */
-  /* max-width: 100vw; */
-}
-
-.divDisplayLoginAdmin {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  /* width: 100%; */
-  /* height: 100px; */
-  /* padding: 0 0; */
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* margin-left: 0px; */
-  /* max-width: 100vw; */
-}
-
-.divDisplayLoginAdminHidden {
-  background-color: black;
-  display: none;
-  flex-direction: row;
-  /* width: 100%; */
-  /* height: 100px; */
-  /* padding: 0 0; */
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* margin-left: 0px; */
-  /* max-width: 100vw; */
-}
-
-.buttonLogin {
-  background-color: #000000;
-  color: goldenrod;
-  border: solid 1px goldenrod;
-  border-radius: 5px;
 }
 
 input {
@@ -122,7 +28,6 @@ input {
 input:-webkit-autofill, input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
   font-size: 16px;
-
 }
 
 input:hover{
@@ -136,9 +41,25 @@ input:hover{
    -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
 }
 
-html {
+.PWButton {
   background-color: black;
+  color: goldenrod;
+  height: 35px;
+  width: 35px;
+  border: none;
+  align-content: center;
+  justify-content: center;
 }
+
+.inputAndPWButton {
+  background-color: black;
+  color: goldenrod;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
 
 
 
@@ -155,31 +76,25 @@ html {
   width: 100vw;
   padding: 0 0;
   max-width: 100vw;
-
 }
 
-
-
-.divLITable {
-  background-color: black;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
-.divButton {
-  background-color: black;
-  /* min-height: 50vh; */
-  display: flex;
-  flex-direction: column;
-}
-
-.divButtonSubjectChoice {
+.divRoundButton {
   background-color: black;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content:space-around;
+}
+
+.divChoice {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
+  height: 80vh;
 }
 
 .divTeacherChoice {
@@ -192,76 +107,19 @@ html {
   height: 100vh;
 }
 
-.divSubjectChoice {
+
+
+
+
+
+
+
+.divLITable {
   background-color: black;
+  min-height: 90vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  height: 100%;
+  flex-direction: column;
 }
-
-.divClassChoice {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  min-height: 30vh;
-}
-
-.divClassChoiceSci {
-  background-color:black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  min-height: 30vh;
-}
-
-.divClassChoiceSTEM {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  min-height: 30vh;
-}
-
-.divClassChoicePhy {
-  background-color:black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  min-height: 30vh;
-}
-
-.divClassChoiceInvSci {
-  background-color:black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%;
-  min-height: 30vh;
-}
-
-.divContentChoice {
-  background-color:black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-  width: 80%;
-  min-height: 30vh;
-}
-
 
 .mainTable {
   /* background-color: #001D3D; */
@@ -272,13 +130,7 @@ html {
   width: 100%;
 }
 
-.adminButton {
-  background-color: #ead6ff;
-}
 
-.homeButton {
-  background-color: #c59cf1;
-}
 
 .buttonCompleted {
   background-color: green;
@@ -305,16 +157,11 @@ html {
   text-align: left;
 }
 
-.pwd-container {
-  display: flex;
-  flex-direction: row;
-  border: solid 1px goldenrod;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: center;
-  background-color: black;
 
-}
+
+
+
+
 
 h1 {
   background-color: black;
@@ -324,24 +171,7 @@ h1 {
   margin-bottom: none;
 }
 
-.PWButton {
-  background-color: black;
-  color: goldenrod;
-  height: 35px;
-  width: 35px;
-  border: none;
-  align-content: center;
-  justify-content: center;
-}
 
-.inputAndPWButton {
-  background-color: black;
-  color: goldenrod;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -354,7 +184,6 @@ h1 {
   align-self:end;
   grid-column:1/5;
   grid-row:2;
-
   text-align:center;
   font-size: 16px;
   background-color: black;
