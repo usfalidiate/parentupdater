@@ -173,8 +173,8 @@ export default function MainPage() {
       <>
       <div className='divTeacherChoice'>
       <ButtonTeacherChoice activeTeacherTitle={'Koglin'} activeTeacher={'koglin'} />
-      {/* <ButtonTeacherChoice activeTeacherTitle={'Mrs Crnogorcevic'} activeTeacher={'crnogorcevic'} />
-      <ButtonTeacherChoice activeTeacherTitle={'Mr Ralston-Bryce'} activeTeacher={'ralstonBryce'} /> */}
+      <ButtonTeacherChoice activeTeacherTitle={'Crnogorcevic'} activeTeacher={'crnogorcevic'} />
+      {/* <ButtonTeacherChoice activeTeacherTitle={'Mr Ralston-Bryce'} activeTeacher={'ralstonBryce'} /> */}
       {/* <ButtonTeacherChoice activeTeacherTitle={'Teacher Admin'} activeTeacher={'admin'} /> */}
 
       </div>
@@ -452,6 +452,65 @@ export default function MainPage() {
 
 
 
+  // PSYCHOLOGY
+  function Year10PyyLITables() {
+    return (
+      <>
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'10'} activeClass={'10Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'10'} activeClass={'10Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'10'} activeClass={'10Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'10'} activeClass={'10Pyy'} adminCheck={adminState} />
+
+
+      </>
+    )
+  };
+
+  function Year9PyyLITables() {
+    return (
+      <>
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'9'} activeClass={'9Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'9'} activeClass={'9Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'9'} activeClass={'9Pyy'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Pyy'} activeYearGroup={'9'} activeClass={'9Pyy'} adminCheck={adminState} />
+
+
+      </>
+    )
+  };
+
+  function Year12CheLITables() {
+    return (
+      <>
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'12'} activeClass={'12Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'12'} activeClass={'12Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'12'} activeClass={'12Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'12'} activeClass={'12Che'} adminCheck={adminState} />
+
+
+      </>
+    )
+  };
+
+  function Year11CheLITables() {
+    return (
+      <>
+      <LITable tnp={ Number(1) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'11'} activeClass={'11Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(2) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'11'} activeClass={'11Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(3) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'11'} activeClass={'11Che'} adminCheck={adminState} />
+      <LITable tnp={ Number(4) } activeTeacher={teacherChoice} activeSubject={'Che'} activeYearGroup={'11'} activeClass={'11Che'} adminCheck={adminState} />
+
+
+      </>
+    )
+  };
+
+  // OTHER SUBJECT LITABLES
+
+
+
+
+
 
   // ASSESSMENT TABLE FUNCTIONS
 
@@ -521,6 +580,10 @@ export default function MainPage() {
         <ButtonSubjectChoice activeSubject={'STEM'} buttonSubjectTitleProp={'STEM'} />
         <ButtonSubjectChoice activeSubject={'Phy'} buttonSubjectTitleProp={'PHYSICS'} />
         <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} />
+        <ButtonSubjectChoice activeSubject={'Che'} buttonSubjectTitleProp={'CHEMISTRY'} />
+        <ButtonSubjectChoice activeSubject={'Pyy'} buttonSubjectTitleProp={'PSYCHOLOGY'} />
+        {/* <ButtonSubjectChoice activeSubject={'InvSci'} buttonSubjectTitleProp={'INVESTIGATING SCIENCE'} /> */}
+
       </div>
     : null 
     }
@@ -537,7 +600,7 @@ export default function MainPage() {
               {/* <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Sci'} buttonClassTitleProp={'Year 10 Science'}/> */}
               {/* <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Sci'} buttonClassTitleProp={'Year 9 Science'}/> */}
               {/* <ButtonClassChoice activeYearGroup={'8'} activeClass={'8Sci'} buttonClassTitleProp={'Year 8 Science'}/> */}
-              {/* <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/> */}
+              <ButtonClassChoice activeYearGroup={'7'} activeClass={'7Sci'} buttonClassTitleProp={'Year 7 Science'}/>
             </div> : null
           }
 
@@ -564,6 +627,23 @@ export default function MainPage() {
           {/* <ButtonClassChoice activeYearGroup={'11'} activeClass={'11InvSci'} buttonClassTitleProp={'Year 11 Investigating Science'}/> */}
           </div> : null
           }
+
+          { subjectChoice == 'Pyy' ?
+            <div className='divClassChoiceInvSci'>
+          <ButtonClassChoice activeYearGroup={'10'} activeClass={'10Pyy'} buttonClassTitleProp={'Year 10 Psychology'}/>
+          <ButtonClassChoice activeYearGroup={'9'} activeClass={'9Pyy'} buttonClassTitleProp={'Year 9 Psychology'}/>
+          </div> : null
+          }
+
+          { subjectChoice == 'Che' ?
+            <div className='divClassChoiceInvSci'>
+          <ButtonClassChoice activeYearGroup={'12'} activeClass={'12Che'} buttonClassTitleProp={'Year 12 Chemistry'}/>
+          <ButtonClassChoice activeYearGroup={'11'} activeClass={'11Che'} buttonClassTitleProp={'Year 11 Chemistry'}/>
+
+          </div> : null
+          }
+
+
         </div>
       : null
       }
@@ -658,6 +738,25 @@ export default function MainPage() {
 
 
 
+
+{ subjectChoice == 'Che' && classChoice == '12Che' && contentChoice == 'LITable' ? 
+  <div className='divLITable' > <Year12CheLITables/> </div> : null
+}
+
+{ subjectChoice == 'Che' && classChoice == '11Che' && contentChoice == 'LITable' ? 
+  <div className='divLITable' > <Year11CheLITables/> </div> : null
+}
+
+
+
+
+{ subjectChoice == 'Pyy' && classChoice == '10Pyy' && contentChoice == 'LITable' ? 
+  <div className='divLITable' > <Year10PyyLITables/> </div> : null
+}
+
+{ subjectChoice == 'Pyy' && classChoice == '9Pyy' && contentChoice == 'LITable' ? 
+  <div className='divLITable' > <Year9PyyLITables/> </div> : null
+}
 
 
 

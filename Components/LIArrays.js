@@ -290,7 +290,33 @@ export const yearArrayIQsInvSci12 = [
 ];
 
 
+export const yearArrayIQsChe12 = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
 
+export const yearArrayIQsChe11 = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const yearArrayPyy10 = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const yearArrayPyy9 = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
 // export const yearTenTopic1Array = [
 
 //     {id: 0,  fullID: "10.1.1",  year: 10, topic: 1, completed: false, LINumber: '1',  LIString: 'Develops questions or hypotheses to be investigated scientifically, using the IF-THEN-BECAUSE format'},

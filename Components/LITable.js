@@ -27,7 +27,9 @@ import {
   yearArraySci10ASP, yearArraySci10, yearArraySci9, yearArraySci8, yearArraySci7, 
   yearArray100HourSTEM10, yearArray200HourSTEM10, yearArraySTEM9, yearArraySTEM8, 
   yearArrayIQsPhy12, yearArrayIQsPhy11,
-  yearArrayIQsInvSci12, yearArrayIQsInvSci11
+  yearArrayIQsInvSci12, yearArrayIQsInvSci11,
+  yearArrayIQsChe12, yearArrayIQsChe11,
+  yearArrayPyy10, yearArrayPyy9
 } from './LIArrays';
 
 export default function LITable ({tnp, activeTeacher, activeSubject, activeYearGroup, activeClass, adminCheck}) {
@@ -85,6 +87,18 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
     case '11InvSci':
       activeYearArray= yearArrayIQsInvSci11
       break;
+    case '12Che':
+      activeYearArray= yearArrayIQsChe12
+      break;
+    case '11Che':
+      activeYearArray= yearArrayIQsChe11
+      break;
+    case '10Pyy':
+      activeYearArray= yearArrayPyy10
+      break;
+    case '9Pyy':
+      activeYearArray= yearArrayPyy9
+      break;  
     default:
       break;
   };
@@ -133,7 +147,19 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
       break;
     case '11InvSci':
       LITableHeading= 'Year 11 Investigating Science'
-      break;      
+      break;
+    case '12Che':
+      LITableHeading= 'Year 12 Chemistry'
+      break;
+    case '11Che':
+      LITableHeading= 'Year 11 Chemistry'
+      break;
+    case '10Pyy':
+      LITableHeading= 'Year 10 Psychology'
+      break;
+    case '9Pyy':
+      LITableHeading= 'Year 9 Psychology'
+      break;       
     default:
       break;
   };
@@ -164,9 +190,14 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
         item.topicName
       )
     });
-    return (
-      topicNameArray[0]
-    )
+
+    try { 
+      return (
+        topicNameArray[0]
+      )
+    } catch {
+      return ( <> Learning Intentions Not Found </>)
+    }
   };
 
   // creates state for buttons and inserts falses from main array
