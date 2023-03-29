@@ -9,6 +9,18 @@ html {
   flex-direction: row;
   align-content: center;
   align-items: center;
+  height: 10vh;
+}
+
+.divTopBarHome {
+  background-color: #000000;
+  color: rgb(25, 160, 164);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
 }
 
 input {
@@ -39,6 +51,13 @@ input:hover{
               0 0 50px orangered,
               0 0 100px orangered;
    -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
+}
+
+.h1HomeHeading {
+text-align: center;
+align-items: center;
+justify-content: center;
+color: rgb(25, 160, 164)
 }
 
 .PWButton {
@@ -72,7 +91,7 @@ input:hover{
   justify-content: space-around;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   padding: 0 0;
   max-width: 100vw;
@@ -104,9 +123,28 @@ input:hover{
   align-items: center;
   justify-content:space-around;
   width: 100%;
+  height: 80vh;
+}
+
+.divClassChoice {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
   height: 100vh;
 }
 
+.divContentChoice {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
+  height: 100vh;
+}
 
 
 
@@ -187,7 +225,7 @@ h1 {
   text-align:center;
   font-size: 16px;
   background-color: black;
-  color: goldenrod;
+  color: rgb(25, 160, 164);
   text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5);
   -webkit-background-clip: text;
       -moz-background-clip: text;

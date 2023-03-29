@@ -1,4 +1,4 @@
-export const yearArraySci10ASP = [
+export const LIArray10SCIASP = [
     // Topic 1 - SRP
     {id: 0  ,  fullID: "10.1.1",  year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '1',  LIString: 'Develops questions or hypotheses to be investigated scientifically, using the IF-THEN-BECAUSE format'},
     {id: 1  ,  fullID: "10.1.2",  year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '2',  LIString: 'Designs a valid, accurate and reliable experimental method'},
@@ -45,7 +45,7 @@ export const yearArraySci10ASP = [
 
 ];
 
-export const yearArraySci10 = [
+export const LIArray10SCI = [
     // Topic 1 - SRP
     {id: 0  ,  fullID: "10.1.1",  year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '1',  LIString: 'Develops questions or hypotheses to be investigated scientifically, using the IF-THEN-BECAUSE format'},
     {id: 1  ,  fullID: "10.1.2",  year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '2',  LIString: 'Designs a valid, accurate and reliable experimental method'},
@@ -89,7 +89,7 @@ export const yearArraySci10 = [
 
 
 
-export const yearArraySci9 = [   
+export const LIArray9SCI = [   
     // Topic 1 - Human Body and Disease
     {id: 0  ,  fullID: "9.1.1",  year: 9, topic: 1, topicName: 'Human Body and Disease', completed: false, LINumber: '1',  LIString: 'x'},
     // Topic 2 - Atomic Energy
@@ -103,7 +103,7 @@ export const yearArraySci9 = [
 
 ];
 
-export const yearArraySci8 = [   
+export const LIArray8SCI = [   
     // Topic 1  - Student Research Project
     {id: 0  ,  fullID: "8.1.1",  year: 8, topic: 1, topicName: 'Student Research Project', completed: false, LINumber: '1',  LIString: 'x'},
     // Topic 2 - Ecology
@@ -121,7 +121,7 @@ export const yearArraySci8 = [
 
 ];
 
-export const yearArraySci7 = [   
+export const LIArray7SCI = [   
     // Topic 1 - Mixtures and Separation
     {id: 0  ,  fullID: "7.1.1",  year: 7, topic: 1, topicName: 'Mixtures and Separation', completed: false, LINumber: '1',  LIString: 'x'},
     // Topic 2 - Forces 
@@ -141,13 +141,13 @@ export const yearArraySci7 = [
 
 
 
-export const yearArray100HourSTEM10 = [   
+export const LIArray10STY = [   
     // Project 1 - Cardboard Hydraulic Arm
     {id: 0  ,  fullID: "1.1.1",  year: 10, topic: 1, topicName: 'Cardboard Hydraulic Arm', completed: false, LINumber: '1', syllabusOutcome: 'DT5-6'  , LIString: 'Construct a cardboard hydraulic arm that completes all 9 movements'},
     {id: 1  ,  fullID: "1.1.1",  year: 10, topic: 1, topicName: 'Cardboard Hydraulic Arm', completed: false, LINumber: '2', syllabusOutcome: 'DT5-7'  , LIString: 'Collaborates effectively with teammates and engages with all activities'},
     {id: 2  ,  fullID: "1.1.1",  year: 10, topic: 1, topicName: 'Cardboard Hydraulic Arm', completed: false, LINumber: '3', syllabusOutcome: 'DT5-8'  , LIString: 'Creates a video portfolio that clearly demonstrates all three assessment (3) criteria'},
     {id: 3  ,  fullID: "1.1.1",  year: 10, topic: 1, topicName: 'Cardboard Hydraulic Arm', completed: false, LINumber: '4', syllabusOutcome: 'DT5-10' , LIString: 'Creates a video portfolio that is creative, unique, and engaging'},
-    // Project 2 - Lego Project
+    // Project 2 - Lego and Matchbox Car Project
     {id: 4  ,  fullID: "2.1.1",  year: 10, topic: 2, topicName: 'Lego Project', completed: false, LINumber: '1', syllabusOutcome: 'DT5-' , LIString: 'x'},
     {id: 5  ,  fullID: "2.1.1",  year: 10, topic: 2, topicName: 'Lego Project', completed: false, LINumber: '2', syllabusOutcome: 'DT5-' , LIString: 'x'},
     {id: 6  ,  fullID: "2.1.1",  year: 10, topic: 2, topicName: 'Lego Project', completed: false, LINumber: '3', syllabusOutcome: 'DT5-' , LIString: 'x'},
@@ -164,7 +164,7 @@ export const yearArray100HourSTEM10 = [
     {id: 15 ,  fullID: "4.1.1",  year: 10, topic: 4, topicName: 'TBD', completed: false, LINumber: '4', syllabusOutcome: 'DT5-' , LIString: 'x'},
 ];
 
-export const yearArray200HourSTEM10 = [
+export const LIArray10STX = [
     // Project 1 - 
     {id: 0  ,  fullID: "7.1.1",  year: 10, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 - 
@@ -175,7 +175,7 @@ export const yearArray200HourSTEM10 = [
     {id: 3  ,  fullID: "7.1.1",  year: 10, topic: 4, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArraySTEM9 = [   
+export const LIArray9STX = [   
     // Project 1 - Straw Roller-Coaster
     {id: 0  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 - Choose Your Own Adventure
@@ -186,7 +186,18 @@ export const yearArraySTEM9 = [
     {id: 3  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArraySTEM8 = [   
+export const LIArray9STY = [   
+    // Project 1 - Straw Roller-Coaster
+    {id: 0  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 - Choose Your Own Adventure
+    {id: 1  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 3 - Movie Making
+    {id: 2  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 4 - Straw Roller-Coaster
+    {id: 3  ,  fullID: "7.1.1",  year: 9, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray8STM = [   
     // Project 1 - Catapult Project
     {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 
@@ -194,53 +205,100 @@ export const yearArraySTEM8 = [
 ];
 
 
-export const yearArrayIQsPhy11 = [   
-    // Module 1 
-    {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '1', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object moving in a straight line described and predicted?'},
-    {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '2', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object that changes its direction of movement on a plane described?'},
-    // Module 2
-    {id: 0  ,  fullID: "2.1",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '1', moduleNumber: 'Module 2' ,  LIString: 'How are forces produced between objects and what effects do forces produce?'},
-    {id: 1  ,  fullID: "2.2",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '2', moduleNumber: 'Module 2' ,  LIString: 'How can the motion of objects be explained and analysed?'},
-    {id: 2  ,  fullID: "2.3",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '3', moduleNumber: 'Module 2' ,  LIString: 'How is the motion of objects in a simple system dependent on the interaction between the objects?'},
-    // Module 3
-    {id: 0  ,  fullID: "3.1",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '1', moduleNumber: 'Module 3' ,  LIString: 'What are the properties of all waves and wave motion?'},
-    {id: 1  ,  fullID: "3.2",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '2', moduleNumber: 'Module 3' ,  LIString: 'How do waves behave?'},
-    {id: 2  ,  fullID: "3.3",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '3', moduleNumber: 'Module 3' ,  LIString: 'What evidence suggests that sound is a mechanical wave?'},
-    {id: 3  ,  fullID: "3.4",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '4', moduleNumber: 'Module 3' ,  LIString: 'What properties can be demonstrated when using the ray model of light?'},
-    {id: 4  ,  fullID: "3.5",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '5', moduleNumber: 'Module 3' ,  LIString: 'How are temperature, thermal energy and particle motion related?'},
-    // Module 4
-    {id: 0  ,  fullID: "4.1",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '1', moduleNumber: 'Module 4' ,  LIString: 'How do charged objects interact with other charged objects and with neutral objects?'},
-    {id: 1  ,  fullID: "4.2",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '2', moduleNumber: 'Module 4' ,  LIString: 'How do the processes of the transfer and the transformation of energy occur in electric circuits?'},
-    {id: 2  ,  fullID: "4.3",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '3', moduleNumber: 'Module 4' ,  LIString: 'How do magnetised and magnetic objects interact?'},
+export const IQArray11BIO = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArrayIQsPhy12 = [   
-    // Module 5
-    {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '1', moduleNumber: 'Module 5' ,  LIString: 'How can models that are used to explain projectile motion be used to analyse and make predictions?'},
-    {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '2', moduleNumber: 'Module 5' ,  LIString: 'Why do objects move in circles?'},
-    {id: 2  ,  fullID: "5.3",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '3', moduleNumber: 'Module 5' ,  LIString: 'How does the force of gravity determine the motion of planets and satellites?'},
-    // Module 6
-    {id: 0  ,  fullID: "6.1",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '1', moduleNumber: 'Module 6' ,  LIString: 'What happens to stationary and moving charged particles when they interact withan electric or magnetic field?'},
-    {id: 1  ,  fullID: "6.2",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '2', moduleNumber: 'Module 6' ,  LIString: 'Under what circumstances is a force produced on a current-carrying conductor in a magnetic field?'},
-    {id: 2  ,  fullID: "6.3",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '3', moduleNumber: 'Module 6' ,  LIString: 'How are electric and magnetic fields related?'},
-    {id: 3  ,  fullID: "6.4",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '4', moduleNumber: 'Module 6' ,  LIString: 'How has knowledge about the Motor Effect been applied to technological advances?'},
+export const IQArray12BIO = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+
+
+export const IQArray11CHE = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const IQArray12CHE = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+
+
+export const IQArray11EES = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const IQArray12EES = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const IQArrayINV = [
+     // Module 1 
+     {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '1', moduleNumber: 'Module 1' ,  LIString: 'How does observation instigate scientific investigation?'},
+     {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '2', moduleNumber: 'Module 1' ,  LIString: 'What are the benefits and drawbacks of qualitative and quantitative observations?'},
+     {id: 2  ,  fullID: "1.3",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '3', moduleNumber: 'Module 1' ,  LIString: 'How does primary data provide evidence for further investigation?'},
+     {id: 3  ,  fullID: "1.4",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '4', moduleNumber: 'Module 1' ,  LIString: 'How does the collection and presentation of primary data affect the outcome of a scientific investigation?'},
+     {id: 4  ,  fullID: "1.5",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '5', moduleNumber: 'Module 1' ,  LIString: 'How do conclusions drawn from the interpretation of primary data promote further scientific investigation?'},
+     // Module 2
+     {id: 0  ,  fullID: "2.1",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '1', moduleNumber: 'Module 2' ,  LIString: 'What inferences can be drawn from observations?'},
+     {id: 1  ,  fullID: "2.2",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '2', moduleNumber: 'Module 2' ,  LIString: 'How is secondary-sourced data used in practical investigations?'},
+     {id: 2  ,  fullID: "2.3",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '3', moduleNumber: 'Module 2' ,  LIString: 'How does humans’ ability to recognise patterns affect the way they interpret data?'},
+     {id: 3  ,  fullID: "2.4",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '4', moduleNumber: 'Module 2' ,  LIString: 'How can hypotheses and assumptions be tested?'},
+     {id: 4  ,  fullID: "2.5",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '5', moduleNumber: 'Module 2' ,  LIString: 'What generalisations and assumptions are made from observed data?'},
+     {id: 5  ,  fullID: "2.6",  year: 11, topic: 2, topicName: 'Cause and Effect - Inferences and Generalisations', completed: false, LINumber: '6', moduleNumber: 'Module 2' ,  LIString: 'What role do peers play in scientific investigation?'},
+     // Module 3
+     {id: 0  ,  fullID: "3.1",  year: 11, topic: 3, topicName: 'Scientific Models', completed: false, LINumber: '1', moduleNumber: 'Module 3' ,  LIString: 'What is a scientific model?'},
+     {id: 1  ,  fullID: "3.2",  year: 11, topic: 3, topicName: 'Scientific Models', completed: false, LINumber: '2', moduleNumber: 'Module 3' ,  LIString: 'What makes scientific models useful?'},
+     {id: 2  ,  fullID: "3.3",  year: 11, topic: 3, topicName: 'Scientific Models', completed: false, LINumber: '3', moduleNumber: 'Module 3' ,  LIString: 'When should a particular model be used?'},
+     {id: 3  ,  fullID: "3.4",  year: 11, topic: 3, topicName: 'Scientific Models', completed: false, LINumber: '4', moduleNumber: 'Module 3' ,  LIString: 'How can a model be constructed to simplify understanding of a scientific concept?'},    
+     // Module 4
+     {id: 0  ,  fullID: "4.1",  year: 11, topic: 4, topicName: 'Theories and Laws', completed: false, LINumber: '1', moduleNumber: 'Module 4' ,  LIString: 'What are the differences and similarities between scientific theories and laws?'},
+     {id: 1  ,  fullID: "4.2",  year: 11, topic: 4, topicName: 'Theories and Laws', completed: false, LINumber: '2', moduleNumber: 'Module 4' ,  LIString: 'What leads to a theory being developed?'},
+     {id: 2  ,  fullID: "4.3",  year: 11, topic: 4, topicName: 'Theories and Laws', completed: false, LINumber: '3', moduleNumber: 'Module 4' ,  LIString: 'What leads to the acceptance of a scientific law?'},
+     {id: 3  ,  fullID: "4.4",  year: 11, topic: 4, topicName: 'Theories and Laws', completed: false, LINumber: '4', moduleNumber: 'Module 4' ,  LIString: 'How are theories and laws used in science?'},    
+ 
+     // Module 5 
+    {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '1', moduleNumber: 'Module 5' ,  LIString: 'What initiates an investigation?'},
+    {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '2', moduleNumber: 'Module 5' ,  LIString: 'What type of methodology best suits a scientific investigation?'},
+    {id: 2  ,  fullID: "5.3",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '3', moduleNumber: 'Module 5' ,  LIString: 'Student Investigation'},
+    {id: 3  ,  fullID: "5.4",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '4', moduleNumber: 'Module 5' ,  LIString: 'How is the integrity of a scientific investigation judged?'},
+    {id: 4  ,  fullID: "5.5",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '5', moduleNumber: 'Module 5' ,  LIString: 'What is the structure of an investigative report?'},
+    // Module 6 
+    {id: 0  ,  fullID: "6.1",  year: 12, topic: 6, topicName: 'Technologies', completed: false, LINumber: '1', moduleNumber: 'Module 6' ,  LIString: 'How does technology enhance and/or limit scientific investigation?'},
+    {id: 1  ,  fullID: "6.2",  year: 12, topic: 6, topicName: 'Technologies', completed: false, LINumber: '2', moduleNumber: 'Module 6' ,  LIString: 'How have developments in technology led to advances in scientific theories and laws that, in turn, drive the need for further developments in technology?'},
     // Module 7
-    {id: 0  ,  fullID: "7.1",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '1', moduleNumber: 'Module 7' ,  LIString: 'What is light?'},
-    {id: 1  ,  fullID: "7.2",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '2', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the classical wave model of light and what predictions can be made using this model?'},
-    {id: 2  ,  fullID: "7.3",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '3', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the particle model of light and what are the implications of this evidence for the development of the quantum model of light?'},
-    {id: 3  ,  fullID: "7.4",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '4', moduleNumber: 'Module 7' ,  LIString: 'How does the behaviour of light affect concepts of time, space and matter?'},
+    {id: 0  ,  fullID: "7.1",  year: 12, topic: 7, topicName: 'Fact or Falacy?', completed: false, LINumber: '1', moduleNumber: 'Module 7' ,  LIString: 'How can a claim be tested?'},
+    {id: 1  ,  fullID: "7.2",  year: 12, topic: 7, topicName: 'Fact or Falacy?', completed: false, LINumber: '2', moduleNumber: 'Module 7' ,  LIString: 'What factors can affect the way data can be interpreted, analysed and understood?'},
+    {id: 2  ,  fullID: "7.3",  year: 12, topic: 7, topicName: 'Fact or Falacy?', completed: false, LINumber: '3', moduleNumber: 'Module 7' ,  LIString: 'What type of evidence is needed to draw valid conclusions?'},    
+    {id: 3  ,  fullID: "7.4",  year: 12, topic: 7, topicName: 'Fact or Falacy?', completed: false, LINumber: '4', moduleNumber: 'Module 7' ,  LIString: "How does the reporting of science influence the general publics understanding of the subject?"},
+    {id: 4  ,  fullID: "7.5",  year: 12, topic: 7, topicName: 'Fact or Falacy?', completed: false, LINumber: '5', moduleNumber: 'Module 7' ,  LIString: 'Can the scientific community and process of peer review find "the truth"?'},
     // Module 8
-    {id: 0  ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '1', moduleNumber: 'Module 8' ,  LIString: 'What evidence is there for the origins of the elements?'},
-    {id: 1  ,  fullID: "8.2",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '2', moduleNumber: 'Module 8' ,  LIString: 'How is it known that atoms are made up of protons, neutrons and electrons?'},
-    {id: 2  ,  fullID: "8.3",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '3', moduleNumber: 'Module 8' ,  LIString: 'How is it known that classical physics cannot explain the properties of the atom?'},
-    {id: 3  ,  fullID: "8.4",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '4', moduleNumber: 'Module 8' ,  LIString: 'How can the energy of the atomic nucleus be harnessed?'},
-    {id: 4  ,  fullID: "8.5",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '5', moduleNumber: 'Module 8' ,  LIString: 'How is it known that human understanding of matter is still incomplete?'},
-];
+    {id: 0  ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'Science and Society', completed: false, LINumber: '1', moduleNumber: 'Module 8' ,  LIString: "How do science-related events affect society's view of science?"},
+    {id: 1  ,  fullID: "8.2",  year: 12, topic: 8, topicName: 'Science and Society', completed: false, LINumber: '2', moduleNumber: 'Module 8' ,  LIString: 'Why is scientific research regulated?'},
+    {id: 2  ,  fullID: "8.3",  year: 12, topic: 8, topicName: 'Science and Society', completed: false, LINumber: '3', moduleNumber: 'Module 8' ,  LIString: 'How do economic, social and political influences affect scientific research?'},
 
+]
 
-
-
-export const yearArrayIQsInvSci11 = [
+export const IQArray11INV = [
     // Module 1 
     {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '1', moduleNumber: 'Module 1' ,  LIString: 'How does observation instigate scientific investigation?'},
     {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Cause and Effect - Observing', completed: false, LINumber: '2', moduleNumber: 'Module 1' ,  LIString: 'What are the benefits and drawbacks of qualitative and quantitative observations?'},
@@ -267,7 +325,7 @@ export const yearArrayIQsInvSci11 = [
 ];
 
 
-export const yearArrayIQsInvSci12 = [ 
+export const IQArray12INV = [ 
     // Module 5 
     {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '1', moduleNumber: 'Module 5' ,  LIString: 'What initiates an investigation?'},
     {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Scientific Investigations', completed: false, LINumber: '2', moduleNumber: 'Module 5' ,  LIString: 'What type of methodology best suits a scientific investigation?'},
@@ -290,33 +348,186 @@ export const yearArrayIQsInvSci12 = [
 ];
 
 
-export const yearArrayIQsChe12 = [   
+
+
+
+export const IQArray11PHY = [   
+    // Module 1 
+    {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '1', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object moving in a straight line described and predicted?'},
+    {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '2', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object that changes its direction of movement on a plane described?'},
+    // Module 2
+    {id: 0  ,  fullID: "2.1",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '1', moduleNumber: 'Module 2' ,  LIString: 'How are forces produced between objects and what effects do forces produce?'},
+    {id: 1  ,  fullID: "2.2",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '2', moduleNumber: 'Module 2' ,  LIString: 'How can the motion of objects be explained and analysed?'},
+    {id: 2  ,  fullID: "2.3",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '3', moduleNumber: 'Module 2' ,  LIString: 'How is the motion of objects in a simple system dependent on the interaction between the objects?'},
+    // Module 3
+    {id: 0  ,  fullID: "3.1",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '1', moduleNumber: 'Module 3' ,  LIString: 'What are the properties of all waves and wave motion?'},
+    {id: 1  ,  fullID: "3.2",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '2', moduleNumber: 'Module 3' ,  LIString: 'How do waves behave?'},
+    {id: 2  ,  fullID: "3.3",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '3', moduleNumber: 'Module 3' ,  LIString: 'What evidence suggests that sound is a mechanical wave?'},
+    {id: 3  ,  fullID: "3.4",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '4', moduleNumber: 'Module 3' ,  LIString: 'What properties can be demonstrated when using the ray model of light?'},
+    {id: 4  ,  fullID: "3.5",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '5', moduleNumber: 'Module 3' ,  LIString: 'How are temperature, thermal energy and particle motion related?'},
+    // Module 4
+    {id: 0  ,  fullID: "4.1",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '1', moduleNumber: 'Module 4' ,  LIString: 'How do charged objects interact with other charged objects and with neutral objects?'},
+    {id: 1  ,  fullID: "4.2",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '2', moduleNumber: 'Module 4' ,  LIString: 'How do the processes of the transfer and the transformation of energy occur in electric circuits?'},
+    {id: 2  ,  fullID: "4.3",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '3', moduleNumber: 'Module 4' ,  LIString: 'How do magnetised and magnetic objects interact?'},
+];
+
+export const IQArray12PHY = [   
+    // Module 5
+    {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '1', moduleNumber: 'Module 5' ,  LIString: 'How can models that are used to explain projectile motion be used to analyse and make predictions?'},
+    {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '2', moduleNumber: 'Module 5' ,  LIString: 'Why do objects move in circles?'},
+    {id: 2  ,  fullID: "5.3",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '3', moduleNumber: 'Module 5' ,  LIString: 'How does the force of gravity determine the motion of planets and satellites?'},
+    // Module 6
+    {id: 0  ,  fullID: "6.1",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '1', moduleNumber: 'Module 6' ,  LIString: 'What happens to stationary and moving charged particles when they interact withan electric or magnetic field?'},
+    {id: 1  ,  fullID: "6.2",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '2', moduleNumber: 'Module 6' ,  LIString: 'Under what circumstances is a force produced on a current-carrying conductor in a magnetic field?'},
+    {id: 2  ,  fullID: "6.3",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '3', moduleNumber: 'Module 6' ,  LIString: 'How are electric and magnetic fields related?'},
+    {id: 3  ,  fullID: "6.4",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '4', moduleNumber: 'Module 6' ,  LIString: 'How has knowledge about the Motor Effect been applied to technological advances?'},
+    // Module 7
+    {id: 0  ,  fullID: "7.1",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '1', moduleNumber: 'Module 7' ,  LIString: 'What is light?'},
+    {id: 1  ,  fullID: "7.2",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '2', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the classical wave model of light and what predictions can be made using this model?'},
+    {id: 2  ,  fullID: "7.3",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '3', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the particle model of light and what are the implications of this evidence for the development of the quantum model of light?'},
+    {id: 3  ,  fullID: "7.4",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '4', moduleNumber: 'Module 7' ,  LIString: 'How does the behaviour of light affect concepts of time, space and matter?'},
+    // Module 8
+    {id: 0  ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '1', moduleNumber: 'Module 8' ,  LIString: 'What evidence is there for the origins of the elements?'},
+    {id: 1  ,  fullID: "8.2",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '2', moduleNumber: 'Module 8' ,  LIString: 'How is it known that atoms are made up of protons, neutrons and electrons?'},
+    {id: 2  ,  fullID: "8.3",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '3', moduleNumber: 'Module 8' ,  LIString: 'How is it known that classical physics cannot explain the properties of the atom?'},
+    {id: 3  ,  fullID: "8.4",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '4', moduleNumber: 'Module 8' ,  LIString: 'How can the energy of the atomic nucleus be harnessed?'},
+    {id: 4  ,  fullID: "8.5",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '5', moduleNumber: 'Module 8' ,  LIString: 'How is it known that human understanding of matter is still incomplete?'},
+];
+
+export const IQArrayPHY = [   
+    // Module 1 
+    {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '1', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object moving in a straight line described and predicted?'},
+    {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Kinematics', completed: false, LINumber: '2', moduleNumber: 'Module 1' ,  LIString: 'How is the motion of an object that changes its direction of movement on a plane described?'},
+    // Module 2
+    {id: 0  ,  fullID: "2.1",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '1', moduleNumber: 'Module 2' ,  LIString: 'How are forces produced between objects and what effects do forces produce?'},
+    {id: 1  ,  fullID: "2.2",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '2', moduleNumber: 'Module 2' ,  LIString: 'How can the motion of objects be explained and analysed?'},
+    {id: 2  ,  fullID: "2.3",  year: 11, topic: 2, topicName: 'Dynamics', completed: false, LINumber: '3', moduleNumber: 'Module 2' ,  LIString: 'How is the motion of objects in a simple system dependent on the interaction between the objects?'},
+    // Module 3
+    {id: 0  ,  fullID: "3.1",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '1', moduleNumber: 'Module 3' ,  LIString: 'What are the properties of all waves and wave motion?'},
+    {id: 1  ,  fullID: "3.2",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '2', moduleNumber: 'Module 3' ,  LIString: 'How do waves behave?'},
+    {id: 2  ,  fullID: "3.3",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '3', moduleNumber: 'Module 3' ,  LIString: 'What evidence suggests that sound is a mechanical wave?'},
+    {id: 3  ,  fullID: "3.4",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '4', moduleNumber: 'Module 3' ,  LIString: 'What properties can be demonstrated when using the ray model of light?'},
+    {id: 4  ,  fullID: "3.5",  year: 11, topic: 3, topicName: 'Waves and Thermodynamics', completed: false, LINumber: '5', moduleNumber: 'Module 3' ,  LIString: 'How are temperature, thermal energy and particle motion related?'},
+    // Module 4
+    {id: 0  ,  fullID: "4.1",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '1', moduleNumber: 'Module 4' ,  LIString: 'How do charged objects interact with other charged objects and with neutral objects?'},
+    {id: 1  ,  fullID: "4.2",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '2', moduleNumber: 'Module 4' ,  LIString: 'How do the processes of the transfer and the transformation of energy occur in electric circuits?'},
+    {id: 2  ,  fullID: "4.3",  year: 11, topic: 4, topicName: 'Electricity and Magnetism', completed: false, LINumber: '3', moduleNumber: 'Module 4' ,  LIString: 'How do magnetised and magnetic objects interact?'},
+
+    // Module 5
+    {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '1', moduleNumber: 'Module 5' ,  LIString: 'How can models that are used to explain projectile motion be used to analyse and make predictions?'},
+    {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '2', moduleNumber: 'Module 5' ,  LIString: 'Why do objects move in circles?'},
+    {id: 2  ,  fullID: "5.3",  year: 12, topic: 5, topicName: 'Advanced Mechanics', completed: false, LINumber: '3', moduleNumber: 'Module 5' ,  LIString: 'How does the force of gravity determine the motion of planets and satellites?'},
+    // Module 6
+    {id: 0  ,  fullID: "6.1",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '1', moduleNumber: 'Module 6' ,  LIString: 'What happens to stationary and moving charged particles when they interact withan electric or magnetic field?'},
+    {id: 1  ,  fullID: "6.2",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '2', moduleNumber: 'Module 6' ,  LIString: 'Under what circumstances is a force produced on a current-carrying conductor in a magnetic field?'},
+    {id: 2  ,  fullID: "6.3",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '3', moduleNumber: 'Module 6' ,  LIString: 'How are electric and magnetic fields related?'},
+    {id: 3  ,  fullID: "6.4",  year: 12, topic: 6, topicName: 'Electromagnetism', completed: false, LINumber: '4', moduleNumber: 'Module 6' ,  LIString: 'How has knowledge about the Motor Effect been applied to technological advances?'},
+    // Module 7
+    {id: 0  ,  fullID: "7.1",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '1', moduleNumber: 'Module 7' ,  LIString: 'What is light?'},
+    {id: 1  ,  fullID: "7.2",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '2', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the classical wave model of light and what predictions can be made using this model?'},
+    {id: 2  ,  fullID: "7.3",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '3', moduleNumber: 'Module 7' ,  LIString: 'What evidence supports the particle model of light and what are the implications of this evidence for the development of the quantum model of light?'},
+    {id: 3  ,  fullID: "7.4",  year: 12, topic: 7, topicName: 'The Nature of Light', completed: false, LINumber: '4', moduleNumber: 'Module 7' ,  LIString: 'How does the behaviour of light affect concepts of time, space and matter?'},
+    // Module 8
+    {id: 0  ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '1', moduleNumber: 'Module 8' ,  LIString: 'What evidence is there for the origins of the elements?'},
+    {id: 1  ,  fullID: "8.2",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '2', moduleNumber: 'Module 8' ,  LIString: 'How is it known that atoms are made up of protons, neutrons and electrons?'},
+    {id: 2  ,  fullID: "8.3",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '3', moduleNumber: 'Module 8' ,  LIString: 'How is it known that classical physics cannot explain the properties of the atom?'},
+    {id: 3  ,  fullID: "8.4",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '4', moduleNumber: 'Module 8' ,  LIString: 'How can the energy of the atomic nucleus be harnessed?'},
+    {id: 4  ,  fullID: "8.5",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '5', moduleNumber: 'Module 8' ,  LIString: 'How is it known that human understanding of matter is still incomplete?'},
+];
+
+
+
+
+
+
+export const LIArray10PYX = [   
     // Project 1 - Catapult Project
     {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 
     {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArrayIQsChe11 = [   
+export const LIArray9PYX = [   
     // Project 1 - Catapult Project
     {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 
     {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArrayPyy10 = [   
+export const LIArray10PYY = [   
     // Project 1 - Catapult Project
     {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 
     {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
 
-export const yearArrayPyy9 = [   
+export const LIArray9PYY = [   
     // Project 1 - Catapult Project
     {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
     // Project 2 
     {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
 ];
+
+
+
+
+
+// BIG HISTORY
+export const LIArray10BHX = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray9BHX = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray10BHY = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray9BHY = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+
+
+
+
+// MARINE STUDIES
+export const LIArray12MST = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray11MST = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+export const LIArray8MST = [   
+    // Project 1 - Catapult Project
+    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Project 2 
+    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+];
+
+
 // export const yearTenTopic1Array = [
 
 //     {id: 0,  fullID: "10.1.1",  year: 10, topic: 1, completed: false, LINumber: '1',  LIString: 'Develops questions or hypotheses to be investigated scientifically, using the IF-THEN-BECAUSE format'},

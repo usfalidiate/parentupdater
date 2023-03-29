@@ -21,7 +21,7 @@ export const auth = getAuth();
 // export const user = auth.currentUser;
 
 
-export default function Login ({adminState, handleToggleAdminMode}) {
+export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
 
   //////   LOGIN AND AUTH   //////
   const [loading, setLoading] = useState(false);
@@ -102,9 +102,9 @@ export default function Login ({adminState, handleToggleAdminMode}) {
     return ( 
       <>       
         <button 
-          className={adminState ? 'neonButtonActive' : 'neonButton'}
-          onClick={handleToggleAdminMode} >
-           {adminState ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p> }
+          className={adminStateProp ? 'neonButtonActive' : 'neonButton'}
+          onClick={handleToggleAdminModeProp} >
+           {adminStateProp ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p> }
         </button>
       </>
     )};

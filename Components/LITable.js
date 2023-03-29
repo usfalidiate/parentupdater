@@ -24,80 +24,86 @@ import {
 } from 'firebase/firestore';
 
 import { 
-  yearArraySci10ASP, yearArraySci10, yearArraySci9, yearArraySci8, yearArraySci7, 
-  yearArray100HourSTEM10, yearArray200HourSTEM10, yearArraySTEM9, yearArraySTEM8, 
-  yearArrayIQsPhy12, yearArrayIQsPhy11,
-  yearArrayIQsInvSci12, yearArrayIQsInvSci11,
-  yearArrayIQsChe12, yearArrayIQsChe11,
-  yearArrayPyy10, yearArrayPyy9
+  yearArray10SCIASP, yearArray10SCI, yearArray9SCI, yearArray8SCI, yearArray7SCI, 
+  yearArray10STEM100Hour, yearArray10STEM200Hour, yearArray9STEM200Hour, yearArray9STEM100Hour, yearArray8STEM, 
+  yearArrayIQs12PHY, yearArrayIQs11PHY,
+  yearArrayIQs12INVSCI, yearArrayIQs11INVSCI,
+  yearArrayIQs12CHE, yearArrayIQs11CHE,
+  yearArray10PYY, yearArray9PYY
 } from './LIArrays';
 
-export default function LITable ({tnp, activeTeacher, activeSubject, activeYearGroup, activeClass, adminCheck}) {
+export default function LITable ({tnp, activeTeacher, activeSubject, activeYearGroup, activeClass, adminCheck, sentralClass}) {
 
 
 
 
 
 
-  const docRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`);
-  const setDocRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}` );
+  const docRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`, activeTeacher, sentralClass);
+  const setDocRef = doc(db, '2023', 'subject', activeSubject, activeClass, 'topic', `${tnp}`, activeTeacher, sentralClass );
 
   let activeYearArray;
 
   switch (activeClass) {
-    case '10SciASP':
-      activeYearArray= yearArraySci10ASP
+    case '10SCIASPA':
+      activeYearArray= yearArray10SCIASP
       break;
-    case '10Sci':
-      activeYearArray= yearArraySci10
+    case '10SCIASPB':
+      activeYearArray= yearArray10SCIASP
       break;
-    case '9Sci':
-      activeYearArray= yearArraySci9
+    case '10SCI':
+      activeYearArray= yearArray10SCI
       break;
-    case '8Sci':
-      activeYearArray= yearArraySci8
+    case '9SCI':
+      activeYearArray= yearArray9SCI
       break;
-    case '7Sci':
-      activeYearArray= yearArraySci7
+    case '8SCI':
+      activeYearArray= yearArray8SCI
+      break;
+    case '7SCI':
+      activeYearArray= yearArray7SCI
       break;
     case '10STEM100Hour':
-      activeYearArray= yearArray100HourSTEM10
+      activeYearArray= yearArray10STEM100Hour
       break;
     case '10STEM200Hour':
-      activeYearArray= yearArray200HourSTEM10
+      activeYearArray= yearArray10STEM200Hour
       break;
-    case '9STEM':
-      activeYearArray= yearArraySTEM9
+    case '9STEM200Hour':
+      activeYearArray= yearArray9STEM200Hour
+      break;
+    case '9STEM100Hour':
+      activeYearArray= yearArray9STEM100Hour
       break;
     case '8STEMSem1':
-      activeYearArray= yearArraySTEM8
+      activeYearArray= yearArray8STEM
       break;
     case '8STEMSem2':
-      activeYearArray= yearArraySTEM8
+      activeYearArray= yearArray8STEM
       break;
-    case '12Phy':
-      activeYearArray= yearArrayIQsPhy12
+    case '12PHY':
+      activeYearArray= yearArrayIQs12PHY
       break;
-    case '11Phy':
-      activeYearArray= yearArrayIQsPhy11
+    case '11PHY':
+      activeYearArray= yearArrayIQs11PHY
       break;
-    case '12InvSci':
-      activeYearArray= yearArrayIQsInvSci12
+    case '12INVSCI':
+      activeYearArray= yearArrayIQs12INVSCI
       break;
-    case '11InvSci':
-      activeYearArray= yearArrayIQsInvSci11
+    case '11INVSCI':
+      activeYearArray= yearArrayIQs11INVSCI
       break;
-    case '12Che':
-      activeYearArray= yearArrayIQsChe12
+    case '12CHE':
+      activeYearArray= yearArrayIQs12CHE
       break;
-    case '11Che':
-      activeYearArray= yearArrayIQsChe11
+    case '11CHE':
+      activeYearArray= yearArrayIQs11CHE
       break;
-    case '10Pyy':
-      activeYearArray= yearArrayPyy10
+    case '10PYY':
+      activeYearArray= yearArray10PYY
       break;
-    case '9Pyy':
-      activeYearArray= yearArrayPyy9
+    case '9PYY':
+      activeYearArray= yearArray9PYY
       break;  
     default:
       break;
@@ -106,19 +112,19 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
   let LITableHeading;
   switch (activeClass) {
-    case '10SciASP':
+    case '10SCIASP':
       LITableHeading= 'Year 10 Science (ASP)'
       break;
-    case '10Sci':
+    case '10SCI':
       LITableHeading= 'Year 10 Science'
       break;
-    case '9Sci':
+    case '9SCI':
       LITableHeading= 'Year 9 Science'
       break;
-    case '8Sci':
+    case '8SCI':
       LITableHeading= 'Year 8 Science'
       break;
-    case '7Sci':
+    case '7SCI':
       LITableHeading= 'Year 7 Science'
       break;
     case '10STEM100Hour':
@@ -127,8 +133,11 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
     case '10STEM200Hour':
       LITableHeading= 'Year 10 STEM (200 Hour)'
       break;
-    case '9STEM':
-      LITableHeading= 'Year 9 STEM'
+    case '9STEM100Hour':
+      LITableHeading= 'Year 9 STEM (100 Hour)'
+      break;
+    case '9STEM200Hour':
+      LITableHeading= 'Year 9 STEM (200 Hour)'
       break;
     case '8STEMSem1':
       LITableHeading= 'Year 8 STEM (Semester 1)'
@@ -136,28 +145,28 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
     case '8STEMSem2':
       LITableHeading= 'Year 8 STEM (Semester 2)'
       break;
-    case '12Phy':
+    case '12PHY':
       LITableHeading= 'Year 12 Physics'
       break;
-    case '11Phy':
+    case '11PHY':
       LITableHeading= 'Year 11 Physics'
       break;
-    case '12InvSci':
+    case '12INVSCI':
       LITableHeading= 'Year 12 Investigating Science'
       break;
-    case '11InvSci':
+    case '11INVSCI':
       LITableHeading= 'Year 11 Investigating Science'
       break;
-    case '12Che':
+    case '12CHE':
       LITableHeading= 'Year 12 Chemistry'
       break;
-    case '11Che':
+    case '11CHE':
       LITableHeading= 'Year 11 Chemistry'
       break;
-    case '10Pyy':
+    case '10PYY':
       LITableHeading= 'Year 10 Psychology'
       break;
-    case '9Pyy':
+    case '9PYY':
       LITableHeading= 'Year 9 Psychology'
       break;       
     default:
@@ -223,7 +232,7 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
         console.log('loadDoc ran');
 
       } catch {
-
+        setButtonState(createInitFalseArray());
       }
     };
     loadDoc();
@@ -343,32 +352,32 @@ export default function LITable ({tnp, activeTeacher, activeSubject, activeYearG
 
   let tableColLIHeading;
   switch (activeSubject) {
-    case 'Sci':
+    case 'SCI':
       tableColLIHeading = 'Learning Intention'
       break;
     case 'STEM':
       tableColLIHeading = 'Project Outcome'
       break; 
-    case 'Phy':
+    case 'PHY':
       tableColLIHeading = 'Inquiry Question'
       break;
-    case 'InvSci':
+    case 'INVSCI':
       tableColLIHeading = 'Inquiry Question'
       break;   
   };
 
   let topicModuleOrProject;
   switch (activeSubject) {
-    case 'Sci':
+    case 'SCI':
       topicModuleOrProject = 'Topic'
       break;
     case 'STEM':
       topicModuleOrProject = 'Project'
       break; 
-    case 'Phy':
+    case 'PHY':
       topicModuleOrProject = 'Module'
       break;
-    case 'InvSci':
+    case 'INVSCI':
       topicModuleOrProject = 'Module'
       break; 
   };
