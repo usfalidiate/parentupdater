@@ -7,7 +7,6 @@ import Login from '../Components/Login';
 import { teacherArrays } from '../Components/TeacherArrays';
 import { contentArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
-import { textAlign } from '@mui/system';
 
 export default function NewMainPage() {
 
