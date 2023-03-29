@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MainPage from './MainPage';
 import NewMainPage from './NewMainPage';
 
 export default function Home() {
@@ -15,7 +14,6 @@ return (
   </Head>
 
 
-  {/* <MainPage /> */}
   <NewMainPage/>
 
 </>
