@@ -379,7 +379,7 @@ export default function NewLITable ({
         alert('Upload To Cloud Successful');
       } catch {
           await setDoc(setDocRef, buttonState );
-        alert('Upload Failed - setDoc was run');
+        alert('Upload Failed and setDoc was run - PLEASE PRESS UPLOAD TO CLOUD BUTTON AGAIN');
       };
     };
 

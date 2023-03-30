@@ -37,12 +37,17 @@ const handleTeacherChoiceButtonClick = ({activeTeacherProp}) => {
 
 
 function TeacherChoiceReturn() {
-    const wenis = teacherArrays.map(item=> {
+    const sortedTeacherArray = [...teacherArrays].sort((a,b) => 
+    a.id > b.id ? 1 : -1,
+    );
+    const wenis = sortedTeacherArray
+    .filter(active => active.active === true)
+    .map(item=> {
         let activeTeacherProp=item.id
         return (
             <div 
             key={item.id}
-            className='divGlowButton'>
+            className='divTeacherGlowButton'>
             <button 
                 className='glow-on-hover' 
                 onClick={ () => handleTeacherChoiceButtonClick({activeTeacherProp}) } 
@@ -91,19 +96,16 @@ function ButtonClassChoice({activesentralclassprop}) {
 };
 
 function ClassChoiceReturn() {
-    const classesFromArray = teacherArrays.filter(name => name.id == activeTeacher).map(group => {
+    const classesFromArray = teacherArrays
+    .filter(checkName => checkName.id == activeTeacher)
+    .map(group => group.sentralClass.sort((a,b)=>a-b)
+    .map(item=> {
         return (
-            group.sentralClass.map(item=> {
-                return (
-                    <div 
-                    key={item.id}
-                    className='divChoice'>
-                    < ButtonClassChoice activesentralclassprop={ item } />
-                    </div>
-                )                
-            })
-        )
-    });
+            <div className='divChoice' key={item} >
+            < ButtonClassChoice key={item} activesentralclassprop={ item } />
+            </div>
+        )                
+    }));
 
     return (
         <>
@@ -267,136 +269,136 @@ const backToTeacher = () => {
 let activeClass;
 let pageHeading;
 switch (activeSentralClass) {
-        case '10SCIASPA' || '10SCIASPB' :
+        case '10SCIASPA' : case '10SCIASPB' :
         activeClass = '10SCIASP'
         pageHeading = 'Year 10 Science (ASP)'
         break;
-        case '10SCIA1' || '10SCIA2' || '10SCIA3' || '10SCIA4' || '10SCIA5' || '10SCIB1' || '10SCIB2' || '10SCIB3' || '10SCIB4' || '10SCIB5' :
+        case '10SCIA1', '10SCIA2' : case '10SCIA3' : case '10SCIA4' : case '10SCIA5' : case '10SCIB1' : case '10SCIB2' : case '10SCIB3' : case '10SCIB4' : case '10SCIB5' :
         activeClass = '10SCI'
         pageHeading = 'Year 10 Science'
         break;   
-        case '9SCIA1' || '9SCIA2' || '9SCIA3' || '9SCIA4' || '9SCIA5' || '9SCIB1' || '9SCIB2' || '9SCIB3' || '9SCIB4' || '9SCIB5' :
+        case '9SCIA1' : case '9SCIA2' : case '9SCIA3' : case '9SCIA4' : case '9SCIA5' : case '9SCIB1' : case '9SCIB2' : case '9SCIB3' : case '9SCIB4' : case '9SCIB5' :
         activeClass = '9SCI'
         pageHeading = 'Year 9 Science'
         break; 
-        case '8SCI1' || '8SCI2' || '8SCI3' || '8SCI4' || '8SCI5' || '8SCI6' || '8SCI7' || '8SCI8' || '8SCI9' || '8SCI10' :
+        case '8SCI1' : case '8SCI2' : case '8SCI3' : case '8SCI4' : case '8SCI5' : case '8SCI6' : case '8SCI7' : case '8SCI8' : case '8SCI9' : case '8SCI10' :
         activeClass = '8SCI'
         pageHeading = 'Year 8 Science'
         break;
-        case '7SCI1' || '7SCI2' || '7SCI3' || '7SCI4' || '7SCI5' || '7SCI6' || '7SCI7' || '7SCI7' || '7SCI9' || '7SCI10' :
+        case '7SCI1' : case '7SCI2' : case '7SCI3' : case '7SCI4' : case '7SCI5' : case '7SCI6' : case '7SCI7' : case '7SCI7' : case '7SCI9' : case '7SCI10' :
         activeClass = '7SCI'
         pageHeading = 'Year 7 Science'
         break;
 
-        case '12BIO01' || '12BIO02' || '12BIO03' || '12BIO04' :
+        case '12BIO01' : case '12BIO02' : case '12BIO03' : case '12BIO04' :
         activeClass = '12BIO'
         pageHeading = 'Biology'
         break;
-        case '11BIO01' || '11BIO02' || '11BIO03' || '11BIO04' :
+        case '11BIO01' : case '11BIO02' : case '11BIO03' : case '11BIO04' :
         activeClass = '11BIO'
         pageHeading = 'Biology'
         break;
     
-        case '12CHE01' || '12CHE02' || '12CHE03' || '12CHE04' :
+        case '12CHE01' : case '12CHE02' : case '12CHE03' : case '12CHE04' :
         activeClass = '12CHE'
         pageHeading = 'Chemistry'
         break;
-        case '11CHE01' || '11CHE02' || '11CHE03' || '11CHE04' :
+        case '11CHE01' : case '11CHE02' : case '11CHE03' : case '11CHE04' :
         activeClass = '11CHE'
         pageHeading = 'Chemistry'
         break;
      
-        case '12EES01' || '12EES02' || '12EES03' || '12EES04' :
+        case '12EES01' : case '12EES02' : case '12EES03' : case '12EES04' :
         activeClass = '12EES'
         pageHeading = 'Earth and Environmental Science'
         break;
-        case '11EES01' || '11EES03' || '11EES03' || '11EES04' :
+        case '11EES01' : case '11EES03' : case '11EES03' : case '11EES04' :
         activeClass = '11EES'
         pageHeading = 'Earth and Environmental Science'
         break;
     
-        case '12INV01' || '12INV02' || '12INV03' || '12INV04' :
+        case '12INV01' : case '12INV02' : case '12INV03' : case '12INV04' :
         activeClass = '12INV'
         pageHeading = 'Investigating Science'
         break;
-        case '11INV01' || '11INV02' || '11INV03' || '11INV04' :
+        case '11INV01' : case '11INV02' : case '11INV03' : case '11INV04' :
         activeClass = '11INV'
         pageHeading = 'Investigating Science'
         break;
 
-        case '12PHY01' || '12PHY02' || '12PHY03' || '12PHY04' :
+        case '12PHY01' : case '12PHY02' : case '12PHY03' : case '12PHY04' :
         activeClass = '12PHY'
         pageHeading = 'Physics'
         break;
-        case '11PHY01' || '11PHY02' || '11PHY03' || '11PHY04' :
+        case '11PHY01' : case '11PHY02' : case '11PHY03' : case '11PHY04' :
         activeClass = '11PHY'
         pageHeading = 'Physics'
         break;
         
-        case '10STX01' || '10STX02' :
+        case '10STX01' : case '10STX02' :
         activeClass = '10STX'
         pageHeading = 'Year 10 STEM (200 Hour)'
         break;
-        case '10STY01' || '10STY02' :
+        case '10STY01' : case '10STY02' :
         activeClass = '10STY'
         pageHeading = 'Year 10 STEM (100 Hour)'
         break;
-        case '9STX01' || '9STX02' :
+        case '9STX01' : case '9STX02' :
         activeClass = '9STX'
         pageHeading = 'Year 9 STEM (200 Hour)'
         break;
-        case '9STY01' || '9STY02' :
+        case '9STY01' : case '9STY02' :
         activeClass = '9STY'
         pageHeading = 'Year 9 STEM (100 Hour)'
         break;     
-        case '8STM01' || '8STM02' || '8STM03' || '8STM04' :
+        case '8STM01' : case '8STM02' : case '8STM03' : case '8STM04' :
         activeClass = '8STM'
         pageHeading = 'Year 8 STEM'
         break;
 
-        case '12MST01' || '12MST02' || '12MST03' || '12MST04' :
+        case '12MST01' : case '12MST02' : case '12MST03' : case '12MST04' :
         activeClass = '12MST'
         pageHeading = 'Marine Studies'
         break;
-        case '11MST01' || '11MST02' || '11MST03' || '11MST04' :
+        case '11MST01' : case '11MST02' : case '11MST03' : case '11MST04' :
         activeClass = '11MST'
         pageHeading = 'Marine Studies'
         break;
-        case '8MST01' || '8MST02' || '8MST03' || '8MST04' :
+        case '8MST01' : case '8MST02' : case '8MST03' : case '8MST04' :
         activeClass = '8MST'
         pageHeading = 'Year 8 Marine Studies'
         break;         
 
-        case '10PYX01' || '10PYX02' :
+        case '10PYX01' : case '10PYX02' :
         activeClass = '10PYX'
         pageHeading = 'Year 10 Psychology (200 Hour)'
         break;
-        case '10PYY01' || '10PYY02' :
+        case '10PYY01' : case '10PYY02' :
         activeClass = '10PYY'
         pageHeading = 'Year 10 Psychology (100 Hour)'
         break;
-        case '9PYX01' || '9PYX02' :
+        case '9PYX01' : case '9PYX02' :
         activeClass = '9PYX'
         pageHeading = 'Year 9 Psychology (200 Hour)'
         break;
-        case '9PYY01' || '9PYY02' :
+        case '9PYY01' : case '9PYY02' :
         activeClass = '9PYY'
         pageHeading = 'Year 9 Psychology (100 Hour)'
         break; 
 
-        case '10BHX01' || '10BHX02' :
+        case '10BHX01' : case '10BHX02' :
         activeClass = '10BHX'
         pageHeading = 'Year 10 Big History (200 Hour)'
         break;
-        case '10BHY01' || '10BHY02' :
+        case '10BHY01' : case '10BHY02' :
         activeClass = '10BHY'
         pageHeading = 'Year 10 Big History (100 Hour)'
         break;
-        case '9BHX01' || '9BHX02' :
+        case '9BHX01' : case '9BHX02' :
         activeClass = '9BHX'
         pageHeading = 'Year 9 Big History (200 Hour)'
         break;
-        case '9BHY01' || '9BHY02' :
+        case '9BHY01' : case '9BHY02' :
         activeClass = '9BHY'
         pageHeading = 'Year 9 Big History (100 Hour)'
         break; 
@@ -440,19 +442,19 @@ function LITableReturn(){
         endNumber = 8
         break;
         default:
-            startNumber = 1
-            endNumber = numberOfTopics.toString()
-            break;
+        startNumber = 1
+        endNumber = numberOfTopics.toString()
+        break;
     }
 
-        for (let i = startNumber; i <= endNumber; i++) {
-            poop.push(i);
-        };
+    for (let i = startNumber; i <= endNumber; i++) {
+        poop.push(i);
+    };
 
     const penis = 
         poop.map(item => {
             return (
-                <div key ={item.id}>
+                <div key ={item}>
                 < NewLITable tnp={ item } activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState} />
                 </div>
             )
@@ -462,7 +464,17 @@ function LITableReturn(){
 };
 
 
+function AssTableReturn() {
+    return (
+        <div className='divContent'> <h1> Assessment Information </h1> </div>
+    )
+};
 
+function SubjectInfoTableReturn() {
+    return (
+            <div className='divContent'> <h1> Subject Information </h1> </div>
+    )
+};
 
 
 
@@ -473,7 +485,7 @@ return (
     <>    
         {displayTeacherChoice ?
         <div className='divTopBarHome'>
-            <button className='neonButton'> Warilla High School Science </button>
+            <button className='altNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
         </div> 
         : 
         <div className='divTopBar'>
@@ -487,17 +499,26 @@ return (
         
 
         <>
-            { displayTeacherChoice ? <div className='divMain'>  <TeacherChoiceReturn/> </div> : null }
+            { displayTeacherChoice ? <>  <TeacherChoiceReturn/> </> : null }
             { displaySentralClassChoice ? <div className='divMain'> <ClassChoiceReturn/> </div> : null }
             { displayContentChoice ? <div className='divMain'> <ContentChoiceReturn/> </div> : null }
         </>
 
 
         <>
-            { activeContent == 'LITable' ? <div className='divLITable'> 
-            <h1> {pageHeading} </h1>
-            <LITableReturn/> 
+            { activeContent == 'LITable' ? 
+            <div className='divLITable'> 
+                <h1> {pageHeading} </h1>
+                <LITableReturn/> 
             </div> : null}
+        </>
+
+        <>
+            {activeContent == 'SubjectInfoTable' ? <> <SubjectInfoTableReturn/> </> : null}
+        </>
+
+        <>
+            {activeContent == 'AssTable' ? <> <AssTableReturn/> </> : null}
         </>
     </>
 )

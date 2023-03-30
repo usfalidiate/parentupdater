@@ -1,9 +1,29 @@
+
+
+
+
+
+
+
+
+
+
 export const subjectInfoArray = [
     
         {
             activeClass: '10SCIASP',
             activeSentralClasses: ['10SCIASPA', '10SCIASPB'],
-            numberOfTopics: 6
+            numberOfTopics: 6,
+            topic: {
+                        1: {
+                            name: 'asdas',
+                            duration: '123 weeks',
+                        },
+                        2: {
+                            name: 'sdd',
+                            duration: 'asd'
+                        }
+                    }
         },
         {
             activeClass: '10SCI',
