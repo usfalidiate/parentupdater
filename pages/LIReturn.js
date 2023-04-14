@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { app, db, auth } from './Firebase';
+import { app, db, auth } from '../Components/Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from './Login';
+import { Login } from '../Components/Login';
+import { subjectInfoArray } from '../Components/SubjectInfoArrays';
 import {
   getFirestore,
   collection,
@@ -37,14 +38,14 @@ import {
   LIArray10BHX, LIArray9BHX,
   LIArray10BHY, LIArray9BHY
 
-} from './LIArrays';
+} from '../Components/LIArrays';
 
-export default function NewLITable ({
+export default function LIReturn ({
   activeTeacherProp, activeSentralClassProp, tnp, adminStateProp,
   activeYearGroup, activeClass, sentralClass
 }) {
 
-
+console.log(activeTeacherProp, activeSentralClassProp, tnp);
   const docRef = doc(db, '2023', activeTeacherProp, activeSentralClassProp, `${tnp}`);
   const setDocRef = doc(db, '2023', activeTeacherProp, activeSentralClassProp, `${tnp}`);
 
@@ -53,6 +54,8 @@ export default function NewLITable ({
   let topicModuleOrProject;
   let activeSubject;
   let LITableHeading;
+  let showLI;
+  let miniTableColLIHeading;
 
 
   switch (activeClass) {
@@ -61,70 +64,83 @@ export default function NewLITable ({
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 10 Science (ASP)'
       tableColLIHeading = 'Learning Intention'
-      activeSubject = 'SCI'
+      activeSubject = 'sci'
+      miniTableColLIHeading = 'LI'
       break;
     case '10SCI':
       activeClassArray= LIArray10SCI
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 10 Science'
       tableColLIHeading = 'Learning Intention'
-      activeSubject = 'SCI'
+      activeSubject = 'sci'
+      miniTableColLIHeading = 'LI'
+
       break;
     case '9SCI':
       activeClassArray= LIArray9SCI
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 9 Science'
       tableColLIHeading = 'Learning Intention'
-      activeSubject = 'SCI'
+      activeSubject = 'sci'
+      miniTableColLIHeading = 'LI'
+
       break;
     case '8SCI':
       activeClassArray= LIArray8SCI
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 8 Science'
       tableColLIHeading = 'Learning Intention'
-      activeSubject = 'SCI'
+      miniTableColLIHeading = 'LI'
+
+      activeSubject = 'sci'
       break;
     case '7SCI':
       activeClassArray= LIArray7SCI
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 7 Science'
       tableColLIHeading = 'Learning Intention'
-      activeSubject = 'SCI'
+      miniTableColLIHeading = 'LI'
+
+      activeSubject = 'sci'
       break;
     
     case '10STX':
       activeClassArray= LIArray10STX
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 10 STEM (200 Hour)'
-      tableColLIHeading = 'Project Outcome'
+      tableColLIHeading = 'Learning Intention'
+      miniTableColLIHeading = 'LI'
+
       activeSubject = 'STEM'
       break;
     case '10STY':
       activeClassArray= LIArray10STY
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 10 STEM (100 Hour)'
-      tableColLIHeading = 'Project Outcome'
+      tableColLIHeading = 'Learning Intention'
+      miniTableColLIHeading = 'LI'
+
       activeSubject = 'STEM'
       break;
     case '9STX':
       activeClassArray= LIArray9STX
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 9 STEM (200 Hour)'
-      tableColLIHeading = 'Project Outcome'
+      tableColLIHeading = 'Learning Intention'
       activeSubject = 'STEM'
       break;
     case '9STY':
       activeClassArray= LIArray9STY
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 9 STEM (100 Hour)'
-      tableColLIHeading = 'Project Outcome'
+      tableColLIHeading = 'Learning Intention'
       activeSubject = 'STEM'
       break;
     case '8STM':
       activeClassArray= LIArray8STM
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 8 STEM'
-      tableColLIHeading = 'Project Outcome'
+      tableColLIHeading = 'Learning Intention'
       activeSubject = 'STEM'
       break;
   
@@ -133,6 +149,8 @@ export default function NewLITable ({
       activeClassArray= IQArray12BIO
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 12 Biology'
       activeSubject = 'BIO'
       break;
@@ -140,6 +158,8 @@ export default function NewLITable ({
       activeClassArray= IQArray11BIO
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 11 Biology'
       activeSubject = 'BIO'
 
@@ -148,6 +168,8 @@ export default function NewLITable ({
       activeClassArray= IQArray12CHE
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 12 Chemistry'
       activeSubject = 'CHE'
       break;
@@ -155,6 +177,8 @@ export default function NewLITable ({
       activeClassArray= IQArray11CHE
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 11 Chemistry'
       activeSubject = 'CHE'
       break;
@@ -178,6 +202,8 @@ export default function NewLITable ({
       activeClassArray= IQArray12INV
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 12 Investigating Science'
       activeSubject = 'INV'
       break;
@@ -185,6 +211,8 @@ export default function NewLITable ({
       activeClassArray= IQArray11INV
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 11 Investigating Science'
       activeSubject = 'INV'
       break;
@@ -193,6 +221,8 @@ export default function NewLITable ({
       activeClassArray= IQArray12PHY
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'  
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 12 Physics'
       activeSubject = 'PHY'
       break;
@@ -200,6 +230,8 @@ export default function NewLITable ({
       activeClassArray= IQArray11PHY
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
+      miniTableColLIHeading = 'IQ'
+
       LITableHeading= 'Year 11 Physics'
       activeSubject = 'PHY'
       break;    
@@ -353,7 +385,7 @@ export default function NewLITable ({
           <button
           onClick={ () => handleClick(i, x) }
           className={ buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' }
-          > Click </button>
+          > { buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Status: Completed' : 'Status: Not Completed' } </button>
         </div>
     )
     } catch {
@@ -385,7 +417,7 @@ export default function NewLITable ({
 
     return (
       <div>
-        <button onClick={()=>uploadToCloud()}> Upload To Cloud </button>
+        <button onClick={()=>uploadToCloud()}> Save Current LI State to Cloud </button>
       </div>
     )
   };
@@ -436,7 +468,7 @@ export default function NewLITable ({
       return ( 
       <div 
       className={ buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' } 
-      > {buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Done' : 'Not Done'} </div> )
+      > {buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Status: Completed' : 'Status: Not Completed'} </div> )
     } catch {
       console.log('error in RowStatus')
       return ( <div className={'buttonUncompleted'}> Status Error </div>)
@@ -445,64 +477,33 @@ export default function NewLITable ({
 
 
 
-
-
-
-
-  // creates table from the main array, plus a button which shows state and changes state onClick
-  const ArrayLITable = () => {
+  const ArrayLIDiv = () => {
     return (
-    <>
- 
-      { adminStateProp ? ButtonUploadToCloud() : null }
+      <>
+      <div className="pageHeading2" >  {topicModuleOrProject} { tnp } - { createTopicName() } </div>
+      <div className="saveToCloudLI"> { adminStateProp ? ButtonUploadToCloud() : null } </div>
 
-      {/* { ProgressBarBasic() } */}
-
-      <h3> {topicModuleOrProject} { tnp } - { createTopicName() }</h3>
-      <div>
-        <table className='mainTable'>
-          <thead>
-            <tr>
-              <th> Completed </th>
-              <th> # </th>
-              <th> { tableColLIHeading } </th>
-            </tr>          
-          </thead>
-          <tbody>
-            {activeClassArray?.filter(topic => topic.topic === tnp).map(item => {
-              return (
-                <tr key = { item.id }>
-                  {adminStateProp ? <td className='tdCheckbox'> 
-                    <ButtonCompleted 
-                      i={ Number(item.id) }
-                      x={ item.fullID }
-                    /> </td> 
-                    : 
-                    <td className='tdCheckbox'>   
-                  <RowStatus
-                    i={ Number(item.id)} 
-                  /> </td>
-                  }
-                  <td className='tdLINumber'> { activeSubject === 'Sci' ? item.LINumber : item.fullID  }</td>
-                  <td className='tdLIString'> { item.LIString }</td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>   
+      <div className='grid-container-LI'>
+          {activeClassArray?.filter(topic => topic.topic === tnp).map(item => {
+            return (
+              <div key = { item.id }>
+                <div> { adminStateProp ? <div> <ButtonCompleted i={ Number(item.id) } x={ item.fullID } /> </div>  : <div className='tdCheckbox'> <RowStatus i={ Number(item.id)} /> </div> } </div>
+                <div className='tdLIString'> <b> {miniTableColLIHeading}: </b>{ activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> { item.LIString } </div>
+              </div>
+            )
+          })}
       </div>
-    </>
+      </>
     )
   };
 
 
   return (
-    <>
-      <ArrayLITable />
-    </>
+    <div>
+      <ArrayLIDiv />
+      <br/><br/>
+    </div>
   )
-
-
 };
 
 

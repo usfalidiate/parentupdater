@@ -10,10 +10,10 @@ import {
     signInWithEmailAndPassword
   } from 'firebase/auth';
 
-import PWeye from '../public/PWeye.svg';
-import PWeyeSlash from '../public/PWeyeSlash.svg';
-import PWEyeFunc from './PWEyeFunc';
-import PWEyeSlashFunc from './PWEyeSlashFunc';
+// import PWeye from '../public/PWeye.svg';
+// import PWeyeSlash from '../public/PWeyeSlash.svg';
+import PWEyeFunc from '../assets/PWEyeFunc';
+import PWEyeSlashFunc from '../assets/PWEyeSlashFunc';
 
 
 

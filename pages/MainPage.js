@@ -1,14 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect, useRef } from 'react';
-
-import LITable from '../Components/LITable';
-import NewLITable from '../Components/NewLITable';
+import LIReturn from './LIReturn';
+// import NewLITable from '../Components/NewLITable';
 import Login from '../Components/Login';
 import { teacherArrays } from '../Components/TeacherArrays';
 import { contentArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
+import {assInfoArraySCI} from '../Components/AssArrays';
+import SubjectInfoReturn  from './SubjectInfoReturn';
+import AssReturn from './AssReturn';
 
-export default function NewMainPage() {
+import Image from 'next/image'
+import STEM from '../assets/STEM.jpg'
+
+export default function MainPage() {
 
 // SET STATES
 const [activeTeacher, setActiveTeacher] = useState();
@@ -47,21 +52,17 @@ function TeacherChoiceReturn() {
         return (
             <div 
             key={item.id}
-            className='divTeacherGlowButton'>
+            className='divGlowButton'>
             <button 
-                className='glow-on-hover' 
+                className='glowButton' 
                 onClick={ () => handleTeacherChoiceButtonClick({activeTeacherProp}) } 
             > 
-                <p className={'buttonText'}> { item.lastName } </p>
+                <p className={'glowButtonText'}> { item.lastName } </p>
             </button> 
         </div>
         )
     });
-    return (
-        <div className='divTeacherChoice'>
-            {wenis}
-        </div>
-    )
+    return (<> { wenis } </>)
 };
 
 
@@ -87,8 +88,8 @@ function ButtonClassChoice({activesentralclassprop}) {
             <button 
                 key={activesentralclassprop}
                 onClick={() => handleClassChoice({activesentralclassprop})}
-                className='glow-on-hover'> 
-                <p className='buttonText'> {activesentralclassprop} 
+                className='glowButton'> 
+                <p className='glowButtonText'> {activesentralclassprop} 
                 </p> 
             </button>
         </div>                    
@@ -101,17 +102,13 @@ function ClassChoiceReturn() {
     .map(group => group.sentralClass.sort((a,b)=>a-b)
     .map(item=> {
         return (
-            <div className='divChoice' key={item} >
+            <div key={item} >
             < ButtonClassChoice key={item} activesentralclassprop={ item } />
             </div>
         )                
     }));
 
-    return (
-        <>
-        {classesFromArray}
-        </>
-    )
+    return (<> { classesFromArray } </>)
 };
 
 
@@ -132,22 +129,22 @@ const handleContentChoice = ({activecontentprop}) => {
 
 function ButtonContentChoice({buttonContentTitleProp, activecontentprop}) {
     return (
-    <div className='divRoundButton'> 
-      <button className='glow-on-hover' 
+    <div className='divGlowButton'> 
+      <button className='glowButton' 
         onClick={()=>handleContentChoice({activecontentprop})} 
       > 
-      <p className={'buttonText'}>  {buttonContentTitleProp} </p>
+      <p className={'glowButtonText'}>  {buttonContentTitleProp} </p>
       </button> 
     </div>)
   };
 
   function ContentChoiceReturn() {
     return (
-      <div className='divChoice'>
+      <>
         <ButtonContentChoice activecontentprop={'LITable'} buttonContentTitleProp={'Learning Intention Checklist'}/>
-        <ButtonContentChoice activecontentprop={'AssTable'} buttonContentTitleProp={'Assessment Information'}/>
-        <ButtonContentChoice activecontentprop={'SubjectInfoTable'} buttonContentTitleProp={'Subject Information'}/>
-    </div>
+        <ButtonContentChoice activecontentprop={'AssTable'} buttonContentTitleProp={'Assessment Tasks'}/>
+        <ButtonContentChoice activecontentprop={'SubjectInfoTable'} buttonContentTitleProp={'Subject Overview'}/>
+    </>
     )
   };
 
@@ -273,7 +270,7 @@ switch (activeSentralClass) {
         activeClass = '10SCIASP'
         pageHeading = 'Year 10 Science (ASP)'
         break;
-        case '10SCIA1', '10SCIA2' : case '10SCIA3' : case '10SCIA4' : case '10SCIA5' : case '10SCIB1' : case '10SCIB2' : case '10SCIB3' : case '10SCIB4' : case '10SCIB5' :
+        case '10SCIA1': case '10SCIA2' : case '10SCIA3' : case '10SCIA4' : case '10SCIA5' : case '10SCIB1' : case '10SCIB2' : case '10SCIB3' : case '10SCIB4' : case '10SCIB5' :
         activeClass = '10SCI'
         pageHeading = 'Year 10 Science'
         break;   
@@ -409,7 +406,7 @@ switch (activeSentralClass) {
 
 // LITABLE RETURN
 
-function LITableReturn(){
+function LIReturnEachTopic(){
     // map function to extract the number of topics from the LIArray array
     // subjectInfoArray.activeSubjects.SCI.activeClasses.10SCIASP.numberOfTopics
     // to access the relevant LIArray, activeSentralClass can be used to create activeSubject, via switch
@@ -417,7 +414,7 @@ function LITableReturn(){
         return (topic.numberOfTopics)
     });
 
-    let poop =[];
+    let arr =[];
     let startNumber;
     let endNumber;
     switch (activeClass) {
@@ -448,33 +445,27 @@ function LITableReturn(){
     }
 
     for (let i = startNumber; i <= endNumber; i++) {
-        poop.push(i);
+        arr.push(i);
     };
 
-    const penis = 
-        poop.map(item => {
+    const topicLI = 
+        arr.map(item => {
             return (
                 <div key ={item}>
-                < NewLITable tnp={ item } activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState} />
+                < LIReturn tnp={ item } activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState} />
                 </div>
             )
         });
 
-    return ( penis )
-};
-
-
-function AssTableReturn() {
     return (
-        <div className='divContent'> <h1> Assessment Information </h1> </div>
+        <div className='divLIContent'>
+            <div className="heading1" > Learning Intentions </div>
+            {topicLI}
+        </div>
     )
 };
 
-function SubjectInfoTableReturn() {
-    return (
-            <div className='divContent'> <h1> Subject Information </h1> </div>
-    )
-};
+
 
 
 
@@ -482,10 +473,10 @@ function SubjectInfoTableReturn() {
 
 
 return (
-    <>    
+    <div className='divBG'>  
         {displayTeacherChoice ?
         <div className='divTopBarHome'>
-            <button className='altNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
+            <button className='homeNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
         </div> 
         : 
         <div className='divTopBar'>
@@ -497,29 +488,23 @@ return (
                 { displayLoginAdmin ? <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> : null } 
         </div>}
         
-
         <>
-            { displayTeacherChoice ? <>  <TeacherChoiceReturn/> </> : null }
-            { displaySentralClassChoice ? <div className='divMain'> <ClassChoiceReturn/> </div> : null }
-            { displayContentChoice ? <div className='divMain'> <ContentChoiceReturn/> </div> : null }
-        </>
-
-
-        <>
-            { activeContent == 'LITable' ? 
-            <div className='divLITable'> 
-                <h1> {pageHeading} </h1>
-                <LITableReturn/> 
-            </div> : null}
+            { displayTeacherChoice ? <div className='divChoice'> <TeacherChoiceReturn/> </div> : null }
+            { displaySentralClassChoice ? <div className='divChoice'> <ClassChoiceReturn/> </div> : null }
+            { displayContentChoice ? <div className='divChoice'> <ContentChoiceReturn/> </div> : null }
         </>
 
         <>
-            {activeContent == 'SubjectInfoTable' ? <> <SubjectInfoTableReturn/> </> : null}
+            { activeContent == 'LITable' ? <> <LIReturnEachTopic activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState}/> </> : null}
         </>
 
         <>
-            {activeContent == 'AssTable' ? <> <AssTableReturn/> </> : null}
+            {activeContent == 'SubjectInfoTable' ? <> <SubjectInfoReturn activeClass={activeClass}/> </> : null}
         </>
-    </>
+
+        <>
+            {activeContent == 'AssTable' ? <> <AssReturn activeClass={activeClass}/> </> : null}
+        </>
+    </div>
 )
 };
