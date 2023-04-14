@@ -1,4 +1,4 @@
-import { gridStringOrNumberComparator } from "@mui/x-data-grid";
+// import { gridStringOrNumberComparator } from "@mui/x-data-grid";
 import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "./SubjectInfoArrays";
 import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY } from "./LIArrays";
 

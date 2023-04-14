@@ -1,10 +1,10 @@
-import Head from 'next/head';
+// import Head from 'next/head';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { app, db, auth } from './Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from './Login';
-import { subjectInfoArray } from './SubjectInfoArrays';
+// import { Login } from './Login';
+// import { subjectInfoArray } from './SubjectInfoArrays';
 import {
   getFirestore,
   collection,
