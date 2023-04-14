@@ -4,14 +4,14 @@ import LIReturn from '../Components/LIReturn';
 // import NewLITable from '../Components/NewLITable';
 import Login from '../Components/Login';
 import { teacherArrays } from '../Components/TeacherArrays';
-import { contentArrays } from '../Components/TeacherArrays';
+// import { contentArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
-import {assInfoArraySCI} from '../Components/AssArrays';
+// import {assInfoArraySCI} from '../Components/AssArrays';
 import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
 
-import Image from 'next/image'
-import STEM from '../assets/STEM.jpg'
+// import Image from 'next/image'
+// import STEM from '../assets/STEM.jpg'
 
 export default function MainPage() {
 
