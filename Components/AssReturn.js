@@ -1,5 +1,5 @@
-import { sciAssArray, STEMAssArray, invAssArray, phyAssArray } from "../Components/AssArrays";
-import { subjectInfoArray, sciSyllabusOutcomesArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "../Components/SubjectInfoArrays";
+import { sciAssArray, STEMAssArray, invAssArray, phyAssArray } from "./AssArrays";
+import { subjectInfoArray, sciSyllabusOutcomesArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "./SubjectInfoArrays";
 
 
 export default function AssReturn({activeClass} ) {

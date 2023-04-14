@@ -8,7 +8,7 @@ import { contentArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
 import {assInfoArraySCI} from '../Components/AssArrays';
 import SubjectInfoReturn  from './SubjectInfoReturn';
-import AssReturn from './AssReturn';
+import AssReturn from '../Components/AssReturn';
 
 import Image from 'next/image'
 import STEM from '../assets/STEM.jpg'
