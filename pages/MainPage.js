@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect, useRef } from 'react';
-import LIReturn from './LIReturn';
+import LIReturn from '../Components/LIReturn';
 // import NewLITable from '../Components/NewLITable';
 import Login from '../Components/Login';
 import { teacherArrays } from '../Components/TeacherArrays';
 import { contentArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
 import {assInfoArraySCI} from '../Components/AssArrays';
-import SubjectInfoReturn  from './SubjectInfoReturn';
+import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
 
 import Image from 'next/image'

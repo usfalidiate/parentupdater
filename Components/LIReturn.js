@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { app, db, auth } from '../Components/Firebase';
+import { app, db, auth } from './Firebase';
 import { useState, useEffect, useRef } from 'react';
-import { Login } from '../Components/Login';
-import { subjectInfoArray } from '../Components/SubjectInfoArrays';
+import { Login } from './Login';
+import { subjectInfoArray } from './SubjectInfoArrays';
 import {
   getFirestore,
   collection,
@@ -38,7 +38,7 @@ import {
   LIArray10BHX, LIArray9BHX,
   LIArray10BHY, LIArray9BHY
 
-} from '../Components/LIArrays';
+} from './LIArrays';
 
 export default function LIReturn ({
   activeTeacherProp, activeSentralClassProp, tnp, adminStateProp,

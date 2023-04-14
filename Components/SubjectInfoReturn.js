@@ -1,6 +1,6 @@
 import { gridStringOrNumberComparator } from "@mui/x-data-grid";
-import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "../Components/SubjectInfoArrays";
-import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY } from "../Components/LIArrays";
+import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "./SubjectInfoArrays";
+import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY } from "./LIArrays";
 
 import Image from 'next/image'
 import STEM from '../assets/STEM.jpg'
