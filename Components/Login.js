@@ -14,6 +14,11 @@ import {
 // import PWeyeSlash from '../public/PWeyeSlash.svg';
 import PWEyeFunc from '../assets/PWEyeFunc';
 import PWEyeSlashFunc from '../assets/PWEyeSlashFunc';
+import UploadIcon from '../assets/UploadIcon';
+import PersonAdd from '../assets/PersonAdd';
+import PersonMinus from '../assets/PersonMinus';
+import PersonIcon from '../assets/PersonIcon';
+import PersonXIcon from '../assets/PersonXIcon';
 
 
 
@@ -104,7 +109,7 @@ export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
         <button 
           className={adminStateProp ? 'neonButtonActive' : 'neonButton'}
           onClick={handleToggleAdminModeProp} >
-           {adminStateProp ? <p className='buttonTextAdmin'> Admin Mode: ON </p> : <p className='buttonTextAdmin'> Admin Mode: OFF </p> }
+           {adminStateProp ? <p className='buttonTextAdmin'> <UploadIcon/> </p> : <p className='buttonTextAdmin'> <UploadIcon/> </p> }
         </button>
       </>
     )};
@@ -114,68 +119,82 @@ export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
 
 
 return (
-
-  <>
- 
-        <>
-          <input 
-            ref={emailRef} 
-            type={"email"} 
-            placeholder='Email'
-          />
-        
-        <div className='inputAndPWButton'>
-          <input
-            ref={passwordRef} 
-            type={passwordVisible ? '' : 'password'} 
-            placeholder='Password'
-          />
-          { 
-            passwordVisible ? 
-              <button 
-                className='PWButton'
-                onClick={togglePasswordVisible}> 
-                <PWEyeFunc/> 
-              </button> 
-            : 
-              <button 
-                className='PWButton'
-                onClick={togglePasswordVisible}> 
-                <PWEyeSlashFunc/> 
-              </button>
-          }
-        </div>
-
-
-
+  <div className='divPWEmailPost'>
     
+    <div className='divPWEmail'>
+      <>
+        <input 
+          ref={emailRef} 
+          type={"email"} 
+          placeholder='Email'
+        />
+      </>
+    
+      <>
+        <input
+          ref={passwordRef} 
+          type={passwordVisible ? '' : 'password'} 
+          placeholder='Password'
+        />
+      </>
+    </div>
 
-          
+
+    <div className='divPost'>
+    <>
+        { 
+          passwordVisible ? 
+            <button 
+              className='neonButton'
+              onClick={togglePasswordVisible}> 
+              <p className='buttonTextAdmin'>
+                <PWEyeFunc/>
+              </p>
+            </button> 
+          : 
+            <button 
+              className='neonButton'
+              onClick={togglePasswordVisible}> 
+                <p className='buttonTextAdmin'>
+                  <PWEyeSlashFunc/>
+                </p>
+            </button>
+        }
+        </>
         
-        <button 
-        className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
-        disabled={loading || currentUser != null } 
-        onClick={handleLogin} 
-        > 
-        <p className='buttonTextAdmin' >Log In </p> 
-        </button>
-        
-        <button 
-        className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
-        disabled={loading || !currentUser } 
-        onClick={handleLogout}
-        > 
-        <p className='buttonTextAdmin' >Log Out </p> </button>
+        <>
+          <button 
+            className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
+            disabled={loading || currentUser != null } 
+            onClick={handleLogin} >
+            <p className='buttonTextAdmin'>
+            <PersonAdd/> 
+            </p>
+          </button>
+        </>
+      
+        <>
+          <button 
+            className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
+            disabled={loading || !currentUser } 
+            onClick={handleLogout} > 
+            <p className='buttonTextAdmin'>
+            <PersonMinus/> 
+            </p>
+          </button>
+        </>
         
         {/* Currently Logged In As: { currentUser?.email } */}
 
-        {currentUser?.email ? <p className='neonBoxActive'>Logged In</p> : <p className='neonBox'>Not Logged In</p>}
-
-        {currentUser?.email ? <ButtonToggleAdminMode /> : null}
-
-      </> 
-
-
-    </>
+        <>
+          {currentUser?.email ? <p className='neonBoxActive'> <PersonIcon/> </p> : <p className='neonBox'> <PersonIcon/> </p>}
+        </>
+        
+        <>
+          {currentUser?.email ? <ButtonToggleAdminMode /> : null}
+        </>
+        
+    </div>
+  </div>
 )
 }

@@ -6,6 +6,10 @@ import { teacherArrays } from '../Components/TeacherArrays';
 import { subjectInfoArray } from '../Components/SubjectInfoArrays';
 import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
+import HomeIcon from '../assets/HomeIcon';
+import BackIcon from '../assets/BackIcon';
+import AdminIcon from '../assets/AdminIcon';
+import GearIcon from '../assets/GearIcon';
 
 export default function MainPage() {
 
@@ -160,7 +164,7 @@ const handleHome = () => {
 };
 
 function ButtonHome() {
-    return (<> <button className='neonButton' onClick={()=> handleHome()}> <p className='buttonTextAdmin'> Home </p> </button> </> )
+    return (<div> <button className='neonButton' onClick={()=> handleHome()}>  <HomeIcon/>  </button> </div> )
   };
 
 
@@ -183,10 +187,12 @@ setDisplayLoginAdmin(prev=>!prev);
 
 function ButtonToggleDisplayLoginAdmin() {
 return (
+    <div>
     <button onClick={handleToggleLoginAdmin}
     className={ adminState ? 'neonButtonActive' : 'neonButton'}>
-    <p className='buttonTextAdmin'> Admin</p>
+    <p className='buttonTextAdmin'> <GearIcon/> </p>
     </button>
+    </div>
 )
 };
 
@@ -234,18 +240,18 @@ const backToTeacher = () => {
 
   function BackToTeacherButton () {
     return (
-      <button className='neonButton' onClick={()=>backToTeacher()}> <p className='buttonTextAdmin'> Back </p> </button>
+      <button className='neonButton' onClick={()=>backToTeacher()}> <p className='buttonTextAdmin'> <BackIcon/> </p> </button>
     )
   };
 
   function BackToClassButton () {
     return (
-      <button className='neonButton' onClick={()=>backToClass()}> <p className='buttonTextAdmin'> Back </p> </button>
+      <button className='neonButton' onClick={()=>backToClass()}> <p className='buttonTextAdmin'> <BackIcon/> </p> </button>
     )
   };
   function BackToContentButton () {
     return (
-      <button className='neonButton' onClick={()=>backToContent()}> <p className='buttonTextAdmin'> Back </p> </button>
+      <button className='neonButton' onClick={()=>backToContent()}> <p className='buttonTextAdmin'> <BackIcon/> </p> </button>
     )
   };
 
@@ -461,19 +467,35 @@ function LIReturnEachTopic(){
 
 return (
     <div className='divBG'>  
-        {displayTeacherChoice ?
-        <div className='divTopBarHome'>
-            <button className='homeNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
-        </div> 
-        : 
-        <div className='divTopBar'>
-            <ButtonHome/>
-                { displaySentralClassChoice ? <BackToTeacherButton/> : null }
-                { displayContentChoice ? <BackToClassButton/> : null }
-                { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
-            <ButtonToggleDisplayLoginAdmin/>
-                { displayLoginAdmin ? <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> : null } 
-        </div>}
+        {
+            displayTeacherChoice ?
+            <div className='divTopBarHome'>
+                <button className='homeNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
+            </div> 
+            : 
+            <div className='divTopBar'>
+                <div className='divAdmin'> 
+                    <div className='divPre'> 
+                        <div> 
+                            <ButtonHome/> 
+                        </div>
+
+                        <div>
+                            { displaySentralClassChoice ? <BackToTeacherButton/> : null }
+                            { displayContentChoice ? <BackToClassButton/> : null }
+                            { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
+                        </div> 
+
+                        <div>             
+                            <ButtonToggleDisplayLoginAdmin/>
+                        </div>
+                    </div>
+
+                        { displayLoginAdmin ?  <div> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </div> : null  } 
+                </div>
+
+            </div>
+        }
         
         <>
             { displayTeacherChoice ? <div className='divChoice'> <TeacherChoiceReturn/> </div> : null }
