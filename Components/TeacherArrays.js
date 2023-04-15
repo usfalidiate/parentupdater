@@ -16,7 +16,7 @@ export const teacherArrays = [
         sentralClass: ['11CHE01', '10SCIASPB', '10PYY01', '9PYY01', '7SCI3'],
         title: 'Mrs',
         email: 'esen.crnogorcevic1@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {

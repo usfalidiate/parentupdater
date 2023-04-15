@@ -1,10 +1,7 @@
-// import Head from 'next/head';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { app, db, auth } from './Firebase';
 import { useState, useEffect, useRef } from 'react';
-// import { Login } from './Login';
-// import { subjectInfoArray } from './SubjectInfoArrays';
 import {
   getFirestore,
   collection,
@@ -37,7 +34,6 @@ import {
   LIArray10PYY, LIArray9PYY,
   LIArray10BHX, LIArray9BHX,
   LIArray10BHY, LIArray9BHY
-
 } from './LIArrays';
 
 export default function LIReturn ({
@@ -45,7 +41,6 @@ export default function LIReturn ({
   activeYearGroup, activeClass, sentralClass
 }) {
 
-console.log(activeTeacherProp, activeSentralClassProp, tnp);
   const docRef = doc(db, '2023', activeTeacherProp, activeSentralClassProp, `${tnp}`);
   const setDocRef = doc(db, '2023', activeTeacherProp, activeSentralClassProp, `${tnp}`);
 
@@ -416,9 +411,9 @@ console.log(activeTeacherProp, activeSentralClassProp, tnp);
     };
 
     return (
-      <div>
-        <button onClick={()=>uploadToCloud()}> Save Current LI State to Cloud </button>
-      </div>
+      <>
+        <button className='uploadButton' onClick={()=>uploadToCloud()}> <b> Save {topicModuleOrProject} { tnp } to Cloud </b> </button>
+      </>
     )
   };
 
@@ -480,15 +475,15 @@ console.log(activeTeacherProp, activeSentralClassProp, tnp);
   const ArrayLIDiv = () => {
     return (
       <>
-      <div className="pageHeading2" >  {topicModuleOrProject} { tnp } - { createTopicName() } </div>
-      <div className="saveToCloudLI"> { adminStateProp ? ButtonUploadToCloud() : null } </div>
+      <div className='divButtonUploadToCloud'> { adminStateProp ? ButtonUploadToCloud() : null } </div>
+      <div className="pageHeading2" >  {topicModuleOrProject} { tnp }: { createTopicName() } </div>
+      <div className='divLIGrid'>
 
-      <div className='grid-container-LI'>
           {activeClassArray?.filter(topic => topic.topic === tnp).map(item => {
             return (
-              <div key = { item.id }>
-                <div> { adminStateProp ? <div> <ButtonCompleted i={ Number(item.id) } x={ item.fullID } /> </div>  : <div className='tdCheckbox'> <RowStatus i={ Number(item.id)} /> </div> } </div>
-                <div className='tdLIString'> <b> {miniTableColLIHeading}: </b>{ activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> { item.LIString } </div>
+              <div className='divLIGridChild' key = { item.id }>
+                <> { adminStateProp ? <> <ButtonCompleted i={ Number(item.id) } x={ item.fullID } /> </>  : <div className='divLIStatus'> <RowStatus i={ Number(item.id)} /> </div> } </>
+                <div className='divLIString'> <b> {miniTableColLIHeading}: </b>{ activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> { item.LIString } </div>
               </div>
             )
           })}
@@ -499,10 +494,10 @@ console.log(activeTeacherProp, activeSentralClassProp, tnp);
 
 
   return (
-    <div>
+    <>
       <ArrayLIDiv />
       <br/><br/>
-    </div>
+    </>
   )
 };
 

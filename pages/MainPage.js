@@ -7,9 +7,6 @@ import { subjectInfoArray } from '../Components/SubjectInfoArrays';
 import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
 
-// import Image from 'next/image'
-// import STEM from '../assets/STEM.jpg'
-
 export default function MainPage() {
 
 // SET STATES
@@ -79,9 +76,7 @@ const handleClassChoice = ({activesentralclassprop}) => {
 
 function ButtonClassChoice({activesentralclassprop}) {
     return (
-        <div 
-        key={activesentralclassprop}
-        className='divGlowButton'>
+        <>
             <button 
                 key={activesentralclassprop}
                 onClick={() => handleClassChoice({activesentralclassprop})}
@@ -89,7 +84,7 @@ function ButtonClassChoice({activesentralclassprop}) {
                 <p className='glowButtonText'> {activesentralclassprop} 
                 </p> 
             </button>
-        </div>                    
+        </>                    
     )
 };
 
@@ -99,7 +94,7 @@ function ClassChoiceReturn() {
     .map(group => group.sentralClass.sort((a,b)=>a-b)
     .map(item=> {
         return (
-            <div key={item} >
+            <div className='divGlowButton' key={item} >
             < ButtonClassChoice key={item} activesentralclassprop={ item } />
             </div>
         )                
@@ -448,18 +443,13 @@ function LIReturnEachTopic(){
     const topicLI = 
         arr.map(item => {
             return (
-                <div key ={item}>
+                <div className='divLITopicArea' key ={item}>
                 < LIReturn tnp={ item } activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState} />
                 </div>
             )
         });
 
-    return (
-        <div className='divLIContent'>
-            <div className="heading1" > Learning Intentions </div>
-            {topicLI}
-        </div>
-    )
+    return ( <> {topicLI} </> )
 };
 
 
@@ -492,7 +482,11 @@ return (
         </>
 
         <>
-            { activeContent == 'LITable' ? <> <LIReturnEachTopic activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState}/> </> : null}
+            { activeContent == 'LITable' ? 
+            <div className='divContent'> 
+                <div className="pageHeading" > Learning Intentions </div>
+                <LIReturnEachTopic activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState}/> 
+            </div> : null}
         </>
 
         <>
