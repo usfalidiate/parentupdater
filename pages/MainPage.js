@@ -8,7 +8,6 @@ import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
 import HomeIcon from '../assets/HomeIcon';
 import BackIcon from '../assets/BackIcon';
-import AdminIcon from '../assets/AdminIcon';
 import GearIcon from '../assets/GearIcon';
 
 export default function MainPage() {

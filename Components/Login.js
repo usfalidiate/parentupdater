@@ -18,7 +18,6 @@ import UploadIcon from '../assets/UploadIcon';
 import PersonAdd from '../assets/PersonAdd';
 import PersonMinus from '../assets/PersonMinus';
 import PersonIcon from '../assets/PersonIcon';
-import PersonXIcon from '../assets/PersonXIcon';
 
 
 
