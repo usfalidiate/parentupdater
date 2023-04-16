@@ -163,7 +163,7 @@ const handleHome = () => {
 };
 
 function ButtonHome() {
-    return (<div> <button className='neonButton' onClick={()=> handleHome()}>  <HomeIcon/>  </button> </div> )
+    return (<> <button className='neonButton' onClick={()=> handleHome()}>  <HomeIcon/>  </button> </> )
   };
 
 
@@ -186,12 +186,12 @@ setDisplayLoginAdmin(prev=>!prev);
 
 function ButtonToggleDisplayLoginAdmin() {
 return (
-    <div>
+    < >
     <button onClick={handleToggleLoginAdmin}
     className={ adminState ? 'neonButtonActive' : 'neonButton'}>
     <p className='buttonTextAdmin'> <GearIcon/> </p>
     </button>
-    </div>
+    </>
 )
 };
 
@@ -473,25 +473,21 @@ return (
             </div> 
             : 
             <div className='divTopBar'>
-                <div className='divAdmin'> 
-                    <div className='divPre'> 
-                        <div> 
-                            <ButtonHome/> 
-                        </div>
-
-                        <div>
-                            { displaySentralClassChoice ? <BackToTeacherButton/> : null }
-                            { displayContentChoice ? <BackToClassButton/> : null }
-                            { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
-                        </div> 
-
-                        <div>             
-                            <ButtonToggleDisplayLoginAdmin/>
-                        </div>
-                    </div>
-
-                        { displayLoginAdmin ?  <div> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </div> : null  } 
+                <div className='divTopBarHomeButton' > 
+                    <ButtonHome/> 
                 </div>
+
+                <div className='divTopBarBack'>
+                    { displaySentralClassChoice ? <BackToTeacherButton/> : null }
+                    { displayContentChoice ? <BackToClassButton/> : null }
+                    { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
+                </div> 
+
+                <div className='divTopBarToggleLoginAdmin'>             
+                    <ButtonToggleDisplayLoginAdmin/>
+                </div>
+
+                { displayLoginAdmin ?  <> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </> : null  } 
 
             </div>
         }

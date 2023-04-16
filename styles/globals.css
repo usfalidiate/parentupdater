@@ -1,3 +1,24 @@
+/* MOBILE */
+
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
 html, body, :root {
   background-color: #050505;
   color: goldenrod;
@@ -23,8 +44,8 @@ html, body, :root {
   justify-items:center;
   position: relative;
   width: 100%;
-  height: 90vh;
-  top: 10vh;
+  height: 70vh;
+  top: 30vh;
 }
 
 /* TABLET */
@@ -36,8 +57,8 @@ html, body, :root {
     justify-items:center;
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 10vh;
+    height: 80vh;
+    top: 20vh;
   }
 }
 
@@ -55,15 +76,49 @@ html, body, :root {
   }
 }
 
+/* MOBILE */
 .divContent {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
   width: 100%;
-  height: 90vh;
-  top: 10vh;
+  height: 70vh;
+  top: 30vh;
   padding: 5%;
 }
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+  .divContent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    top: 20vh;
+    padding: 5%;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  .divContent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    top: 10vh;
+    padding: 5%;
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -125,6 +180,10 @@ html, body, :root {
 
 
 
+
+
+
+
 /* ASSESSMENT INFORMATION*/
 
 .divAss {
@@ -152,6 +211,13 @@ html, body, :root {
 
 
 
+
+
+
+
+
+
+
 /* SUBJECT INFORMATION*/
 .divSubj {
   grid-column: span 12;
@@ -169,6 +235,20 @@ html, body, :root {
   border-radius: 10px;
   padding: 10px 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PAGE HEADINGS STYLINGS */
 
@@ -230,7 +310,20 @@ html, body, :root {
 }
 
 
-/* UPLOAD TO CLOUD DIV AND BUTTON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LI UPLOAD TO CLOUD DIV AND BUTTON */
 
 .divButtonUploadToCloud {
   grid-column: span 12;
@@ -259,58 +352,6 @@ html, body, :root {
 
 /* TOP BAR AND ADMIN BUTTONS */
 
-.divTopBar {
-  background-color: transparent;
-  color: goldenrod;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 12fr;
-  flex-direction: row;
-  align-items: center;
-  height: 10vh;
-  width: 100%;
-  position: fixed;
-  /* justify-content: space-around; */
-  z-index: 1;
-  overflow: visible;
-}
-
-.divTopBar > div:nth-child(1) {
-  grid-column: span 1;
-}
-
-.divTopBar > div:nth-child(2) {
-  grid-column: span 1;
-}
-
-.divTopBar > div:nth-child(3) {
-  grid-column: span 1;
-}
-
-.divTopBar > div:nth-child(4) {
-  grid-column: span 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.divAdmin {
-background-color: transparent;
-display: flex;
-
-}
-
-.divAdmin > div {
-  background-color: transparent;
-}
-
-.divTopBarEmail {
-  grid-column: span 3;
-}
-
-.divTopBarPW {
-  grid-column: span 3;
-}
-
 .divTopBarHome {
   background-color: transparent;
   color: rgb(25, 160, 164);
@@ -324,19 +365,228 @@ display: flex;
   position: fixed;
 }
 
+/* MOBILE */
+.divTopBar {
+  background-color: transparent;
+  color: goldenrod;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 1fr 1fr ;
+  grid-template-rows: 50px 50px 50px;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+  .divTopBar {
+    background-color: transparent;
+    color: goldenrod;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 1fr 1fr ;
+    grid-template-rows: 50px 50px 50px;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: visible;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  .divTopBar {
+    background-color: transparent;
+    color: goldenrod;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 1fr 1fr ;
+    grid-template-rows: 50px;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: visible;
+  }
+}
+
+
+
+.divTopBarHomeButton {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  width: 50px;
+}
+
+.divTopBarBack {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.divTopBarToggleLoginAdmin {
+  grid-row: 1;
+  grid-column: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.divLoginButton {
+  grid-row: 1;
+  grid-column: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+.divLogOutButton {
+  grid-row: 1;
+  grid-column: 5;
+  align-self: center;
+  justify-self: center;
+}
+
+.divLoginStatus {
+  grid-row: 1;
+  grid-column: 6;
+  align-self: center;
+  justify-self: center;
+}
+
+.divUploadToCloudButton {
+  grid-row: 1;
+  grid-column: 7;
+  align-self: center;
+  justify-self: center;
+}
+
+
+
+
+
+
+
+
+/* MOBILE */
+.divEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  grid-row: 2;
+  grid-column: 1 / 8;
+  height: 50px;
+  width: 100%;  
+  align-self: center;
+  justify-self: left;
+}
+
+.divPW {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  grid-row: 3;
+  grid-column: 1 / 8;
+  height: 50px;
+  width: 100%;
+  align-self: center;
+  justify-self: left;
+}
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+  .divEmail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    grid-row: 2;
+    grid-column: 1 / 9;
+    height: 50px;
+    width: 100%;  
+    align-self: center;
+    justify-self: left;
+  }
+  
+  .divPW {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    grid-row: 3;
+    grid-column: 1 / 9;
+    height: 50px;
+    width: 100%;
+    align-self: center;
+    justify-self: left;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  .divEmail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column:8;
+    height: 50px;
+    width: 100%;  
+    align-self: center;
+    justify-self: left;
+  }
+  
+  .divPW {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 9;
+    height: 50px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+
+
+.neonButtonPW {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: 50px;
+  width: 50px;
+  color: goldenrod;
+  background-color: #050505;
+  outline: goldenrod;
+  font-weight: normal;
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
 /* LOGIN INPUT AND PW */
+
 input {
-  background: black;
+  /* background: black; */
   background-color: #050505;
   color: goldenrod;
   border: solid 1px goldenrod;
   border-radius: 5px;
-  text-align: center;
-  padding: 20px 20px 20px 20px;
-  margin: 10px 10px 10px 10px;
-  height: 50px;
-  width: 500px;
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
   font-size: 1em;
 }
 
@@ -347,7 +597,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
 input:hover{
   font-size: 1em;
-  background: goldenrod;
+  /* background: goldenrod; */
   color: black;
   box-shadow: 0 0 5px goldenrod,
               0 0 25px goldenrod,
@@ -356,38 +606,23 @@ input:hover{
    -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
 }
 
-.divLogin {
-  display: flex;
-  align-items: center;
-}
 
-.divPre {
-  display: flex;
-  align-items: center;
-}
 
-.divPre > div {
-width: 50px;
-}
 
-.divPWEmailPost {
-  display: flex;
-  align-items: center;
-}
 
-.divPWEmail {
-  display: flex;
-  align-items: center;
-}
 
-.divPost {
-  display: flex;
-  align-items: center;
-}
 
-.divPost > div {
-  width: 50px;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -599,6 +834,7 @@ width: 50px;
   /* display: flex; */
 
 }
+
 
 .neonButtonDisabled{
   padding: 0px 0px 0px 0px;
