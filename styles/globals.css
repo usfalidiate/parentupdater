@@ -22,8 +22,8 @@ html, body, :root {
   justify-items:center;
   position: relative;
   width: 100%;
-  height: 90vh;
-  top: 10vh;
+  height: 90%;
+  top: 10%;
   padding: 5px;
 }
 
@@ -32,8 +32,8 @@ html, body, :root {
   grid-template-columns: repeat(12, 1fr);
   position: relative;
   width: 100%;
-  height: 90vh;
-  top: 10vh;
+  height: 90%;
+  top: 10%;
   padding: 5px;
 }
 
@@ -47,7 +47,7 @@ html, body, :root {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 10vh;
+  height: 10%;
   width: 100%;
   overflow: visible;
   position: fixed;
@@ -59,7 +59,7 @@ html, body, :root {
   display: flex;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
   grid-template-rows: 50px;
-  height: 10vh;
+  height: 10%;
   padding: 5px 5px 5px 5px;
   width: 100%;
   position: fixed;
@@ -101,7 +101,7 @@ html, body, :root {
 .divLoginAdmin {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* background-color: #050505; */
   position: fixed;
   z-index: 1;
@@ -877,8 +877,8 @@ input:hover{
     justify-items:center;
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 10vh;
+    height: 90%;
+    top: 10%;
   }
 
   .divContent {
@@ -886,8 +886,8 @@ input:hover{
     grid-template-columns: repeat(12, 1fr);
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 10vh;
+    height: 90%;
+    top: 10%;
     padding: 5%;
   }
 
@@ -934,16 +934,16 @@ input:hover{
     justify-items:center;
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 10vh;
+    height: 90%;
+    top: 10%;
   }
   .divContent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 10vh;
+    height: 90%;
+    top: 10%;
     padding: 5%;
   }
   .divLIGridChild {
