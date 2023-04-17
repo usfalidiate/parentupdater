@@ -476,7 +476,7 @@ export default function LIReturn ({
     return (
       <>
       <div className='divButtonUploadToCloud'> { adminStateProp ? ButtonUploadToCloud() : null } </div>
-      <div className="pageHeading2" >  {topicModuleOrProject} { tnp }: { createTopicName() } </div>
+      <div className="pageHeading2" >  {topicModuleOrProject} { tnp }: <br/> { createTopicName() } </div>
       <div className='divLIGrid'>
 
           {activeClassArray?.filter(topic => topic.topic === tnp).map(item => {

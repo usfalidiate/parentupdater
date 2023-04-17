@@ -119,8 +119,41 @@ export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
 
 return (
   <>
-    
-    
+    <div className='divLogin'>
+      <div className='divLoginButton'>
+        <button 
+          className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
+          disabled={loading || currentUser != null } 
+          onClick={handleLogin} >
+          <p className='buttonTextAdmin'>
+          <PersonAdd/> 
+          </p>
+        </button>
+      </div>
+      
+      <div className='divLogOutButton'>
+        <button 
+          className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
+          disabled={loading || !currentUser } 
+          onClick={handleLogout} > 
+          <p className='buttonTextAdmin'>
+          <PersonMinus/> 
+          </p>
+        </button>
+      </div>
+        
+        {/* Currently Logged In As: { currentUser?.email } */}
+
+      <div className='divLoginStatus'>
+        {currentUser?.email ? <p className='neonBoxActive'> <PersonIcon/> </p> : <p className='neonBox'> <PersonIcon/> </p>}
+      </div>
+        
+      <div className='divUploadToCloudButton'>
+        {currentUser?.email ? <ButtonToggleAdminMode /> : null}
+      </div>
+    </div>
+
+    <div className='divPWEmail'>
       <div className='divEmail'>
         <input 
           ref={emailRef} 
@@ -128,7 +161,7 @@ return (
           placeholder='Email'
         />
       </div>
-    
+
       <div className='divPW'>
         <input
           ref={passwordRef} 
@@ -156,39 +189,7 @@ return (
             </button>
         }
       </div>
-       
-        <div className='divLoginButton'>
-          <button 
-            className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
-            disabled={loading || currentUser != null } 
-            onClick={handleLogin} >
-            <p className='buttonTextAdmin'>
-            <PersonAdd/> 
-            </p>
-          </button>
-        </div>
-      
-        <div className='divLogOutButton'>
-          <button 
-            className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
-            disabled={loading || !currentUser } 
-            onClick={handleLogout} > 
-            <p className='buttonTextAdmin'>
-            <PersonMinus/> 
-            </p>
-          </button>
-        </div>
-        
-        {/* Currently Logged In As: { currentUser?.email } */}
-
-        <div className='divLoginStatus'>
-          {currentUser?.email ? <p className='neonBoxActive'> <PersonIcon/> </p> : <p className='neonBox'> <PersonIcon/> </p>}
-        </div>
-        
-        <div className='divUploadToCloudButton'>
-          {currentUser?.email ? <ButtonToggleAdminMode /> : null}
-        </div>
-        
+    </div>
   </>
 )
 }

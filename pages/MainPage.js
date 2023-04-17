@@ -466,6 +466,7 @@ function LIReturnEachTopic(){
 
 return (
     <div className='divBG'>  
+    <>
         {
             displayTeacherChoice ?
             <div className='divTopBarHome'>
@@ -487,11 +488,14 @@ return (
                     <ButtonToggleDisplayLoginAdmin/>
                 </div>
 
-                { displayLoginAdmin ?  <> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </> : null  } 
 
             </div>
         }
-        
+
+            { displayLoginAdmin ?  <> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </> : null  } 
+
+    </>
+    
         <>
             { displayTeacherChoice ? <div className='divChoice'> <TeacherChoiceReturn/> </div> : null }
             { displaySentralClassChoice ? <div className='divChoice'> <ClassChoiceReturn/> </div> : null }
