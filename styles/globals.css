@@ -10,7 +10,7 @@ html, body, :root {
   height: 100%;
   width: 100%;
   position: absolute;
-  padding: 0px;
+  padding: 5px;
   margin: 0px;
   box-sizing: border-box;
 }
@@ -24,6 +24,7 @@ html, body, :root {
   width: 100%;
   height: 90vh;
   top: 10vh;
+  padding: 5px;
 }
 
 .divContent {
@@ -33,7 +34,7 @@ html, body, :root {
   width: 100%;
   height: 90vh;
   top: 10vh;
-  padding: 5%;
+  padding: 5px;
 }
 
 
@@ -99,13 +100,14 @@ html, body, :root {
 
 .divLoginAdmin {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /* background-color: #050505; */
   position: fixed;
   z-index: 1;
   backdrop-filter: blur(10px);
   /* opacity: 95%; */
+  padding: 5px;
 
 }
 
@@ -154,6 +156,7 @@ html, body, :root {
 }
 
 .divLoginClose {
+  background-color: transparent;
   display: flex;
   border: none;
   justify-content: flex-end;
@@ -226,7 +229,7 @@ html, body, :root {
   height: 50px;
   width: 50px;
   color: teal;
-  background-color: #050505;
+  background-color: transparent;
   outline: goldenrod;
   font-weight: normal;
   border: none;
