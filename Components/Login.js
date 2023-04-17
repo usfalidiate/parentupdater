@@ -120,7 +120,7 @@ export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
 return (
   <>
     <div className='divLogin'>
-      ADMIN MENU
+      <div className='pageHeading3' > <> ADMIN MENU </> </div>
       <div className='divPWEmail'>
         <div className='divEmail'>
           {/* <p className='divEmailText'> EMAIL </p> */}

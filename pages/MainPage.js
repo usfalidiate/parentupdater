@@ -509,7 +509,7 @@ return (
         <>
             { displayTeacherChoice ? <div className='divChoice'> <TeacherChoiceReturn/> </div> : null }
             { displaySentralClassChoice ? <div className='divChoice'> <ClassChoiceReturn/> </div> : null }
-            { displayContentChoice ? <div className='divChoice'> <ContentChoiceReturn/> </div> : null }
+            { displayContentChoice ? <div className='divChoiceContent'> <ContentChoiceReturn/> </div> : null }
         </>
 
         <>

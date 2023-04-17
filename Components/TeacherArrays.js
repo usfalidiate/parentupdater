@@ -26,7 +26,7 @@ export const teacherArrays = [
         sentralClass: ['12MST01', '12MST02', '11MST01', '11MST03'],
         title: 'Mr',
         email: 'glen.smart@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -36,7 +36,7 @@ export const teacherArrays = [
         sentralClass: ['12INV01', '9SCIA2', '8SCI8', '8SCI7', '7SCI4'],
         title: 'Mr',
         email: 'nathan.ralstonbryce@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
