@@ -180,9 +180,6 @@ export const LIArray10STY = [
     {id: 33 ,  fullID: "4.8",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '8', LIString: 'x'},
 ];
 
-
-
-// SPARE ARRAYS
 // SCIENCE
 export const LIArray10SCI = [
     // Topic 1 - SRP

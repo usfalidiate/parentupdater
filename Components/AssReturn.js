@@ -1,8 +1,8 @@
 import { 
-    sciAssArray, 
+    SCIAssArray, 
     STEMAssArray, 
-    invAssArray, 
-    phyAssArray, 
+    INVAssArray, 
+    PHYAssArray, 
     PSYAssArray, 
     CHEAssArray, 
     MSTAssArray, 
@@ -10,9 +10,9 @@ import {
 
 import { 
     subjectInfoArray, 
-    sciSyllabusOutcomesArray, 
-    phySyllabusOutcomesArray, 
-    invSyllabusOutcomesArray, 
+    SCISyllabusOutcomesArray, 
+    PHYSyllabusOutcomesArray, 
+    INVSyllabusOutcomesArray, 
     STEMSyllabusOutcomesArray, 
     PSYSyllabusOutcomesArray, 
     CHESyllabusOutcomesArray, 
@@ -22,70 +22,57 @@ import {
 
 export default function AssReturn({activeClass} ) {
 
-    let ActiveAssTable;
-    let ActiveAssDiv;
+
     let activeClassTitle;
     let activeSyllabusOutcomeArray;
     let activeAssArray;
     switch (activeClass) {
         case '10SCIASP' : case '10SCI' : case '9SCI'  : case '8SCI' : case '7SCI' :
-        // ActiveAssTable = SciAssTable
         activeClassTitle = 'Science'
-        // ActiveAssDiv = SciAssDiv
-        activeAssArray = sciAssArray
-        activeSyllabusOutcomeArray = sciSyllabusOutcomesArray
+        activeAssArray = SCIAssArray
+        activeSyllabusOutcomeArray = SCISyllabusOutcomesArray
         break;
 
-        case '12PHY' : case '11PHY' : 
-        // ActiveAssTable = PhyAssTable
-        activeClassTitle = "Physics"
-        // ActiveAssDiv = ST6AssDiv
-        activeSyllabusOutcomeArray = phySyllabusOutcomesArray
-        activeAssArray = phyAssArray
-        break;
-
-        case '12INV' : case '11INV' :
-        // ActiveAssTable = InvAssTable
-        activeClassTitle = "Investigating Science"
-        // ActiveAssDiv = ST6AssDiv
-        activeSyllabusOutcomeArray = invSyllabusOutcomesArray
-        activeAssArray = invAssArray
-        break;
-
-        case '12CHE' : case '11CHE' :
-        // ActiveAssTable = CHEAssTable
-        activeClassTitle = "CHEestigating Science"
-        // ActiveAssDiv = ST6AssDiv
-        activeSyllabusOutcomeArray = CHESyllabusOutcomesArray
-        activeAssArray = CHEAssArray
-        break;
-
-        case '10STY' : 
-        // ActiveAssTable = STEMAssTable
+        case '10STY' : case '10STX' : case '9STY' : case '9STX' :
         activeClassTitle = "STEM"
-        // ActiveAssDiv = STEMAssDiv
         activeAssArray = STEMAssArray
         activeSyllabusOutcomeArray = STEMSyllabusOutcomesArray
+        break;
 
+        //bio
+        case '12CHE' : case '11CHE' :
+        activeClassTitle = "Chemistry"
+        activeSyllabusOutcomeArray = CHESyllabusOutcomesArray
+        activeAssArray = CHEAssArray
+        break;  
+        
+        //ees
+
+        case '12INV' : case '11INV' :
+        activeClassTitle = "Investigating Science"
+        activeSyllabusOutcomeArray = INVSyllabusOutcomesArray
+        activeAssArray = INVAssArray
+        break;  
+
+        case '12PHY' : case '11PHY' : 
+        activeClassTitle = "Physics"
+        activeSyllabusOutcomeArray = PHYSyllabusOutcomesArray
+        activeAssArray = PHYAssArray
         break;
 
         case '10PYY' : case '9PYY' :
-        // ActiveAssTable = STEMAssTable
         activeClassTitle = "Psychology"
-        // ActiveAssDiv = STEMAssDiv
         activeAssArray = PSYAssArray
         activeSyllabusOutcomeArray = PSYSyllabusOutcomesArray
-
         break;
 
+        //bh
+
         case '12MST' : case '11MST' : case '8MST' :
-            // ActiveAssTable = STEMAssTable
-            activeClassTitle = "Marine Studies"
-            // ActiveAssDiv = STEMAssDiv
-            activeAssArray = MSTAssArray
-            activeSyllabusOutcomeArray = MSTSyllabusOutcomesArray
-    
-            break;
+        activeClassTitle = "Marine Studies"
+        activeAssArray = MSTAssArray
+        activeSyllabusOutcomeArray = MSTSyllabusOutcomesArray
+        break;
     };
 
     

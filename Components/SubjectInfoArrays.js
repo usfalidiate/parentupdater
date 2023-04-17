@@ -1,6 +1,484 @@
-import { STEMAssArray } from "./AssArrays";
+export const subjectInfoArray = [
+    {   //10SciASP
+        activeClass: "10SCIASP",
+        activeSentralClasses: ["10SCIASPA", "10SCIASPB"],
+        numberOfTopics: 6,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Student Research Project",
+                topicDuration: "7 weeks",
+                topicDescription: "Student Research Project (SRP)",
+                topicOutcomes: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
+                topicContent: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Human-Earth Interactions",
+                topicDuration: "5 weeks",
+                topicDescription: "Conserving and maintaining the quality and sustainability of the environment requires scientific understanding of interactions within, the cycling of matter and the flow of energy through ecosystems",
+                topicOutcomes: ["SC5-13ES", "SC5-15LW"],
+                topicContent: ["SC5-ES3a", "SC5-ES3c", "SC5-ES3d", "SC5-LW2a", "SC5-LW2b", "SC5-LW2c", "SC5-LW2d", "SC5-LW2e", "SC5-LW2f"],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "Genetics and Biotechnology",
+                topicDuration: "7 weeks",
+                topicDescription: "Students discover the importance of DNA for containing the genetic material passed down through generations. They will also advocate for a biotechnology significant to society in the future.",
+                topicOutcomes: [ "SC5-15LW" ],
+                topicContent: [ "SC5-LW3a", "SC5-LW3b", "SC5-LW3c", "SC5-LW3d", "SC5-LW3e", "SC5-LW3f"],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
+            },
+            {
+                topicNumber: 4,
+                topicName: "Motion",
+                topicDuration: "7 weeks",
+                topicDescription: "Mechanics is the study of the relationship between motion, forces and energy. It is a large field and its study is essential to the understanding of physics. Without an understanding of motion first, we could not develop our understanding of the various types of waves nor the forces that hold the universe together.",
+                topicOutcomes: [ "SC5-10PW" ],
+                topicContent: [ "SC5-PW2a", "SC5-PW2b", "SC5-PW2c", "SC5-PW2d",],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
+            },
+            {
+                topicNumber: 5,
+                topicName: "Chemistry",
+                topicDuration: "7 weeks",
+                topicDescription: "Students develop an understanding of the different types of chemical reactions. By completing this topic students have fundamental knowledge of chemistry principles preparing them for HSC chemistry.",
+                topicOutcomes: [ "SC5-17CW" ],
+                topicContent: ["SC5-CW3a","SC5-CW3b", "SC5-CW3c", "SC5-CW3d", "SC5-CW3e", "SC5-CW3f", "SC5-CW3g", "SC5-CW4a", "SC5-CW4b", "SC5-CW4c", "SC5-CW4d", "SC5-CW4e" ],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
+            },
+            {
+                topicNumber: 6,
+                topicName: "Evolution",
+                topicDuration: "7 weeks",
+                topicDescription: "Evolution introduces students to Darwin's theory of evolution, explaining the processes by which evolution occurs and exploring evidence for evolution. Students apply their knowledge of evolutionary processes to current and future changes in organisms.",
+                topicOutcomes: [ "SC5-14LW", "SC5-15LW" ],
+                topicContent: [ "SC5-LW4a", "SC5-LW4b", "SC5-LW4c", "SC5-LW4d" ],
+                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
+            },
+        ],
+    },
+    
+    {   // 12INV
+        activeClass: "12INV",
+        activeSentralClasses: ["12INV01", "12INV02"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 5,
+                topicName: "Scientific Investigations",
+                topicDuration: "8 weeks",
+                topicDescription: <> Students learn that the experimental method is a dynamic process influenced by initial observations, new evidence, unexpected results or phenomena arising from the investigation. They examine the interrelated roles of practical and secondary-sourced investigations. When conducting practical and secondary-sourced investigations, students use peer feedback to refine their investigative designs and report on their findings. <br/> Students explore the importance of accuracy, validity and reliability in relation to the investigative work of a scientist. They examine the differences between a scientific investigation and a scientific report, recognising that although the report format follows a sequential order, the investigation need not. </>,
+                topicOutcomes: ["INS12-12"] ,
+                topicContent:["5.1", "5.2", "5.3", "5.4", "5.5"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 6,
+                topicName: "Technologies",
+                topicDuration: "8 weeks",
+                topicDescription: <> The rapid development of new technologies has enhanced industrial and agricultural processes, medical applications and communications. Students explore the dynamic relationship between science and technology where the continuing advancement of science is dependent on the development of new tools and materials. They also examine how advances in science inform the development of new technologies and so reflect the interdependence of science and technology. <br/> Students consider experimental risks as they engage with the skills of Working Scientifically. They investigate the appropriateness of using a range of technologies in conducting practical investigations, including those that provide accurate measurement. </>,
+                topicOutcomes: ["INS12-13"] ,
+                topicContent:["6.1", "6.2"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 7,
+                topicName: "Fact or Falacy?",
+                topicDuration: "8 weeks",
+                topicDescription: <> The scientific process is the most powerful tool available for generating knowledge about the world. It uses evidence and measurement to find truth and highlight misinterpretations and misrepresentations. Science as a human endeavour is subject to human failings, which can contribute to fallacies, misinterpretations and, on occasion, fraud. For this reason, scientific processes attempt to compensate for human failings by questioning evidence, re-testing ideas, replicating results and engaging with peer review in order to evaluate research. <br/> Students investigate claims through conducting practical and secondary-sourced investigations and evaluate these based on scientific evidence. They explore examples of scientific claims made in the media and investigate the benefits of peer review. </>,
+                topicOutcomes: ["INS12-14"] ,
+                topicContent:["7.1", "7.2", "7.3", "7.4", "7.5"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 8,
+                topicName: "Science and Society",
+                topicDuration: "8 weeks",
+                topicDescription: <> Those who pursue the study of science have created processes, tools and products that challenge and influence society and some of its belief systems, ethics and societal norms. In response, society debates and regulates science in order to prevent harmful developments and unacceptable outcomes, and to allow for new and beneficial products, processes and ideas. Science also can be affected by society, as well as governments, industry, economic interests and cultural perspectives. <br/> Students explore the impacts of ethical, social, economic and political influences on science and its research. </>,
+                topicOutcomes: ["INS12-15"] ,
+                topicContent:["8.1", "8.2", "8.3"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+        ],
+    },
+    {   //11INV
+        activeClass: "11INV",
+        activeSentralClasses: ["11INV01", "11INV02"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Cause and Effect - Observing",
+                topicDuration: "8 weeks",
+                topicDescription: <> Observation instigates all scientific experimentation. Investigative scientific processes can only be applied to phenomena that can be observed and measured. Detailed observations motivate scientists to ask questions about the causes and the effects of phenomena they observe. In this way, science continues to progress and enhance the lives of individuals and society by encouraging a continued search for reason and understanding. <br/> Students explore the importance of observation and the collection of quantitative and qualitative data in scientific investigations. They conduct their own practical investigation, either individually or collaboratively, which is used to demonstrate the importance of making detailed and accurate observations, determining the types of variables and formulating testable scientific hypotheses. </>,
+                topicOutcomes: ["INS11-8"] ,
+                topicContent:["1.1", "1.2", "1.3", "1.4", "1.5"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Cause and Effect - Inferences and Generalisations",
+                topicDuration: "8 weeks",
+                topicDescription: <> Scientific inquiry follows on from humans making inferences and generalisations from commonly held understandings. Such inferences and generalisations have led to a wide range of investigations being performed throughout history, culminating in breakthroughs in scientific understanding. Many hypotheses, when found to be correct, have generated further inquiry and created the need to develop new technologies for further observation. Students consider primary and secondary-sourced data and its influence on scientific investigations. <br/> In this module, students engage in gathering primary and secondary-sourced data to assist them in conducting and reporting on investigations, and to further develop their understanding of the central roles of scientific questioning and collaboration in the pursuit of scientific truth. </>,
+                topicOutcomes: ["INS11-9"] ,
+                topicContent:["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "Scientific Models",
+                topicDuration: "8 weeks",
+                topicDescription: <> Scientific models are developed as a means of helping people understand scientific concepts and representing them in a visual medium. Models are used to make predictions. They may include physical and digital models, which can be refined over time by the inclusion of new scientific knowledge. <br/> Students recognise that many scientific models have limitations and are modified as further evidence comes to light. For this reason, scientific models are continually evaluated for accuracy and applicability by the global scientific community through the process of peer review. Students construct and evaluate their own models, which are generated through practical investigation. </>,
+                topicOutcomes: ["INS11-10"] ,
+                topicContent:["3.1", "3.2", "3.3", "3.4"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "Theories and Laws",
+                topicDuration: "8 weeks",
+                topicDescription: <> The term 'science' comes from the Latin scientia, which means 'a knowledge based on demonstrable and reproducible data'. Reproducible data is used by scientists to develop theories and laws to explain and describe phenomena. Theories provide a coherent understanding of a wide range of phenomena. A law is usually a statement that can be expressed as a mathematical relationship. It describes phenomena in nature, with no exceptions, at a point in time. Testing scientific theories drives scientific breakthroughs and questions current understandings. <br/> Students examine how complex models and theories often require a wide range of evidence, which impacts on society and the environment. In this module, students engage in practical and secondary investigations that are related to major theories or laws and their application. </>,
+                topicOutcomes: ["INS11-11"] ,
+                topicContent:["4.1", "4.2", "4.3", "4.4"] ,
+                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
+            },
+        ],
+    },
 
-export const sciSyllabusOutcomesArray =
+
+    {   //12PHY
+        activeClass: "12PHY",
+        activeSentralClasses: ["12PHY01"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 5,
+                topicName: "Advanced Mechanics",
+                topicDuration: "8 weeks",
+                topicDescription: <> Motion in one dimension at constant velocity or constant acceleration can be explained and analysed relatively simply. However, motion is frequently more complicated because objects move in two or three dimensions, causing the net force to vary in size or direction.  Students develop an understanding that all forms of complex motion can be understood by analysing the forces acting on a system, including the energy transformations taking place within and around the system. <br/> By applying new mathematical techniques, students model and predict the motion of objects within systems. They examine two-dimensional motion, including projectile motion and uniform circular motion, along with the orbital motion of planets and satellites, which are modelled as an approximation to uniform circular motion. </>,
+                topicOutcomes: ["PH12-12"] ,
+                topicContent:["5.1", "5.2", "5.3"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 6,
+                topicName: "Electromagnetism",
+                topicDuration: "9 weeks",
+                topicDescription: <> Discoveries about the interactions that take place between charged particles and electric and magnetic fields not only produced significant advances in physics, but also led to significant technological developments. These developments include the generation and distribution of electricity, and the invention of numerous devices that convert electrical energy into other forms of energy. Understanding the similarities and differences in the interactions of single charges in electric and magnetic fields provides students with a conceptual foundation for this module. <br/> Phenomena that include the force produced on a current-carrying wire in a magnetic field, the force between current-carrying wires, Faraday's Law of Electromagnetic Induction, the principles of transformers and the workings of motors and generators can all be understood as instances of forces acting on moving charged particles in magnetic fields. The law of conservation of energy underpins all of these interactions. The conversion of energy into forms other than the intended form is a problem that constantly drives engineers to improve designs of electromagnetic devices. </>,
+                topicOutcomes: ["PH12-13"] ,
+                topicContent:["6.1", "6.2", "6.3", "6.4"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 7,
+                topicName: "The Nature of Light",
+                topicDuration: "10 weeks",
+                topicDescription: <> Prior to the 20th century, physicists, including Newton and Maxwell, developed theories and models about mechanics, electricity and magnetism and the nature of matter. These theories and models had great explanatory power and produced useful predictions. However, the 20th century saw major developments in physics as existing theories and models were challenged by new observations that could not be explained. These observations led to the development of quantum theory and the theory of relativity. <br/> Technologies arising from these theories have shaped the modern world. For example, the independence of the speed of light on the frame of observation or the motion of the source and observer had significant consequences for the measurement, and concepts about the nature, of time and space. Throughout this module, students explore the evidence supporting these physical theories, along with the power of scientific theories to make useful predictions. </>,
+                topicOutcomes: ["PH12-14"] ,
+                topicContent:["7.1", "7.2", "7.3", "7.4"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 8,
+                topicName: "From the Universe to the Atom",
+                topicDuration: "11 weeks",
+                topicDescription: <> Humans have always been fascinated with the finite or infinite state of the Universe and whether there ever was a beginning to time. Where does all the matter that makes up the Universe come from? Ideas and theories about the beginnings of the Universe, based on sound scientific evidence, have come and gone. Current theories such as the Big Bang theory and claims of an expanding Universe are based on scientific evidence available today through investigations that use modern technologies. Evidence gathered on the nucleosynthesis reactions in stars allows scientists to understand how elements are made in the nuclear furnace of stars. <br/> On scales as large as the Universe to those as small as an atom, humans look to the sky for answers through astronomical observations of stars and galaxies. Beginning in the late 19th and early 20th centuries, experimental discoveries revolutionised the accepted understanding of the nature of matter on an atomic scale. Observations of the properties of matter and light inspired the development of better models of matter, which in turn have been modified or abandoned in the light of further experimental investigations. <br/> By studying the development of the atomic models through the work of Thomson and Rutherford, who established the nuclear model of the atom - a positive nucleus surrounded by electrons - students further their understanding of the limitations of theories and models. The work of Bohr, de Broglie and, later, Schrödinger demonstrated that the quantum mechanical nature of matter was a better way to understand the structure of the atom. Experimental investigations of the nucleus have led to an understanding of radioactive decay, the ability to extract energy from nuclear fission and fusion, and a deeper understanding of the atomic model. Particle accelerators have revealed that protons themselves are not fundamental, and have continued to provide evidence in support of the Standard Model of matter. <br/> In studying this module, students can appreciate that the fundamental particle model is forever being updated and that our understanding of the nature of matter remains incomplete. </>,
+                topicOutcomes: ["PH12-15"] ,
+                topicContent:["8.1", "8.2", "8.3", "8.4", "8.5"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+        ],
+    },
+    {   //11PHY
+        activeClass: "11PHY",
+        activeSentralClasses: ["11PHY01"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Kinematics",
+                topicDuration: "7 weeks",
+                topicDescription: <> Motion is a fundamental observable phenomenon. The study of kinematics involves describing, measuring and analysing motion without considering the forces and masses involved in that motion. Uniformly accelerated motion is described in terms of relationships between measurable scalar and vector quantities, including displacement, speed, velocity, acceleration and time.Representations - including graphs and vectors, and equations of motion - can be used qualitatively and quantitatively to describe and predict linear motion. <br/> By studying this module, students come to understand that scientific knowledge enables scientists to offer valid explanations and make reliable predictions, particularly in regard to the motion of an object. </>,
+                topicOutcomes: ["PH11-8"] ,
+                topicContent:["1.1", "1.2"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Dynamics",
+                topicDuration: "7 weeks",
+                topicDescription: <> The relationship between the motion of objects and the forces that act on them is often complex. However, Newton’s Laws of Motion can be used to describe the effect of forces on the motion of single objects and simple systems. This module develops the key concept that forces are always produced in pairs that act on different objects and add to zero. <br/> By applying Newton's laws directly to simple systems, and, where appropriate, the law of conservation of momentum and law of conservation of mechanical energy, students examine the effects of forces. They also examine the interactions and relationships that can occur between objects by modelling and representing these using vectors and equations. In many situations, within and beyond the discipline of physics, knowing the rates of change of quantities provides deeper insight into various phenomena. <br/> In this module, the rates of change of displacement, velocity and energy are of particular significance and students develop an understanding of the usefulness and limitations of modelling. </>,
+                topicOutcomes: ["PH11-9"] ,
+                topicContent:["2.1", "2.2", "2.3"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "Waves and Thermodynamics",
+                topicDuration: "7 weeks",
+                topicDescription: <> Wave motion involves the transfer of energy without the transfer of matter. By exploring the behaviour of wave motion and examining the characteristics of wavelength, frequency, period, velocity and amplitude, students further their understanding of the properties of waves. They are then able to demonstrate how waves can be reflected, refracted, diffracted and superposed (interfered) and to develop an understanding that not all waves require a medium for their propagation. Students examine mechanical waves and electromagnetic waves, including their similarities and differences. <br/> Students also examine energy and its transfer, in the form of heat, from one place to another. Thermodynamics is the study of the relationship between energy, work, temperature and matter. Understanding this relationship allows students to appreciate particle motion within objects. Students have the opportunity to examine how hot objects lose energy in three ways: first, by conduction, and, second, by convection - which both involve the motion of particles; and, third, the emission of electromagnetic radiation. An understanding of thermodynamics is a pathway to understanding related concepts in many fields involving Science, Technology, Engineering and Mathematics (STEM). </>,
+                topicOutcomes: ["PH11-10"] ,
+                topicContent:["3.1", "3.2", "3.3", "3.4", "3.5"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "Electricity and Magnetism",
+                topicDuration: "7 weeks",
+                topicDescription: <> Atomic theory and the laws of conservation of energy and electric charge are unifying concepts in understanding the electrical and magnetic properties and behaviour of matter. Interactions resulting from these properties and behaviour can be understood and analysed in terms of electric fields represented by lines. <br/> Students use these representations and mathematical models to make predictions about the behaviour of objects, and explore the limitations of the models. Students also examine how the analysis of electrical circuits' behaviour and the transfer and conversion of energy in electrical circuits has led to a variety of technological applications. </>,
+                topicOutcomes: ["PH11-11"] ,
+                topicContent:["4.1", "4.2", "4.3"] ,
+                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
+            },
+        ],
+    },
+
+
+
+
+    {   //10STY
+        activeClass: "10STY",
+        activeSentralClasses: ["10STY01"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Green Construction - Cardboard Hydraulic Arm",
+                topicDuration: "10 weeks",
+                topicDescription: <>Imagine that you have been contracted by a representative from 'Green Construction', a company that is designing a range of industrial machines built from cardboard. This will reduce the environmental impact of the construction industry by utilising reusable materials. <br/> They have employed you and three teammates on a ten-week contract to build a scale model of the 'Cardboard Hydraulic Arm', and have asked you to design and construct a hydraulic arm made of cardboard that is capable of lifting and moving heavy objects. In addition to the creation of the prototype, they have asked you to create a project portfolio to track the process of design and construction. The project portfolio will be presented to the company at the end of the project.</>,
+                topicOutcomes: ["DT5-6", "DT5-7", "DT5-8", "DT5-10"] ,
+                topicContent:[] ,
+                topicSkills: [],
+            },
+            {
+                topicNumber: 2,
+                topicName: "LEGO In Motion",
+                topicDuration: "10 weeks",
+                topicDescription: <>Imagine that you have been contacted by Alex, an Educational Liaison Officer (ELO) from “General Automotive”, a large car manufacturer centred in Victoria. Alex has reached out to you to offer you a job in their Mechanics division, on the condition that you demonstrate four (4) key skills. <br/> To get the job, you must have a demonstrated ability to: <br/> 1. Follow instructions precisely and efficiently; <br/> 2. Use creative thinking to modify and improve design plans; <br/> 3. Conduct an Occupational Health and Safety Risk Assessment;  <br/> 4. Abide by all safety policies and procedures in the workplace. <br/><br/> Therefore, for this assessment task you are going to use LEGO 'dacta' kits to demonstrate these four key skills by building a range of LEGO machines, designing and constructing your own machine, and using Risk Assessment strategies to work safely in the classroom.</>,
+                topicOutcomes: ["DT5-1", "DT5-2", "DT5-4", "DT5-9"] ,
+                topicContent:[] ,
+                topicSkills: [],
+            },
+            {
+                topicNumber: 3,
+                topicName: "Transport Analysis - The Parking Lot",
+                topicDuration: "10 weeks",
+                topicDescription: <>Imagine that you work for Transport Analysis, a coompany that designs and constructs integrated technology systems capable of measuring and communicating the number of available parking spaces in parking facilities (such as those at Figtree Shopping Centre, etc). <br/> You have been asked by your supervisor to design and construct a miniature model of a parking lot that displays the number of available spaces on a digital sign in the lot. You have been given access to a range of constructions materials and technology to complete this, including cardboard, ultrasonic sensors, Arduinos, and Raspberry Pis.</>,
+                topicOutcomes: ["DT5-2", "DT5-3", "DT5-6", "DT5-8"] ,
+                topicContent:[] ,
+                topicSkills: [],
+            },
+            {
+                topicNumber: 4,
+                topicName: "OneLine Build and Sell",
+                topicDuration: "10 weeks",
+                topicDescription: <>Imagine you want to pick up some additional income on the side, and have come up with a great product or service that you could sell online. You discover a program called 'OneLine', which outlines how to create your very own webiste to sell your product or service. <br/><br/> This project involves designing the product or service, as well as constructing a functional website that could be used to sell your product or service. </>,
+                topicOutcomes: ["DT5-4", "DT5-5", "DT5-6", "DT5-10"] ,
+                topicContent:[] ,
+                topicSkills: [],
+            },
+        ],
+    },
+
+    {   //10 PSYCHOLOGY
+        activeClass: "10PYY",
+        activeSentralClasses: ["10PYY01"],
+        numberOfTopics: 2,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Core 1 - What is psychology?",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
+                </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Core 2 - Research methods in psychology",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+        ],
+    },
+
+    {   //9 PSYCHOLOGY
+        activeClass: "9PYY",
+        activeSentralClasses: ["9PYY01"],
+        numberOfTopics: 2,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Core 1 - What is psychology?",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
+                </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Core 2 - Research methods in psychology",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+        ],
+    },
+
+    {   //12 Chemistry
+        activeClass: "12CHE",
+        activeSentralClasses: ["12CHE01"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+           
+
+        ],
+    },
+
+    {   //11 Chemistry
+        activeClass: "11CHE",
+        activeSentralClasses: ["11CHE01"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //12 MST
+        activeClass: "12MST",
+        activeSentralClasses: ["12MST01", "12MST02"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //11 MST
+        activeClass: "11MST",
+        activeSentralClasses: ["11MST01", "11MST02", "11MST03"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //8 MST
+        activeClass: "8MST",
+        activeSentralClasses: ["8MST01", "8MST02"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    
+
+    {   //XXX
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    
+    
+]
+
+export const SCISyllabusOutcomesArray =
 [
     //MISC
     {
@@ -1299,93 +1777,82 @@ export const sciSyllabusOutcomesArray =
     },
 ];
 
-export const phySyllabusOutcomesArray = [
+export const STEMSyllabusOutcomesArray = [
     //MISC
     {
         outcome: "N/A",
         description: "",
     },
-    //PHYSICS
+    //STEM
     {
-        outcome: "PH11-8",
-        description: "Describes and analyses motion in terms of scalar and vector quantities in two dimensions and makes quantitative measurements and calculations for distance, displacement, speed velocity and acceleration.",
+        outcome: "DT5-1",
+        description: "analyses and applies a range of design concepts and processes",
         type: "outcome",
     },
     {
-        outcome: "PH11-9",
-        description: "Describes and explains events in terms of Newton's Laws of Motion, the law of conservation of momentum and the law of conservation of energy.",
+        outcome: "DT5-2",
+        description: "applies and justifies an appropriate process of design when developing design ideas and solutions",
         type: "outcome",
     },
     {
-        outcome: "PH11-10",
-        description: "Explains and analyses waves and the transfer of energy by sound, light and thermodynamic principles.",
+        outcome: "DT5-3",
+        description: "evaluates and explains the impact of past, current and emerging technologies on the individual, society and environments",
         type: "outcome",
     },
     {
-        outcome: "PH11-11",
-        description: "Explains and quantitatively analyses electric fields, circuitry and magnetism.",
+        outcome: "DT5-4",
+        description: "analyses the work and responsibilities of designers and the factors affecting their work",
         type: "outcome",
     },
     {
-        outcome: "PH12-12",
-        description: "Describes and analyses qualitatively and quantitatively circular motion and motion in a gravitational field, in particular, the projectile motion of particles.",
+        outcome: "DT5-5",
+        description: "evaluates designed solutions that consider preferred futures, the principles of appropriate technology, and ethical and responsible design",
         type: "outcome",
     },
     {
-        outcome: "PH12-13",
-        description: "Explains and analyses the electric and magnetic interactions due to charged particles and currents and evaluates their effect both qualitatively and quantitatively.",
+        outcome: "DT5-6",
+        description: "develops and evaluates creative, innovative and enterprising design ideas and solutions",
         type: "outcome",
     },
     {
-        outcome: "PH12-14",
-        description: "Describes and analyses evidence for the properties of light and evaluates the implications of this evidence for modern theories of physics in the contemporary world.",
+        outcome: "DT5-7",
+        description: "uses appropriate techniques when communicating design ideas and solutions to a range of audiences",
         type: "outcome",
     },
     {
-        outcome: "PH12-15",
-        description: "Explains and analyses the evidence supporting the relationship between astronomical events and the nucleosynthesis of atoms and relates these to the development of the current model of the atom.",
+        outcome: "DT5-8",
+        description: "selects and applies management strategies when developing design solutions",
         type: "outcome",
     },
-
-    // skills
     {
-        outcome: "PH11/12-1",
-        description: "Develops and evaluates questions and hypotheses for scientific investigation.",
-        type: "skills",
+        outcome: "DT5-9",
+        description: "applies risk management practices and works safely in developing quality design solutions",
+        type: "outcome",
     },
     {
-        outcome: "PH11/12-2",
-        description: "Designs and evaluates investigations in order to obtain primary and secondary data and information.",
-        type: "skills",
-    },
-    {
-        outcome: "PH11/12-3",
-        description: "Conducts investigations to collect valid and reliable primary and secondary data and information.",
-        type: "skills",
-    },
-    {
-        outcome: "PH11/12-4",
-        description: "Selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media.",
-        type: "skills",
-    },
-    {
-        outcome: "PH11/12-5",
-        description: "Analyses and evaluates primary and secondary data and information.",
-        type: "skills",
-    },
-    {
-        outcome: "PH11/12-6",
-        description: "Solves scientific problems using primary and secondary data, critical thinking skills and scientific processes." ,
-        type: "skills",
-    },
-    {
-        outcome: "PH11/12-7",
-        description: "Communicates scientific understanding using suitable language and terminology for a specific audience or purpose.",
-        type: "skills",
+        outcome: "DT5-10",
+        description: "selects and uses a range of technologies competently in the development and management of quality design solutions",
+        type: "outcome",
     },
 ];
 
-export const invSyllabusOutcomesArray = [
+export const BIOSyllabusOutcomesArray = [
+
+];
+
+export const CHESyllabusOutcomesArray = [
+    //MISC
+    {
+        outcome: "N/A",
+        description: "",
+    },
+];
+
+export const EESSyllabusOutcomesArray = [
+
+];
+
+export const INVSyllabusOutcomesArray = [
     //MISC
     {
         outcome: "N/A",
@@ -1472,19 +1939,89 @@ export const invSyllabusOutcomesArray = [
 
 ];
 
-export const CHESyllabusOutcomesArray = [
+export const PHYSyllabusOutcomesArray = [
     //MISC
     {
         outcome: "N/A",
         description: "",
     },
-];
-
-export const MSTSyllabusOutcomesArray = [
-    //MISC
+    //PHYSICS
     {
-        outcome: "N/A",
-        description: "",
+        outcome: "PH11-8",
+        description: "Describes and analyses motion in terms of scalar and vector quantities in two dimensions and makes quantitative measurements and calculations for distance, displacement, speed velocity and acceleration.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH11-9",
+        description: "Describes and explains events in terms of Newton's Laws of Motion, the law of conservation of momentum and the law of conservation of energy.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH11-10",
+        description: "Explains and analyses waves and the transfer of energy by sound, light and thermodynamic principles.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH11-11",
+        description: "Explains and quantitatively analyses electric fields, circuitry and magnetism.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH12-12",
+        description: "Describes and analyses qualitatively and quantitatively circular motion and motion in a gravitational field, in particular, the projectile motion of particles.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH12-13",
+        description: "Explains and analyses the electric and magnetic interactions due to charged particles and currents and evaluates their effect both qualitatively and quantitatively.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH12-14",
+        description: "Describes and analyses evidence for the properties of light and evaluates the implications of this evidence for modern theories of physics in the contemporary world.",
+        type: "outcome",
+    },
+    {
+        outcome: "PH12-15",
+        description: "Explains and analyses the evidence supporting the relationship between astronomical events and the nucleosynthesis of atoms and relates these to the development of the current model of the atom.",
+        type: "outcome",
+    },
+
+    // skills
+    {
+        outcome: "PH11/12-1",
+        description: "Develops and evaluates questions and hypotheses for scientific investigation.",
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-2",
+        description: "Designs and evaluates investigations in order to obtain primary and secondary data and information.",
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-3",
+        description: "Conducts investigations to collect valid and reliable primary and secondary data and information.",
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-4",
+        description: "Selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media.",
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-5",
+        description: "Analyses and evaluates primary and secondary data and information.",
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-6",
+        description: "Solves scientific problems using primary and secondary data, critical thinking skills and scientific processes." ,
+        type: "skills",
+    },
+    {
+        outcome: "PH11/12-7",
+        description: "Communicates scientific understanding using suitable language and terminology for a specific audience or purpose.",
+        type: "skills",
     },
 ];
 
@@ -1525,543 +2062,22 @@ export const PSYSyllabusOutcomesArray = [
         outcome: "PSY5-8",
         description: "communicates psychological information and ideas using appropriate written, oral and visual forms",
     },
-]
+];
 
-export const STEMSyllabusOutcomesArray = [
+export const BHSyllabusOutcomesArray = [
+
+];
+
+export const MSTSyllabusOutcomesArray = [
     //MISC
     {
         outcome: "N/A",
         description: "",
     },
-    //STEM
-    {
-        outcome: "DT5-1",
-        description: "analyses and applies a range of design concepts and processes",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-2",
-        description: "applies and justifies an appropriate process of design when developing design ideas and solutions",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-3",
-        description: "evaluates and explains the impact of past, current and emerging technologies on the individual, society and environments",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-4",
-        description: "analyses the work and responsibilities of designers and the factors affecting their work",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-5",
-        description: "evaluates designed solutions that consider preferred futures, the principles of appropriate technology, and ethical and responsible design",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-6",
-        description: "develops and evaluates creative, innovative and enterprising design ideas and solutions",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-7",
-        description: "uses appropriate techniques when communicating design ideas and solutions to a range of audiences",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-8",
-        description: "selects and applies management strategies when developing design solutions",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-9",
-        description: "applies risk management practices and works safely in developing quality design solutions",
-        type: "outcome",
-    },
-    {
-        outcome: "DT5-10",
-        description: "selects and uses a range of technologies competently in the development and management of quality design solutions",
-        type: "outcome",
-    },
 ];
 
-export const subjectInfoArray = [
-    {   //10SciASP
-        activeClass: "10SCIASP",
-        activeSentralClasses: ["10SCIASPA", "10SCIASPB"],
-        numberOfTopics: 6,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Student Research Project",
-                topicDuration: "7 weeks",
-                topicDescription: "Student Research Project (SRP)",
-                topicOutcomes: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
-                topicContent: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Human-Earth Interactions",
-                topicDuration: "5 weeks",
-                topicDescription: "Conserving and maintaining the quality and sustainability of the environment requires scientific understanding of interactions within, the cycling of matter and the flow of energy through ecosystems",
-                topicOutcomes: ["SC5-13ES", "SC5-15LW"],
-                topicContent: ["SC5-ES3a", "SC5-ES3c", "SC5-ES3d", "SC5-LW2a", "SC5-LW2b", "SC5-LW2c", "SC5-LW2d", "SC5-LW2e", "SC5-LW2f"],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS"],
-            },
-            {
-                topicNumber: 3,
-                topicName: "Genetics and Biotechnology",
-                topicDuration: "7 weeks",
-                topicDescription: "Students discover the importance of DNA for containing the genetic material passed down through generations. They will also advocate for a biotechnology significant to society in the future.",
-                topicOutcomes: [ "SC5-15LW" ],
-                topicContent: [ "SC5-LW3a", "SC5-LW3b", "SC5-LW3c", "SC5-LW3d", "SC5-LW3e", "SC5-LW3f"],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
-            },
-            {
-                topicNumber: 4,
-                topicName: "Motion",
-                topicDuration: "7 weeks",
-                topicDescription: "Mechanics is the study of the relationship between motion, forces and energy. It is a large field and its study is essential to the understanding of physics. Without an understanding of motion first, we could not develop our understanding of the various types of waves nor the forces that hold the universe together.",
-                topicOutcomes: [ "SC5-10PW" ],
-                topicContent: [ "SC5-PW2a", "SC5-PW2b", "SC5-PW2c", "SC5-PW2d",],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
-            },
-            {
-                topicNumber: 5,
-                topicName: "Chemistry",
-                topicDuration: "7 weeks",
-                topicDescription: "Students develop an understanding of the different types of chemical reactions. By completing this topic students have fundamental knowledge of chemistry principles preparing them for HSC chemistry.",
-                topicOutcomes: [ "SC5-17CW" ],
-                topicContent: ["SC5-CW3a","SC5-CW3b", "SC5-CW3c", "SC5-CW3d", "SC5-CW3e", "SC5-CW3f", "SC5-CW3g", "SC5-CW4a", "SC5-CW4b", "SC5-CW4c", "SC5-CW4d", "SC5-CW4e" ],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
-            },
-            {
-                topicNumber: 6,
-                topicName: "Evolution",
-                topicDuration: "7 weeks",
-                topicDescription: "Evolution introduces students to Darwin's theory of evolution, explaining the processes by which evolution occurs and exploring evidence for evolution. Students apply their knowledge of evolutionary processes to current and future changes in organisms.",
-                topicOutcomes: [ "SC5-14LW", "SC5-15LW" ],
-                topicContent: [ "SC5-LW4a", "SC5-LW4b", "SC5-LW4c", "SC5-LW4d" ],
-                topicSkills: ["SC5-4WS", "SC5-5WS", "SC5-6WS", "SC5-7WS", "SC5-8WS", "SC5-9WS" ],
-            },
-        ],
-    },
-    
-    {   // 12INV
-        activeClass: "12INV",
-        activeSentralClasses: ["12INV01", "12INV02"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 5,
-                topicName: "Scientific Investigations",
-                topicDuration: "8 weeks",
-                topicDescription: <> Students learn that the experimental method is a dynamic process influenced by initial observations, new evidence, unexpected results or phenomena arising from the investigation. They examine the interrelated roles of practical and secondary-sourced investigations. When conducting practical and secondary-sourced investigations, students use peer feedback to refine their investigative designs and report on their findings. <br/> Students explore the importance of accuracy, validity and reliability in relation to the investigative work of a scientist. They examine the differences between a scientific investigation and a scientific report, recognising that although the report format follows a sequential order, the investigation need not. </>,
-                topicOutcomes: ["INS12-12"] ,
-                topicContent:["5.1", "5.2", "5.3", "5.4", "5.5"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 6,
-                topicName: "Technologies",
-                topicDuration: "8 weeks",
-                topicDescription: <> The rapid development of new technologies has enhanced industrial and agricultural processes, medical applications and communications. Students explore the dynamic relationship between science and technology where the continuing advancement of science is dependent on the development of new tools and materials. They also examine how advances in science inform the development of new technologies and so reflect the interdependence of science and technology. <br/> Students consider experimental risks as they engage with the skills of Working Scientifically. They investigate the appropriateness of using a range of technologies in conducting practical investigations, including those that provide accurate measurement. </>,
-                topicOutcomes: ["INS12-13"] ,
-                topicContent:["6.1", "6.2"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 7,
-                topicName: "Fact or Falacy?",
-                topicDuration: "8 weeks",
-                topicDescription: <> The scientific process is the most powerful tool available for generating knowledge about the world. It uses evidence and measurement to find truth and highlight misinterpretations and misrepresentations. Science as a human endeavour is subject to human failings, which can contribute to fallacies, misinterpretations and, on occasion, fraud. For this reason, scientific processes attempt to compensate for human failings by questioning evidence, re-testing ideas, replicating results and engaging with peer review in order to evaluate research. <br/> Students investigate claims through conducting practical and secondary-sourced investigations and evaluate these based on scientific evidence. They explore examples of scientific claims made in the media and investigate the benefits of peer review. </>,
-                topicOutcomes: ["INS12-14"] ,
-                topicContent:["7.1", "7.2", "7.3", "7.4", "7.5"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 8,
-                topicName: "Science and Society",
-                topicDuration: "8 weeks",
-                topicDescription: <> Those who pursue the study of science have created processes, tools and products that challenge and influence society and some of its belief systems, ethics and societal norms. In response, society debates and regulates science in order to prevent harmful developments and unacceptable outcomes, and to allow for new and beneficial products, processes and ideas. Science also can be affected by society, as well as governments, industry, economic interests and cultural perspectives. <br/> Students explore the impacts of ethical, social, economic and political influences on science and its research. </>,
-                topicOutcomes: ["INS12-15"] ,
-                topicContent:["8.1", "8.2", "8.3"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-        ],
-    },
-    {   //11INV
-        activeClass: "11INV",
-        activeSentralClasses: ["11INV01", "11INV02"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Cause and Effect - Observing",
-                topicDuration: "8 weeks",
-                topicDescription: <> Observation instigates all scientific experimentation. Investigative scientific processes can only be applied to phenomena that can be observed and measured. Detailed observations motivate scientists to ask questions about the causes and the effects of phenomena they observe. In this way, science continues to progress and enhance the lives of individuals and society by encouraging a continued search for reason and understanding. <br/> Students explore the importance of observation and the collection of quantitative and qualitative data in scientific investigations. They conduct their own practical investigation, either individually or collaboratively, which is used to demonstrate the importance of making detailed and accurate observations, determining the types of variables and formulating testable scientific hypotheses. </>,
-                topicOutcomes: ["INS11-8"] ,
-                topicContent:["1.1", "1.2", "1.3", "1.4", "1.5"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Cause and Effect - Inferences and Generalisations",
-                topicDuration: "8 weeks",
-                topicDescription: <> Scientific inquiry follows on from humans making inferences and generalisations from commonly held understandings. Such inferences and generalisations have led to a wide range of investigations being performed throughout history, culminating in breakthroughs in scientific understanding. Many hypotheses, when found to be correct, have generated further inquiry and created the need to develop new technologies for further observation. Students consider primary and secondary-sourced data and its influence on scientific investigations. <br/> In this module, students engage in gathering primary and secondary-sourced data to assist them in conducting and reporting on investigations, and to further develop their understanding of the central roles of scientific questioning and collaboration in the pursuit of scientific truth. </>,
-                topicOutcomes: ["INS11-9"] ,
-                topicContent:["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 3,
-                topicName: "Scientific Models",
-                topicDuration: "8 weeks",
-                topicDescription: <> Scientific models are developed as a means of helping people understand scientific concepts and representing them in a visual medium. Models are used to make predictions. They may include physical and digital models, which can be refined over time by the inclusion of new scientific knowledge. <br/> Students recognise that many scientific models have limitations and are modified as further evidence comes to light. For this reason, scientific models are continually evaluated for accuracy and applicability by the global scientific community through the process of peer review. Students construct and evaluate their own models, which are generated through practical investigation. </>,
-                topicOutcomes: ["INS11-10"] ,
-                topicContent:["3.1", "3.2", "3.3", "3.4"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-            {
-                topicNumber: 4,
-                topicName: "Theories and Laws",
-                topicDuration: "8 weeks",
-                topicDescription: <> The term 'science' comes from the Latin scientia, which means 'a knowledge based on demonstrable and reproducible data'. Reproducible data is used by scientists to develop theories and laws to explain and describe phenomena. Theories provide a coherent understanding of a wide range of phenomena. A law is usually a statement that can be expressed as a mathematical relationship. It describes phenomena in nature, with no exceptions, at a point in time. Testing scientific theories drives scientific breakthroughs and questions current understandings. <br/> Students examine how complex models and theories often require a wide range of evidence, which impacts on society and the environment. In this module, students engage in practical and secondary investigations that are related to major theories or laws and their application. </>,
-                topicOutcomes: ["INS11-11"] ,
-                topicContent:["4.1", "4.2", "4.3", "4.4"] ,
-                topicSkills: ["INS11/12-1", "INS11/12-2", "INS11/12-3", "INS11/12-4", "INS11/12-5", "INS11/12-6", "INS11/12-7"],
-            },
-        ],
-    },
-
-
-    {   //12PHY
-        activeClass: "12PHY",
-        activeSentralClasses: ["12PHY01"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 5,
-                topicName: "Advanced Mechanics",
-                topicDuration: "8 weeks",
-                topicDescription: <> Motion in one dimension at constant velocity or constant acceleration can be explained and analysed relatively simply. However, motion is frequently more complicated because objects move in two or three dimensions, causing the net force to vary in size or direction.  Students develop an understanding that all forms of complex motion can be understood by analysing the forces acting on a system, including the energy transformations taking place within and around the system. <br/> By applying new mathematical techniques, students model and predict the motion of objects within systems. They examine two-dimensional motion, including projectile motion and uniform circular motion, along with the orbital motion of planets and satellites, which are modelled as an approximation to uniform circular motion. </>,
-                topicOutcomes: ["PH12-12"] ,
-                topicContent:["5.1", "5.2", "5.3"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 6,
-                topicName: "Electromagnetism",
-                topicDuration: "9 weeks",
-                topicDescription: <> Discoveries about the interactions that take place between charged particles and electric and magnetic fields not only produced significant advances in physics, but also led to significant technological developments. These developments include the generation and distribution of electricity, and the invention of numerous devices that convert electrical energy into other forms of energy. Understanding the similarities and differences in the interactions of single charges in electric and magnetic fields provides students with a conceptual foundation for this module. <br/> Phenomena that include the force produced on a current-carrying wire in a magnetic field, the force between current-carrying wires, Faraday's Law of Electromagnetic Induction, the principles of transformers and the workings of motors and generators can all be understood as instances of forces acting on moving charged particles in magnetic fields. The law of conservation of energy underpins all of these interactions. The conversion of energy into forms other than the intended form is a problem that constantly drives engineers to improve designs of electromagnetic devices. </>,
-                topicOutcomes: ["PH12-13"] ,
-                topicContent:["6.1", "6.2", "6.3", "6.4"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 7,
-                topicName: "The Nature of Light",
-                topicDuration: "10 weeks",
-                topicDescription: <> Prior to the 20th century, physicists, including Newton and Maxwell, developed theories and models about mechanics, electricity and magnetism and the nature of matter. These theories and models had great explanatory power and produced useful predictions. However, the 20th century saw major developments in physics as existing theories and models were challenged by new observations that could not be explained. These observations led to the development of quantum theory and the theory of relativity. <br/> Technologies arising from these theories have shaped the modern world. For example, the independence of the speed of light on the frame of observation or the motion of the source and observer had significant consequences for the measurement, and concepts about the nature, of time and space. Throughout this module, students explore the evidence supporting these physical theories, along with the power of scientific theories to make useful predictions. </>,
-                topicOutcomes: ["PH12-14"] ,
-                topicContent:["7.1", "7.2", "7.3", "7.4"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 8,
-                topicName: "From the Universe to the Atom",
-                topicDuration: "11 weeks",
-                topicDescription: <> Humans have always been fascinated with the finite or infinite state of the Universe and whether there ever was a beginning to time. Where does all the matter that makes up the Universe come from? Ideas and theories about the beginnings of the Universe, based on sound scientific evidence, have come and gone. Current theories such as the Big Bang theory and claims of an expanding Universe are based on scientific evidence available today through investigations that use modern technologies. Evidence gathered on the nucleosynthesis reactions in stars allows scientists to understand how elements are made in the nuclear furnace of stars. <br/> On scales as large as the Universe to those as small as an atom, humans look to the sky for answers through astronomical observations of stars and galaxies. Beginning in the late 19th and early 20th centuries, experimental discoveries revolutionised the accepted understanding of the nature of matter on an atomic scale. Observations of the properties of matter and light inspired the development of better models of matter, which in turn have been modified or abandoned in the light of further experimental investigations. <br/> By studying the development of the atomic models through the work of Thomson and Rutherford, who established the nuclear model of the atom - a positive nucleus surrounded by electrons - students further their understanding of the limitations of theories and models. The work of Bohr, de Broglie and, later, Schrödinger demonstrated that the quantum mechanical nature of matter was a better way to understand the structure of the atom. Experimental investigations of the nucleus have led to an understanding of radioactive decay, the ability to extract energy from nuclear fission and fusion, and a deeper understanding of the atomic model. Particle accelerators have revealed that protons themselves are not fundamental, and have continued to provide evidence in support of the Standard Model of matter. <br/> In studying this module, students can appreciate that the fundamental particle model is forever being updated and that our understanding of the nature of matter remains incomplete. </>,
-                topicOutcomes: ["PH12-15"] ,
-                topicContent:["8.1", "8.2", "8.3", "8.4", "8.5"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-        ],
-    },
-    {   //11PHY
-        activeClass: "11PHY",
-        activeSentralClasses: ["11PHY01"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Kinematics",
-                topicDuration: "7 weeks",
-                topicDescription: <> Motion is a fundamental observable phenomenon. The study of kinematics involves describing, measuring and analysing motion without considering the forces and masses involved in that motion. Uniformly accelerated motion is described in terms of relationships between measurable scalar and vector quantities, including displacement, speed, velocity, acceleration and time.Representations - including graphs and vectors, and equations of motion - can be used qualitatively and quantitatively to describe and predict linear motion. <br/> By studying this module, students come to understand that scientific knowledge enables scientists to offer valid explanations and make reliable predictions, particularly in regard to the motion of an object. </>,
-                topicOutcomes: ["PH11-8"] ,
-                topicContent:["1.1", "1.2"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Dynamics",
-                topicDuration: "7 weeks",
-                topicDescription: <> The relationship between the motion of objects and the forces that act on them is often complex. However, Newton’s Laws of Motion can be used to describe the effect of forces on the motion of single objects and simple systems. This module develops the key concept that forces are always produced in pairs that act on different objects and add to zero. <br/> By applying Newton's laws directly to simple systems, and, where appropriate, the law of conservation of momentum and law of conservation of mechanical energy, students examine the effects of forces. They also examine the interactions and relationships that can occur between objects by modelling and representing these using vectors and equations. In many situations, within and beyond the discipline of physics, knowing the rates of change of quantities provides deeper insight into various phenomena. <br/> In this module, the rates of change of displacement, velocity and energy are of particular significance and students develop an understanding of the usefulness and limitations of modelling. </>,
-                topicOutcomes: ["PH11-9"] ,
-                topicContent:["2.1", "2.2", "2.3"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 3,
-                topicName: "Waves and Thermodynamics",
-                topicDuration: "7 weeks",
-                topicDescription: <> Wave motion involves the transfer of energy without the transfer of matter. By exploring the behaviour of wave motion and examining the characteristics of wavelength, frequency, period, velocity and amplitude, students further their understanding of the properties of waves. They are then able to demonstrate how waves can be reflected, refracted, diffracted and superposed (interfered) and to develop an understanding that not all waves require a medium for their propagation. Students examine mechanical waves and electromagnetic waves, including their similarities and differences. <br/> Students also examine energy and its transfer, in the form of heat, from one place to another. Thermodynamics is the study of the relationship between energy, work, temperature and matter. Understanding this relationship allows students to appreciate particle motion within objects. Students have the opportunity to examine how hot objects lose energy in three ways: first, by conduction, and, second, by convection - which both involve the motion of particles; and, third, the emission of electromagnetic radiation. An understanding of thermodynamics is a pathway to understanding related concepts in many fields involving Science, Technology, Engineering and Mathematics (STEM). </>,
-                topicOutcomes: ["PH11-10"] ,
-                topicContent:["3.1", "3.2", "3.3", "3.4", "3.5"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-            {
-                topicNumber: 4,
-                topicName: "Electricity and Magnetism",
-                topicDuration: "7 weeks",
-                topicDescription: <> Atomic theory and the laws of conservation of energy and electric charge are unifying concepts in understanding the electrical and magnetic properties and behaviour of matter. Interactions resulting from these properties and behaviour can be understood and analysed in terms of electric fields represented by lines. <br/> Students use these representations and mathematical models to make predictions about the behaviour of objects, and explore the limitations of the models. Students also examine how the analysis of electrical circuits' behaviour and the transfer and conversion of energy in electrical circuits has led to a variety of technological applications. </>,
-                topicOutcomes: ["PH11-11"] ,
-                topicContent:["4.1", "4.2", "4.3"] ,
-                topicSkills: ["PH11/12-1", "PH11/12-2", "PH11/12-3", "PH11/12-4", "PH11/12-5", "PH11/12-6", "PH11/12-7"],
-            },
-        ],
-    },
 
 
 
 
-    {   //10STY
-        activeClass: "10STY",
-        activeSentralClasses: ["10STY01"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Green Construction - Cardboard Hydraulic Arm",
-                topicDuration: "10 weeks",
-                topicDescription: <>Imagine that you have been contracted by a representative from 'Green Construction', a company that is designing a range of industrial machines built from cardboard. This will reduce the environmental impact of the construction industry by utilising reusable materials. <br/> They have employed you and three teammates on a ten-week contract to build a scale model of the 'Cardboard Hydraulic Arm', and have asked you to design and construct a hydraulic arm made of cardboard that is capable of lifting and moving heavy objects. In addition to the creation of the prototype, they have asked you to create a project portfolio to track the process of design and construction. The project portfolio will be presented to the company at the end of the project.</>,
-                topicOutcomes: ["DT5-6", "DT5-7", "DT5-8", "DT5-10"] ,
-                topicContent:[] ,
-                topicSkills: [],
-            },
-            {
-                topicNumber: 2,
-                topicName: "LEGO In Motion",
-                topicDuration: "10 weeks",
-                topicDescription: <>Imagine that you have been contacted by Alex, an Educational Liaison Officer (ELO) from “General Automotive”, a large car manufacturer centred in Victoria. Alex has reached out to you to offer you a job in their Mechanics division, on the condition that you demonstrate four (4) key skills. <br/> To get the job, you must have a demonstrated ability to: <br/> 1. Follow instructions precisely and efficiently; <br/> 2. Use creative thinking to modify and improve design plans; <br/> 3. Conduct an Occupational Health and Safety Risk Assessment;  <br/> 4. Abide by all safety policies and procedures in the workplace. <br/><br/> Therefore, for this assessment task you are going to use LEGO 'dacta' kits to demonstrate these four key skills by building a range of LEGO machines, designing and constructing your own machine, and using Risk Assessment strategies to work safely in the classroom.</>,
-                topicOutcomes: ["DT5-1", "DT5-2", "DT5-4", "DT5-9"] ,
-                topicContent:[] ,
-                topicSkills: [],
-            },
-            {
-                topicNumber: 3,
-                topicName: "Transport Analysis - The Parking Lot",
-                topicDuration: "10 weeks",
-                topicDescription: <>Imagine that you work for Transport Analysis, a coompany that designs and constructs integrated technology systems capable of measuring and communicating the number of available parking spaces in parking facilities (such as those at Figtree Shopping Centre, etc). <br/> You have been asked by your supervisor to design and construct a miniature model of a parking lot that displays the number of available spaces on a digital sign in the lot. You have been given access to a range of constructions materials and technology to complete this, including cardboard, ultrasonic sensors, Arduinos, and Raspberry Pis.</>,
-                topicOutcomes: ["DT5-2", "DT5-3", "DT5-6", "DT5-8"] ,
-                topicContent:[] ,
-                topicSkills: [],
-            },
-            {
-                topicNumber: 4,
-                topicName: "OneLine Build and Sell",
-                topicDuration: "10 weeks",
-                topicDescription: <>Imagine you want to pick up some additional income on the side, and have come up with a great product or service that you could sell online. You discover a program called 'OneLine', which outlines how to create your very own webiste to sell your product or service. <br/><br/> This project involves designing the product or service, as well as constructing a functional website that could be used to sell your product or service. </>,
-                topicOutcomes: ["DT5-4", "DT5-5", "DT5-6", "DT5-10"] ,
-                topicContent:[] ,
-                topicSkills: [],
-            },
-        ],
-    },
 
-    {   //10 PSYCHOLOGY
-        activeClass: "10PYY",
-        activeSentralClasses: ["10PYY01"],
-        numberOfTopics: 2,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Core 1 - What is psychology?",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
-                </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Core 2 - Research methods in psychology",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-        ],
-    },
-
-    {   //9 PSYCHOLOGY
-        activeClass: "9PYY",
-        activeSentralClasses: ["9PYY01"],
-        numberOfTopics: 2,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Core 1 - What is psychology?",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
-                </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Core 2 - Research methods in psychology",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-        ],
-    },
-
-    {   //12 Chemistry
-        activeClass: "12CHE",
-        activeSentralClasses: ["12CHE01"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-           
-
-        ],
-    },
-
-    {   //11 Chemistry
-        activeClass: "11CHE",
-        activeSentralClasses: ["11CHE01"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    {   //12 MST
-        activeClass: "12MST",
-        activeSentralClasses: ["12MST01", "12MST02"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    {   //11 MST
-        activeClass: "11MST",
-        activeSentralClasses: ["11MST01", "11MST02", "11MST03"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    {   //8 MST
-        activeClass: "8MST",
-        activeSentralClasses: ["8MST01", "8MST02"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    
-
-    {   //XXX
-        activeClass: "XXX",
-        activeSentralClasses: ["XXX"],
-        numberOfTopics: 111,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 3,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 4,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-
-        ],
-    },
-    
-    
-]

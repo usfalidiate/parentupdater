@@ -1,26 +1,41 @@
-import { 
-    sciSyllabusOutcomesArray, 
+import {     
     subjectInfoArray, 
-    phySyllabusOutcomesArray, 
-    invSyllabusOutcomesArray, 
+    SCISyllabusOutcomesArray, 
+    //bio
+    CHESyllabusOutcomesArray, 
+    //ees
+    INVSyllabusOutcomesArray, 
+    PHYSyllabusOutcomesArray, 
     STEMSyllabusOutcomesArray, 
     PSYSyllabusOutcomesArray, 
-    CHESyllabusOutcomesArray, 
+    //bh
     MSTSyllabusOutcomesArray,
-     
+
 } from "./SubjectInfoArrays";
 
-import { 
-    IQArray11INV, 
-    IQArray12INV, 
-    IQArray11PHY, 
-    IQArray12PHY, 
-    LIArray10STY, 
+import {
     LIArray10SCI, 
-    LIArray10PYY, 
-    LIArray9PYY, 
+    LIArray9SI,
+    LIArray8SI,
+    LIArray7SI,
+    IQArray12BIO,
+    IQArray11BIO,
     IQArray12CHE, 
     IQArray11CHE,
+    IQArray12EES,
+    IQArray11EES,
+    IQArray12INV, 
+    IQArray11INV, 
+    IQArray12PHY, 
+    IQArray11PHY, 
+    LIArray10STY, 
+    LIArray10STX, 
+    LIArray9STY, 
+    LIArraySTX, 
+    LIArray10PYY, 
+    LIArray9PYY, 
+    LIArray10BHX,
+    LIArray10BHY,
     LIArray12MST,
     LIArray11MST,
     LIArray8MST,
@@ -32,101 +47,111 @@ import {
 
 export default function SubjectInfoReturn({activeClass}) {
 
-    let ActiveSubjectInfoTable;
     let activeClassTitle;
-    let activeSubjectInfoArray;
     let activeSubjectSyllabusOutcomesArray;
     let activeIQorLIArray;
     switch (activeClass) {
         case '10SCIASP' : 
-            // ActiveSubjectInfoTable = SciSubjectInfoTable
             activeClassTitle = 'Year 10 Science (ASP)'
-            activeSubjectSyllabusOutcomesArray = sciSyllabusOutcomesArray
+            activeSubjectSyllabusOutcomesArray = SCISyllabusOutcomesArray
             activeIQorLIArray = LIArray10SCI
             break;
 
-        case '12PHY' : 
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
-            activeClassTitle = "Physics"
-            activeSubjectSyllabusOutcomesArray = phySyllabusOutcomesArray
-            activeIQorLIArray = IQArray12PHY
-            break;
+        //10SCI
+        //9SCI
+        //8SCI
+        //7SCI
 
-        case '11PHY' :
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
-            activeClassTitle = "Physics"
-            activeSubjectSyllabusOutcomesArray = phySyllabusOutcomesArray
-            activeIQorLIArray = IQArray11PHY
+        case '10STY' : 
+            activeClassTitle = "Year 10 STEM (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = STEMSyllabusOutcomesArray
+            activeIQorLIArray = LIArray10STY
             break;
-
+ 
             
+        //10STX
+        //9STY
+        //9STX
+        //8STM      
+        
+        
+        //12BIO
+        //11BIO
+
         case '12CHE' : 
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
             activeClassTitle = "Chemistry"
             activeSubjectSyllabusOutcomesArray = CHESyllabusOutcomesArray
             activeIQorLIArray = IQArray12CHE
             break;
 
         case '11CHE' :
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
             activeClassTitle = "Chemistry"
             activeSubjectSyllabusOutcomesArray = CHESyllabusOutcomesArray
             activeIQorLIArray = IQArray11CHE
             break;
 
+        //12EES
+        //11EES   
 
         case '12INV' : 
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
             activeClassTitle = "Investigating Science"
-            activeSubjectSyllabusOutcomesArray = invSyllabusOutcomesArray
+            activeSubjectSyllabusOutcomesArray = INVSyllabusOutcomesArray
             activeIQorLIArray = IQArray12INV
             break;
 
         case '11INV' :
-            // ActiveSubjectInfoTable = ST6SubjectInfoTable
             activeClassTitle = "Investigating Science"
-            activeSubjectSyllabusOutcomesArray = invSyllabusOutcomesArray
+            activeSubjectSyllabusOutcomesArray = INVSyllabusOutcomesArray
             activeIQorLIArray = IQArray11INV
             break;
 
-        case '10STY' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
-            activeClassTitle = "Year 10 STEM (100-Hour)"
-            activeSubjectSyllabusOutcomesArray = STEMSyllabusOutcomesArray
-            activeIQorLIArray = LIArray10STY
+        case '12PHY' : 
+            activeClassTitle = "Physics"
+            activeSubjectSyllabusOutcomesArray = PHYSyllabusOutcomesArray
+            activeIQorLIArray = IQArray12PHY
             break;
+
+        case '11PHY' :
+            activeClassTitle = "Physics"
+            activeSubjectSyllabusOutcomesArray = PHYSyllabusOutcomesArray
+            activeIQorLIArray = IQArray11PHY
+            break;
+
+
         
+        //10PYX
         case '10PYY' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
             activeClassTitle = "Year 10 Psychology (100-Hour)"
             activeSubjectSyllabusOutcomesArray = PSYSyllabusOutcomesArray
             activeIQorLIArray = LIArray10PYY
             break;  
 
+        //9PYX
+
         case '9PYY' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
             activeClassTitle = "Year 9 Psychology (100-Hour)"
             activeSubjectSyllabusOutcomesArray = PSYSyllabusOutcomesArray
             activeIQorLIArray = LIArray9PYY
             break; 
 
-            case '12MST' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
-            activeClassTitle = "Year 9 Psychology (100-Hour)"
+
+        //10BHX
+        //10BHY
+
+        case '12MST' : 
+            activeClassTitle = "Year 12 Marine Studies"
             activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
             activeIQorLIArray = LIArray12MST
             break; 
 
-            case '11MST' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
-            activeClassTitle = "Year 9 Psychology (100-Hour)"
+        case '11MST' : 
+            activeClassTitle = "Year 11 Marine Studies"
             activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
             activeIQorLIArray = LIArray11MST
             break; 
 
-            case '8MST' : 
-            // ActiveSubjectInfoTable = STEMSubjectInfoTable
-            activeClassTitle = "Year 9 Psychology (100-Hour)"
+        case '8MST' : 
+            activeClassTitle = "Year 8 Marine Studies"
             activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
             activeIQorLIArray = LIArray8MST
             break; 
