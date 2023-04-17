@@ -12,5 +12,5 @@ SubjectInfoArray
     -One array for syllabus outcomes for each subject (in the form of outcome and description)
     Naming eg: STEMSyllabusOutcomesArray
 
-    
-    - One array (subjectInfoArray) of the info for each subject (including for each topic: topicOutcomes, numberOfTopics, topicDuration, topicName etc)
+
+    - One array (subjectInfoArray) of the info for each subject (including for each topic: topicOutcomes, numberOfTopics, topicDuration, topicName etc).
