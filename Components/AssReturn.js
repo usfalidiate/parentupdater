@@ -1,5 +1,5 @@
-import { sciAssArray, STEMAssArray, invAssArray, phyAssArray } from "./AssArrays";
-import { subjectInfoArray, sciSyllabusOutcomesArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "./SubjectInfoArrays";
+import { sciAssArray, STEMAssArray, invAssArray, phyAssArray, PSYAssArray, CHEAssArray } from "./AssArrays";
+import { subjectInfoArray, sciSyllabusOutcomesArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray, PSYSyllabusOutcomesArray, CHESyllabusOutcomesArray } from "./SubjectInfoArrays";
 
 
 export default function AssReturn({activeClass} ) {
@@ -10,9 +10,9 @@ export default function AssReturn({activeClass} ) {
     let activeSyllabusOutcomeArray;
     let activeAssArray;
     switch (activeClass) {
-        case '10SCIASP' : 
+        case '10SCIASP' : case '10SCI' : case '9SCI'  : case '8SCI' : case '7SCI' :
         // ActiveAssTable = SciAssTable
-        activeClassTitle = 'Year 10 Science (ASP)'
+        activeClassTitle = 'Science'
         // ActiveAssDiv = SciAssDiv
         activeAssArray = sciAssArray
         activeSyllabusOutcomeArray = sciSyllabusOutcomesArray
@@ -34,12 +34,29 @@ export default function AssReturn({activeClass} ) {
         activeAssArray = invAssArray
         break;
 
+        case '12CHE' : case '11CHE' :
+        // ActiveAssTable = CHEAssTable
+        activeClassTitle = "CHEestigating Science"
+        // ActiveAssDiv = ST6AssDiv
+        activeSyllabusOutcomeArray = CHESyllabusOutcomesArray
+        activeAssArray = CHEAssArray
+        break;
+
         case '10STY' : 
         // ActiveAssTable = STEMAssTable
-        activeClassTitle = "Year 10 STEM (100-Hour)"
+        activeClassTitle = "STEM"
         // ActiveAssDiv = STEMAssDiv
         activeAssArray = STEMAssArray
         activeSyllabusOutcomeArray = STEMSyllabusOutcomesArray
+
+        break;
+
+        case '10PYY' : case '9PYY' :
+        // ActiveAssTable = STEMAssTable
+        activeClassTitle = "Psychology"
+        // ActiveAssDiv = STEMAssDiv
+        activeAssArray = PSYAssArray
+        activeSyllabusOutcomeArray = PSYSyllabusOutcomesArray
 
         break;
     };

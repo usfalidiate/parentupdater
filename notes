@@ -1,0 +1,16 @@
+For each subject, following arrays need to be updated:
+
+LIArrays OR IQArrays
+    - One array for each activeClass (e.g. 12PHY, 9SCI, etc) which contains LIs, topicName, fullID, etc.
+    Naming eg: LIArray10SCIASP, IQArray11PHY
+
+AssArray
+    - One array for each subject (e.g. sci, phy, psy, etc) which contains details of each assessment task  
+    Naming eg: sciAssArray, STEMAssArray, etc 
+
+SubjectInfoArray
+    -One array for syllabus outcomes for each subject (in the form of outcome and description)
+    Naming eg: STEMSyllabusOutcomesArray
+
+    
+    - One array (subjectInfoArray) of the info for each subject (including for each topic: topicOutcomes, numberOfTopics, topicDuration, topicName etc)

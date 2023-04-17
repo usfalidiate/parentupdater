@@ -477,7 +477,7 @@ return (
         {
             displayTeacherChoice ?
             <div className='divTopBarHome'>
-                <button className='homeNeonButton'> Warilla High School Science: <br/> Choose Your Teacher </button>
+                <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Your Teacher </p> </button>
             </div> 
             : 
             <div className='divTopBar'>

@@ -81,7 +81,7 @@ html, body, :root {
   padding: 5px 5px 5px 5px;
   width: 100%;
   position: fixed;
-  z-index: 0.9;
+  z-index: 1;
   overflow: visible;
 }
 
@@ -778,6 +778,8 @@ input:hover{
 .homeNeonButton {
   font-family: 'Inter var';
   font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
+  letter-spacing: -0.055em;
+  font-weight: 740;
   padding: 30px 30px 30px 30px;
   margin: 10px 10px 10px 10px;
   height: 15px;
@@ -794,6 +796,14 @@ input:hover{
   align-content: center;
   align-items: center;
   display: flex;
+}
+
+.homeNeonButtonText {
+  font-family: 'Inter var';
+  font-size: 100%;
+  letter-spacing: -0.045em;
+  font-weight: 640;
+  margin: 0px;
 }
 
 .homeNeonButtonActive {

@@ -254,3 +254,255 @@ export const STEMAssArray = [
         ]
     },
 ];
+
+
+export const PSYAssArray = [
+    {
+        class: "10PYY",
+        tasks: [
+            {
+                taskNumber: 1,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 2,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 3,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 4,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            }, 
+        ]
+    },
+    {
+        class: "9PYY",
+        tasks: [
+            {
+                taskNumber: 1,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 2,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 3,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 4,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            }, 
+        ]
+    },
+];
+
+
+export const CHEAssArray = [
+    {
+        class: "12CHE",
+        tasks: [
+            {
+                taskNumber: 1,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 2,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 3,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 4,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            }, 
+        ]
+    },
+    {
+        class: "11CHE",
+        tasks: [
+            {
+                taskNumber: 1,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 2,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 3,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            },
+            {
+                taskNumber: 4,
+                taskName: 'TBA',
+                taskDescription: <> TBA. </>,
+                taskWeighting: '25%',
+                taskOutcomes: ["N/A"],
+                date: "End of Term 1",
+                successCriteria: [
+                    "1. TBA", 
+                    "2. TBA",
+                    "3. TBA",
+                    "4. TBA ",
+                ],
+            }, 
+        ]
+    },
+];

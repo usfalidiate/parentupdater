@@ -1,8 +1,8 @@
-import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray } from "./SubjectInfoArrays";
-import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY, LIArray10STY, LIArray10SCI } from "./LIArrays";
+import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray, PSYSyllabusOutcomesArray, CHESyllabusOutcomesArray } from "./SubjectInfoArrays";
+import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY, LIArray10STY, LIArray10SCI, LIArray10PYY, LIArray9PYY, IQArray12CHE, IQArray11CHE } from "./LIArrays";
 
-import Image from 'next/image'
-import STEM from '../assets/STEM.jpg'
+// import Image from 'next/image'
+// import STEM from '../assets/STEM.jpg'
 
 export default function SubjectInfoReturn({activeClass}) {
 
@@ -33,6 +33,22 @@ export default function SubjectInfoReturn({activeClass}) {
             activeIQorLIArray = IQArray11PHY
             break;
 
+            
+        case '12CHE' : 
+            // ActiveSubjectInfoTable = ST6SubjectInfoTable
+            activeClassTitle = "Chemistry"
+            activeSubjectSyllabusOutcomesArray = CHESyllabusOutcomesArray
+            activeIQorLIArray = IQArray12CHE
+            break;
+
+        case '11CHE' :
+            // ActiveSubjectInfoTable = ST6SubjectInfoTable
+            activeClassTitle = "Chemistry"
+            activeSubjectSyllabusOutcomesArray = CHESyllabusOutcomesArray
+            activeIQorLIArray = IQArray11CHE
+            break;
+
+
         case '12INV' : 
             // ActiveSubjectInfoTable = ST6SubjectInfoTable
             activeClassTitle = "Investigating Science"
@@ -53,6 +69,21 @@ export default function SubjectInfoReturn({activeClass}) {
             activeSubjectSyllabusOutcomesArray = STEMSyllabusOutcomesArray
             activeIQorLIArray = LIArray10STY
             break;
+        
+        case '10PYY' : 
+            // ActiveSubjectInfoTable = STEMSubjectInfoTable
+            activeClassTitle = "Year 10 Psychology (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = PSYSyllabusOutcomesArray
+            activeIQorLIArray = LIArray10PYY
+            break;  
+
+        case '9PYY' : 
+            // ActiveSubjectInfoTable = STEMSubjectInfoTable
+            activeClassTitle = "Year 9 Psychology (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = PSYSyllabusOutcomesArray
+            activeIQorLIArray = LIArray9PYY
+            break; 
+
     };
 
     // function SciSubjectInfoTable(){
