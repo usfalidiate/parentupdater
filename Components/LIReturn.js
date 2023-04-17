@@ -61,7 +61,7 @@ export default function LIReturn ({
       LITableHeading= 'Year 10 Science (ASP)'
       tableColLIHeading = 'Learning Intention'
       activeSubject = 'sci'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       break;
 
     case '10SCI':
@@ -70,7 +70,7 @@ export default function LIReturn ({
       LITableHeading= 'Year 10 Science'
       tableColLIHeading = 'Learning Intention'
       activeSubject = 'sci'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       break;
 
     case '9SCI':
@@ -79,7 +79,7 @@ export default function LIReturn ({
       LITableHeading= 'Year 9 Science'
       tableColLIHeading = 'Learning Intention'
       activeSubject = 'sci'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       break;
 
     case '8SCI':
@@ -87,7 +87,7 @@ export default function LIReturn ({
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 8 Science'
       tableColLIHeading = 'Learning Intention'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       activeSubject = 'sci'
       break;
 
@@ -96,7 +96,7 @@ export default function LIReturn ({
       topicModuleOrProject = 'Topic'
       LITableHeading= 'Year 7 Science'
       tableColLIHeading = 'Learning Intention'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       activeSubject = 'sci'
       break;
     
@@ -106,7 +106,7 @@ export default function LIReturn ({
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 10 STEM (200 Hour)'
       tableColLIHeading = 'Learning Intention'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       activeSubject = 'STEM'
       break;
 
@@ -115,7 +115,7 @@ export default function LIReturn ({
       topicModuleOrProject = 'Project'
       LITableHeading= 'Year 10 STEM (100 Hour)'
       tableColLIHeading = 'Learning Intention'
-      miniTableColLIHeading = 'LI'
+      miniTableColLIHeading = 'Learning Intention'
       activeSubject = 'STEM'
       break;
 
@@ -148,7 +148,7 @@ export default function LIReturn ({
       activeClassArray= IQArray12BIO
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 12 Biology'
       activeSubject = 'BIO'
       break;
@@ -157,7 +157,7 @@ export default function LIReturn ({
       activeClassArray= IQArray11BIO
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 11 Biology'
       activeSubject = 'BIO'
       break;  
@@ -167,7 +167,7 @@ export default function LIReturn ({
       activeClassArray= IQArray12CHE
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 12 Chemistry'
       activeSubject = 'CHE'
       break;
@@ -176,7 +176,7 @@ export default function LIReturn ({
       activeClassArray= IQArray11CHE
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 11 Chemistry'
       activeSubject = 'CHE'
       break;
@@ -203,7 +203,7 @@ export default function LIReturn ({
       activeClassArray= IQArray12INV
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 12 Investigating Science'
       activeSubject = 'INV'
       break;
@@ -212,7 +212,7 @@ export default function LIReturn ({
       activeClassArray= IQArray11INV
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 11 Investigating Science'
       activeSubject = 'INV'
       break;
@@ -222,7 +222,7 @@ export default function LIReturn ({
       activeClassArray= IQArray12PHY
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'  
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 12 Physics'
       activeSubject = 'PHY'
       break;
@@ -231,7 +231,7 @@ export default function LIReturn ({
       activeClassArray= IQArray11PHY
       topicModuleOrProject = 'Module'
       tableColLIHeading = 'Inquiry Question'
-      miniTableColLIHeading = 'IQ'
+      miniTableColLIHeading = 'Inquiry Question'
       LITableHeading= 'Year 11 Physics'
       activeSubject = 'PHY'
       break;    
@@ -497,7 +497,7 @@ export default function LIReturn ({
             return (
               <div className='divLIGridChild' key = { item.id }>
                 <> { adminStateProp ? <> <ButtonCompleted i={ Number(item.id) } x={ item.fullID } /> </>  : <div className='divLIStatus'> <RowStatus i={ Number(item.id)} /> </div> } </>
-                <div className='divLIString'> <b> {miniTableColLIHeading}: </b>{ activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> { item.LIString } </div>
+                <div className='divLIMiniHeadingText'> {miniTableColLIHeading}: { activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> </div> <div className='divLIStringText'> { item.LIString } </div>
               </div>
             )
           })}
