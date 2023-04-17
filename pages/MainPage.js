@@ -8,7 +8,8 @@ import SubjectInfoReturn  from '../Components/SubjectInfoReturn';
 import AssReturn from '../Components/AssReturn';
 import HomeIcon from '../assets/HomeIcon';
 import BackIcon from '../assets/BackIcon';
-import GearIcon from '../assets/GearIcon';
+import CloseIcon from '../assets/CloseIcon';
+import BriefcaseIcon from '../assets/BriefcaseIcon';
 
 export default function MainPage() {
 
@@ -189,7 +190,7 @@ return (
     < >
     <button onClick={handleToggleLoginAdmin}
     className={ adminState ? 'neonButtonActive' : 'neonButton'}>
-    <p className='buttonTextAdmin'> <GearIcon/> </p>
+    <p className='buttonTextAdmin'> <BriefcaseIcon/> </p>
     </button>
     </>
 )
@@ -459,7 +460,13 @@ function LIReturnEachTopic(){
 
 
 
-
+function LoginClose () {
+    return (
+        <div className='divLoginClose'>
+            <button className='neonButtonClose' onClick={()=>handleToggleLoginAdmin()}> <CloseIcon /> </button>
+        </div>
+    )
+};
 
 
 
@@ -492,7 +499,10 @@ return (
             </div>
         }
 
-            { displayLoginAdmin ?  <> <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> </> : null  } 
+            { displayLoginAdmin ?  <div className='divLoginAdmin'> 
+            <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> 
+            <LoginClose />
+            </div> : null  } 
 
     </>
     

@@ -120,6 +120,46 @@ export default function Login ({adminStateProp, handleToggleAdminModeProp}) {
 return (
   <>
     <div className='divLogin'>
+      ADMIN MENU
+      <div className='divPWEmail'>
+        <div className='divEmail'>
+          {/* <p className='divEmailText'> EMAIL </p> */}
+          <input 
+            ref={emailRef} 
+            type={"email"} 
+            placeholder='Email'
+          />
+        </div>
+
+        <div className='divPW'>
+          {/* <p className='divPWText'> PASSWORD </p> */}
+          <input
+            ref={passwordRef} 
+            type={passwordVisible ? '' : 'password'} 
+            placeholder='Password'
+          />
+
+
+          { 
+            passwordVisible ? 
+              <button 
+                className='neonButtonPW'
+                onClick={togglePasswordVisible}> 
+                <p className='buttonTextAdmin'>
+                  <PWEyeFunc/>
+                </p>
+              </button> 
+            : 
+              <button 
+                className='neonButtonPW'
+                onClick={togglePasswordVisible}> 
+                  <p className='buttonTextAdmin'>
+                    <PWEyeSlashFunc/>
+                  </p>
+              </button>
+          }
+      </div>
+
       <div className='divLoginButton'>
         <button 
           className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
@@ -129,6 +169,8 @@ return (
           <PersonAdd/> 
           </p>
         </button>
+        Login
+
       </div>
       
       <div className='divLogOutButton'>
@@ -140,55 +182,21 @@ return (
           <PersonMinus/> 
           </p>
         </button>
+        Logout
       </div>
         
         {/* Currently Logged In As: { currentUser?.email } */}
 
       <div className='divLoginStatus'>
-        {currentUser?.email ? <p className='neonBoxActive'> <PersonIcon/> </p> : <p className='neonBox'> <PersonIcon/> </p>}
+        {currentUser?.email ? <>  <p className='neonBoxActive'> <PersonIcon/>  </p> Logged In </>  : <> <p className='neonBox'> <PersonIcon/> </p> Logged Out </>}
       </div>
         
       <div className='divUploadToCloudButton'>
-        {currentUser?.email ? <ButtonToggleAdminMode /> : null}
+        {currentUser?.email ? <> <ButtonToggleAdminMode /> Toggle Admin Mode </> : null}
       </div>
     </div>
 
-    <div className='divPWEmail'>
-      <div className='divEmail'>
-        <input 
-          ref={emailRef} 
-          type={"email"} 
-          placeholder='Email'
-        />
-      </div>
-
-      <div className='divPW'>
-        <input
-          ref={passwordRef} 
-          type={passwordVisible ? '' : 'password'} 
-          placeholder='Password'
-        />
-
-
-        { 
-          passwordVisible ? 
-            <button 
-              className='neonButtonPW'
-              onClick={togglePasswordVisible}> 
-              <p className='buttonTextAdmin'>
-                <PWEyeFunc/>
-              </p>
-            </button> 
-          : 
-            <button 
-              className='neonButtonPW'
-              onClick={togglePasswordVisible}> 
-                <p className='buttonTextAdmin'>
-                  <PWEyeSlashFunc/>
-                </p>
-            </button>
-        }
-      </div>
+    
     </div>
   </>
 )
