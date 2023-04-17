@@ -489,7 +489,7 @@ export default function LIReturn ({
   const ArrayLIDiv = () => {
     return (
       <>
-      <div className='divButtonUploadToCloud'> { adminStateProp ? ButtonUploadToCloud() : null } </div>
+       { adminStateProp ? <div className='divButtonUploadToCloud'> { ButtonUploadToCloud() } </div> : null } 
       <div className="pageHeading2" >  {topicModuleOrProject} { tnp }: <br/> { createTopicName() } </div>
       <div className='divLIGrid'>
 

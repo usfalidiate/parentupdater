@@ -25,8 +25,8 @@ html, body, :root {
   justify-items:center;
   position: relative;
   width: 100%;
-  height: 90%;
-  top: 10%;
+  height: calc(100% - 70px);
+  top: 70px;
   padding: 5px;
 }
 
@@ -40,8 +40,8 @@ html, body, :root {
   justify-items:center;
   position: relative;
   width: 100%;
-  height: 90%;
-  top: 10%;
+  height: calc(100% - 70px);
+  top: 70px;
   padding: 5px;
 }
 
@@ -50,8 +50,8 @@ html, body, :root {
   grid-template-columns: repeat(12, 1fr);
   position: relative;
   width: 100%;
-  height: 90%;
-  top: 10%;
+  height: calc(100% - 70px);
+  top: 70px;
   padding: 5px;
 }
 
@@ -65,7 +65,7 @@ html, body, :root {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 10%;
+  height: 70px;
   width: 100%;
   overflow: visible;
   position: fixed;
@@ -77,7 +77,7 @@ html, body, :root {
   display: flex;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
   grid-template-rows: 50px;
-  height: 10%;
+  height: 70px;
   padding: 5px 5px 5px 5px;
   width: 100%;
   position: fixed;
@@ -323,7 +323,7 @@ input:hover{
 .divLIGridChild {
   background: #121212;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #777;
   border-radius: 10px;
   grid-column: span 6;
@@ -331,11 +331,17 @@ input:hover{
 
 .divLIMiniHeadingText {
   font-size: 0.9em;
-  padding: 5px;
+  padding: 0px;
+  background-color: #050505;
+  border-radius: 5px;
+
+
 }
 
 .divLIStringText {
   font-size: 0.8em;
+  border-radius: 5px;
+  padding: 0px;
 }
 
 
@@ -419,16 +425,17 @@ input:hover{
 .pageHeading {
   grid-column: span 12;
   font-family: "Inter var";
-  font-size: 2em;
+  font-size: 2.5em;
   background-color: #050505;
   color: goldenrod;
-  /* padding: 10px 0px; */
+  padding: 5px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.055em;
   font-weight: 740;
   line-height: 1em;
+  text-align: center;
 }
 
 
@@ -517,12 +524,15 @@ input:hover{
   background-color: rgb(2, 71, 2);
   width: 100%;
   color:lightgrey;
+  border-radius: 5px;
 }
 
 .buttonUncompleted {
   background-color: rgb(74, 3, 3);
   width: 100%;
   color:lightgrey;
+  border-radius: 5px;
+
 }
 
 .divLIStatus {
@@ -530,9 +540,9 @@ input:hover{
   width: 100%;
 }
 
-.divLIString {
+/* .divLIString {
   text-align: left;
-}
+} */
 
 
 .divIcon {
@@ -822,8 +832,8 @@ input:hover{
   letter-spacing: -0.055em;
   font-weight: 740;
   padding: 30px 30px 30px 30px;
-  margin: 10px 10px 10px 10px;
-  height: 15px;
+  /* margin: 10px 10px 10px 10px; */
+  height: 1px;
   color: goldenrod;
   background-color: #050505;
   outline: goldenrod;
@@ -957,7 +967,7 @@ input:hover{
     justify-items:center;
     position: relative;
     width: 100%;
-    height: 90%;
+    height: calc(100% - 70px);
     top: 10%;
   }
 
@@ -966,7 +976,7 @@ input:hover{
     grid-template-columns: repeat(12, 1fr);
     position: relative;
     width: 100%;
-    height: 90%;
+    height: calc(100% - 70px);
     top: 10%;
     padding: 5%;
   }
