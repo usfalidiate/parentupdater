@@ -1478,7 +1478,16 @@ export const CHESyllabusOutcomesArray = [
         outcome: "N/A",
         description: "",
     },
-]
+];
+
+export const MSTSyllabusOutcomesArray = [
+    //MISC
+    {
+        outcome: "N/A",
+        description: "",
+    },
+];
+
 export const PSYSyllabusOutcomesArray = [
     {
         outcome: "N/A",
@@ -1938,6 +1947,60 @@ export const subjectInfoArray = [
     {   //11 Chemistry
         activeClass: "11CHE",
         activeSentralClasses: ["11CHE01"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //12 MST
+        activeClass: "12MST",
+        activeSentralClasses: ["12MST01", "12MST02"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //11 MST
+        activeClass: "11MST",
+        activeSentralClasses: ["11MST01", "11MST02", "11MST03"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+
+    {   //8 MST
+        activeClass: "8MST",
+        activeSentralClasses: ["8MST01", "8MST02"],
         numberOfTopics: 1,
         topic: [
             {

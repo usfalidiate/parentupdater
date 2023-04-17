@@ -1,5 +1,31 @@
-import { sciSyllabusOutcomesArray, subjectInfoArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray, PSYSyllabusOutcomesArray, CHESyllabusOutcomesArray } from "./SubjectInfoArrays";
-import { IQArray11INV, IQArray12INV, IQArray11PHY, IQArray12PHY, LIArray10STY, LIArray10SCI, LIArray10PYY, LIArray9PYY, IQArray12CHE, IQArray11CHE } from "./LIArrays";
+import { 
+    sciSyllabusOutcomesArray, 
+    subjectInfoArray, 
+    phySyllabusOutcomesArray, 
+    invSyllabusOutcomesArray, 
+    STEMSyllabusOutcomesArray, 
+    PSYSyllabusOutcomesArray, 
+    CHESyllabusOutcomesArray, 
+    MSTSyllabusOutcomesArray,
+     
+} from "./SubjectInfoArrays";
+
+import { 
+    IQArray11INV, 
+    IQArray12INV, 
+    IQArray11PHY, 
+    IQArray12PHY, 
+    LIArray10STY, 
+    LIArray10SCI, 
+    LIArray10PYY, 
+    LIArray9PYY, 
+    IQArray12CHE, 
+    IQArray11CHE,
+    LIArray12MST,
+    LIArray11MST,
+    LIArray8MST,
+
+} from "./LIArrays";
 
 // import Image from 'next/image'
 // import STEM from '../assets/STEM.jpg'
@@ -82,6 +108,27 @@ export default function SubjectInfoReturn({activeClass}) {
             activeClassTitle = "Year 9 Psychology (100-Hour)"
             activeSubjectSyllabusOutcomesArray = PSYSyllabusOutcomesArray
             activeIQorLIArray = LIArray9PYY
+            break; 
+
+            case '12MST' : 
+            // ActiveSubjectInfoTable = STEMSubjectInfoTable
+            activeClassTitle = "Year 9 Psychology (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
+            activeIQorLIArray = LIArray12MST
+            break; 
+
+            case '11MST' : 
+            // ActiveSubjectInfoTable = STEMSubjectInfoTable
+            activeClassTitle = "Year 9 Psychology (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
+            activeIQorLIArray = LIArray11MST
+            break; 
+
+            case '8MST' : 
+            // ActiveSubjectInfoTable = STEMSubjectInfoTable
+            activeClassTitle = "Year 9 Psychology (100-Hour)"
+            activeSubjectSyllabusOutcomesArray = MSTSyllabusOutcomesArray
+            activeIQorLIArray = LIArray8MST
             break; 
 
     };

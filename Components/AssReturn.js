@@ -1,5 +1,23 @@
-import { sciAssArray, STEMAssArray, invAssArray, phyAssArray, PSYAssArray, CHEAssArray } from "./AssArrays";
-import { subjectInfoArray, sciSyllabusOutcomesArray, phySyllabusOutcomesArray, invSyllabusOutcomesArray, STEMSyllabusOutcomesArray, PSYSyllabusOutcomesArray, CHESyllabusOutcomesArray } from "./SubjectInfoArrays";
+import { 
+    sciAssArray, 
+    STEMAssArray, 
+    invAssArray, 
+    phyAssArray, 
+    PSYAssArray, 
+    CHEAssArray, 
+    MSTAssArray, 
+} from "./AssArrays";
+
+import { 
+    subjectInfoArray, 
+    sciSyllabusOutcomesArray, 
+    phySyllabusOutcomesArray, 
+    invSyllabusOutcomesArray, 
+    STEMSyllabusOutcomesArray, 
+    PSYSyllabusOutcomesArray, 
+    CHESyllabusOutcomesArray, 
+    MSTSyllabusOutcomesArray, 
+} from "./SubjectInfoArrays";
 
 
 export default function AssReturn({activeClass} ) {
@@ -59,6 +77,15 @@ export default function AssReturn({activeClass} ) {
         activeSyllabusOutcomeArray = PSYSyllabusOutcomesArray
 
         break;
+
+        case '12MST' : case '11MST' : case '8MST' :
+            // ActiveAssTable = STEMAssTable
+            activeClassTitle = "Marine Studies"
+            // ActiveAssDiv = STEMAssDiv
+            activeAssArray = MSTAssArray
+            activeSyllabusOutcomeArray = MSTSyllabusOutcomesArray
+    
+            break;
     };
 
     
