@@ -515,7 +515,7 @@ return (
         <>
             { activeContent == 'LITable' ? 
             <div className='divContent'> 
-                <div className="pageHeading" > Learning Intentions </div>
+                <div className="pageHeadingLI" > Learning Intentions </div>
                 <LIReturnEachTopic activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState}/> 
             </div> : null}
         </>

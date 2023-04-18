@@ -314,6 +314,7 @@ input:hover{
   color: goldenrod;
   max-width: 95vw;
   margin: 0 auto;
+  padding: 5px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 5px ;
@@ -322,17 +323,52 @@ input:hover{
 
 .divLIGridChild {
   background: #121212;
-  text-align: center;
   padding: 10px;
   border: 1px solid #777;
   border-radius: 10px;
   grid-column: span 6;
 }
 
+.pageHeadingLI {
+  grid-column: span 12;
+  font-family: "Inter var";
+  font-size: 2.5em;
+  background-color: #050505;
+  color: goldenrod;
+  padding: 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: left;
+}
+
+.topicHeadingLI {
+  /* display: inline; */
+  grid-column: span 12;
+  font-family: "Inter var";
+  font-size: 1.5em;
+  background-color: #050505;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+}
+
 .divLIMiniHeadingText {
   font-size: 0.9em;
-  padding: 0px;
-  background-color: #050505;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  background-color: #121212;
   border-radius: 5px;
 
 
@@ -340,8 +376,13 @@ input:hover{
 
 .divLIStringText {
   font-size: 0.8em;
+  text-align: center;
   border-radius: 5px;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.divLIStringText::first-letter {
+  text-transform: capitalize;
 }
 
 
