@@ -234,34 +234,35 @@ export default function AssReturn({activeClass} ) {
                         return (
                             <> 
                             <div key={result.taskNumber} className='divAss'>
-                                <div className="pageHeading2"> Assessment Task {result.taskNumber}:  </div>
-                                <div className="pageHeading3"> {result.taskName} </div>
+                                {/* <div className="pageHeadingAss"> Assessment Task {result.taskNumber}:  </div> */}
+                                <div className="assHeading"> Task {result.taskNumber}: {result.taskName} </div>
                                 <div className="divAssInfo">
-                                    <div> <b> Due Date: </b> {result.date} </div>
-                                    <div> <b> Weighting: </b> {result.taskWeighting} </div>
-                                    <div> <h3> Task Description </h3> {result.taskDescription} </div>
-
-                                    <div> <h3> Task Outcomes </h3> 
+                                    <div className="divAssDueDate"> <div className="divAssBoxHeading"> Due Date </div> <div className="divAssBoxText"> {result.date} </div> </div>
+                                    <div className="divAssWeighting"> <div className="divAssBoxHeading"> Weighting </div> <div className="divAssBoxText"> {result.taskWeighting} </div> </div>
+                                    <div className="divAssDescription">  <div className="divAssBoxHeading"> Task Description </div> <div className="divAssBoxText"> {result.taskDescription} </div> <br/> </div>
+                                    
+                                    <div className="divAssOutcomes"> <div className="divAssBoxHeading"> Task Outcomes </div>  
                                         {result.taskOutcomes.map(out => {
                                             let des = activeSyllabusOutcomeArray.find((item) => item.outcome == out)
                                             return (
                                                 <div key = {des.outcome}>
-                                                    <b> {out}: </b> {des.description} 
+                                                    <div className="divAssBoxHeading"> {out}: </div> <div className="divAssBoxText"> {des.description} </div> 
                                                     <br/> 
                                                 </div>
                                             )
                                         })}
-                                        <div> <h3> Success Criteria </h3> <b> A strong submission will successfully achieve the following criteria: </b> <br/> 
-                                            {
-                                                result.successCriteria.map(item => {
-                                                    return (
-                                                        <div key = {item}>
-                                                        {item} <br/>
-                                                        </div>
-                                                    )
-                                                })
-                                            }
-                                        </div>
+                                    </div>
+
+                                    <div className="divAssSuccessCriteria"> <div className="divAssBoxHeading"> Success Criteria </div> 
+                                        {
+                                            result.successCriteria.map(item => {
+                                                return (
+                                                    <div key = {item}>
+                                                        <div className="divAssBoxText"> {item}  </div> <br/>
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +278,7 @@ export default function AssReturn({activeClass} ) {
 
     return (
         <div className="divContent">
-            <div className="pageHeading" >{activeClassTitle} ({activeClass})</div>
+            <div className="pageHeadingAss" > Assessments ({activeClass}) </div>
             <AssDiv />
         </div>
     )

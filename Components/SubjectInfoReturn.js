@@ -302,25 +302,29 @@ export default function SubjectInfoReturn({activeClass}) {
                     return (
                         <>
                         <div className="divSubjTopic" key={result.topicNumber} >
-                            <div className="pageHeading2"> Topic {result.topicNumber}: </div>
-                            <div className="pageHeading3">  {result.topicName} </div>
+                            <div className="subjHeading"> Topic {result.topicNumber}: {result.topicName} </div>
 
                             <div className="divSubjTopicInfo">
                                 
-                            <div> <b> Duration: </b>  </div> 
-                            <div> {result.topicDuration} approx.  </div> 
-                            <br/>
+                            <div className="divSubjDuration">  <div className="divSubjBoxHeading"> Duration: </div> {result.topicDuration} approx. </div> 
+                            
 
-                            <div> <b> Topic Description </b> </div>
-                            <div> {result.topicDescription} </div>
-                            <br/>
+                            <div className="divSubjTopicDescription"> <div className="divSubjBoxHeading"> Topic Description </div> <div className="divSubjBoxText"> {result.topicDescription}</div> <br/> </div>
+                            
 
-                            <div> <b> Outcomes </b> <br/> {                                  
+                            <div className="divSubjTopicOutcomes"> <div className="divSubjBoxHeading"> Outcomes </div> {                                  
                                 result.topicOutcomes.map(row => {
-                                let out = activeSubjectSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-                                return (<div key = {out.outcome}> <b>{out.outcome} </b> <br/> {out.description} </div> )                                            
+                                    let out = activeSubjectSyllabusOutcomesArray.find((poop) => poop.outcome == row)
+                                    return (
+                                        <div key = {out.outcome}> 
+                                            <div className="divSubjBoxHeading"> {out.outcome} </div> <div className="divSubjBoxText">{out.description} </div> 
+                                            <br/>
+                                        </div> 
+                                    )                                            
                                 })
-                            } </div> {/* Child 3 */}
+                            } </div> 
+                            
+                            {/* Child 3 */}
                             {/* <div> <b> Inquiry Questions </b> <br/> {
                                 result.topicContent.map(row => {
                                 let out = activeIQorLIArray.find((IQ) => IQ.fullID == row)
@@ -340,7 +344,7 @@ export default function SubjectInfoReturn({activeClass}) {
 
             return (
             <> 
-                <div className="pageHeading" > Subject Information <br/> {activeClassTitle} </div> 
+                <div className="pageHeadingSubj" > Subject Information <br/> ({activeClass}) </div> 
                 <> {END} </>
                 <br/>
             </>
