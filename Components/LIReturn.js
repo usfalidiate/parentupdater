@@ -477,7 +477,7 @@ export default function LIReturn ({
       return ( 
       <div 
       className={ buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' } 
-      > {buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Status: Completed' : 'Status: Not Completed'} </div> )
+      > {buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Completed' : 'Not Completed'} </div> )
     } catch {
       console.log('error in RowStatus')
       return ( <div className={'buttonUncompleted'}> Status Error </div>)
