@@ -160,6 +160,19 @@ html, body, :root {
   text-transform: uppercase;
   font-size: 1.1em;
 }
+.divLoginTextInactive {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: grey;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
 
 
 .divLogOutContainer {
@@ -184,6 +197,19 @@ html, body, :root {
   padding: 5px;
   width: auto;
   color: goldenrod;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.divLogOutTextInactive {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: grey;
   letter-spacing: -0.055em;
   font-weight: 740;
   text-transform: uppercase;
@@ -218,8 +244,21 @@ html, body, :root {
   font-weight: 740;
   text-transform: uppercase;
   font-size: 1.1em;
-
 }
+.divLoginStatusTextInactive {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: grey;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
 
 
 

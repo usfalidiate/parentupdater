@@ -172,7 +172,7 @@ return (
           </button>
         </div>
 
-        <div className='divLoginText' >
+        <div className={ loading || currentUser != null ? 'divLoginTextInactive' : 'divLoginText'} >
           Login
         </div>
 
@@ -189,7 +189,7 @@ return (
             </p>
           </button>
         </div>
-        <div className='divLogOutText'> Logout </div>
+        <div className={ loading || !currentUser ? 'divLogOutTextInactive' : 'divLogOutText'}> Logout </div>
       </div>
         
         {/* Currently Logged In As: { currentUser?.email } */}
@@ -208,7 +208,7 @@ return (
           
           <> 
             <div className='divLoginStatus'> <p className='neonBox'> <PersonIcon/> </p> </div>
-            <div className='divLoginStatusText' > Status: Logged Out </div> 
+            <div className='divLoginStatusTextInactive' > Status: Logged Out </div> 
           </>
         }
       </div>
@@ -218,7 +218,7 @@ return (
           currentUser?.email ? 
             <> 
               <div className='divUploadToCloudButton' > <ButtonToggleAdminMode /> </div> 
-              <div className='divUploadToCloudText' > Toggle Admin Mode  </div>
+              { adminStateProp ? <div className='divUploadToCloudText' > Toggle Admin Mode (Status: ON)  </div> : <div className='divUploadToCloudText' > Toggle Admin Mode (Status: OFF)  </div>}
             </> : null
         }
       </div>
