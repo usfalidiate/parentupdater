@@ -122,17 +122,16 @@ return (
     <div className='divLogin'>
       <div className='pageHeading' > <> ADMIN MENU </> </div>
       <div className='divPWEmail'>
-        <div className='divEmail'>
-          {/* <p className='divEmailText'> EMAIL </p> */}
+        
+        { loading || currentUser != null ? null : <div className='divEmail'>
           <input 
             ref={emailRef} 
             type={"email"} 
             placeholder='Email'
           />
-        </div>
+        </div>}
 
-        <div className='divPW'>
-          {/* <p className='divPWText'> PASSWORD </p> */}
+        { loading || currentUser != null ? null : <div className='divPW'>
           <input
             ref={passwordRef} 
             type={passwordVisible ? '' : 'password'} 
@@ -158,7 +157,7 @@ return (
                   </p>
               </button>
           }
-      </div>
+      </div>}
 
       <div className='divLoginContainer'>
         <div className='divLoginButton' >
