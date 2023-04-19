@@ -344,7 +344,7 @@ export default function SubjectInfoReturn({activeClass}) {
 
             return (
             <> 
-                <div className="pageHeadingSubj" > Subject Information <br/> ({activeClass}) </div> 
+                <div className="pageHeadingSubj" > Subject Information </div> <div className="subjSubHeading" > ({activeClass})  </div> 
                 <> {END} </>
                 <br/>
             </>

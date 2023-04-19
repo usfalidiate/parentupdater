@@ -160,39 +160,67 @@ return (
           }
       </div>
 
-      <div className='divLoginButton'>
-        <button 
-          className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
-          disabled={loading || currentUser != null } 
-          onClick={handleLogin} >
-          <p className='buttonTextAdmin'>
-          <PersonAdd/> 
-          </p>
-        </button>
-        Login
+      <div className='divLoginContainer'>
+        <div className='divLoginButton' >
+          <button 
+            className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
+            disabled={loading || currentUser != null } 
+            onClick={handleLogin} >
+            <p className='buttonTextAdmin'>
+            <PersonAdd/> 
+            </p>
+          </button>
+        </div>
+
+        <div className='divLoginText' >
+          Login
+        </div>
 
       </div>
       
-      <div className='divLogOutButton'>
-        <button 
-          className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
-          disabled={loading || !currentUser } 
-          onClick={handleLogout} > 
-          <p className='buttonTextAdmin'>
-          <PersonMinus/> 
-          </p>
-        </button>
-        Logout
+      <div className='divLogOutContainer'>
+        <div className='divLogOutButton'>
+          <button 
+            className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
+            disabled={loading || !currentUser } 
+            onClick={handleLogout} > 
+            <p className='buttonTextAdmin'>
+            <PersonMinus/> 
+            </p>
+          </button>
+        </div>
+        <div className='divLogOutText'> Logout </div>
       </div>
         
         {/* Currently Logged In As: { currentUser?.email } */}
 
-      <div className='divLoginStatus'>
-        {currentUser?.email ? <>  <p className='neonBoxActive'> <PersonIcon/>  </p> Logged In </>  : <> <p className='neonBox'> <PersonIcon/> </p> Logged Out </>}
+      <div className='divLoginStatusContainer'>
+        {currentUser?.email ? 
+          <>  
+            <div className='divLoginStatus'> 
+              <p className='neonBoxActive'> <PersonIcon/> </p>  
+            </div>
+
+            <div className='divLoginStatusText'> Status: Logged In </div> 
+          </> 
+          
+          : 
+          
+          <> 
+            <div className='divLoginStatus'> <p className='neonBox'> <PersonIcon/> </p> </div>
+            <div className='divLoginStatusText' > Status: Logged Out </div> 
+          </>
+        }
       </div>
         
-      <div className='divUploadToCloudButton'>
-        {currentUser?.email ? <> <ButtonToggleAdminMode /> Toggle Admin Mode </> : null}
+      <div className='divUploadToCloudContainer'>
+        {
+          currentUser?.email ? 
+            <> 
+              <div className='divUploadToCloudButton' > <ButtonToggleAdminMode /> </div> 
+              <div className='divUploadToCloudText' > Toggle Admin Mode  </div>
+            </> : null
+        }
       </div>
     </div>
 

@@ -129,49 +129,153 @@ html, body, :root {
 
 }
 
+
+
+
+
+.divLoginContainer {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 .divLoginButton {
-  /* grid-row: 1;
-  grid-column: 4; */
   align-self: center;
   justify-self: center;
-  width: 100%;
+  width: 50px;
   display: flex;
   align-items: center;
 }
+.divLoginText {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: goldenrod;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
 
+
+.divLogOutContainer {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 .divLogOutButton {
-  /* grid-row: 1;
-  grid-column: 5; */
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+.divLogOutText {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: goldenrod;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+
+
+.divLoginStatusContainer {
   align-self: center;
   justify-self: center;
   display: flex;
   align-items: center;
   width: 100%;
-
 }
-
 .divLoginStatus {
-  /* grid-row: 1;
-  grid-column: 6; */
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+.divLoginStatusText {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: goldenrod;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+
+}
+
+
+
+
+
+
+.divUploadToCloudContainer {
   align-self: center;
   justify-self: center;
   display: flex;
   align-items: center;
   width: 100%;
-
 }
-
 .divUploadToCloudButton {
-  /* grid-row: 1;
-  grid-column: 7; */
   align-self: center;
   justify-self: center;
   display: flex;
   align-items: center;
-  width: 100%;
-
-
+  width: 50px;
 }
+.divUploadToCloudText {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: auto;
+  color: goldenrod;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .divLoginClose {
   background-color: transparent;
@@ -336,7 +440,25 @@ input:hover{
   text-transform: uppercase;
   background-color: #050505;
   color: goldenrod;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+}
+
+.pageSubHeadingLI {
+  /* display: inline; */
+  grid-column: span 12;
+  font-family: "Inter var";
+  font-size: 1.5em;
+  background-color: #050505;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 0px 10px 10px 10px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -464,7 +586,7 @@ input:hover{
   font-size: 2.5em;
   background-color: #050505;
   color: goldenrod;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -492,13 +614,39 @@ input:hover{
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
+}
 
+.assSubHeading {
+  /* display: inline; */
+  grid-column: span 12;
+  font-family: "Inter var";
+  font-size: 1.5em;
+  background-color: #050505;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 0px 10px 10px 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .divAssBoxHeading {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.95em;
+  text-align: center;
+}
+
+.divAssBoxSubHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  text-align: left;
 }
 
 .divAssBoxText {
@@ -580,7 +728,7 @@ input:hover{
   font-size: 2.5em;
   background-color: #050505;
   color: goldenrod;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -600,6 +748,26 @@ input:hover{
   color: goldenrod;
   margin: 0px 0px;
   padding: 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.subjSubHeading {
+  /* display: inline; */
+  grid-column: span 12;
+  font-family: "Inter var";
+  font-size: 1.5em;
+  background-color: #050505;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 0px 10px 10px 10px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;

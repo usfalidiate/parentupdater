@@ -278,7 +278,7 @@ export default function AssReturn({activeClass} ) {
 
     return (
         <div className="divContent">
-            <div className="pageHeadingAss" > Assessments ({activeClass}) </div>
+            <div className="pageHeadingAss" > Assessments </div> <div className="assSubHeading" > ({activeClass}) </div> 
             <AssDiv />
         </div>
     )
