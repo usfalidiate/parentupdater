@@ -473,38 +473,40 @@ function LoginClose () {
 
 return (
     <div className='divBG'>  
-    <>
-        {
-            displayTeacherChoice ?
-            <div className='divTopBarHome'>
-                <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Your Teacher </p> </button>
-            </div> 
-            : 
-            <div className='divTopBar'>
-                <div className='divTopBarHomeButton' > 
-                    <ButtonHome/> 
-                </div>
-
-                <div className='divTopBarBack'>
-                    { displaySentralClassChoice ? <BackToTeacherButton/> : null }
-                    { displayContentChoice ? <BackToClassButton/> : null }
-                    { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
+        <>
+            {
+                displayTeacherChoice ?
+                <div className='divTopBarHome'>
+                    <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Your Teacher </p> </button>
                 </div> 
+                : 
+                <div className='divTopBar'>
+                    <div className='divTopBarHomeButton' > 
+                        <ButtonHome/> 
+                    </div>
 
-                <div className='divTopBarToggleLoginAdmin'>             
-                    <ButtonToggleDisplayLoginAdmin/>
+                    <div className='divTopBarBack'>
+                        { displaySentralClassChoice ? <BackToTeacherButton/> : null }
+                        { displayContentChoice ? <BackToClassButton/> : null }
+                        { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
+                    </div> 
+
+                    <div className='divTopBarToggleLoginAdmin'>             
+                        <ButtonToggleDisplayLoginAdmin/>
+                    </div>
+
+
                 </div>
+            }
 
+            { 
+                displayLoginAdmin ?  <div className='divLoginAdmin'> 
+                <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> 
+                <LoginClose />
+                </div> : null  
+            } 
 
-            </div>
-        }
-
-            { displayLoginAdmin ?  <div className='divLoginAdmin'> 
-            <Login handleToggleAdminModeProp={ handleToggleAdminMode } adminStateProp={ adminState } /> 
-            <LoginClose />
-            </div> : null  } 
-
-    </>
+        </>
     
         <>
             { displayTeacherChoice ? <div className='divChoice'> <TeacherChoiceReturn/> </div> : null }
@@ -527,6 +529,8 @@ return (
         <>
             {activeContent == 'AssTable' ? <> <AssReturn activeClass={activeClass}/> </> : null}
         </>
+
+
     </div>
 )
 };

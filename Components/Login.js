@@ -172,7 +172,7 @@ return (
         </div>
 
         <div className={ loading || currentUser != null ? 'divLoginTextInactive' : 'divLoginText'} >
-          Login
+          Login (Teacher Only)
         </div>
 
       </div>
@@ -188,7 +188,7 @@ return (
             </p>
           </button>
         </div>
-        <div className={ loading || !currentUser ? 'divLogOutTextInactive' : 'divLogOutText'}> Logout </div>
+        <div className={ loading || !currentUser ? 'divLogOutTextInactive' : 'divLogOutText'}> Logout (Teacher Only) </div>
       </div>
         
         {/* Currently Logged In As: { currentUser?.email } */}
@@ -200,14 +200,14 @@ return (
               <p className='neonBoxActive'> <PersonIcon/> </p>  
             </div>
 
-            <div className='divLoginStatusText'> Status: Logged In </div> 
+            <div className='divLoginStatusText'> Admin Status: Teacher </div> 
           </> 
           
           : 
           
           <> 
             <div className='divLoginStatus'> <p className='neonBox'> <PersonIcon/> </p> </div>
-            <div className='divLoginStatusTextInactive' > Status: Logged Out </div> 
+            <div className='divLoginStatusTextInactive' > Admin Status: Guest </div> 
           </>
         }
       </div>
