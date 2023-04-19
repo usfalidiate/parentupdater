@@ -368,17 +368,57 @@ export const IQArray12BIO = [
 
 // CHEMISTRY
 export const IQArray11CHE = [   
-    // Project 1 - Catapult Project
-    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
-    // Project 2 
-    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Module 1 - Properties and Structure of Matter
+    {id: 0  ,  fullID: "1.1",  year: 11, topic: 1, topicName: 'Properties and Structure of Matter', completed: false, LINumber: '1', moduleNumber: 'Module 1',  LIString: 'How do the properties of substances help us to classify and separate them?'},
+    {id: 1  ,  fullID: "1.2",  year: 11, topic: 1, topicName: 'Properties and Structure of Matter', completed: false, LINumber: '2', moduleNumber: 'Module 1',  LIString: 'Why are atoms of elements different from one another?'},
+    {id: 2  ,  fullID: "1.3",  year: 11, topic: 1, topicName: 'Properties and Structure of Matter', completed: false, LINumber: '3', moduleNumber: 'Module 1',  LIString: 'Are there patterns in the properties of elements?'},
+    {id: 3  ,  fullID: "1.4",  year: 11, topic: 1, topicName: 'Properties and Structure of Matter', completed: false, LINumber: '4', moduleNumber: 'Module 1',  LIString: 'What binds atoms together in elements and compounds?'},
+
+    // Module 2 - Introduction to Quantitative Chemistry
+    {id: 4  ,  fullID: "2.1",  year: 11, topic: 2, topicName: 'Introduction to Quantitative Chemistry', completed: false, LINumber: '1', moduleNumber: 'Module 2',  LIString: 'What happens in chemical reactions?'},
+    {id: 5  ,  fullID: "2.2",  year: 11, topic: 2, topicName: 'Introduction to Quantitative Chemistry', completed: false, LINumber: '2', moduleNumber: 'Module 2',  LIString: 'How are measurements made in chemistry?'},
+    {id: 6  ,  fullID: "2.3",  year: 11, topic: 2, topicName: 'Introduction to Quantitative Chemistry', completed: false, LINumber: '3', moduleNumber: 'Module 2',  LIString: 'How are chemicals in solutions measured?'},
+    {id: 7  ,  fullID: "2.4",  year: 11, topic: 2, topicName: 'Introduction to Quantitative Chemistry', completed: false, LINumber: '4', moduleNumber: 'Module 2',  LIString: 'How does the Ideal Gas Law relate to all other Gas Laws?'},
+
+    // Module 3 - Reactive Chemistry
+    {id: 8  ,  fullID: "3.1",  year: 11, topic: 3, topicName: 'Reactive Chemistry', completed: false, LINumber: '1', moduleNumber: 'Module 3',  LIString: 'What are the products of a chemical reaction?'},
+    {id: 9  ,  fullID: "3.2",  year: 11, topic: 3, topicName: 'Reactive Chemistry', completed: false, LINumber: '2', moduleNumber: 'Module 3',  LIString: 'How is the reactivity of various metals predicted?'},
+    {id: 10 ,  fullID: "3.3",  year: 11, topic: 3, topicName: 'Reactive Chemistry', completed: false, LINumber: '3', moduleNumber: 'Module 3',  LIString: 'What affects the rate of a chemical reaction?'},
+
+    // Module 4 - Drivers of Reactions
+    {id: 11 ,  fullID: "4.1",  year: 11, topic: 4, topicName: 'Drivers of Reactions', completed: false, LINumber: '1', moduleNumber: 'Module 4',  LIString: 'What energy changes occur in chemical reactions?'},
+    {id: 12 ,  fullID: "4.2",  year: 11, topic: 4, topicName: 'Drivers of Reactions', completed: false, LINumber: '2', moduleNumber: 'Module 4',  LIString: 'How much energy does it take to break bonds, and how much is released when bonds are formed?'},
+    {id: 13 ,  fullID: "4.3",  year: 11, topic: 4, topicName: 'Drivers of Reactions', completed: false, LINumber: '3', moduleNumber: 'Module 4',  LIString: 'How can enthalpy and entropy be used to explain reaction spontaneity?'},
+
+
 ];
 
 export const IQArray12CHE = [   
-    // Project 1 - Catapult Project
-    {id: 0  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
-    // Project 2 
-    {id: 1  ,  fullID: "7.1.1",  year: 8, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},
+    // Module 5 - Equilibrium and Acid Reactions
+    {id: 0  ,  fullID: "5.1",  year: 12, topic: 5, topicName: 'Equilibrium and Acid Reactions', completed: false, LINumber: '1', moduleNumber: 'Module 5',  LIString: 'What happens when chemical reactions do not go through to completion?'},
+    {id: 1  ,  fullID: "5.2",  year: 12, topic: 5, topicName: 'Equilibrium and Acid Reactions', completed: false, LINumber: '2', moduleNumber: 'Module 5',  LIString: 'What factors affect equilibrium and how?'},
+    {id: 2  ,  fullID: "5.3",  year: 12, topic: 5, topicName: 'Equilibrium and Acid Reactions', completed: false, LINumber: '3', moduleNumber: 'Module 5',  LIString: 'How can the position of equilibrium be described and what does the equilibrium constant represent?'},
+    {id: 3  ,  fullID: "5.4",  year: 12, topic: 5, topicName: 'Equilibrium and Acid Reactions', completed: false, LINumber: '4', moduleNumber: 'Module 5',  LIString: 'How does solubility relate to chemical equilibrium?'},
+
+    // Module 6 - Acid/Base Reactions
+    {id: 4  ,  fullID: "6.1",  year: 12, topic: 6, topicName: 'Acid/Base Reactions', completed: false, LINumber: '1', moduleNumber: 'Module 6',  LIString: 'What is an acid and what is a base?'},
+    {id: 5  ,  fullID: "6.2",  year: 12, topic: 6, topicName: 'Acid/Base Reactions', completed: false, LINumber: '2', moduleNumber: 'Module 6',  LIString: 'What is the role of water in solutions of acids and bases?'},
+    {id: 6  ,  fullID: "6.3",  year: 12, topic: 6, topicName: 'Acid/Base Reactions', completed: false, LINumber: '3', moduleNumber: 'Module 6',  LIString: 'How are solutions of acids and bases analysed?'},
+
+    // Module 7 - Organic Chemistry
+    {id: 7  ,  fullID: "7.1",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '1', moduleNumber: 'Module 7',  LIString: 'How do we systematically name organic chemical compounds?'},
+    {id: 8  ,  fullID: "7.2",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '2', moduleNumber: 'Module 7',  LIString: 'How can hydrocarbons be classified based on their structure and reactivity?'},
+    {id: 9  ,  fullID: "7.3",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '3', moduleNumber: 'Module 7',  LIString: 'What are the products of reactions of hydrocarbons and how do they react?'},
+    {id: 10 ,  fullID: "7.4",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '4', moduleNumber: 'Module 7',  LIString: 'How can alcohols be produced and what are their properties?'},
+    {id: 11 ,  fullID: "7.5",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '5', moduleNumber: 'Module 7',  LIString: 'What are the properties of organic acids and bases?'},
+    {id: 12 ,  fullID: "7.6",  year: 12, topic: 7, topicName: 'Organic Chemistry', completed: false, LINumber: '6', moduleNumber: 'Module 7',  LIString: 'What are the properties and uses of polymers?'},
+
+    // Module 8 - Applying Chemical Ideas
+    {id: 13 ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'Applying Chemical Ideas', completed: false, LINumber: '1', moduleNumber: 'Module 8',  LIString: 'How are the ions present in the environment identified and measured?'},
+    {id: 14 ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'Applying Chemical Ideas', completed: false, LINumber: '1', moduleNumber: 'Module 8',  LIString: 'How is information about the reactivity and structure of organic compounds obtained?'},
+    {id: 15 ,  fullID: "8.1",  year: 12, topic: 8, topicName: 'Applying Chemical Ideas', completed: false, LINumber: '1', moduleNumber: 'Module 8',  LIString: 'What are the implications for society of chemical synthesis and design?'},
+
+
 ];
 
 

@@ -239,31 +239,31 @@ export default function AssReturn({activeClass} ) {
                                 <div className="divAssInfo">
                                     <div className="divAssDueDate"> <div className="divAssBoxHeading"> Due Date </div> <div className="divAssBoxText"> {result.date} </div> </div>
                                     <div className="divAssWeighting"> <div className="divAssBoxHeading"> Weighting </div> <div className="divAssBoxText"> {result.taskWeighting} </div> </div>
-                                    <div className="divAssDescription">  <div className="divAssBoxHeading"> Task Description </div> <div className="divAssBoxText"> {result.taskDescription} </div> <br/> </div>
-                                    
-                                    <div className="divAssOutcomes"> <div className="divAssBoxHeading"> Task Outcomes </div>  
-                                        {result.taskOutcomes.map(out => {
-                                            let des = activeSyllabusOutcomeArray.find((item) => item.outcome == out)
-                                            return (
-                                                <div key = {des.outcome}>
-                                                    <div className="divAssBoxHeading"> {out}: </div> <div className="divAssBoxText"> {des.description} </div> 
-                                                    <br/> 
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-
-                                    <div className="divAssSuccessCriteria"> <div className="divAssBoxHeading"> Success Criteria </div> 
+                                    <div className="divAssDescription">  <div className="divAssBoxHeading"> Task Description </div> <div className="divAssBoxText"> {result.taskDescription} </div> </div>
+                                    <div className="divAssSuccessCriteria"> <div className="divAssBoxHeading"> Specific Task Criteria </div> 
                                         {
                                             result.successCriteria.map(item => {
                                                 return (
                                                     <div key = {item}>
-                                                        <div className="divAssBoxText"> {item}  </div> <br/>
+                                                        <div className="divAssBoxText"> {item}  </div>
                                                     </div>
                                                 )
                                             })
                                         }
                                     </div>
+                                    
+                                    <div className="divAssOutcomes"> <div className="divAssBoxHeading"> Task Outcomes </div>  
+                                        {result.taskOutcomes.map(out => {
+                                            let des = activeSyllabusOutcomeArray.find((item) => item.outcome == out)
+                                            return (
+                                                <div key = {des.outcome} className="divAssHeadingAndText">
+                                                    <div className="divAssBoxSubHeading"> {out}: </div> <div className="divAssBoxText"> {des.description} </div> 
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+
+
                                 </div>
                             </div>
                             <br/><br/><br/>

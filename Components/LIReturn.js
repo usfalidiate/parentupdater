@@ -394,7 +394,7 @@ export default function LIReturn ({
           <button
           onClick={ () => handleClick(i, x) }
           className={ buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'buttonCompleted' : 'buttonUncompleted' }
-          > { buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Status: Completed' : 'Status: Not Completed' } </button>
+          > { buttonState[`${activeTeacherProp}`][i]?.buttonState ? 'Completed' : 'Not Completed' } </button>
         </div>
     )
     } catch {

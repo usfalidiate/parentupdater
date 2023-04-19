@@ -609,6 +609,9 @@ input:hover{
   grid-column: span 12;
   border: 1px solid goldenrod;
   padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
 
 }
 
@@ -674,22 +677,33 @@ input:hover{
   text-transform: uppercase;
 }
 
+.divAssHeadingAndText {
+  /* background-color: #050505; */
+  grid-column: span 12;
+  padding: 5px;
+  /* border: 1px solid goldenrod; */
+  /* border-radius: 5px; */
+
+}
+
 .divAssBoxHeading {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.95em;
   text-align: center;
+  grid-column: span 12;
 }
 
 .divAssBoxSubHeading {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.95em;
-  text-align: left;
+  font-size: 0.75em;
+  text-align: center;
 }
 
 .divAssBoxText {
   font-size: 0.8em;
+  padding: 5px;
 }
 
 
@@ -720,7 +734,7 @@ input:hover{
   background: #121212;
   border: 1px solid lightgrey;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px 20px 20px 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -783,10 +797,10 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
+  /* background-color: #050505; */
   color: goldenrod;
   margin: 0px 0px;
-  padding: 10px;
+  padding: 0px 10px 10px 10px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
