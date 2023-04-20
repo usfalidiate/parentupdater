@@ -10,7 +10,7 @@ html, body, :root {
   height: 100%;
   width: 100%;
   position: absolute;
-  padding: 5px;
+  padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
@@ -154,6 +154,7 @@ html, body, :root {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end ;
+  margin: 0px 0px;
 
 }
 
@@ -364,7 +365,7 @@ html, body, :root {
   display: flex;
   border: none;
   justify-content: flex-end;
-  height: 70px;
+  height: 60px;
 }
 
 .divPWEmail {
