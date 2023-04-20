@@ -497,8 +497,6 @@ return (
                         <ButtonToggleDisplayLoginAdmin/>
                     </div>
 
-
-
                 </div>
             }
 
