@@ -160,6 +160,10 @@ return (
       </div>}
 
       <div className='divLoginContainer'>
+        
+      <div className={ loading || currentUser != null ? 'divLoginTextInactive' : 'divLoginText'} >
+          Login (Teacher Only)
+        </div>
         <div className='divLoginButton' >
           <button 
             className={ loading || currentUser != null ? 'neonButtonDisabled' : 'neonButton'} 
@@ -170,14 +174,12 @@ return (
             </p>
           </button>
         </div>
-
-        <div className={ loading || currentUser != null ? 'divLoginTextInactive' : 'divLoginText'} >
-          Login (Teacher Only)
-        </div>
-
       </div>
       
       <div className='divLogOutContainer'>
+      <div className={ loading || !currentUser ? 'divLogOutTextInactive' : 'divLogOutText'}> Logout (Teacher Only) </div>
+
+
         <div className='divLogOutButton'>
           <button 
             className={ loading || !currentUser ? 'neonButtonDisabled' : 'neonButton'} 
@@ -188,39 +190,48 @@ return (
             </p>
           </button>
         </div>
-        <div className={ loading || !currentUser ? 'divLogOutTextInactive' : 'divLogOutText'}> Logout (Teacher Only) </div>
+
+
+
+     
+     
       </div>
         
         {/* Currently Logged In As: { currentUser?.email } */}
 
+      <div className='divUploadToCloudContainer'>
+        {
+          currentUser?.email ? 
+            <> 
+             { adminStateProp ? <div className='divUploadToCloudText' > Toggle Admin Mode (Status: ON)  </div> : <div className='divUploadToCloudText' > Toggle Admin Mode (Status: OFF)  </div>}
+
+              <div className='divUploadToCloudButton' > <ButtonToggleAdminMode /> </div> 
+            </> : null
+        }
+      </div>
+
       <div className='divLoginStatusContainer'>
         {currentUser?.email ? 
           <>  
+                      <div className='divLoginStatusText'> Admin Status: Teacher </div> 
+
             <div className='divLoginStatus'> 
               <p className='neonBoxActive'> <PersonIcon/> </p>  
             </div>
 
-            <div className='divLoginStatusText'> Admin Status: Teacher </div> 
           </> 
           
           : 
           
           <> 
+                      <div className='divLoginStatusTextInactive' > Admin Status: Guest </div> 
+
             <div className='divLoginStatus'> <p className='neonBox'> <PersonIcon/> </p> </div>
-            <div className='divLoginStatusTextInactive' > Admin Status: Guest </div> 
           </>
         }
       </div>
         
-      <div className='divUploadToCloudContainer'>
-        {
-          currentUser?.email ? 
-            <> 
-              <div className='divUploadToCloudButton' > <ButtonToggleAdminMode /> </div> 
-              { adminStateProp ? <div className='divUploadToCloudText' > Toggle Admin Mode (Status: ON)  </div> : <div className='divUploadToCloudText' > Toggle Admin Mode (Status: OFF)  </div>}
-            </> : null
-        }
-      </div>
+
     </div>
 
     

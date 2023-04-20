@@ -482,8 +482,9 @@ return (
                 : 
                 <div className='divTopBar'>
 
-                    <div className='divTopBarToggleLoginAdmin'>             
-                        <ButtonToggleDisplayLoginAdmin/>
+
+                    <div className='divTopBarHomeButton' > 
+                        <ButtonHome/> 
                     </div>
 
                     <div className='divTopBarBack'>
@@ -492,9 +493,10 @@ return (
                         { activeSentralClass != null && activeContent != null ? <BackToContentButton/> : null }
                     </div> 
 
-                    <div className='divTopBarHomeButton' > 
-                        <ButtonHome/> 
+                    <div className='divTopBarToggleLoginAdmin'>             
+                        <ButtonToggleDisplayLoginAdmin/>
                     </div>
+
 
 
                 </div>

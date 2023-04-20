@@ -142,7 +142,7 @@ html, body, :root {
 
 .divLoginAdmin {
   position: relative;
-  width: auto;
+  width: 100%;
   height: 100%;
   /* background-color: #050505; */
   position: fixed;
@@ -151,8 +151,10 @@ html, body, :root {
   /* opacity: 95%; */
   padding: 5px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end ;
+
 }
 
 .pageHeadingAdmin {
@@ -174,24 +176,19 @@ html, body, :root {
 
 
 .divLoginContainer {
-  align-self: center;
-  justify-self: center;
   width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 .divLoginButton {
-  align-self: center;
-  justify-self: center;
+  align-self: flex-end;
   width: 50px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .divLoginText {
-  align-self: center;
-  justify-self: center;
+  align-self: left;
   display: flex;
-  align-items: center;
   padding: 5px;
   width: auto;
   color: goldenrod;
@@ -221,6 +218,8 @@ html, body, :root {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: flex-end;
+
 }
 .divLogOutButton {
   align-self: center;
@@ -264,6 +263,8 @@ html, body, :root {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: flex-end;
+
 }
 .divLoginStatus {
   align-self: center;
@@ -311,6 +312,8 @@ html, body, :root {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: flex-end;
+
 }
 .divUploadToCloudButton {
   align-self: center;
