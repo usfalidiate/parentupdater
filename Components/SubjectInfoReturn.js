@@ -1,9 +1,9 @@
 import {     
     subjectInfoArray, 
     SCISyllabusOutcomesArray, 
-    //bio
+    BIOSyllabusOutcomesArray,
     CHESyllabusOutcomesArray, 
-    //ees
+    EESSyllabusOutcomesArray,
     INVSyllabusOutcomesArray, 
     PHYSyllabusOutcomesArray, 
     STEMSyllabusOutcomesArray, 
@@ -74,9 +74,18 @@ export default function SubjectInfoReturn({activeClass}) {
         //9STX
         //8STM      
         
-        
-        //12BIO
-        //11BIO
+
+        case '12BIO' : 
+            activeClassTitle = "Biology"
+            activeSubjectSyllabusOutcomesArray = BIOSyllabusOutcomesArray
+            activeIQorLIArray = IQArray12BIO
+            break;
+
+        case '11BIO' :
+            activeClassTitle = "Biology"
+            activeSubjectSyllabusOutcomesArray = BIOSyllabusOutcomesArray
+            activeIQorLIArray = IQArray11BIO
+            break;        
 
         case '12CHE' : 
             activeClassTitle = "Chemistry"
@@ -89,9 +98,18 @@ export default function SubjectInfoReturn({activeClass}) {
             activeSubjectSyllabusOutcomesArray = CHESyllabusOutcomesArray
             activeIQorLIArray = IQArray11CHE
             break;
+        
+        case '12EES' : 
+            activeClassTitle = "Earth and Environmental Science"
+            activeSubjectSyllabusOutcomesArray = EESSyllabusOutcomesArray
+            activeIQorLIArray = IQArray12EES
+            break;
 
-        //12EES
-        //11EES   
+        case '11EES' :
+            activeClassTitle = "Earth and Environmental Science"
+            activeSubjectSyllabusOutcomesArray = EESSyllabusOutcomesArray
+            activeIQorLIArray = IQArray11EES
+            break;            
 
         case '12INV' : 
             activeClassTitle = "Investigating Science"
@@ -306,7 +324,7 @@ export default function SubjectInfoReturn({activeClass}) {
                             <div className="divSubjTopicInfo">
                             <div className="subjHeading"> Topic {result.topicNumber}: {result.topicName} </div>
 
-                            <div className="divSubjDuration">  <div className="divSubjBoxHeading"> Duration: </div> {result.topicDuration} approx. </div> 
+                            <div className="divSubjDuration">  <div className="divSubjBoxHeading"> Duration </div> {result.topicDuration} approx. </div> 
                             
 
                             <div className="divSubjTopicDescription"> <div className="divSubjBoxHeading"> Topic Description </div> <div className="divSubjBoxText"> {result.topicDescription}</div> <br/> </div>

@@ -1,4 +1,5 @@
 export const subjectInfoArray = [
+    //SCIENCE
     {   //10SciASP
         activeClass: "10SCIASP",
         activeSentralClasses: ["10SCIASPA", "10SCIASPB"],
@@ -60,7 +61,475 @@ export const subjectInfoArray = [
             },
         ],
     },
-    
+    {   //10SCI
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //9SCI
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //8SCI
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //7SCI
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+
+    //STAGE 6 SCIENCE
+    {   //12 Biology
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //11bio
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //12 Chemistry
+        activeClass: "12CHE",
+        activeSentralClasses: ["12CHE01"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 5,
+                topicName: "Equilibrium and Acid Reactions",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Chemical systems may be open or closed. They include physical changes and chemical reactions that can result in observable changes to a system. Students study the effects of changes in temperature, concentration of chemicals and pressure on equilibrium systems, and consider that these can be predicted by applying Le Chatelier's principle. Students also analyse the quantitative relationship between products and reactants in equilibrium reactions to determine an equilibrium constant. From this calculation, they predict the equilibrium position, either favouring the formation of products or reactants in a chemical reaction. 
+                <br/>
+                This module also allows students to understand that scientific knowledge enables scientists to offer valid explanations and make reliable predictions. Students make reliable predictions by comparing equilibrium calculations and equilibrium constants to determine whether a combination of two solutions will result in the formation of a precipitate.
+                 </>,
+                topicOutcomes: ["CH12-12"] ,
+                topicContent:["5.1", "5.2", "5.3", "5.4"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 6,
+                topicName: "Acid/Base Reactions",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Students analyse how and why the definitions of both an acid and a base have changed over time, and how the current definitions characterise the many chemical reactions of acids. Acids react in particular ways to a variety of substances. These reactions follow a pattern that students identify and explore in detail.
+                <br/>
+                Acids and bases, and their reactions, are used extensively in everyday life and in the human body. The chemistry of acids and bases contributes to industrial contexts and the environment. Therefore, it is essential that the degree of acidity in these situations is continually monitored. By investigating the qualitative and quantitative properties of acids and bases, students learn to appreciate the importance of factors such as pH and indicators.
+                 </>,
+                topicOutcomes: ["CH12-13"] ,
+                topicContent:["6.1", "6.2", "6.3"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 7,
+                topicName: "Organic Chemistry",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Students focus on the principles and applications of chemical synthesis in the field of organic chemistry. Current and future applications of chemistry include techniques to synthesise new substances – including pharmaceuticals, fuels and polymers – to meet the needs of society.
+                <br/>
+                Each class of organic compounds displays characteristic chemical properties and undergoes specific reactions based on the functional groups present. These reactions, including acid/base and oxidation reactions, are used to identify the class of an organic compound. In this module, students investigate the many classes of organic compounds and their characteristic chemical reactions. By considering the primary, secondary and tertiary structures of organic materials, students are provided with opportunities to gain an understanding of the properties of materials – including strength, density and biodegradability – and relate these to proteins, carbohydrates and synthetic polymers.
+                 </>,
+                topicOutcomes: ["CH12-14"] ,
+                topicContent:["7.1", "7.2", "7.3", "7.4", "7.5", "7.6"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 8,
+                topicName: "Applying Chemical Ideas",
+                topicDuration: "TBA weeks",
+                topicDescription: <> The identification and analysis of chemicals is of immense importance in scientific research, medicine, environmental management, quality control, mining and many other fields.
+                <br/>
+                Students investigate a range of methods used to identify and measure quantities of chemicals. They investigate and process data involving the identification and quantification of ions present in aqueous solutions. This is particularly important because of the impact of adverse water quality on the environment. Students deduce or confirm the structure and identity of organic compounds by interpreting data from qualitative tests of chemical reactivity and determining structural information using proton and carbon 13 nuclear magnetic resonance (NMR) spectroscopy.
+                 </>,
+                topicOutcomes: ["CH12-15"] ,
+                topicContent:["8.1", "8.2", "8.3"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+           
+
+        ],
+    },
+    {   //11 Chemistry
+        activeClass: "11CHE",
+        activeSentralClasses: ["11CHE01"],
+        numberOfTopics: 4,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Properties and Structure of Matter",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Students analyse trends and patterns in relation to the properties of pure substances and use these to predict the properties of other pure substances. This knowledge is used to determine the ways in which substances can be separated from each other and those that allow them to remain together.
+                <br/>
+                Matter can be either pure substances with distinct measurable properties (eg melting and boiling points, reactivity, strength, density) or mixtures with properties that are dependent on the identity and relative amounts of the substances that make up the mixture. The analysis of these properties has led to the expansion of the periodic table of elements and the advancement of atomic theory. This understanding has allowed for the development of complex models that have been subject to extensive peer review, and has contributed to advances in many disciplines over time.
+                <br/>
+                Students use knowledge obtained from the study of the periodic table to examine trends and patterns that exist between chemical elements and atoms in order to discover that fundamental particles, and their role in the structure of an atom, give all chemicals their properties.
+                 </>,
+                topicOutcomes: ["CH11-8"] ,
+                topicContent:["1.1", "1.2", "1.3", "1.4"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Introduction to Quantitative Chemistry",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Students are introduced to the quantitative nature of chemistry. Chemists must be able to quantify reactions in order to make predictions about yields and communicate with specific audiences for specific purposes using nomenclature, genres and modes unique to the discipline. Using the mole concept, students will have the opportunity to select and use appropriate mathematical representations to solve problems, make predictions and calculate the mass of reactants and products, whether solid, liquid or gas.
+                <br/>
+                Students further develop their understanding of the universal language of chemistry. They are introduced to the idea that science is a global enterprise that relies on clear communication, international conventions, peer review and reproducibility.
+                 </>,
+                topicOutcomes: ["CH11-9"] ,
+                topicContent:["2.1", "2.2", "2.3", "2.4"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "Reactive Chemistry",
+                topicDuration: "TBA weeks",
+                topicDescription: <> All chemical reactions involve the creation of new substances and associated energy transformations, which are commonly observable as changes in the temperature of the surroundings and/or the emission of light. These reactions are harnessed and controlled by chemists to produce substances that lead to the development of useful products.
+                <br/>
+                Chemicals can react at many different speeds and in many different ways, yet they basically involve the breaking and making of chemical bonds. Students study how chemicals react, the changes in matter and energy that take place during these reactions, and how these chemical reactions and changes relate to the chemicals that are used in everyday life.
+                 </>,
+                topicOutcomes: ["CH11-10"] ,
+                topicContent:["3.1", "3.2", "3.3"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "Drivers of Reactions",
+                topicDuration: "TBA weeks",
+                topicDescription: <> Students investigate factors that initiate and drive a reaction. They examine the relationship between enthalpy and entropy in calculating the Gibbs free energy. They also examine the roles that enthalpy and entropy play in the spontaneity of reactions. Students are provided with opportunities to understand that all chemical reactions involve the creation of new substances and associated energy transformations, which are commonly observable as changes in temperature of the surrounding environment and/or emission of light.
+                <br/>
+                Students conduct investigations to measure the heat energy changes that occur in chemical reactions. They describe reactions using terms such as endothermic and exothermic, and explain reactions in terms of the law of conservation of energy. They use Hess’s Law to calculate enthalpy changes involved in the breaking and making of bonds.
+                 </>,
+                topicOutcomes: ["CH11-11"] ,
+                topicContent:["4.1", "4.2", "4.3"] ,
+                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+            },
+            
+        ],
+    },
+    {   //12ees
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //11ees
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
     {   // 12INV
         activeClass: "12INV",
         activeSentralClasses: ["12INV01", "12INV02"],
@@ -147,8 +616,6 @@ export const subjectInfoArray = [
             },
         ],
     },
-
-
     {   //12PHY
         activeClass: "12PHY",
         activeSentralClasses: ["12PHY01"],
@@ -236,9 +703,7 @@ export const subjectInfoArray = [
         ],
     },
 
-
-
-
+    //STEM
     {   //10STY
         activeClass: "10STY",
         activeSentralClasses: ["10STY01"],
@@ -282,235 +747,7 @@ export const subjectInfoArray = [
             },
         ],
     },
-
-    {   //10 PSYCHOLOGY
-        activeClass: "10PYY",
-        activeSentralClasses: ["10PYY01"],
-        numberOfTopics: 2,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Core 1 - What is psychology?",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
-                </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Core 2 - Research methods in psychology",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-        ],
-    },
-
-    {   //9 PSYCHOLOGY
-        activeClass: "9PYY",
-        activeSentralClasses: ["9PYY01"],
-        numberOfTopics: 2,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Core 1 - What is psychology?",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
-                </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Core 2 - Research methods in psychology",
-                topicDuration: "10 weeks",
-                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
-                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-        ],
-    },
-
-    {   //12 Chemistry
-        activeClass: "12CHE",
-        activeSentralClasses: ["12CHE01"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 5,
-                topicName: "Equilibrium and Acid Reactions",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Chemical systems may be open or closed. They include physical changes and chemical reactions that can result in observable changes to a system. Students study the effects of changes in temperature, concentration of chemicals and pressure on equilibrium systems, and consider that these can be predicted by applying Le Chatelier's principle. Students also analyse the quantitative relationship between products and reactants in equilibrium reactions to determine an equilibrium constant. From this calculation, they predict the equilibrium position, either favouring the formation of products or reactants in a chemical reaction. 
-                <br/>
-                This module also allows students to understand that scientific knowledge enables scientists to offer valid explanations and make reliable predictions. Students make reliable predictions by comparing equilibrium calculations and equilibrium constants to determine whether a combination of two solutions will result in the formation of a precipitate.
-                 </>,
-                topicOutcomes: ["CH12-12"] ,
-                topicContent:["5.1", "5.2", "5.3", "5.4"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 6,
-                topicName: "Acid/Base Reactions",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Students analyse how and why the definitions of both an acid and a base have changed over time, and how the current definitions characterise the many chemical reactions of acids. Acids react in particular ways to a variety of substances. These reactions follow a pattern that students identify and explore in detail.
-                <br/>
-                Acids and bases, and their reactions, are used extensively in everyday life and in the human body. The chemistry of acids and bases contributes to industrial contexts and the environment. Therefore, it is essential that the degree of acidity in these situations is continually monitored. By investigating the qualitative and quantitative properties of acids and bases, students learn to appreciate the importance of factors such as pH and indicators.
-                 </>,
-                topicOutcomes: ["CH12-13"] ,
-                topicContent:["6.1", "6.2", "6.3"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 7,
-                topicName: "Organic Chemistry",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Students focus on the principles and applications of chemical synthesis in the field of organic chemistry. Current and future applications of chemistry include techniques to synthesise new substances – including pharmaceuticals, fuels and polymers – to meet the needs of society.
-                <br/>
-                Each class of organic compounds displays characteristic chemical properties and undergoes specific reactions based on the functional groups present. These reactions, including acid/base and oxidation reactions, are used to identify the class of an organic compound. In this module, students investigate the many classes of organic compounds and their characteristic chemical reactions. By considering the primary, secondary and tertiary structures of organic materials, students are provided with opportunities to gain an understanding of the properties of materials – including strength, density and biodegradability – and relate these to proteins, carbohydrates and synthetic polymers.
-                 </>,
-                topicOutcomes: ["CH12-14"] ,
-                topicContent:["7.1", "7.2", "7.3", "7.4", "7.5", "7.6"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 8,
-                topicName: "Applying Chemical Ideas",
-                topicDuration: "TBA weeks",
-                topicDescription: <> The identification and analysis of chemicals is of immense importance in scientific research, medicine, environmental management, quality control, mining and many other fields.
-                <br/>
-                Students investigate a range of methods used to identify and measure quantities of chemicals. They investigate and process data involving the identification and quantification of ions present in aqueous solutions. This is particularly important because of the impact of adverse water quality on the environment. Students deduce or confirm the structure and identity of organic compounds by interpreting data from qualitative tests of chemical reactivity and determining structural information using proton and carbon 13 nuclear magnetic resonance (NMR) spectroscopy.
-                 </>,
-                topicOutcomes: ["CH12-15"] ,
-                topicContent:["8.1", "8.2", "8.3"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-           
-
-        ],
-    },
-
-    {   //11 Chemistry
-        activeClass: "11CHE",
-        activeSentralClasses: ["11CHE01"],
-        numberOfTopics: 4,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "Properties and Structure of Matter",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Students analyse trends and patterns in relation to the properties of pure substances and use these to predict the properties of other pure substances. This knowledge is used to determine the ways in which substances can be separated from each other and those that allow them to remain together.
-                <br/>
-                Matter can be either pure substances with distinct measurable properties (eg melting and boiling points, reactivity, strength, density) or mixtures with properties that are dependent on the identity and relative amounts of the substances that make up the mixture. The analysis of these properties has led to the expansion of the periodic table of elements and the advancement of atomic theory. This understanding has allowed for the development of complex models that have been subject to extensive peer review, and has contributed to advances in many disciplines over time.
-                <br/>
-                Students use knowledge obtained from the study of the periodic table to examine trends and patterns that exist between chemical elements and atoms in order to discover that fundamental particles, and their role in the structure of an atom, give all chemicals their properties.
-                 </>,
-                topicOutcomes: ["CH11-8"] ,
-                topicContent:["1.1", "1.2", "1.3", "1.4"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 2,
-                topicName: "Introduction to Quantitative Chemistry",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Students are introduced to the quantitative nature of chemistry. Chemists must be able to quantify reactions in order to make predictions about yields and communicate with specific audiences for specific purposes using nomenclature, genres and modes unique to the discipline. Using the mole concept, students will have the opportunity to select and use appropriate mathematical representations to solve problems, make predictions and calculate the mass of reactants and products, whether solid, liquid or gas.
-                <br/>
-                Students further develop their understanding of the universal language of chemistry. They are introduced to the idea that science is a global enterprise that relies on clear communication, international conventions, peer review and reproducibility.
-                 </>,
-                topicOutcomes: ["CH11-9"] ,
-                topicContent:["2.1", "2.2", "2.3", "2.4"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 3,
-                topicName: "Reactive Chemistry",
-                topicDuration: "TBA weeks",
-                topicDescription: <> All chemical reactions involve the creation of new substances and associated energy transformations, which are commonly observable as changes in the temperature of the surroundings and/or the emission of light. These reactions are harnessed and controlled by chemists to produce substances that lead to the development of useful products.
-                <br/>
-                Chemicals can react at many different speeds and in many different ways, yet they basically involve the breaking and making of chemical bonds. Students study how chemicals react, the changes in matter and energy that take place during these reactions, and how these chemical reactions and changes relate to the chemicals that are used in everyday life.
-                 </>,
-                topicOutcomes: ["CH11-10"] ,
-                topicContent:["3.1", "3.2", "3.3"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            {
-                topicNumber: 4,
-                topicName: "Drivers of Reactions",
-                topicDuration: "TBA weeks",
-                topicDescription: <> Students investigate factors that initiate and drive a reaction. They examine the relationship between enthalpy and entropy in calculating the Gibbs free energy. They also examine the roles that enthalpy and entropy play in the spontaneity of reactions. Students are provided with opportunities to understand that all chemical reactions involve the creation of new substances and associated energy transformations, which are commonly observable as changes in temperature of the surrounding environment and/or emission of light.
-                <br/>
-                Students conduct investigations to measure the heat energy changes that occur in chemical reactions. They describe reactions using terms such as endothermic and exothermic, and explain reactions in terms of the law of conservation of energy. They use Hess’s Law to calculate enthalpy changes involved in the breaking and making of bonds.
-                 </>,
-                topicOutcomes: ["CH11-11"] ,
-                topicContent:["4.1", "4.2", "4.3"] ,
-                topicSkills: ["CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
-            },
-            
-        ],
-    },
-
-    {   //12 MST
-        activeClass: "12MST",
-        activeSentralClasses: ["12MST01", "12MST02"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    {   //11 MST
-        activeClass: "11MST",
-        activeSentralClasses: ["11MST01", "11MST02", "11MST03"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    {   //8 MST
-        activeClass: "8MST",
-        activeSentralClasses: ["8MST01", "8MST02"],
-        numberOfTopics: 1,
-        topic: [
-            {
-                topicNumber: 1,
-                topicName: "XXX",
-                topicDuration: "XX weeks",
-                topicDescription: <> XXX </>,
-                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
-                topicContent:["N/A"] ,
-                topicSkills: ["N/A"],
-            },
-            
-        ],
-    },
-
-    
-
-    {   //XXX
+    {   //10STX
         activeClass: "XXX",
         activeSentralClasses: ["XXX"],
         numberOfTopics: 111,
@@ -546,6 +783,381 @@ export const subjectInfoArray = [
                 topicNumber: 4,
                 topicName: "XXX",
                 topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //9STY
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //9STX
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //8stm
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+
+    //PSYCHOLOGY
+    {   //10 PSYCHOLOGY
+        activeClass: "10PYY",
+        activeSentralClasses: ["10PYY01"],
+        numberOfTopics: 2,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Core 1 - What is psychology?",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
+                </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Core 2 - Research methods in psychology",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+        ],
+    },
+    {   //9 PSYCHOLOGY
+        activeClass: "9PYY",
+        activeSentralClasses: ["9PYY01"],
+        numberOfTopics: 2,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "Core 1 - What is psychology?",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students will identify psychology as a scientific discipline which studies mental processes and human behaviour, the world of the psychologist, the history of psychology and present-day theories of psychology.<br/>  Students will learn how the knowledge gained by research psychologists is used by applied psychologists in their dealings with individuals and groups. Students will appreciate the eclectic nature of psychological theories and the contributions made by psychologists of the past in formulating contemporary theories.
+                </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-4", "PSY5-6", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "Core 2 - Research methods in psychology",
+                topicDuration: "10 weeks",
+                topicDescription: <> Students examine the scientific methods and ethics involved in psychological research and experimentation. They will investigate the types of psychological research and examine the ethical principles that practices are required to adhere to when engaging participants in research studies. </>,
+                topicOutcomes: ["PSY5-1", "PSY5-2", "PSY5-5", "PSY5-7", "PSY5-8"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+        ],
+    },
+
+    //BIG HISTORY
+    {   //10bh
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+    {   //9bh
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+
+        ],
+    },
+
+    //MARINE STUDIES
+    {   //12 MST
+        activeClass: "12MST",
+        activeSentralClasses: ["12MST01", "12MST02"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+    {   //11 MST
+        activeClass: "11MST",
+        activeSentralClasses: ["11MST01", "11MST02", "11MST03"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+    {   //8 MST
+        activeClass: "8MST",
+        activeSentralClasses: ["8MST01", "8MST02"],
+        numberOfTopics: 1,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            
+        ],
+    },
+   
+    // BLANK
+    {   //XXX
+        activeClass: "XXX",
+        activeSentralClasses: ["XXX"],
+        numberOfTopics: 111,
+        topic: [
+            {
+                topicNumber: 1,
+                topicName: "XXX",
+                topicDuration: "XXX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 2,
+                topicName: "XXX",
+                topicDuration: "XXX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 3,
+                topicName: "XXX",
+                topicDuration: "XXX weeks",
+                topicDescription: <> XXX </>,
+                topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
+                topicContent:["N/A"] ,
+                topicSkills: ["N/A"],
+            },
+            {
+                topicNumber: 4,
+                topicName: "XXX",
+                topicDuration: "XXX weeks",
                 topicDescription: <> XXX </>,
                 topicOutcomes: ["XXX", "XXX", "XXX", "XXX", "XXX", "XXX"] ,
                 topicContent:["N/A"] ,
