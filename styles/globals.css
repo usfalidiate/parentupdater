@@ -523,7 +523,7 @@ input:hover{
 .LIHeadBG {
   grid-column: span 12;
   padding: 10px;
-  background-image: url(../assets/blackSandMedium.jpg);
+  background-image: url(../assets/BlackSandMedium.jpg);
   background-size: 100%;
   /* object-fit: cover; */
   border: 1px solid black;
