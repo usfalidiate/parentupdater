@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import LIReturn from '../Components/LIReturn';
 import Login from '../Components/Login';
@@ -477,7 +478,7 @@ return (
             {
                 displayTeacherChoice ?
                 <div className='divTopBarHome'>
-                    <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Your Teacher </p> </button>
+                    <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Class Teacher </p> </button>
                 </div> 
                 : 
                 <div className='divTopBar'>
@@ -518,7 +519,10 @@ return (
         <>
             { activeContent == 'LITable' ? 
             <div className='divContent'> 
-                <div className="pageHeadingLI" >  Learning Intentions </div>  <div className='pageSubHeadingLI'> ({activeClass}) </div>
+                {/* <> <Image src={BWMarble}  /> </> */}
+                <div 
+                className='LIHeadBG'
+                > <div className="pageHeadingLI" >  Learning Intentions </div>  <div className='pageSubHeadingLI'> ({activeClass}) </div> </div>
                 <LIReturnEachTopic activeTeacherProp={activeTeacher} activeSentralClassProp={activeSentralClass} activeClass={activeClass} adminStateProp={adminState}/> 
             </div> : null}
         </>

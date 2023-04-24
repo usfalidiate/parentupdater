@@ -500,11 +500,14 @@ input:hover{
 
 .divLIGrid {
   color: goldenrod;
+  border: 1px solid lightgrey;
+  background: #121212;
   max-width: 95vw;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0px 20px 20px 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  border-radius: 10px;
   gap: 5px ;
 }
 
@@ -512,9 +515,19 @@ input:hover{
 .divLIGridChild {
   background: #121212;
   padding: 10px;
-  border: 1px solid #777;
+  border: 1px solid goldenrod;
   border-radius: 10px;
   grid-column: span 6;
+}
+
+.LIHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/blackSand.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .pageHeadingLI {
@@ -522,9 +535,8 @@ input:hover{
   font-family: "Inter var";
   font-size: 2.5em;
   text-transform: uppercase;
-  background-color: #050505;
   color: goldenrod;
-  padding: 10px 10px 0px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -539,10 +551,9 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
   color: goldenrod;
   margin: 0px 0px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -557,7 +568,7 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
+  background-color: transparent;
   color: goldenrod;
   margin: 0px 0px;
   padding: 10px;
@@ -608,6 +619,16 @@ input:hover{
 
 
 /* ASSESSMENT INFORMATION*/
+
+.AssHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/chalkBoard.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .divAss {
   grid-column: span 12;
   background: transparent;
@@ -621,7 +642,7 @@ input:hover{
   grid-template-columns: repeat(12, 1fr);
   border: 1px solid lightgrey;
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
 }
 
 /* .divAssInfo > div {
@@ -671,9 +692,8 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 2.5em;
-  background-color: #050505;
   color: goldenrod;
-  padding: 10px 10px 0px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -689,7 +709,7 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
+  background-color: transparent;
   color: goldenrod;
   margin: 0px 0px;
   padding: 10px;
@@ -708,10 +728,9 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
   color: goldenrod;
   margin: 0px 0px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -765,6 +784,16 @@ input:hover{
 
 
 /* SUBJECT INFORMATION*/
+
+.SubjHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/Moonish.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .divSubj {
   grid-column: span 12;
   background: transparent;
@@ -824,12 +853,13 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 2.5em;
-  background-color: #050505;
   color: goldenrod;
-  padding: 10px 10px 0px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: black; */
   letter-spacing: -0.055em;
   font-weight: 740;
   line-height: 1em;
@@ -862,10 +892,9 @@ input:hover{
   grid-column: span 12;
   font-family: "Inter var";
   font-size: 1.5em;
-  background-color: #050505;
   color: goldenrod;
   margin: 0px 0px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px;
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
@@ -1038,7 +1067,7 @@ input:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');

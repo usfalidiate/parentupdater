@@ -235,8 +235,9 @@ export default function AssReturn({activeClass} ) {
                             <> 
                             <div key={result.taskNumber} className='divAss'>
                                 {/* <div className="pageHeadingAss"> Assessment Task {result.taskNumber}:  </div> */}
-                                <div className="assHeading"> Task {result.taskNumber}: {result.taskName} </div>
                                 <div className="divAssInfo">
+                                <div className="assHeading"> Task {result.taskNumber}: {result.taskName} </div>
+
                                     <div className="divAssDueDate"> <div className="divAssBoxHeading"> Due Date </div> <div className="divAssBoxText"> {result.date} </div> </div>
                                     <div className="divAssWeighting"> <div className="divAssBoxHeading"> Weighting </div> <div className="divAssBoxText"> {result.taskWeighting} </div> </div>
                                     <div className="divAssDescription">  <div className="divAssBoxHeading"> Task Description </div> <div className="divAssBoxText"> {result.taskDescription} </div> </div>
@@ -278,7 +279,7 @@ export default function AssReturn({activeClass} ) {
 
     return (
         <div className="divContent">
-            <div className="pageHeadingAss" > Assessments </div> <div className="assSubHeading" > ({activeClass}) </div> 
+            <div className="AssHeadBG"> <div className="pageHeadingAss" > Assessments </div> <div className="assSubHeading" > ({activeClass}) </div> </div>
             <AssDiv />
         </div>
     )
