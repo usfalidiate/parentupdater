@@ -497,7 +497,7 @@ export default function LIReturn ({
             return (
               <div className='divLIGridChild' key = { item.id }>
                 <> { adminStateProp ? <> <ButtonCompleted i={ Number(item.id) } x={ item.fullID } /> </>  : <div className='divLIStatus'> <RowStatus i={ Number(item.id)} /> </div> } </>
-                <div className='divLIMiniHeadingText'> {miniTableColLIHeading}: { activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> </div> <div className='divLIStringText'> { item.LIString } </div>
+                <div className='divLIMiniHeadingText'> {miniTableColLIHeading} { activeSubject === 'sci' || 'STEM' ? item.LINumber : item.fullID } <br/> </div> <div className='divLIStringText'> { item.LIString } </div>
               </div>
             )
           })}

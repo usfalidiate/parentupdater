@@ -71,7 +71,7 @@ html, body, :root {
   height: calc(100% - 70px);
   top: 0px;
   bottom: 70px;
-  padding: 5px;
+  padding: 0px 5px 5px 5px;
 }
 
 
@@ -523,7 +523,7 @@ input:hover{
 .LIHeadBG {
   grid-column: span 12;
   padding: 10px;
-  background-image: url(../assets/blackSand.jpg);
+  background-image: url(../assets/blackSandMedium.jpg);
   background-size: 100%;
   /* object-fit: cover; */
   border: 1px solid black;
@@ -623,7 +623,7 @@ input:hover{
 .AssHeadBG {
   grid-column: span 12;
   padding: 10px;
-  background-image: url(../assets/chalkBoard.jpg);
+  background-image: url(../assets/StarsMedium.jpg);
   background-size: 100%;
   /* object-fit: cover; */
   border: 1px solid black;
@@ -788,7 +788,7 @@ input:hover{
 .SubjHeadBG {
   grid-column: span 12;
   padding: 10px;
-  background-image: url(../assets/Moonish.jpg);
+  background-image: url(../assets/BlueSwirlMedium.jpg);
   background-size: 100%;
   /* object-fit: cover; */
   border: 1px solid black;
