@@ -2,7 +2,7 @@
 html, body, :root {
   background-color: #050505;
   color: goldenrod;
-  font-family: 'Inter var', 'Inter', 'Verdana', 'serif', 'sans-serif';
+  font-family: 'Inter', 'Inter', 'Verdana', 'serif', 'sans-serif';
 }
 
 .divBG {
@@ -15,44 +15,75 @@ html, body, :root {
   box-sizing: border-box;
 }
 
-.divTeacherChoice {
+.divTopBarHome {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/BlueBlackSwirlsMedium.jpg);
+  background-size: 100%;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 15%;
+  font-family: 'Inter';
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  text-transform: uppercase;
+  color: goldenrod;
+  -webkit-text-stroke: 1px black;
+  
+
+}
+
+/* .divTeacherChoice {
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  /* grid-template-rows: 1fr ; */
   grid-auto-flow: row;
-  /* grid-auto-rows: 25%; */
   align-items: center;
-  justify-items:center;
-  position: relative;
+  justify-items: center;
+  position: absolute;
   width: 100%;
-  height: calc(100% - 140px);
-  top: 70px;
+  height: calc(85% - 70px);
+  top: 15%;
   bottom: 70px;
   padding: 5px;
+} */
+
+.divTeacherChoice {
+  position: absolute;
+  height: calc(85% - 70px);
+  width: 100%;
+  top: 15%;
+  bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .divChoice {
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  /* grid-template-rows: 1fr ; */
-  grid-auto-flow: row;
-  /* grid-auto-rows: 25%; */
-  align-items: center;
-  justify-items:center;
-  position: relative;
+  position: absolute;
+  height: calc(95% - 70px);
   width: 100%;
-  height: calc(100% - 70px);
-  top: 0px;
+  top: 5%;
   bottom: 70px;
-  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.divChoiceContent {
+/* .divChoiceContent {
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  /* grid-template-rows: 1fr ; */
   grid-auto-flow: row;
-  /* grid-auto-rows: 25%; */
   align-items: center;
   justify-items:center;
   position: relative;
@@ -61,7 +92,7 @@ html, body, :root {
   top: 0px;
   bottom: 70px;
   padding: 5px;
-}
+} */
 
 .divContent {
   display: grid;
@@ -77,7 +108,7 @@ html, body, :root {
 
 
 /* TOP BAR AND ADMIN BUTTONS */
-.divTopBarHome {
+/* .divTopBarHome {
   background-color: transparent;
   color: rgb(25, 160, 164);
   display: flex;
@@ -88,14 +119,15 @@ html, body, :root {
   width: 100%;
   overflow: visible;
   position: fixed;
-}
+} */
+
+
 
 .divTopBar {
   background-color: transparent;
   color: goldenrod;
   display: flex;
   justify-content: right;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
   grid-template-rows: 50px;
   height: 70px;
   padding: 5px 5px 5px 5px;
@@ -109,23 +141,17 @@ html, body, :root {
 }
 
 .divTopBarHomeButton {
-  /* grid-row: 1;
-  grid-column: 1; */
   align-self: center;
   justify-self: center;
   width: 50px;
 }
 
 .divTopBarBack {
-  /* grid-row: 1;
-  grid-column: 2; */
   align-self: center;
   justify-self: center;
 }
 
 .divTopBarToggleLoginAdmin {
-  /* grid-row: 1;
-  grid-column: 3; */
   align-self: center;
   justify-self: center;
 }
@@ -134,7 +160,6 @@ html, body, :root {
   position: relative;
   width: 100%;
   background-color: transparent;
-  /* display: flex; */
   align-content: center;
   bottom: 10px;
 
@@ -160,7 +185,7 @@ html, body, :root {
 
 .pageHeadingAdmin {
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 2.5em;
   background-color: transparent;
   color: goldenrod;
@@ -452,7 +477,7 @@ html, body, :root {
 /* LOGIN INPUT AND PW */
 input {
   /* background: black; */
-  font-family: "Inter var";
+  font-family: "Inter";
   letter-spacing: -0.035em;
   font-weight: 640;
   background-color: #050505;
@@ -494,6 +519,48 @@ input:hover{
 
 /* LEARNING INTENTIONS*/
 
+.LIHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/BlueOrangeOilyMedium.jpg);
+  background-size: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.pageHeadingLI {
+  grid-column: span 12;
+  font-family: "Inter";
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: goldenrod;
+  padding: 0px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+}
+
+.pageSubHeadingLI {
+  /* display: inline; */
+  grid-column: span 12;
+  font-family: "Inter";
+  font-size: 1.5em;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 0px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+}
+
 .divLITopicArea {
   grid-column: span 12;
 }
@@ -520,53 +587,14 @@ input:hover{
   grid-column: span 6;
 }
 
-.LIHeadBG {
-  grid-column: span 12;
-  padding: 10px;
-  background-image: url(../assets/BlackSandMedium.jpg);
-  background-size: 100%;
-  /* object-fit: cover; */
-  border: 1px solid black;
-  border-radius: 5px;
-}
 
-.pageHeadingLI {
-  grid-column: span 12;
-  font-family: "Inter var";
-  font-size: 2.5em;
-  text-transform: uppercase;
-  color: goldenrod;
-  padding: 0px;
-  border-color: black;
-  margin-bottom: none;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: -0.055em;
-  font-weight: 740;
-  line-height: 1em;
-  text-align: center;
-}
 
-.pageSubHeadingLI {
-  /* display: inline; */
-  grid-column: span 12;
-  font-family: "Inter var";
-  font-size: 1.5em;
-  color: goldenrod;
-  margin: 0px 0px;
-  padding: 0px;
-  border-color: black;
-  margin-bottom: none;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: -0.055em;
-  font-weight: 740;
-  line-height: 1em;
-  text-align: center;
-}
+
 
 .topicHeadingLI {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   background-color: transparent;
   color: goldenrod;
@@ -623,7 +651,7 @@ input:hover{
 .AssHeadBG {
   grid-column: span 12;
   padding: 10px;
-  background-image: url(../assets/StarsMedium.jpg);
+  background-image: url(../assets/BlueCaveyMedium.jpg);
   background-size: 100%;
   /* object-fit: cover; */
   border: 1px solid black;
@@ -690,7 +718,7 @@ input:hover{
 
 .pageHeadingAss {
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 2.5em;
   color: goldenrod;
   padding: 0px;
@@ -707,7 +735,7 @@ input:hover{
 .assHeading {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   background-color: transparent;
   color: goldenrod;
@@ -726,7 +754,7 @@ input:hover{
 .assSubHeading {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   color: goldenrod;
   margin: 0px 0px;
@@ -851,7 +879,7 @@ input:hover{
 
 .pageHeadingSubj {
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 2.5em;
   color: goldenrod;
   padding: 0px;
@@ -870,7 +898,7 @@ input:hover{
 .subjHeading {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   /* background-color: #050505; */
   color: goldenrod;
@@ -890,7 +918,7 @@ input:hover{
 .subjSubHeading {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   color: goldenrod;
   margin: 0px 0px;
@@ -914,7 +942,7 @@ input:hover{
 /* PAGE HEADINGS STYLINGS */
 .pageHeading {
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 2.5em;
   background-color: #050505;
   color: goldenrod;
@@ -932,7 +960,7 @@ input:hover{
 .pageHeading2 {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.5em;
   background-color: #050505;
   color: goldenrod;
@@ -950,7 +978,7 @@ input:hover{
 .pageHeading3 {
   /* display: inline; */
   grid-column: span 12;
-  font-family: "Inter var";
+  font-family: "Inter";
   font-size: 1.2em;
   background-color: #050505;
   color: goldenrod;
@@ -1062,7 +1090,7 @@ input:hover{
   grid-column-end: auto;
   grid-row-start: auto;
   grid-row-end: auto;
-  width: 80% ;
+  width: 50% ;
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: row;
@@ -1074,7 +1102,7 @@ input:hover{
 
 .glowButtonText {
   position:relative;
-  font-family:"Inter var", sans-serif;
+  font-family:"Inter", sans-serif;
   letter-spacing: -0.025em;
   font-weight: 540;
   text-transform: uppercase;
@@ -1099,7 +1127,7 @@ input:hover{
 }
 
 .glowButton {
-  font-family:"Inter var", sans-serif;
+  font-family:"Inter", sans-serif;
   transform:translate3d(0px, -4px, 0px);
   /* text-shadow: 2px 2px 3px rgba(255,255,255,0.5); */
   /* width: 80% ; */
@@ -1177,14 +1205,14 @@ input:hover{
   text-align: center;
   padding: 0 0;
   margin: 0;
-  font-family:"Inter var", sans-serif;
+  font-family:"Inter", sans-serif;
 }
 
 .buttonTextHome {
   text-align: center;
   padding: 0 0;
   margin: 0;
-  font-family:"Inter var", sans-serif;
+  font-family:"Inter", sans-serif;
 }
 
 .neonButton{
@@ -1317,7 +1345,7 @@ input:hover{
 }
 
 .homeNeonButton {
-  font-family: 'Inter var';
+  font-family: 'Inter';
   font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
   letter-spacing: -0.055em;
   font-weight: 740;
@@ -1340,7 +1368,7 @@ input:hover{
 }
 
 .homeNeonButtonText {
-  font-family: 'Inter var';
+  font-family: 'Inter';
   font-size: 100%;
   letter-spacing: -0.045em;
   font-weight: 640;
@@ -1507,24 +1535,116 @@ input:hover{
 
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
+
+  .divTopBarHome {
+    grid-column: span 12;
+    padding: 10px;
+    background-image: url(../assets/BlueBlackSwirlsMedium.jpg);
+    background-size: 100%;
+    /* object-fit: cover; */
+    border: 1px solid black;
+    border-radius: 5px;
+    /* height: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 42px; */
+    height: 20%;
+    font-family: 'Inter';
+    font-size: 50px;
+    line-height: 50px;
+    /* font-size: calc(1.2em + 6 * ((100vw - 320px) / 680)); */
+    letter-spacing: -0.055em;
+    font-weight: 740;
+    text-transform: uppercase;
+    color: goldenrod;
+    -webkit-text-stroke: 1px black;
+
+
+  }
+
+  /* .divTopBarHomeButton {
+
+    align-self: center;
+    justify-self: center;
+  } */
+
+  /* .homeNeonButton {
+    font-family: 'Inter';
+    font-size: 80%;
+    font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
+    letter-spacing: -0.055em;
+    font-weight: 740;
+    text-transform: uppercase;
+    padding: 30px 30px 30px 30px;
+    height: 100%;
+    color: goldenrod;
+    background-color: transparent;
+    outline: none;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    align-content: center;
+    align-items: center;
+    display: flex;
+  } */
+
+  /* .homeNeonButtonText {
+    font-family: 'Inter';
+    margin: 0px;
+    letter-spacing: -0.055em;
+    font-weight: 740;
+    -webkit-text-stroke: 1px black;
+    line-height: calc(1em + 6 * ((100vw - 320px) / 680));
+  } */
+
+
   .divChoice {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items:center;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 90%;
-    top: 10%;
+    /* height: 100%; */
+    height: calc(100% - 70px);
+    bottom: 70px;
+    top: 0px;
   }
+
+  .divTeacherChoice {
+    /* font-size: 42px; */
+    /* height: calc( 100% - ( 4 * (1.2em + 6 * ((100vw - 320px) / 680)))); */
+    height: 80%;
+    top: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items:center;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    /* top: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    padding: 5px;
+  }
+
   .divContent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
     width: 100%;
-    height: 90%;
-    top: 10%;
-    padding: 5%;
+    height: 100%;
+    /* top: 10%; */
+    padding: 0px;
+    top: 0%;
   }
   .divLIGridChild {
     background: #121212;
@@ -1535,6 +1655,99 @@ input:hover{
     grid-column: span 3;
   }
 
+  /* HALO GLOW BUTTONS */
+.divGlowButton {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  width: 50% ;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.glowButtonText {
+  position:relative;
+  font-family:"Inter", sans-serif;
+  letter-spacing: -0.025em;
+  font-weight: 540;
+  text-transform: uppercase;
+  /* font-variant: small-caps; */
+  /* transform:translate3d(0px, 0px, 0px); */
+  margin:0;
+  /* align-self:end;
+  grid-column:1/5;
+  grid-row:2; */
+  text-align:center;
+  /* text-transform: capitalize; */
+  font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
+  background-color: #050505;
+  /* color: rgb(25, 160, 164); */
+  color:goldenrod;
+
+  /* text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5); */
+  -webkit-background-clip: text;
+      -moz-background-clip: text;
+          background-clip: text;
+  transition: .13s ease-in-out; 
+}
+
+.LIHeadBG {
+  font-family: 'Inter';
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/BlueOrangeOilyMedium.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  -webkit-text-stroke: 1px black;
+}
+
+.AssHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/BlueCaveyMedium.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.SubjHeadBG {
+  grid-column: span 12;
+  padding: 10px;
+  background-image: url(../assets/BlueSwirlMedium.jpg);
+  background-size: 100%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  -webkit-text-stroke: 1px black;
+
+}
 }
 
 

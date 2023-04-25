@@ -16,7 +16,7 @@ export const teacherArrays = [
         sentralClass: ['11CHE01', '10SCIASPB', '10PYY01', '9PYY01', '7SCI3'],
         title: 'Mrs',
         email: 'esen.crnogorcevic1@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -26,7 +26,7 @@ export const teacherArrays = [
         sentralClass: ['12MST01', '12MST02', '11MST01', '11MST03'],
         title: 'Mr',
         email: 'glen.smart@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -36,7 +36,7 @@ export const teacherArrays = [
         sentralClass: ['12INV01', '9SCIA2', '8SCI8', '8SCI7', '7SCI4'],
         title: 'Mr',
         email: 'nathan.ralstonbryce@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -46,7 +46,7 @@ export const teacherArrays = [
         sentralClass: ['12BIO01', '10SCIA3', '7SCI6', 'SS3SCI', 'SSSCI2'],
         title: 'Mr',
         email: 'paul.dyer@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -56,7 +56,7 @@ export const teacherArrays = [
         sentralClass: ['12BIO02', '12BIO03', '11BIO01', '11BIO02'],
         title: 'Mrs',
         email: 'rowena.howell@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -66,7 +66,7 @@ export const teacherArrays = [
         sentralClass: ['11INV02', '9SCIB3', '9SCIA5', '8SCI2', '8SCI6', '8MST01'],
         title: 'Mrs',
         email: 'alana.hanson@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -76,7 +76,7 @@ export const teacherArrays = [
         sentralClass: ['10BHY01', '10STX01', '9STX01', '9SCIA1', '8SCI9', '8SCI5'],
         title: 'Mr',
         email: 'john.berry@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {

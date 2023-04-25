@@ -478,7 +478,7 @@ return (
             {
                 displayTeacherChoice ?
                 <div className='divTopBarHome'>
-                    <button className='homeNeonButton'> <p className='homeNeonButtonText'> Warilla High School Science: <br/> Choose Class Teacher </p> </button>
+                     Warilla High School <br/> Science Faculty <br/> Choose Teacher:
                 </div> 
                 : 
                 <div className='divTopBar'>
@@ -513,7 +513,7 @@ return (
         <>
             { displayTeacherChoice ? <div className='divTeacherChoice'> <TeacherChoiceReturn/> </div> : null }
             { displaySentralClassChoice ? <div className='divChoice'> <ClassChoiceReturn/> </div> : null }
-            { displayContentChoice ? <div className='divChoiceContent'> <ContentChoiceReturn/> </div> : null }
+            { displayContentChoice ? <div className='divChoice'> <ContentChoiceReturn/> </div> : null }
         </>
 
         <>
