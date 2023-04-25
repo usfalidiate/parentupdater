@@ -478,7 +478,7 @@ return (
             {
                 displayTeacherChoice ?
                 <div className='divTopBarHome'>
-                     Warilla High School <br/> Science Faculty <br/> Choose Teacher:
+                     Warilla High School <br/> Science Faculty <br/> Choose A Teacher:
                 </div> 
                 : 
                 <div className='divTopBar'>
