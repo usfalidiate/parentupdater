@@ -36,10 +36,7 @@ html, body, :root {
   text-transform: uppercase;
   color: goldenrod;
   -webkit-text-stroke: 1px black;
-  
-
-}
-
+  }
 
 .divTeacherChoice {
   position: absolute;
@@ -68,20 +65,6 @@ html, body, :root {
   align-items: center;
 }
 
-/* .divChoiceContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-auto-flow: row;
-  align-items: center;
-  justify-items:center;
-  position: relative;
-  width: 100%;
-  height: calc(100% - 70px);
-  top: 0px;
-  bottom: 70px;
-  padding: 5px;
-} */
-
 .divContent {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -95,22 +78,14 @@ html, body, :root {
 
 
 
+
+
+
+
+
+
+
 /* TOP BAR AND ADMIN BUTTONS */
-/* .divTopBarHome {
-  background-color: transparent;
-  color: rgb(25, 160, 164);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 70px;
-  width: 100%;
-  overflow: visible;
-  position: fixed;
-} */
-
-
-
 .divTopBar {
   background-color: transparent;
   color: goldenrod;
@@ -150,25 +125,21 @@ html, body, :root {
   background-color: transparent;
   align-content: center;
   bottom: 10px;
-
 }
 
 .divLoginAdmin {
   position: relative;
   width: 100%;
   height: 100%;
-  /* background-color: #050505; */
   position: fixed;
   z-index: 1;
   backdrop-filter: blur(10px);
-  /* opacity: 95%; */
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end ;
   margin: 0px 0px;
-
 }
 
 .pageHeadingAdmin {
@@ -225,7 +196,6 @@ html, body, :root {
   font-size: 1.1em;
 }
 
-
 .divLogOutContainer {
   align-self: center;
   justify-self: center;
@@ -278,7 +248,6 @@ html, body, :root {
   align-items: center;
   width: 100%;
   justify-content: flex-end;
-
 }
 .divLoginStatus {
   align-self: center;
@@ -315,11 +284,6 @@ html, body, :root {
 }
 
 
-
-
-
-
-
 .divUploadToCloudContainer {
   align-self: center;
   justify-self: center;
@@ -327,7 +291,6 @@ html, body, :root {
   align-items: center;
   width: 100%;
   justify-content: flex-end;
-
 }
 .divUploadToCloudButton {
   align-self: center;
@@ -349,29 +312,6 @@ html, body, :root {
   text-transform: uppercase;
   font-size: 1.1em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .divLoginClose {
   background-color: transparent;
@@ -462,9 +402,13 @@ html, body, :root {
   align-items: center;
 }
 
+
+
+
+
+
 /* LOGIN INPUT AND PW */
 input {
-  /* background: black; */
   font-family: "Inter";
   letter-spacing: -0.035em;
   font-weight: 640;
@@ -487,7 +431,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 
 input:hover{
   font-size: 1em;
-  /* background: goldenrod; */
   color: goldenrod;
   box-shadow: 0 0 5px goldenrod,
               0 0 25px goldenrod,
@@ -495,6 +438,11 @@ input:hover{
               0 0 100px orangered;
    -webkit-box-reflect:below 0.1px linear-gradient(transparent, #0005);
 }
+
+
+
+
+
 
 
 
@@ -533,7 +481,6 @@ input:hover{
 }
 
 .pageSubHeadingLI {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -580,7 +527,6 @@ input:hover{
 
 
 .topicHeadingLI {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -604,8 +550,6 @@ input:hover{
   text-align: center;
   background-color: #121212;
   border-radius: 5px;
-
-
 }
 
 .divLIStringText {
@@ -634,6 +578,8 @@ input:hover{
 
 
 
+
+
 /* ASSESSMENT INFORMATION*/
 
 .AssHeadBG {
@@ -641,7 +587,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueCaveyMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -649,7 +594,6 @@ input:hover{
   grid-column: span 12;
   background: transparent;
 }
-
 .divAssInfo {
   grid-column: span 12;
   background: #121212;
@@ -661,9 +605,6 @@ input:hover{
   padding: 5px 20px 20px 20px;
 }
 
-/* .divAssInfo > div {
-  grid-column: span 12;
-} */
 
 .divAssDueDate {
   text-align: center;
@@ -693,8 +634,6 @@ input:hover{
   padding: 5px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
-
 }
 
 .divAssSuccessCriteria {
@@ -721,7 +660,6 @@ input:hover{
 }
 
 .assHeading {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -740,7 +678,6 @@ input:hover{
 }
 
 .assSubHeading {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -758,12 +695,8 @@ input:hover{
 }
 
 .divAssHeadingAndText {
-  /* background-color: #050505; */
   grid-column: span 12;
   padding: 5px;
-  /* border: 1px solid goldenrod; */
-  /* border-radius: 5px; */
-
 }
 
 .divAssBoxHeading {
@@ -806,7 +739,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BluePurpleSmearsMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   -webkit-text-stroke: 0.5px black;
@@ -843,8 +775,6 @@ input:hover{
   border: 1px solid goldenrod;
   padding: 5px 10px;
   text-align: center;
-
-
 }
 
 .divSubjTopicOutcomes {
@@ -852,7 +782,6 @@ input:hover{
   border: 1px solid goldenrod;
   padding: 5px;
   text-align: center;
-
 }
 
 .divSubjBoxHeading {
@@ -863,8 +792,7 @@ input:hover{
 
 .divSubjBoxText {
   font-size: 0.8em;
-  
-}
+  }
 
 .pageHeadingSubj {
   grid-column: span 12;
@@ -875,8 +803,6 @@ input:hover{
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
-  /* -webkit-text-stroke-width: 1px; */
-  /* -webkit-text-stroke-color: black; */
   letter-spacing: -0.055em;
   font-weight: 740;
   line-height: 1em;
@@ -885,11 +811,9 @@ input:hover{
 }
 
 .subjHeading {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
-  /* background-color: #050505; */
   color: goldenrod;
   margin: 0px 0px;
   padding: 0px 10px 10px 10px;
@@ -901,11 +825,9 @@ input:hover{
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .subjSubHeading {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -920,7 +842,6 @@ input:hover{
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 
@@ -947,39 +868,33 @@ input:hover{
 
 
 .pageHeading2 {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
   background-color: #050505;
   color: goldenrod;
   margin: 0px 0px;
-  /* padding: 5px 10px; */
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.055em;
   font-weight: 740;
   line-height: 1em;
-  /* text-align: left; */
 }
 
 .pageHeading3 {
-  /* display: inline; */
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.2em;
   background-color: #050505;
   color: goldenrod;
   margin: 0px 0px;
-  /* padding: 5px 10px; */
   border-color: black;
   margin-bottom: none;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.055em;
   font-weight: 740;
   line-height: 1em;
-  /* text-align: left; */
 }
 
 
@@ -994,13 +909,9 @@ input:hover{
 
 
 
-
-
-
 /* LI UPLOAD TO CLOUD DIV AND BUTTON */
 .divButtonUploadToCloud {
   grid-column: span 12;
-  /* background: transparent; */
   display: flex;
   flex-direction: row;
   align-items: right;
@@ -1047,10 +958,6 @@ input:hover{
   width: 100%;
 }
 
-/* .divLIString {
-  text-align: left;
-} */
-
 
 .divIcon {
   background-color: transparent;
@@ -1095,20 +1002,11 @@ input:hover{
   letter-spacing: -0.025em;
   font-weight: 540;
   text-transform: uppercase;
-  /* font-variant: small-caps; */
-  /* transform:translate3d(0px, 0px, 0px); */
   margin:0;
-  /* align-self:end;
-  grid-column:1/5;
-  grid-row:2; */
   text-align:center;
-  /* text-transform: capitalize; */
   font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
   background-color: #050505;
-  /* color: rgb(25, 160, 164); */
   color:goldenrod;
-
-  /* text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5); */
   -webkit-background-clip: text;
       -moz-background-clip: text;
           background-clip: text;
@@ -1118,8 +1016,6 @@ input:hover{
 .glowButton {
   font-family:"Inter", sans-serif;
   transform:translate3d(0px, -4px, 0px);
-  /* text-shadow: 2px 2px 3px rgba(255,255,255,0.5); */
-  /* width: 80% ; */
   aspect-ratio: 1 / 1;
   height: 80%;
   border: none;
@@ -1222,7 +1118,6 @@ input:hover{
   align-content: center;
   justify-content: center;
   align-items: center;
-  /* display: flex; */
 }
 
 .neonButtonDisabled{
@@ -1339,7 +1234,6 @@ input:hover{
   letter-spacing: -0.055em;
   font-weight: 740;
   padding: 30px 30px 30px 30px;
-  /* margin: 10px 10px 10px 10px; */
   height: 1px;
   color: goldenrod;
   background-color: #050505;
@@ -1474,20 +1368,16 @@ input:hover{
     padding: 10px;
     background-image: url(../assets/BlueSwirlMedium.jpg);
     background-size: 100%;
-    /* object-fit: cover; */
     border: 1px solid black;
     border-radius: 5px;
-    /* height: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* font-size: 42px; */
     min-height: 15%;
     font-family: 'Inter';
     font-size: 35px;
     line-height: 35px;
-    /* font-size: calc(1.2em + 6 * ((100vw - 320px) / 680)); */
     letter-spacing: -0.055em;
     font-weight: 740;
     text-transform: uppercase;
@@ -1502,15 +1392,12 @@ input:hover{
     justify-items:center;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     height: calc(100% - 70px);
     bottom: 70px;
     top: 0px;
   }
 
   .divTeacherChoice {
-    /* font-size: 42px; */
-    /* height: calc( 100% - ( 4 * (1.2em + 6 * ((100vw - 320px) / 680)))); */
     height: 85%;
     top: 15%;
     display: grid;
@@ -1520,10 +1407,6 @@ input:hover{
     justify-items:center;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
-    /* top: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
-    /* top: 0px; */
-    /* bottom: 0px; */
     padding: 10px;
   }
 
@@ -1533,7 +1416,6 @@ input:hover{
     position: relative;
     width: 100%;
     height: 100%;
-    /* top: 10%; */
     padding: 0px;
     top: 0%;
   }
@@ -1566,20 +1448,11 @@ input:hover{
   letter-spacing: -0.025em;
   font-weight: 540;
   text-transform: uppercase;
-  /* font-variant: small-caps; */
-  /* transform:translate3d(0px, 0px, 0px); */
   margin:0;
-  /* align-self:end;
-  grid-column:1/5;
-  grid-row:2; */
   text-align:center;
-  /* text-transform: capitalize; */
   font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
   background-color: #050505;
-  /* color: rgb(25, 160, 164); */
   color:goldenrod;
-
-  /* text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5); */
   -webkit-background-clip: text;
       -moz-background-clip: text;
           background-clip: text;
@@ -1592,7 +1465,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueOrangeOilyMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 150px;
@@ -1600,7 +1472,7 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
 }
 
@@ -1609,7 +1481,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueCaveyMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 150px;
@@ -1617,7 +1488,7 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
 
 }
@@ -1627,7 +1498,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueSwirlMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 150px;
@@ -1635,11 +1505,9 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
-
 }
-
 }
 
 
@@ -1673,68 +1541,22 @@ input:hover{
     padding: 10px;
     background-image: url(../assets/BlueSwirlMedium.jpg);
     background-size: 100%;
-    /* object-fit: cover; */
     border: 1px solid black;
     border-radius: 5px;
-    /* height: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* font-size: 42px; */
     height: 20%;
     font-family: 'Inter';
     font-size: 50px;
     line-height: 50px;
-    /* font-size: calc(1.2em + 6 * ((100vw - 320px) / 680)); */
     letter-spacing: -0.055em;
     font-weight: 740;
     text-transform: uppercase;
     color: goldenrod;
     -webkit-text-stroke: 1px black;
-
-
   }
-
-  /* .divTopBarHomeButton {
-
-    align-self: center;
-    justify-self: center;
-  } */
-
-  /* .homeNeonButton {
-    font-family: 'Inter';
-    font-size: 80%;
-    font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
-    letter-spacing: -0.055em;
-    font-weight: 740;
-    text-transform: uppercase;
-    padding: 30px 30px 30px 30px;
-    height: 100%;
-    color: goldenrod;
-    background-color: transparent;
-    outline: none;
-    font-weight: normal;
-    border: none;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    overflow: hidden;
-    transition: 0.5s;
-    cursor: pointer;
-    align-content: center;
-    align-items: center;
-    display: flex;
-  } */
-
-  /* .homeNeonButtonText {
-    font-family: 'Inter';
-    margin: 0px;
-    letter-spacing: -0.055em;
-    font-weight: 740;
-    -webkit-text-stroke: 1px black;
-    line-height: calc(1em + 6 * ((100vw - 320px) / 680));
-  } */
-
 
   .divChoice {
     display: grid;
@@ -1743,15 +1565,12 @@ input:hover{
     justify-items:center;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     height: calc(100% - 70px);
     bottom: 70px;
     top: 0px;
   }
 
   .divTeacherChoice {
-    /* font-size: 42px; */
-    /* height: calc( 100% - ( 4 * (1.2em + 6 * ((100vw - 320px) / 680)))); */
     height: 80%;
     top: 20%;
     display: grid;
@@ -1761,10 +1580,6 @@ input:hover{
     justify-items:center;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
-    /* top: calc( 4 * (1.2em + 6 * ((100vw - 320px) / 680))); */
-    /* top: 0px; */
-    /* bottom: 0px; */
     padding: 10px;
   }
 
@@ -1774,7 +1589,6 @@ input:hover{
     position: relative;
     width: 100%;
     height: 100%;
-    /* top: 10%; */
     padding: 0px;
     top: 0%;
   }
@@ -1807,20 +1621,11 @@ input:hover{
   letter-spacing: -0.025em;
   font-weight: 540;
   text-transform: uppercase;
-  /* font-variant: small-caps; */
-  /* transform:translate3d(0px, 0px, 0px); */
   margin:0;
-  /* align-self:end;
-  grid-column:1/5;
-  grid-row:2; */
   text-align:center;
-  /* text-transform: capitalize; */
   font-size: calc(0.7em + 6 * ((100vw - 320px) / 680));
   background-color: #050505;
-  /* color: rgb(25, 160, 164); */
   color:goldenrod;
-
-  /* text-shadow: 0.3px 0.3px 0.3px rgba(138, 134, 134, 0.5); */
   -webkit-background-clip: text;
       -moz-background-clip: text;
           background-clip: text;
@@ -1833,7 +1638,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueOrangeOilyMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 250px;
@@ -1841,7 +1645,7 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 42px;
+  font-size: calc(1.9em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
 }
 
@@ -1850,7 +1654,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueCaveyMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 250px;
@@ -1858,7 +1661,7 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: calc(1.9em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
 
 }
@@ -1868,7 +1671,6 @@ input:hover{
   padding: 10px;
   background-image: url(../assets/BlueSwirlMedium.jpg);
   background-size: 100%;
-  /* object-fit: cover; */
   border: 1px solid black;
   border-radius: 5px;
   height: 250px;
@@ -1876,9 +1678,8 @@ input:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 42px;
+  font-size: calc(1.9em + 6 * ((100vw - 320px) / 680));
   -webkit-text-stroke: 1px black;
-
 }
 }
 
