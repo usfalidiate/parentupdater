@@ -42,8 +42,6 @@ import {
 
 } from "./LIArrays";
 
-// import Image from 'next/image'
-// import STEM from '../assets/STEM.jpg'
 
 export default function SubjectInfoReturn({activeClass}) {
 
@@ -176,141 +174,6 @@ export default function SubjectInfoReturn({activeClass}) {
 
     };
 
-    // function SciSubjectInfoTable(){
-    //     const sciDIV = subjectInfoArray.filter(item => item.activeClass == activeClass).map(element => {
-    //         return (
-    //             element.topic.map(result => {
-    //                 return (
-    //                     <>
-    //                         <div key={result.topicNumber} className="grid-container-subject-sci">
-    //                             <div> <h3> Topic {result.topicNumber}: {result.topicName} </h3> </div>
-    //                             <div> <b> Duration: </b> {result.topicDuration} </div> 
-    //                             <div> <b> Topic Description</b> <br/> {result.topicDescription} </div> 
-
-    //                             <div>
-    //                                 <b> Topic Outcomes</b>
-    //                                 <br/>
-    //                                 {
-    //                                     result.topicOutcomes.map(row => {
-    //                                     let des = sciSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-    //                                     return (<div key = {des.outcome} >  <b> {des.outcome}: </b> {des.description} <br/> </div>)                                            
-    //                                     })
-    //                                 } 
-    //                             </div>
-
-    //                             <div>
-    //                                 <b> Topic Content </b>
-    //                                 <br/>
-    //                             {
-    //                                 result.topicContent.map(row => {
-    //                                 let des = sciSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-    //                                 return (<div key = {des.outcome} > <b> {des.outcome}: </b> {des.description} <br/> </div>)                                                 
-    //                                 })
-    //                             } 
-    //                             </div>
-    //                         </div>
-    //                     <br/>
-    //                     </>
-    //                 )
-    //             })
-    //         )
-    //     });
-
-    //         return (
-    //         <> 
-    //             <div className="pageHeading" > {activeClassTitle}: Subject Information </div> 
-    //             {sciDIV}
-    //         </>
-    //     )  
-    // };
-
-    // function ST6SubjectInfoTable(){
-    //     const ST6Div = subjectInfoArray.filter(item => item.activeClass == activeClass).map(element => {
-    //         return (
-    //             <div key={element.topic}>
-    //             {element.topic.map(result => {
-    //                 return (
-    //                     <>
-    //                     <div key={result.topicNumber} className="grid-container-subject-ST6">
-    //                         <div> <h2> Topic {result.topicNumber}: {result.topicName} </h2> </div> {/* Child 1 */}
-    //                         <div> <b> Duration: </b> Approximately {result.topicDuration}.  </div> {/* Child 2 */}
-    //                         <div> <b> Outcomes </b> <br/> {                                  
-    //                             result.topicOutcomes.map(row => {
-    //                             let out = activeSubjectSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-    //                             return (<div key = {out.outcome}><b>{out.outcome}: &nbsp; </b> {out.description} </div> )                                            
-    //                             })
-    //                         } </div> {/* Child 3 */}
-    //                         <div> <b> Topic Description </b> <br/> {result.topicDescription} </div> {/* Child 4 */}
-    //                         <div> <b> Inquiry Questions </b> <br/> {
-    //                             result.topicContent.map(row => {
-    //                             let out = activeIQorLIArray.find((IQ) => IQ.fullID == row)
-    //                             return (<div key = {out.outcome} > <b> {out.fullID}: &nbsp; </b> {out.LIString} <br/> </div>)                                                 
-    //                             })
-    //                         } </div> {/* Child 5 */}
-    //                     </div>
-    //                     <br/><br/><br/><br/>
-    //                     </>
-    //                 )
-    //             })}
-    //             <br/>
-    //         </div>
-    //         )
-    //     });
-
-    //         return (
-    //         <> 
-    //             <div className="pageHeading" > {activeClassTitle}: Subject Information </div> 
-    //             <> {ST6Div} </>
-    //         </>
-    //     )  
-    // };
-
-    // function STEMSubjectInfoTable(){
-    //     const STEMdiv = subjectInfoArray.filter(item => item.activeClass == activeClass).map(element => {
-    //         return (
-    //             element.topic.map(result => {
-    //                 return (
-    //                     <>
-    //                     <div key={result.topicNumber} className="grid-container-subject-STEM">
-    //                         <div> <h2> Project {result.topicNumber}: {result.topicName} </h2> </div> 
-    //                         <div> <b> Duration: </b>{result.topicDuration} </div> 
-    //                         <div> <b> Project Description</b> <br/> {result.topicDescription} </div> 
-                            
-    //                         <div> 
-    //                             {
-    //                                 result.topicOutcomes.map(row => {
-    //                                 let des = STEMSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-    //                                 return (<div key = {des.outcome} > <b> {des.outcome}: </b> {des.description} <br/></div> )                                            
-    //                                 })
-    //                             } 
-    //                         </div>
-
-    //                         {/* <div> 
-    //                             {
-    //                                 result.topicContent.map(row => {
-    //                                 let des = STEMSyllabusOutcomesArray.find((poop) => poop.outcome == row)
-    //                                 return (<> {des.outcome}: {des.description} <br/><br/> </>)                                                 
-    //                                 })
-    //                             } 
-    //                         </div> */}
-    //                     </div>
-    //                     <br/>
-
-    //                     </>
-    //                 )
-    //             })
-    //         )
-    //     });
-
-    // return (
-    //         <> 
-    //             <div className="divImage"> <Image src={STEM} width={900} height={100} alt="Heading for STEM Page" /> </div>
-    //             <div className="pageHeading" > {activeClassTitle}: Subject Information </div> 
-    //             {STEMdiv}
-
-    //         </>
-    //     )    
-    // };
 
     function SubjDiv(){
         const END = subjectInfoArray.filter(item => item.activeClass == activeClass).map(element => {
@@ -327,7 +190,7 @@ export default function SubjectInfoReturn({activeClass}) {
                             <div className="divSubjDuration">  <div className="divSubjBoxHeading"> Duration </div> {result.topicDuration} approx. </div> 
                             
 
-                            <div className="divSubjTopicDescription"> <div className="divSubjBoxHeading"> Topic Description </div> <div className="divSubjBoxText"> {result.topicDescription}</div> <br/> </div>
+                            <div className="divSubjTopicDescription"> <div className="divSubjBoxHeading"> Topic Description </div> <div className="divSubjBoxText"> {result.topicDescription}</div> </div>
                             
 
                             <div className="divSubjTopicOutcomes"> <div className="divSubjBoxHeading"> Outcomes </div> {                                  
@@ -341,14 +204,6 @@ export default function SubjectInfoReturn({activeClass}) {
                                     )                                            
                                 })
                             } </div> 
-                            
-                            {/* Child 3 */}
-                            {/* <div> <b> Inquiry Questions </b> <br/> {
-                                result.topicContent.map(row => {
-                                let out = activeIQorLIArray.find((IQ) => IQ.fullID == row)
-                                return (<div key = {out.outcome} > <b> {out.fullID}: &nbsp; </b> {out.LIString} <br/> </div>)                                                 
-                                })
-                            } </div> Child 5 */}
                             </div>
                         </div>
                         <br/><br/>

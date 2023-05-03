@@ -86,7 +86,7 @@ export const teacherArrays = [
         sentralClass: ['10SCIB1', '10SCIA2', '9SCIB1', '7SCI8', '7SCI7', '7SCI5'],
         title: 'Mr',
         email: 'kieran.delves@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -96,7 +96,7 @@ export const teacherArrays = [
         sentralClass: ['11BIO03', '10SCIA1', '10SCIB3', '8SCI1', '8SCI4'],
         title: 'Mr',
         email: 'aaron.michael@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -106,7 +106,7 @@ export const teacherArrays = [
         sentralClass: ['12CHE01', '9SCIA4', '9SCIB3', '8MST03', '7SCI1', '7SCI2'],
         title: 'Mr',
         email: 'samuel.donovan@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
     {
@@ -116,7 +116,7 @@ export const teacherArrays = [
         sentralClass: ['12EES01', '11INV01', '9SCIA3', '9SCIB2', '8SCI3'],
         title: 'Mrs',
         email: 'terese.woollett@det.nsw.edu.au',
-        active: false,
+        active: true,
 
     },
 ];

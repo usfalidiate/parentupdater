@@ -74,6 +74,7 @@ html, body, :root {
   top: 0px;
   bottom: 70px;
   padding: 0px 5px 5px 5px;
+  align-items: center;
 }
 
 
@@ -582,68 +583,17 @@ input:hover{
 
 /* ASSESSMENT INFORMATION*/
 
-.AssHeadBG {
+.AssHeaderImage {
   grid-column: span 12;
   padding: 10px;
   background-image: url(../assets/BlueCaveyMedium.jpg);
   background-size: 100%;
   border: 1px solid black;
   border-radius: 5px;
-}
-.divAss {
-  grid-column: span 12;
-  background: transparent;
-}
-.divAssInfo {
-  grid-column: span 12;
-  background: #121212;
-  color: goldenrod;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  padding: 5px 20px 20px 20px;
+  width: 100%;
 }
 
-
-.divAssDueDate {
-  text-align: center;
-  grid-column: span 6;
-  border: 1px solid goldenrod;
-  padding: 5px;
-}
-
-.divAssWeighting {
-  text-align: center;
-  grid-column: span 6;
-  border: 1px solid goldenrod;
-  padding: 5px;
-}
-
-.divAssDescription {
-  text-align: center;
-  grid-column: span 12;
-  border: 1px solid goldenrod;
-  padding: 5px;
-}
-
-.divAssOutcomes {
-  text-align: center;
-  grid-column: span 12;
-  border: 1px solid goldenrod;
-  padding: 5px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.divAssSuccessCriteria {
-  text-align: center;
-  grid-column: span 12;
-  border: 1px solid goldenrod;
-  padding: 5px;
-}
-
-.pageHeadingAss {
+.divAssPageHeading {
   grid-column: span 12;
   font-family: "Inter";
   font-size: 2.5em;
@@ -658,26 +608,7 @@ input:hover{
   text-align: center;
   text-transform: uppercase;
 }
-
-.assHeading {
-  grid-column: span 12;
-  font-family: "Inter";
-  font-size: 1.5em;
-  background-color: transparent;
-  color: goldenrod;
-  margin: 0px 0px;
-  padding: 10px;
-  border-color: black;
-  margin-bottom: none;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: -0.055em;
-  font-weight: 740;
-  line-height: 1em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.assSubHeading {
+.divAssPageSubHeading {
   grid-column: span 12;
   font-family: "Inter";
   font-size: 1.5em;
@@ -694,30 +625,72 @@ input:hover{
   text-transform: uppercase;
 }
 
-.divAssHeadingAndText {
+.divAssTaskBox {
   grid-column: span 12;
+  background: #121212;
+  color: goldenrod;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 5px 20px 20px 20px;
+  max-width: 650px;
+}
+
+.divAssTaskHeading {
+  grid-column: span 12;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: goldenrod;
+  margin: 0px 0px;
+  padding: 10px;
+  border-color: black;
+  margin-bottom: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.055em;
+  font-weight: 740;
+  line-height: 1em;
+  text-align: center;
+}
+
+.divAssTaskRow {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+.divAssTaskSubHeading {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   padding: 5px;
 }
 
-.divAssBoxHeading {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.95em;
-  text-align: center;
-  grid-column: span 12;
-}
-
-.divAssBoxSubHeading {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  text-align: center;
-}
-
-.divAssBoxText {
-  font-size: 0.8em;
+.divAssTaskSubInfo {
+  grid-column: 5 / 13;
   padding: 5px;
+  text-align: left;
 }
+
+.divAssSuccessCriteriaBox {
+  padding: 5px 0px 5px 0px;
+}
+
+.divAssOutcomeBox {
+  padding: 5px 0px 5px 0px;
+  border: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -766,7 +739,7 @@ input:hover{
   grid-column: span 12;
   border: 1px solid goldenrod;
   padding: 5px;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -774,14 +747,14 @@ input:hover{
   grid-column: span 12;
   border: 1px solid goldenrod;
   padding: 5px 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .divSubjTopicOutcomes {
   grid-column: span 12;
   border: 1px solid goldenrod;
   padding: 5px;
-  text-align: center;
+  text-align: left;
 }
 
 .divSubjBoxHeading {
@@ -1419,6 +1392,8 @@ input:hover{
     height: 100%;
     padding: 0px;
     top: 0%;
+    justify-items: center;
+
   }
   .divLIGridChild {
     background: #121212;
