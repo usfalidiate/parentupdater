@@ -86,37 +86,39 @@ export default function AssReturn({activeClass} ) {
                         return (
                             <> 
                             <div key={result.taskNumber} className="divAssTaskBox">
-                                <div className="divAssTaskHeading"> Task {result.taskNumber}: {result.taskName} </div>
+                                <div className="divAssTaskHeading"> Task {result.taskNumber}: <br/> {result.taskName} </div>
+
 
                                 <div className="divAssTaskRow"> <div className="divAssTaskSubHeading"> Due Date </div> <div className="divAssTaskSubInfo"> {result.date} </div> </div> 
                                 <div className="divAssTaskRow"> <div className="divAssTaskSubHeading"> Weighting </div> <div className="divAssTaskSubInfo"> {result.taskWeighting} </div> </div> 
-                                <div className="divAssTaskRow"> <div className="divAssTaskSubHeading"> Task Description </div> <div className="divAssTaskSubInfo"> {result.taskDescription} </div> </div>
+                                <div className="divAssTaskRow"> <div className="divAssTaskSubHeadingVert"> Task Description </div> <div className="divAssTaskSubInfoVert"> {result.taskDescription} </div> </div>
+                                
+                                                                
+                                <div className="divAssTaskRow" > 
+                                    <div className="divAssTaskSubHeadingVert" > Task Outcomes </div>  
+                                    {result.taskOutcomes.map(out => {
+                                        let des = activeSyllabusOutcomeArray.find((item) => item.outcome == out)
+                                        return (
+                                            <div key = {des.outcome} className="divAssTaskSubInfoVert" >
+                                                <div className="divAssOutcomeBox"> <em>{out}:</em>  {des.description} </div> 
+                                            </div>
+                                        )
+                                    })}
+                                
+                                </div> 
                                 <div className="divAssTaskRow">
-                                    <div className="divAssTaskSubHeading"> Specific Task Criteria </div> 
+                                    <div className="divAssTaskSubHeadingVert"> Specific Task Criteria </div> 
                                         {
                                             result.successCriteria.map(item => {
                                                 return (
-                                                    <div className="divAssTaskSubInfo" key = {item}>
+                                                    <div className="divAssTaskSubInfoVert" key = {item}>
                                                         <div className="divAssSuccessCriteriaBox"> {item} </div>
                                                     </div>
                                                 )
                                             })
                                         }
-                                    </div>
-                                                                
-                                <div className="divAssTaskRow" > 
-                                    <div className="divAssTaskSubHeading" > Task Outcomes </div>  
-                                    {result.taskOutcomes.map(out => {
-                                        let des = activeSyllabusOutcomeArray.find((item) => item.outcome == out)
-                                        return (
-                                            <div key = {des.outcome} className="divAssTaskSubInfo" >
-                                                <div className="divAssOutcomeBox"> {out}:  {des.description} </div> 
-                                            </div>
-                                        )
-                                    })}
-                                
-                                    </div> 
                                 </div>
+                            </div>
 
                             <br/>
                             </>
@@ -180,8 +182,15 @@ export default function AssReturn({activeClass} ) {
 
     return (
         <div className="divContent">
-            <div className="AssHeaderImage"> <div className="divAssPageHeading" > Assessments </div> <div className="divAssPageSubHeading" > ({activeClass}) </div> </div>
+            <div className="AssHeaderImage"> 
+                <div className="divAssPageHeading" > Assessments </div> 
+                <div className="divAssPageSubHeading" > ({activeClass}) </div> 
+            </div>
+
+            <div className="divAssJumpToHeader"> Jump To Section </div>
+
             <AssDiv />
+            
         </div>
     )
 }

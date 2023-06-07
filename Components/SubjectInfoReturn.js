@@ -185,7 +185,7 @@ export default function SubjectInfoReturn({activeClass}) {
                         <div className="divSubjTopic" key={result.topicNumber} >
 
                             <div className="divSubjTopicInfo">
-                            <div className="subjHeading"> Topic {result.topicNumber}: {result.topicName} </div>
+                            <div className="subjHeading"> Topic {result.topicNumber}: <br/> {result.topicName} </div>
 
                             <div className="divSubjDuration">  <div className="divSubjBoxHeading"> Duration </div> {result.topicDuration} approx. </div> 
                             
