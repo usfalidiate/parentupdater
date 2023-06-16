@@ -17,32 +17,60 @@ export const LIArray10SCIASP = [
     {id: 13 , topicActive: true, fullID: "10.1.9",  year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '9',  LIString: 'Analyses the validity of second-hand sources used using the WWWD framework'},
     {id: 14 , topicActive: true, fullID: "10.1.10", year: 10, topic:  1, topicName: 'Student Research Project', completed: false, LINumber: '10', LIString: 'Communicates their findings in a complete scientific report. (Including: Abstract, Question, Aim, Hypothesis, Introduction, Method, Results, Discussion, Conclusion, Appendix, and References)'},
     // Topic 2 - Human-Earth Interactions
-    {id: 0  , topicActive: true, fullID: "10.2.1",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"1	",	LIString: "recall that ecosystems consist of communities of interdependent organisms and abiotic components of the environment	"	}	,
-    {id: 1  , topicActive: true, fullID: "10.2.2",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"2	",	LIString: "describe how energy flows through ecosystems, including input and output through food webs	"	}	,
-    {id: 2  , topicActive: true, fullID: "10.2.3",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"3	",	LIString: "analyse how changes in some biotic and abiotic components of an ecosystem affect populations and/or communities	"	}	,
-    {id: 3  , topicActive: true, fullID: "10.2.4",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"4	",	LIString: "outline using examples how matter is cycled through ecosystems such as nitrogen	"	}	,
-    {id: 4  , topicActive: true, fullID: "10.2.5",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"5	",	LIString: "outline how global systems rely on interactions involving the biosphere, lithosphere, hydrosphere and atmosphere, including the carbon cycle	"	}	,
-    {id: 5  , topicActive: true, fullID: "10.2.6",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"6	",	LIString: "evaluate scientific evidence of how human activity has led to the greenhouse effect	"	}	,
-    {id: 6  , topicActive: true, fullID: "10.2.7",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"7	",	LIString: "evaluate scientific evidence of how human activity has led to the ozone layer depletion	"	}	,
-    {id: 7  , topicActive: true, fullID: "10.2.8",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"8	",	LIString: "evaluate scientific evidence of how human activity has led to the change of sea levels	"	}	,
-    {id: 8  , topicActive: true, fullID: "10.2.9",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"9	",	LIString: "evaluate scientific evidence of how human activity has led to the long-term effects of waste management	"	}	,
-    {id: 9  , topicActive: true, fullID: "10.2.10", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"10	",	LIString: "evaluate scientific evidence of how human activity has led to the loss of biodiversity	"	}	,
-    {id: 10	, topicActive: true, fullID: "10.2.11", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"11	",	LIString: "discuss the reasons different groups in society may use or weight criteria differently to evaluate claims, explanations or predictions in making decisions about contemporary issues involving interactions of the Earth's spheres  	"	}	,
-    {id: 11	, topicActive: true, fullID: "10.2.12", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"12	",	LIString: "assess ways that Aboriginal and Torres Strait Islander Peoples' cultural practices and knowledge of the environment contribute to the conservation and management of sustainable ecosystems	"	}	,
-    {id: 12	, topicActive: true, fullID: "10.2.13", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"13	",	LIString: "evaluate some examples in ecosystems, of strategies used to balance conserving, protecting and maintaining the quality and sustainability of the environment with human activities and needs	"	}	,
-    {id: 13	, topicActive: true, fullID: "10.2.14", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"14	",	LIString: "discuss the development and implications of international agreements relating to biodiversity and climate change, e.g. the original 1987 Montreal Protocol, 1992 United Nations Conference on Environment and Development, 1997 Kyoto Protocol and the 2009 United Nations Climate Change Conference	"	}	,
-    {id: 14	, topicActive: true, fullID: "10.2.15", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"15	",	LIString: "discuss technological developments that have extended the ability of scientists to collect information about, and monitor events in, the natural world 	"	}	,
-    {id: 15	, topicActive: true, fullID: "10.2.16", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"16	",	LIString: "research evidence relating global warming to changes in weather patterns, including El Niño and La Niña	"	}	,
-    {id: 16	, topicActive: true, fullID: "10.2.17", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"17	",	LIString: "investigate how models can be used to predict the changes in populations due to environmental changes, e.g. the impact of fire or flooding, introduction of a disease or predator  	"	}	,
-    {id: 17	, topicActive: true, fullID: "10.2.18", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"18	",	LIString: "discuss the strengths and limitations of using models to make predictions about changes in biological systems  	"	}	,
+    {id: 0  , topicActive: true, fullID: "10.2.1",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"1" ,	LIString: "recall that ecosystems consist of communities of interdependent organisms and abiotic components of the environment	"	}	,
+    {id: 1  , topicActive: true, fullID: "10.2.2",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"2" ,	LIString: "describe how energy flows through ecosystems, including input and output through food webs	"	}	,
+    {id: 2  , topicActive: true, fullID: "10.2.3",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"3" ,	LIString: "analyse how changes in some biotic and abiotic components of an ecosystem affect populations and/or communities	"	}	,
+    {id: 3  , topicActive: true, fullID: "10.2.4",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"4" ,	LIString: "outline using examples how matter is cycled through ecosystems such as nitrogen	"	}	,
+    {id: 4  , topicActive: true, fullID: "10.2.5",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"5" ,	LIString: "outline how global systems rely on interactions involving the biosphere, lithosphere, hydrosphere and atmosphere, including the carbon cycle	"	}	,
+    {id: 5  , topicActive: true, fullID: "10.2.6",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"6" ,	LIString: "evaluate scientific evidence of how human activity has led to the greenhouse effect	"	}	,
+    {id: 6  , topicActive: true, fullID: "10.2.7",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"7" ,	LIString: "evaluate scientific evidence of how human activity has led to the ozone layer depletion	"	}	,
+    {id: 7  , topicActive: true, fullID: "10.2.8",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"8" ,	LIString: "evaluate scientific evidence of how human activity has led to the change of sea levels	"	}	,
+    {id: 8  , topicActive: true, fullID: "10.2.9",  year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"9" ,	LIString: "evaluate scientific evidence of how human activity has led to the long-term effects of waste management	"	}	,
+    {id: 9  , topicActive: true, fullID: "10.2.10", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"10",	LIString: "evaluate scientific evidence of how human activity has led to the loss of biodiversity	"	}	,
+    {id: 10	, topicActive: true, fullID: "10.2.11", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"11",	LIString: "discuss the reasons different groups in society may use or weight criteria differently to evaluate claims, explanations or predictions in making decisions about contemporary issues involving interactions of the Earth's spheres  	"	}	,
+    {id: 11	, topicActive: true, fullID: "10.2.12", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"12",	LIString: "assess ways that Aboriginal and Torres Strait Islander Peoples' cultural practices and knowledge of the environment contribute to the conservation and management of sustainable ecosystems	"	}	,
+    {id: 12	, topicActive: true, fullID: "10.2.13", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"13",	LIString: "evaluate some examples in ecosystems, of strategies used to balance conserving, protecting and maintaining the quality and sustainability of the environment with human activities and needs	"	}	,
+    {id: 13	, topicActive: true, fullID: "10.2.14", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"14",	LIString: "discuss the development and implications of international agreements relating to biodiversity and climate change, e.g. the original 1987 Montreal Protocol, 1992 United Nations Conference on Environment and Development, 1997 Kyoto Protocol and the 2009 United Nations Climate Change Conference	"	}	,
+    {id: 14	, topicActive: true, fullID: "10.2.15", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"15",	LIString: "discuss technological developments that have extended the ability of scientists to collect information about, and monitor events in, the natural world 	"	}	,
+    {id: 15	, topicActive: true, fullID: "10.2.16", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"16",	LIString: "research evidence relating global warming to changes in weather patterns, including El Niño and La Niña	"	}	,
+    {id: 16	, topicActive: true, fullID: "10.2.17", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"17",	LIString: "investigate how models can be used to predict the changes in populations due to environmental changes, e.g. the impact of fire or flooding, introduction of a disease or predator  	"	}	,
+    {id: 17	, topicActive: true, fullID: "10.2.18", year: 10,	topic:	2, topicName: 'Human-Earth Interactions', completed: false, LINumber:	"18",	LIString: "discuss the strengths and limitations of using models to make predictions about changes in biological systems  	"	}	,
     // Topic 3 - Genetics and Biotechnology
-    {id: 0  , topicActive: false, fullID: "10.3.1",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '1',  LIString: 'x'},
+    {id: 0  , topicActive: false, fullID: "10.3.1" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '1' ,  LIString: 'Describe replication for a range of organisms, including:- animals: external and internal fertilisation- plants: asexual and sexual reproduction- fungi: budding, spores- bacteria: binary fission- protists: binary fission, budding'},
+    {id: 1  , topicActive: false, fullID: "10.3.2" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '2' ,  LIString: 'Relate the organs involved in human reproductive systems to their function. '},
+    {id: 2  , topicActive: false, fullID: "10.3.3" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '3' ,  LIString: 'Identify glands and hormones responsible for hormonal control of the menstrual cycle and link this to reproduction in humans. '},
+    {id: 3  , topicActive: false, fullID: "10.3.4" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '4' ,  LIString: 'Identify different categories of contraception including barriers, sterilisation, and hormonal, and explain how they prevent fertilisation.'},
+    {id: 4  , topicActive: false, fullID: "10.3.5" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '5' ,  LIString: 'Identify that during reproduction the transmission of heritable characteristics from one generation to the next involves DNA and genes. '},
+    {id: 5  , topicActive: false, fullID: "10.3.6" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '6' ,  LIString: 'Identify and describe the structure and function of DNA, chromosomes, and genes.'},
+    {id: 6  , topicActive: false, fullID: "10.3.7a",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '7a',  LIString: 'Describe DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing, and bonding.'},
+    {id: 7  , topicActive: false, fullID: "10.3.7b",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '7b',  LIString: 'Compare the causes, processes, and effects of different types of mutation, including: -point mutation  -chromosomal mutation'},
+    {id: 8  , topicActive: false, fullID: "10.3.8" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '8' ,  LIString: 'Model the processes involved in mitotic and meiotic cell replication'},
+    {id: 9  , topicActive: false, fullID: "10.3.9" ,  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '9 ',  LIString: "Describe the 'Central Dogma of Molecular Biology', including transcription and translation."},
+    {id: 10 , topicActive: false, fullID: "10.3.10",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '10',  LIString: 'Describe sexual reproduction and how inheritable characteristics are passed onto the next generation.'},
+    {id: 11 , topicActive: false, fullID: "10.3.11",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '11',  LIString: 'Define the process of meiosis in relation to formation of haploid and diploid cells.'},
+    {id: 12 , topicActive: false, fullID: "10.3.12",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '12',  LIString: 'Identify dominant and recessive characteristics through pedigree tree interpretation.'},
+    {id: 13 , topicActive: false, fullID: "10.3.13",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '13',  LIString: 'Predict genotype and phenotype of offspring through punnet squares.'},
+    {id: 14 , topicActive: false, fullID: "10.3.14",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '14',  LIString: 'Describe, using examples, how developments in technology have advanced biological understanding, e.g., vaccines, biotechnology, stem-cell research, and in-vitro fertilisation.'},
+    {id: 15 , topicActive: false, fullID: "10.3.15",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '15',  LIString: 'Evaluate some advantages and disadvantages of the use and applications of biotechnology, including social and ethical considerations.'},
+    {id: 16 , topicActive: false, fullID: "10.3.16",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '16',  LIString: 'Describe techniques and applications used in recombinant DNA technology for the development of transgenic organisms in agricultural and medical applications'},
+    {id: 17 , topicActive: false, fullID: "10.3.17",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '17',  LIString: 'Conduct experiments with restriction enzymes to genetically modify E. coli DNA with Green Fluorescent Protein (GFP) to introduce fluorescence.'},
+    {id: 18 , topicActive: false, fullID: "10.3.18",  year: 10, topic: 3, topicName: 'Genetics and Biotechnology', completed: false, LINumber: '18',  LIString: 'Conduct experiments using Gel Electrophoresis'},
+
+
     // Topic 4 - Motion
-    {id: 0  , topicActive: false, fullID: "10.4.1",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '1',  LIString: 'x'},
+    {id: 0  , topicActive: false, fullID: "10.4.1",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '1',  LIString: 'Outline the difference between vectors and scalars, including speed/velocity and distance/displacement.'},
+    {id: 1  , topicActive: false, fullID: "10.4.2",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '2',  LIString: 'Identify the variables of the SUVAT equations and use them in a range of linear scenarios.'},
+    {id: 2  , topicActive: false, fullID: "10.4.3",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '3',  LIString: 'Identify a force as an action that alters the motion of an object'},
+    {id: 3  , topicActive: false, fullID: "10.4.4",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '4',  LIString: 'Draw and use free-body diagrams in a range of problems'},
+    {id: 4  , topicActive: false, fullID: "10.4.5",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '5',  LIString: "Describe Newton's Three Laws of Motion"},
+    {id: 5  , topicActive: false, fullID: "10.4.6",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '6',  LIString: 'Analyse the motion of a range of objects using motion graphs'},
+    {id: 6  , topicActive: false, fullID: "10.4.7",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '7',  LIString: 'Define and calculate torque in a range of scenarios'},
+    {id: 7  , topicActive: false, fullID: "10.4.8",  year: 10, topic: 4, topicName: 'Motion', completed: false, LINumber: '8',  LIString: 'Define and calculate centripetal force in a range of scenarios'},
+
     // Topic 5 - Chemistry
-    {id: 0  , topicActive: false, fullID: "10.5.1",  year: 10, topic: 5, topicName: 'Chemistry', completed: false, LINumber: '1',  LIString: 'x'},
+    {id: 0  , topicActive: false, fullID: "10.5.1",  year: 10, topic: 5, topicName: 'Chemistry', completed: false, LINumber: '1',  LIString: 'Under Construction'},
     // Topic 6 - Evolution
-    {id: 0  , topicActive: false, fullID: "10.6.1",  year: 10, topic: 6, topicName: 'Evolution', completed: false, LINumber: '1',  LIString: 'x'},
+    {id: 0  , topicActive: false, fullID: "10.6.1",  year: 10, topic: 6, topicName: 'Evolution', completed: false, LINumber: '1',  LIString: 'Under Construction'},
 
 ];
 
@@ -315,6 +343,7 @@ export const IQArray12PHY = [
     {id: 4  ,  fullID: "8.5",  year: 12, topic: 8, topicName: 'From the Universe to the Atom', completed: false, LINumber: '5', moduleNumber: 'Module 8' ,  LIString: 'How is it known that human understanding of matter is still incomplete?'},
 ];
 
+// STEM
 export const LIArray10STY = [   
     // Project 1
     {id: 0  ,  fullID: "1.1" ,  year: 10, topic: 1, topicName: 'Green Construction - Cardboard Hydraulic Arm', completed: false, LINumber: '1' , LIString: "Complete STEM workspace Risk Assessment" },
@@ -329,37 +358,37 @@ export const LIArray10STY = [
     {id: 9  ,  fullID: "1.10",  year: 10, topic: 1, topicName: 'Green Construction - Cardboard Hydraulic Arm', completed: false, LINumber: '10', LIString: "Test functionality of cardboard hydraulic arm" },
 
     // Project 2
-    {id: 10 ,  fullID: "2.1",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '1', LIString: 'Analyse a range of example Risk Assessments'},
-    {id: 11 ,  fullID: "2.2",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '2', LIString: 'Conduct a collaborative Risk Assessment'},
-    {id: 12 ,  fullID: "2.3",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '3', LIString: 'Conduct an individual Risk Assessment for completing projects in the STEM Room'},
-    {id: 13 ,  fullID: "2.4",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '4', LIString: 'Construct a range of LEGO machines and vehicles, using provided instructions'},
-    {id: 14 ,  fullID: "2.5",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '5', LIString: 'Draft a design of a personal LEGO machine or vehicle'},
-    {id: 15 ,  fullID: "2.6",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '6', LIString: 'Seek and incorporate feedback on design'},
-    {id: 16 ,  fullID: "2.7",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '7', LIString: 'Construct personal LEGO machine or vehicle'},
-    {id: 17 ,  fullID: "2.8",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '8', LIString: 'Complete final evaluation of LEGO machine or vehicle'},
+    {id: 0 ,  fullID: "2.1",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '1', LIString: 'Analyse a range of example Risk Assessments'},
+    {id: 1 ,  fullID: "2.2",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '2', LIString: 'Conduct a collaborative Risk Assessment'},
+    {id: 2 ,  fullID: "2.3",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '3', LIString: 'Conduct an individual Risk Assessment for completing projects in the STEM Room'},
+    {id: 3 ,  fullID: "2.4",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '4', LIString: 'Construct a range of LEGO machines and vehicles, using provided instructions'},
+    {id: 4 ,  fullID: "2.5",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '5', LIString: 'Draft a design of a personal LEGO machine or vehicle'},
+    {id: 5 ,  fullID: "2.6",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '6', LIString: 'Seek and incorporate feedback on design'},
+    {id: 6 ,  fullID: "2.7",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '7', LIString: 'Construct personal LEGO machine or vehicle'},
+    {id: 7 ,  fullID: "2.8",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '8', LIString: 'Complete final evaluation of LEGO machine or vehicle'},
 
     // Project 3
-    {id: 18 ,  fullID: "3.1",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '1', LIString: 'x'},
-    {id: 19 ,  fullID: "3.2",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '2', LIString: 'x'},
-    {id: 20 ,  fullID: "3.3",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '3', LIString: 'x'},
-    {id: 21 ,  fullID: "3.4",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '4', LIString: 'x'},
-    {id: 22 ,  fullID: "3.5",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '5', LIString: 'x'},
-    {id: 23 ,  fullID: "3.6",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '6', LIString: 'x'},
-    {id: 24 ,  fullID: "3.7",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '7', LIString: 'x'},
-    {id: 25 ,  fullID: "3.8",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '8', LIString: 'x'},
+    {id: 0 ,  fullID: "3.1",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '1', LIString: 'x'},
+    {id: 1 ,  fullID: "3.2",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '2', LIString: 'x'},
+    {id: 2 ,  fullID: "3.3",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '3', LIString: 'x'},
+    {id: 3 ,  fullID: "3.4",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '4', LIString: 'x'},
+    {id: 4 ,  fullID: "3.5",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '5', LIString: 'x'},
+    {id: 5 ,  fullID: "3.6",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '6', LIString: 'x'},
+    {id: 6 ,  fullID: "3.7",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '7', LIString: 'x'},
+    {id: 7 ,  fullID: "3.8",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '8', LIString: 'x'},
 
     // Project 4
-    {id: 26 ,  fullID: "4.1",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '1', LIString: 'x'},
-    {id: 27 ,  fullID: "4.2",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '2', LIString: 'x'},
-    {id: 28 ,  fullID: "4.3",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '3', LIString: 'x'},
-    {id: 29 ,  fullID: "4.4",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '4', LIString: 'x'},
-    {id: 30 ,  fullID: "4.5",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '5', LIString: 'x'},
-    {id: 31 ,  fullID: "4.6",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '6', LIString: 'x'},
-    {id: 32 ,  fullID: "4.7",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '7', LIString: 'x'},
-    {id: 33 ,  fullID: "4.8",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '8', LIString: 'x'},
+    {id: 0 ,  fullID: "4.1",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '1', LIString: 'x'},
+    {id: 1 ,  fullID: "4.2",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '2', LIString: 'x'},
+    {id: 2 ,  fullID: "4.3",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '3', LIString: 'x'},
+    {id: 3 ,  fullID: "4.4",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '4', LIString: 'x'},
+    {id: 4 ,  fullID: "4.5",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '5', LIString: 'x'},
+    {id: 5 ,  fullID: "4.6",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '6', LIString: 'x'},
+    {id: 6 ,  fullID: "4.7",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '7', LIString: 'x'},
+    {id: 7 ,  fullID: "4.8",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '8', LIString: 'x'},
 ];
 
-// STEM
+
 export const LIArray10STX = [
     // Project 1 - 
     {id: 0  ,  fullID: "7.1.1",  year: 10, topic: 1, topicName: 'x', completed: false, LINumber: '1',  LIString: 'x'},

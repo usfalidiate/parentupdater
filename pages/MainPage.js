@@ -51,7 +51,7 @@ function TeacherChoiceReturn() {
         return (
             <div 
             key={item.id}
-            className='divGlowButton'>
+            className='divGlowButtonTeacherChoice'>
             <button 
                 className='glowButton' 
                 onClick={ () => handleTeacherChoiceButtonClick({activeTeacherProp}) } 

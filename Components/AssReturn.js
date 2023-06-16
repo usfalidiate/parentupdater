@@ -182,12 +182,12 @@ export default function AssReturn({activeClass} ) {
 
     return (
         <div className="divContent">
-            <div className="AssHeaderImage"> 
+            <div className="AssHeadBG"> 
                 <div className="divAssPageHeading" > Assessments </div> 
                 <div className="divAssPageSubHeading" > ({activeClass}) </div> 
             </div>
 
-            <div className="divAssJumpToHeader"> Jump To Section </div>
+            {/* <div className="divAssJumpToHeader"> Jump To Section </div> */}
 
             <AssDiv />
             
