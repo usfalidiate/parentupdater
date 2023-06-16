@@ -368,24 +368,12 @@ export const LIArray10STY = [
     {id: 7 ,  fullID: "2.8",  year: 10, topic: 2, topicName: 'LEGO In Motion', completed: false, LINumber: '8', LIString: 'Complete final evaluation of LEGO machine or vehicle'},
 
     // Project 3
-    {id: 0 ,  fullID: "3.1",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '1', LIString: 'x'},
-    {id: 1 ,  fullID: "3.2",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '2', LIString: 'x'},
-    {id: 2 ,  fullID: "3.3",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '3', LIString: 'x'},
-    {id: 3 ,  fullID: "3.4",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '4', LIString: 'x'},
-    {id: 4 ,  fullID: "3.5",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '5', LIString: 'x'},
-    {id: 5 ,  fullID: "3.6",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '6', LIString: 'x'},
-    {id: 6 ,  fullID: "3.7",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '7', LIString: 'x'},
-    {id: 7 ,  fullID: "3.8",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '8', LIString: 'x'},
+    {id: 0 ,  fullID: "3.1",  year: 10, topic: 3, topicName: 'Transport Analysis - The Parking Lot', completed: false, LINumber: '1', LIString: 'Under Construction'},
+
 
     // Project 4
-    {id: 0 ,  fullID: "4.1",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '1', LIString: 'x'},
-    {id: 1 ,  fullID: "4.2",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '2', LIString: 'x'},
-    {id: 2 ,  fullID: "4.3",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '3', LIString: 'x'},
-    {id: 3 ,  fullID: "4.4",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '4', LIString: 'x'},
-    {id: 4 ,  fullID: "4.5",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '5', LIString: 'x'},
-    {id: 5 ,  fullID: "4.6",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '6', LIString: 'x'},
-    {id: 6 ,  fullID: "4.7",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '7', LIString: 'x'},
-    {id: 7 ,  fullID: "4.8",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '8', LIString: 'x'},
+    {id: 0 ,  fullID: "4.1",  year: 10, topic: 4, topicName: 'OneLine Build and Sell', completed: false, LINumber: '1', LIString: 'Under Construction'},
+
 ];
 
 
