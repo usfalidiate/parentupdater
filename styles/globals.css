@@ -1025,6 +1025,19 @@ input:hover{
   justify-content: center;
 }
 
+.divGlowButtonTeacherChoice {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  width: 50% ;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .glowButtonText {
@@ -1476,6 +1489,19 @@ input:hover{
   justify-content: center;
 }
 
+.divGlowButtonTeacherChoice {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  width: 50% ;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .glowButtonText {
   position:relative;
   font-family:"Inter", sans-serif;
@@ -1640,6 +1666,19 @@ input:hover{
 
   /* HALO GLOW BUTTONS desktop*/
 .divGlowButton {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  width: 50% ;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.divGlowButtonTeacherChoice {
   grid-column-start: auto;
   grid-column-end: auto;
   grid-row-start: auto;
